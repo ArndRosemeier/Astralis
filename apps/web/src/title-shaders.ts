@@ -1,4 +1,8 @@
 // Continuous 3D noise keeps the spherical surfaces seamless at the longitude seam.
+export const starVertex=`attribute float starSize;uniform float pixelRatio;varying vec3 starColor;
+void main(){starColor=color;vec4 eye=modelViewMatrix*vec4(position,1.);gl_Position=projectionMatrix*eye;gl_PointSize=starSize*pixelRatio;}`;
+export const starFragment=`varying vec3 starColor;
+void main(){vec2 p=gl_PointCoord*2.-1.;float r=length(p);if(r>1.)discard;float core=exp(-r*r*30.);float halo=exp(-r*r*5.)*.25;gl_FragColor=vec4(starColor,core+halo);}`;
 export const noiseGLSL=`
 float hash(vec3 p){p=fract(p*.3183099+vec3(.1,.2,.3));p*=17.;return fract(p.x*p.y*p.z*(p.x+p.y+p.z));}
 float noise3(vec3 p){vec3 i=floor(p),f=fract(p);f=f*f*(3.-2.*f);

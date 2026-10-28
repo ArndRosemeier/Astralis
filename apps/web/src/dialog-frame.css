@@ -1,0 +1,75 @@
+/* Orbital light border + Nebula shadow, shared by every modal surface. */
+@property --dialog-orbit-angle {
+  syntax: '<angle>';
+  initial-value: 0deg;
+  inherits: false;
+}
+
+.dialog-frame {
+  position: relative;
+  isolation: isolate;
+  width: min(1120px, 95vw);
+  max-width: 100%;
+  min-width: 0;
+  border-radius: 16px;
+  animation: panel-in .25s ease-out;
+}
+
+.dialog-frame--setup { width: min(1060px, 95vw); }
+.dialog-frame > .modal,
+.dialog-frame > .setup-panel { width: 100%; animation: none; }
+
+.dialog-frame::before,
+.dialog-frame::after {
+  content: '';
+  position: absolute;
+  border-radius: inherit;
+  pointer-events: none;
+}
+
+.dialog-frame::before {
+  z-index: -1;
+  inset: 18% -2% -4%;
+  transform: translateY(24px);
+  background:
+    radial-gradient(ellipse at 18% 75%, #56cbe7 0%, transparent 57%),
+    radial-gradient(ellipse at 80% 80%, #c16bef 0%, transparent 62%);
+  filter: blur(28px);
+  opacity: .85;
+}
+
+.dialog-frame::after {
+  --dialog-orbit-angle: 40deg;
+  z-index: 3;
+  inset: -1px;
+  padding: 2px;
+  background: conic-gradient(from var(--dialog-orbit-angle),
+    transparent 0deg, transparent 240deg, #426ccd55 275deg,
+    #b998ff 315deg, #80ebff 342deg, #e9fcff 350deg, transparent 354deg);
+  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  mask-composite: exclude;
+  animation: dialog-orbit 8s linear infinite;
+}
+
+@keyframes dialog-orbit {
+  from { --dialog-orbit-angle: 0deg; }
+  to { --dialog-orbit-angle: 360deg; }
+}
+
+@media (max-width: 650px) {
+  .dialog-frame { width: 100%; }
+  .dialog-frame::before {
+    inset: 24% 0 -2%;
+    transform: translateY(12px);
+    filter: blur(20px);
+    opacity: .7;
+  }
+}
+
+html[data-motion=off] .dialog-frame,
+html[data-motion=off] .dialog-frame::after { animation: none; }
+
+@media (prefers-reduced-motion: reduce) {
+  .dialog-frame,
+  .dialog-frame::after { animation: none; }
+}

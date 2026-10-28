@@ -1,5 +1,6 @@
 /* Celestial arcade: saturated light, quiet surfaces, readable instruments. */
-.title-observatory{background:radial-gradient(ellipse at 80% 20%,#17203966,transparent 60%),radial-gradient(ellipse at 60% 90%,#26163d55,transparent 55%),#030714}
+@media(min-width:651px){.observatory-controls{padding:12px 14px;background:#081426d9;border:1px solid #8eadd333;border-radius:12px;backdrop-filter:blur(10px)}}
+.title-observatory{background:radial-gradient(ellipse at 80% 20%,#17203966,transparent 60%),radial-gradient(ellipse at 60% 90%,#26163d55,transparent 55%),#030714;background-size:cover;background-position:60% center;background-repeat:no-repeat}
 .mode-title:has(.scene-unavailable)>.space-backdrop{opacity:.8}
 .title-observatory{position:absolute;inset:0;z-index:1;overflow:hidden;pointer-events:none}.title-observatory canvas{display:block;width:100%;height:100%}.title-observatory.scene-unavailable{opacity:0}
 .observatory-controls{position:absolute;z-index:4;right:5%;top:105px;max-width:48%;text-align:right}.observatory-controls .eyebrow{color:#95b7d4;font-size:.62rem;letter-spacing:.2em}.orbital-views{display:flex;gap:5px;justify-content:flex-end;margin:12px 0}.orbital-views button{display:flex;align-items:center;gap:6px;padding:9px 11px;background:#0c192b99;border:1px solid #a2c9f12a;border-radius:6px;color:#b8c9de;font-size:.7rem}.orbital-views button[aria-pressed=true]{background:#31639244;color:#b4f6ff;border-color:#75d6ff66}.observatory-controls>p{font-size:.7rem;color:#91aac5}

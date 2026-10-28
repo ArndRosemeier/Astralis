@@ -1,14 +1,15 @@
 import {useEffect,useRef,useState} from 'react';
 import * as THREE from 'three';
 import {Focus,Pause,Play,Radar,Rocket} from 'lucide-react';
-import {effect} from './lib';
-import {sphereVertex,planetFragment,cloudsFragment,atmosphereFragment,moonFragment} from './title-shaders';
+import {asset,effect} from './lib';
+import {sphereVertex,planetFragment,cloudsFragment,atmosphereFragment,moonFragment,starVertex,starFragment} from './title-shaders';
+import type {TitleNebula} from './title-nebula';
 import {createStation} from './title-orbit';
 
 const transmissions=['Probe reports: space is enormous. Requesting a longer lunch break.','Tranquility relay acquired. The night shift sends its regards.','Ocean survey complete. More blue than the committee anticipated.','Orbital traffic control requests that we stop waving at the satellites.','Gardener signal detected beneath the northern ice. Expedition recommended.'];
 const views=['Homeworld','Lunar approach','Orbital shipyard'];
 
-export function TitleScene({motion,quality}:{motion:boolean;quality:string}){
+export function TitleScene({motion,quality,nebula}:{motion:boolean;quality:string;nebula:TitleNebula}){
  const host=useRef<HTMLDivElement>(null),launch=useRef(0),latest=useRef({motion,view:0,paused:false});
  const [view,setView]=useState(0),[paused,setPaused]=useState(false),[probes,setProbes]=useState(0),[failed,setFailed]=useState(false);
  latest.current={motion,view,paused};
@@ -27,9 +28,9 @@ export function TitleScene({motion,quality}:{motion:boolean;quality:string}){
   const station=createStation(),relay=createStation();relay.scale.multiplyScalar(.43);root.add(station,relay);
   const moonPosition=(t:number)=>new THREE.Vector3(Math.cos(t)*6.5,Math.sin(t)*1.8,Math.sin(t)*5.2);
   const stationPosition=(t:number)=>new THREE.Vector3(Math.cos(t)*4.8,Math.sin(t)*2.5,Math.sin(t)*3.7);
-  const starPositions:number[]=[],starColors:number[]=[];let seed=937;const random=()=>{seed=(seed*1664525+1013904223)>>>0;return seed/4294967296;};
-  for(let i=0;i<(quality==='Low'?700:1800);i++){const p=new THREE.Vector3(random()*2-1,random()*2-1,random()*2-1).normalize().multiplyScalar(65+random()*30);starPositions.push(p.x,p.y,p.z);const c=new THREE.Color().setHSL(.55+random()*.13,.12+random()*.3,.45+random()*.5);starColors.push(c.r,c.g,c.b);}
-  const starGeometry=new THREE.BufferGeometry();starGeometry.setAttribute('position',new THREE.Float32BufferAttribute(starPositions,3));starGeometry.setAttribute('color',new THREE.Float32BufferAttribute(starColors,3));scene.add(new THREE.Points(starGeometry,new THREE.PointsMaterial({size:.065,vertexColors:true,transparent:true,opacity:.85,depthWrite:false})));
+  const starPositions:number[]=[],starColors:number[]=[],starSizes:number[]=[];let seed=937;const random=()=>{seed=(seed*1664525+1013904223)>>>0;return seed/4294967296;};
+  for(let i=0;i<(quality==='Low'?900:2200);i++){const p=new THREE.Vector3(random()*2-1,random()*2-1,random()*2-1).normalize().multiplyScalar(65+random()*30);starPositions.push(p.x,p.y,p.z);const c=new THREE.Color().setHSL(random()<.25?.1:.58,.12+random()*.2,.72+random()*.26);starColors.push(c.r,c.g,c.b);starSizes.push(random()<.08?7+random()*4:2.5+random()*2.5);}
+  const starGeometry=new THREE.BufferGeometry();starGeometry.setAttribute('position',new THREE.Float32BufferAttribute(starPositions,3));starGeometry.setAttribute('color',new THREE.Float32BufferAttribute(starColors,3));starGeometry.setAttribute('starSize',new THREE.Float32BufferAttribute(starSizes,1));scene.add(new THREE.Points(starGeometry,new THREE.ShaderMaterial({vertexShader:starVertex,fragmentShader:starFragment,uniforms:{pixelRatio:{value:renderer.getPixelRatio()}},vertexColors:true,transparent:true,depthWrite:false,blending:THREE.AdditiveBlending})));
   const probe=new THREE.Group();probe.add(new THREE.Mesh(new THREE.OctahedronGeometry(.065),new THREE.MeshStandardMaterial({color:'#e0c791',metalness:.6,roughness:.4})));probe.add(new THREE.Mesh(new THREE.BoxGeometry(.38,.1,.012),new THREE.MeshStandardMaterial({color:'#2875c2',metalness:.55,roughness:.35})));root.add(probe);probe.visible=false;
   const trailGeometry=new THREE.BufferGeometry().setFromPoints([new THREE.Vector3(),new THREE.Vector3()]);const trail=new THREE.Line(trailGeometry,new THREE.LineBasicMaterial({color:'#8ef4ff',transparent:true,opacity:.65}));root.add(trail);trail.visible=false;
   const pointer=new THREE.Vector2();const move=(event:PointerEvent)=>{const r=container.getBoundingClientRect();pointer.set((event.clientX-r.left)/r.width-.5,(event.clientY-r.top)/r.height-.5);};window.addEventListener('pointermove',move);const resetPointer=()=>pointer.set(0,0);window.addEventListener('blur',resetPointer);
@@ -50,7 +51,7 @@ export function TitleScene({motion,quality}:{motion:boolean;quality:string}){
   const lost=(event:Event)=>{event.preventDefault();setFailed(true);};renderer.domElement.addEventListener('webglcontextlost',lost);
   return()=>{cancelAnimationFrame(frame);resize.disconnect();window.removeEventListener('pointermove',move);window.removeEventListener('blur',resetPointer);renderer.domElement.removeEventListener('webglcontextlost',lost);const geometries=new Set<THREE.BufferGeometry>(),materials=new Set<THREE.Material>();scene.traverse(o=>{if(o instanceof THREE.Mesh||o instanceof THREE.Points||o instanceof THREE.Line){geometries.add(o.geometry);(Array.isArray(o.material)?o.material:[o.material]).forEach(m=>materials.add(m));}});geometries.forEach(g=>g.dispose());materials.forEach(m=>m.dispose());renderer.dispose();renderer.domElement.remove();};
  },[quality]);
- return <><div className={'title-observatory'+(failed?' scene-unavailable':'')} ref={host} role="img" aria-label="A rotating ocean world with moving clouds, an orbiting moon and orbital habitats"/>
+ return <><div className={'title-observatory'+(failed?' scene-unavailable':'')} style={{backgroundImage:`url(${asset(nebula.path)})`}} data-nebula={nebula.id} ref={host} role="img" aria-label={`A rotating ocean world, orbiting moon and orbital habitats against a ${nebula.name.toLowerCase()} nebula`}/>
  <div className="observatory-controls"><div className="eyebrow">THE CRADLE / HIGH ORBIT</div><div className="orbital-views" aria-label="Observatory camera">{views.map((name,i)=><button key={name} aria-pressed={view===i} onClick={()=>setView(i)}><Focus size={13}/>{name}</button>)}<button className="orbit-pause" disabled={!motion} aria-label={paused?'Resume orbital motion':'Pause orbital motion'} onClick={()=>setPaused(p=>!p)}>{paused||!motion?<Play size={14}/>:<Pause size={14}/>}</button></div><p>{failed?'3D view unavailable on this device. Expedition controls remain available.':'A living world. A thousand possible futures.'}</p></div>
  <aside className="probe-console"><div className="eyebrow"><Radar size={14}/> DEEP SPACE LISTENING POST</div><p aria-live="polite">{probes?transmissions[(probes-1)%transmissions.length]:'Tranquility station is listening. Send a little hello.'}</p><button className="probe-launch" onClick={()=>{launch.current++;setProbes(p=>p+1);effect('discovery');}}><Rocket size={16}/> Launch a probe <span>{String(probes).padStart(2,'0')} ↗</span></button></aside></>;
 }
