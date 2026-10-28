@@ -1,0 +1,26 @@
+.ship-preview{display:inline-block;width:88px;aspect-ratio:4/3;flex-shrink:0;vertical-align:middle;overflow:hidden;background:radial-gradient(ellipse,#4276a522,transparent 70%);border-radius:10px}
+.ship-preview canvas{display:block;width:100%;height:100%}
+.ship-preview>svg{width:60%;height:60%;margin:15% 20%;color:#9edcff}
+.ship-preview.small{width:58px}.ship-preview.large{width:min(100%,330px)}
+.fleet-symbol{width:130px;height:100px;background:none;box-shadow:none}
+.fleet-symbol .ship-preview{width:130px}
+.ship-chip{align-items:center;padding:4px 10px 4px 0;border-radius:10px}
+.ship-chip>span{display:flex;flex-direction:column;gap:4px}
+.local-fleet{min-height:64px}.local-fleet>.ship-preview{flex:0 0 62px}
+.ship-marker{position:absolute;left:0;top:0;width:42px;height:42px;padding:0;z-index:3;border:1px solid #b5dcff44;border-radius:50%;background:radial-gradient(circle,transparent 45%,#11233d55);box-shadow:0 0 12px #050b1a88;cursor:pointer;transition:box-shadow .15s,border-color .15s}
+.ship-marker:hover,.ship-marker:focus-visible{border-color:#bdf4ff;box-shadow:0 0 18px #66dfff88;outline:2px solid #e1fbff;outline-offset:2px}
+.ship-marker[aria-pressed=true]{border:2px solid #9fffe0;box-shadow:0 0 20px #57ffd899,inset 0 0 8px #57ffd855}
+.ship-marker.in-transit{border-style:dashed}
+.star-map.choosing-destination .star-label{cursor:crosshair}
+.star-map.choosing-destination .star-label.reachable{outline:1px solid #9effc688;color:#b9ffdb}
+.star-map.choosing-destination .star-label.unreachable{color:#bac1d2}
+.fleet-course{max-width:490px;border-color:#79d8cb;box-shadow:0 8px 32px #030a1a99}
+.fleet-course p{margin:4px 0;line-height:1.5}.fleet-course .ship-preview{width:70px}
+.fleet-course .selection-add{font-size:.7rem;white-space:nowrap;padding:7px 9px;border:1px solid #8acbdc55;border-radius:8px}
+.fleet-course .selection-add[aria-pressed=true]{background:#356c7866;color:#c5fff0}
+@media(max-width:700px){.fleet-symbol,.fleet-symbol .ship-preview{width:100px;height:75px}.local-fleet{display:flex}.fleet-course{left:74px;right:12px;top:auto;bottom:175px;flex-wrap:wrap;gap:8px}.fleet-course .ship-preview{width:44px}.fleet-course>div{flex:1;min-width:150px}.ship-chip .ship-preview{width:48px}}
+
+html[data-motion=off] .primary:not(:disabled):hover{transform:none}@media(prefers-reduced-motion:reduce){.primary:not(:disabled):hover{transform:none}}
+
+.fleet-course{background:#10263afa}
+@media(max-width:700px){.fleet-course{display:grid;grid-template-columns:40px minmax(0,1fr) 30px}.fleet-course>.ship-preview{grid-column:1;grid-row:1;width:40px}.fleet-course>div{grid-column:2;grid-row:1;min-width:0}.fleet-course .selection-add{grid-column:2;grid-row:2;justify-self:start}.fleet-course>button:last-child{grid-column:3;grid-row:1;padding:4px}.fleet-course p{font-size:.72rem}}

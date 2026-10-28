@@ -1,6 +1,6 @@
 import {useEffect,useRef,useState} from 'react';
 import * as THREE from 'three';
-import {Focus,Orbit,Pause,Play,Ship} from 'lucide-react';
+import {Focus,Orbit,Pause,Play,Rocket as Ship} from 'lucide-react';
 import {asset,effect} from './lib';
 import {sphereVertex,planetFragment,cloudsFragment,atmosphereFragment,moonFragment,starVertex,starFragment} from './title-shaders';
 import type {TitleNebula} from './title-nebula';
@@ -59,6 +59,7 @@ export function TitleScene({motion,quality,nebula,sunProfile}:{motion:boolean;qu
   const cameraTarget=new THREE.Vector3(),lookTarget=new THREE.Vector3(),currentLook=new THREE.Vector3();
   const dockRotation=new THREE.Quaternion(),dockFlip=new THREE.Quaternion().setFromAxisAngle(new THREE.Vector3(0,1,0),Math.PI);
   const size=()=>{
+   if(!anchor.current||!container.isConnected)return;
    width=container.clientWidth;height=container.clientHeight;renderer.setSize(width,height);camera.aspect=width/Math.max(height,1);camera.updateProjectionMatrix();lastDraw=0;
    const r=anchor.current!.getBoundingClientRect(),c=container.getBoundingClientRect(),depth=7,worldHeight=2*Math.tan(THREE.MathUtils.degToRad(21))*depth,worldWidth=worldHeight*camera.aspect;
    lettering.root.position.set(((r.left-c.left+r.width/2)/width-.5)*worldWidth,(.5-(r.top-c.top+r.height/2)/height)*worldHeight,-depth);

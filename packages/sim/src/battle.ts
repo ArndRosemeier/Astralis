@@ -15,7 +15,8 @@ export function simulateBattle(g:GameState,systemId:string,attacker:Fleet[],defe
    units.push({id:ship.id,owner:f.owner,pos,vel:[0,0,0],heading:[side===0?1:-1,0,0],shield:empire.artifacts.includes('Veil Shield')?(stat?.hp||15)*.3:0,hp:ship.hp,maxHp:Math.max(ship.hp,stat?.hp||15),armour:stat?.armour||0,maxArmour:stat?.armour||0,strategy:f.strategy||d?.strategy||'Line of battle',weapon:stat?.weapon.id||'none',weapons:d?.weapons||0,range:stat?.range||0,damage:stat?.damage||0,cooldown:Math.floor(random(rng)*10),acceleration:stat?.acceleration||7,pd:d?.pd||0,ammo:6,heat:0,withdrawn:false,kind:ship.kind,rule:'Default settings'});
   }
  }
- const record:BattleRecord={id:`battle-${g.turn}-${systemId}-${seed}`,turn:g.turn,systemId,name:`Battle of ${g.systems.find(s=>s.id===systemId)?.name}`,attacker:a,defender:b,winner:null,duration:0,frames:[],losses:{[a]:0,[b]:0},events:[],damage:{laser:0,kinetic:0,missile:0,particle:0},seed};
+ const vessels=Object.fromEntries([...attacker,...defender].flatMap(f=>f.ships.map(ship=>{const design=g.designs[f.owner]?.find(d=>d.id===ship.designId);return [ship.id,{kind:ship.kind,hull:design?.hull,weapons:design?.weapons}];})));
+ const record:BattleRecord={vessels,id:`battle-${g.turn}-${systemId}-${seed}`,turn:g.turn,systemId,name:`Battle of ${g.systems.find(s=>s.id===systemId)?.name}`,attacker:a,defender:b,winner:null,duration:0,frames:[],losses:{[a]:0,[b]:0},events:[],damage:{laser:0,kinetic:0,missile:0,particle:0},seed};
  type Projectile={target:string;from:Vec3;to:Vec3;damage:number;family:string;arrival:number;owner:number};
  const projectiles:Projectile[]=[];const overrides=new Map<string,string>();const latticeTicks=new Map<string,number>();
  let tick=0;

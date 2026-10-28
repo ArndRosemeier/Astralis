@@ -18,3 +18,11 @@ test('battle strategies produce deterministic records and bounded survivors',()=
 test('score victory triggers at configured turn limit',()=>{let g=fixture();g.options.turnLimit=1;g=processTurn(g);assert.equal(g.victory,'Score');assert.notEqual(g.winner,null);});
 test('Legacy project requires keys and can finish only after minimum duration',()=>{let g=fixture();const e=g.empires[0],p=planetById(g,e.capital)!;assert.ok(validateCommand(g,{empire:0,type:'queue',planet:p.id,item:{kind:'project',id:'legacy'}}));e.keys=3;e.techs.push('archive-decryption');p.progress=3000;p.terraformProgress=9;p.queue=[{kind:'project',id:'legacy'}];g=processTurn(g);assert.equal(g.victory,'Legacy');assert.equal(g.winner,0);});
 test('damaged and incompatible saves are rejected',()=>{const g=fixture(),save=JSON.parse(serialize(g));save.state.empires[0].credits+=1;assert.throws(()=>deserialize(JSON.stringify(save)),/Invalid/);save.version='0.000';assert.throws(()=>deserialize(JSON.stringify(save)),/Invalid/);});
+
+// Build 0.010 has the same save schema; this UI release must not strand expeditions.
+test('the previous build loads intact and upgrades on the next save',()=>{
+ const g=fixture();g.version='0.010';g.options.turnLimit=null;g.turn=17;
+ const save=JSON.stringify({format:'astralis-save',version:'0.010',checksum:hash(g),state:g});
+ const restored=deserialize(save);assert.equal(restored.turn,17);assert.equal(restored.options.turnLimit,null);assert.deepEqual(restored.fleets,g.fleets);assert.notEqual(restored.version,'0.010');assert.doesNotThrow(()=>deserialize(serialize(restored)));
+ const corrupt=JSON.parse(save);corrupt.state.empires[0].credits+=1;assert.throws(()=>deserialize(JSON.stringify(corrupt)),/Invalid/);
+});
