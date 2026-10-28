@@ -851,6 +851,63 @@
       "format": "WEBP",
       "provenance": "docs/assets/hero-source.json",
       "preexisting_integration_test": true
+    },
+    {
+      "path": "/assets/planets/tidal-ocean.png",
+      "model": "built-in image_gen",
+      "bytes": 2817676,
+      "dimensions": [
+        1672,
+        941
+      ],
+      "format": "PNG",
+      "cost_usd": null,
+      "openrouter_call": false,
+      "provenance": "docs/assets/tidal-art-prompts.json",
+      "sha256": "d1e68147e2cb963914da40242311e42848992d1f019eb69c2b2d29f198a258c4",
+      "verification": [
+        "full PNG decode passed",
+        "composition visually inspected",
+        "desktop/mobile integration checked"
+      ]
+    },
+    {
+      "path": "/assets/planets/tidal-frost.png",
+      "model": "built-in image_gen",
+      "bytes": 2641829,
+      "dimensions": [
+        1672,
+        941
+      ],
+      "format": "PNG",
+      "cost_usd": null,
+      "openrouter_call": false,
+      "provenance": "docs/assets/tidal-art-prompts.json",
+      "sha256": "cc39e5088e6e5a3e39337c4a901d3370252a1e688eb288b46455cd9d22d8e98c",
+      "verification": [
+        "full PNG decode passed",
+        "composition visually inspected",
+        "desktop/mobile integration checked"
+      ]
+    },
+    {
+      "path": "/assets/planets/tidal-rock.png",
+      "model": "built-in image_gen",
+      "bytes": 2442389,
+      "dimensions": [
+        1672,
+        941
+      ],
+      "format": "PNG",
+      "cost_usd": null,
+      "openrouter_call": false,
+      "provenance": "docs/assets/tidal-art-prompts.json",
+      "sha256": "ae561aeaba31d66f9cf103d2bd14f1ec29a9c563d4fb3e74c158105c9d856f19",
+      "verification": [
+        "full PNG decode passed",
+        "composition visually inspected",
+        "desktop/mobile integration checked"
+      ]
     }
   ],
   "fonts": [

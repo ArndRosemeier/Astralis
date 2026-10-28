@@ -121,3 +121,7 @@ limited so rapid interface actions do not become a wall of overlapping sounds.
 Both font license notices are bundled beside the fonts. Fonts load locally; no
 third-party font service is needed at game runtime. OpenRouter is used only during
 asset authoring, and its private API key must never be included in the web bundle.
+
+## Build 0.014 planet studies
+
+Three new tidally locked surface illustrations use built-in ImageGen rather than OpenRouter. Runtime assets: `public/assets/planets/tidal-ocean.png`, `tidal-frost.png`, `tidal-rock.png`. Full prompts: [tidal-art-prompts.json](tidal-art-prompts.json). See [integration and scientific limits](../tidal-world-art.md). These calls do not change the historical confirmed OpenRouter spend. No built-in generation price is claimed.

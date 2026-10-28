@@ -1,3 +1,4 @@
+import {VERSION} from '../packages/sim/src/rules';
 import {hash} from '../packages/sim/src/math';
 import {test} from 'node:test';
 import assert from 'node:assert/strict';
@@ -41,5 +42,5 @@ test('every actual scene in a busy turn supports animation and a completed still
  for(const event of collectMoments(game,after,0)){const scene=buildMomentScene(event,after);for(const progress of [0,.5,1]){scene.update(progress*8,progress);scene.root.traverse(o=>assert.ok([...o.position.toArray(),...o.scale.toArray()].every(Number.isFinite),event.kind));}disposeModel(scene.root);}
 });
 test('build 0.012 saves upgrade without changing the existing campaign',()=>{
- const {game}=achievementFixture();game.version='0.012';const save={...JSON.parse(serialize(game)),version:'0.012',checksum:hash(game),state:game},restored=deserialize(JSON.stringify(save));assert.equal(restored.version,'0.013');assert.deepEqual(restored.fleets,game.fleets);assert.equal(JSON.stringify(restored.systems),JSON.stringify(game.systems));
+ const {game}=achievementFixture();game.version='0.012';const save={...JSON.parse(serialize(game)),version:'0.012',checksum:hash(game),state:game},restored=deserialize(JSON.stringify(save));assert.equal(restored.version,VERSION);assert.deepEqual(restored.fleets,game.fleets);assert.equal(JSON.stringify(restored.systems),JSON.stringify(game.systems));
 });
