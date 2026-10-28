@@ -44,9 +44,11 @@ export function createTitleLettering(){
    const progress=THREE.MathUtils.smoothstep(age-i*.16,0,3.5);
    const roll=age>=0&&age<5?progress*Math.PI*2:0;
    letter.position.set(letter.userData.homeX*(1+envelope*.045),Math.sin(time*.55+i*.65)*.015+stagger*.24,envelope*Math.sin(i*.8)*.45);
+   letter.scale.setScalar(1);
    letter.rotation.set(Math.sin(time*.28+i)*.025+roll,Math.sin(time*.25+i)*.025+stagger*.45,stagger*.12);
   });
   chips.forEach((chip,i)=>{const angle=time*.18+i*2.4;chip.position.set(Math.cos(angle)*(.7+i/22*width*.52),Math.sin(angle)*(.68+envelope*.35),Math.sin(angle*.6)*.35);chip.rotation.set(time*.4+i,time*.2+i,angle);chip.scale.setScalar(.5+envelope*1.4);});
  }
- return {root,width,height:1.28,update};
+ const letterHeight=new THREE.Box3().setFromObject(letters[0]).getSize(new THREE.Vector3()).y;
+ return {root,letters,letterHeight,width,height:1.28,update,setOrbitActive:(active:boolean)=>{halo.visible=!active;dust.visible=!active;}};
 }

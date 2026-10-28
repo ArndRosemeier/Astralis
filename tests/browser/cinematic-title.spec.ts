@@ -49,7 +49,7 @@ test('without WebGL the title stays readable and navigation still works',async({
  await expect(page.getByRole('button',{name:'Lift the Veil',exact:true})).toBeVisible();
 });
 
-test('the title orbits through world depth and returns while the sun persists',async({page})=>{
+test('letters orbit independently through world depth and reassemble while the sun persists',async({page})=>{
  test.setTimeout(120000);
  const errors:string[]=[];page.on('pageerror',e=>errors.push(e.message));
  await page.goto('/');await page.getByRole('button',{name:'Click to start',exact:true}).click();
@@ -58,8 +58,13 @@ test('the title orbits through world depth and returns while the sun persists',a
  await scene.evaluate(el=>{const observer=new MutationObserver(()=>{if((el as HTMLElement).dataset.titleOrbitPhase==='behind-world'){document.querySelector<HTMLButtonElement>('[aria-label="Pause scene"]')!.click();observer.disconnect();}});observer.observe(el,{attributes:true,attributeFilter:['data-title-orbit-phase']});});
  await page.getByRole('button',{name:'Orbit the title',exact:true}).click();
  await expect(scene).toHaveAttribute('data-title-orbit','orbiting');
+ await expect(scene).toHaveAttribute('data-orbit-letters',/[2-7]/);
+ await page.screenshot({path:'tmp/qa/letter-orbit-departure.png'});
  await expect(page.getByRole('button',{name:'Resume scene',exact:true})).toBeVisible({timeout:60000});
+ await expect(scene).toHaveAttribute('data-orbit-letters',/[5-8]/);
  await page.screenshot({path:'tmp/qa/living-sky-title-behind.png'});
+ await page.setViewportSize({width:390,height:844});await page.screenshot({path:'tmp/qa/letter-orbit-phone.png'});
+ await page.setViewportSize({width:1440,height:1000});
  await page.getByRole('button',{name:'Resume scene',exact:true}).click();
  await expect(scene).toHaveAttribute('data-title-orbit','home',{timeout:60000});
  await expect(scene).toHaveAttribute('data-sun',sun!);

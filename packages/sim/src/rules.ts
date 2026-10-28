@@ -2,7 +2,7 @@ import {bonuses} from './effects';
 import data from './rules-data.json';
 import type {Empire,Fleet,GameState,Planet,ShipDesign,Species} from './types';
 import {clamp,quant} from './math';
-export const VERSION='0.007';
+export const VERSION='0.008';
 export const TECHS=[...data.techs,...['Propulsion','Energy & Weapons','Materials','Life Sciences','Computing','Society'].map((field,i)=>({id:['advanced-propulsion','advanced-weapons','advanced-materials','advanced-biology','advanced-computing','advanced-society'][i],name:['Advanced Propulsion','Advanced Weapons','Advanced Materials','Advanced Biology','Advanced Computing','Advanced Society'][i],field,tier:9,cost:2000,description:['Supply +1 ly; battle acceleration +5%.','Weapon damage +5%.','Armour +5%; building cost −2%.','Population capacity +3%.','Research +3%.','Stability +2; commerce +3%.'][i]}))];
 export const BUILDINGS=data.buildings;
 export const FIELDS=['Propulsion','Energy & Weapons','Materials','Life Sciences','Computing','Society'];

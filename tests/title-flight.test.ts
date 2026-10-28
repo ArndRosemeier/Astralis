@@ -2,7 +2,8 @@ import {test} from 'node:test';
 import assert from 'node:assert/strict';
 import * as THREE from 'three';
 import {createFlyby,createShuttleSchedule,shuttlePeriod,flybyFlight,outsidePlanet,shuttleFlight} from '../apps/web/src/title-flight';
-import {titleOrbitPose,TITLE_ORBIT_DURATION} from '../apps/web/src/title-orbit-flight';
+import {titleOrbitPose,TITLE_ORBIT_DURATION,TITLE_LETTER_DELAY,TITLE_LETTER_ORBIT_DURATION,ORBIT_LETTER_HEIGHT} from '../apps/web/src/title-orbit-flight';
+import {createTitleLettering} from '../apps/web/src/title-lettering';
 import {createTitleShip} from '../apps/web/src/title-ships';
 import {createStation} from '../apps/web/src/title-orbit';
 
@@ -64,12 +65,28 @@ test('fresh shuttle schedules preserve docking and circuit joins',()=>{
  }
 });
 
-test('title orbit leaves home, passes behind the world and returns exactly',()=>{
+test('letters depart in sequence, pass behind the world and return to their own places',()=>{
  const center=new THREE.Vector3(3.5,-1.15,0),home=new THREE.Vector3(0,4,11);
  for(const mobile of [true,false]){
-  assert.ok(titleOrbitPose(0,center,home,mobile).position.distanceTo(home)<1e-9);
-  assert.ok(titleOrbitPose(8.5,center,home,mobile).position.z<center.z-7);
-  assert.ok(titleOrbitPose(TITLE_ORBIT_DURATION,center,home,mobile).position.distanceTo(home)<1e-9);
-  for(let age=2.5;age<14.5;age+=.1)assert.ok(titleOrbitPose(age,center,home,mobile).position.distanceTo(center)>3.25);
+  for(let i=0;i<8;i++){
+   const start=i*TITLE_LETTER_DELAY;
+   assert.equal(titleOrbitPose(start-.01,center,home,mobile,i).active,false);
+   assert.ok(titleOrbitPose(start,center,home,mobile,i).position.distanceTo(home)<1e-9);
+   assert.ok(titleOrbitPose(start+10.5,center,home,mobile,i).position.z<center.z-4.9);
+   assert.ok(titleOrbitPose(start+TITLE_LETTER_ORBIT_DURATION,center,home,mobile,i).position.distanceTo(home)<1e-9);
+   assert.equal(titleOrbitPose(TITLE_ORBIT_DURATION,center,home,mobile,i).active,false);
+   for(let age=2.5;age<18.5;age+=.1)assert.ok(titleOrbitPose(start+age,center,home,mobile,i).position.distanceTo(center)>4.8);
+  }
+  const first=titleOrbitPose(12,center,home,mobile,0),second=titleOrbitPose(12,center,home,mobile,1);
+  assert.ok(first.position.distanceTo(second.position)>2,'letters must be spaced along the orbit');
+ }
+});
+
+test('the orbit scale gives every sculpted letter half the planet diameter in height',()=>{
+ const model=createTitleLettering();
+ for(const letter of model.letters){
+  letter.scale.setScalar(ORBIT_LETTER_HEIGHT/model.letterHeight);
+  const height=new THREE.Box3().setFromObject(letter).getSize(new THREE.Vector3()).y;
+  assert.ok(Math.abs(height/6.5-.5)<.01);
  }
 });

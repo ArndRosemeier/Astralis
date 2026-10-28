@@ -9,7 +9,7 @@ import {createTitleLettering} from './title-lettering';
 import {createTitleShip} from './title-ships';
 import {createFlyby,createShuttleSchedule,shuttlePeriod,flybyFlight,outsidePlanet,shuttleFlight} from './title-flight';
 import {createTitleSun,type TitleSun} from './title-sun';
-import {titleOrbitPose,TITLE_ORBIT_DURATION} from './title-orbit-flight';
+import {titleOrbitPose,TITLE_ORBIT_DURATION,ORBIT_LETTER_HEIGHT} from './title-orbit-flight';
 
 const views=['Homeworld','Lunar approach','Orbital shipyard'];
 export function TitleScene({motion,quality,nebula,sunProfile}:{motion:boolean;quality:string;nebula:TitleNebula;sunProfile:TitleSun}){
@@ -39,7 +39,7 @@ export function TitleScene({motion,quality,nebula,sunProfile}:{motion:boolean;qu
   const starGeometry=new THREE.BufferGeometry();starGeometry.setAttribute('position',new THREE.Float32BufferAttribute(starPositions,3));starGeometry.setAttribute('color',new THREE.Float32BufferAttribute(starColors,3));starGeometry.setAttribute('starSize',new THREE.Float32BufferAttribute(starSizes,1));scene.add(new THREE.Points(starGeometry,new THREE.ShaderMaterial({vertexShader:starVertex,fragmentShader:starFragment,uniforms:{pixelRatio:{value:renderer.getPixelRatio()}},vertexColors:true,transparent:true,depthWrite:false,blending:THREE.AdditiveBlending})));
   const lettering=createTitleLettering();camera.add(lettering.root);lettering.root.traverse(o=>o.layers.set(1));
   const stellarDisk=createTitleSun(sunProfile);camera.add(stellarDisk.mesh);
-  const letterHome=new THREE.Vector3(),letterRotation=new THREE.Quaternion();let letterScale=1,letterLayer=1;
+  const letterHome=new THREE.Vector3(),letterRotation=new THREE.Quaternion();let letterScale=1;
   scene.traverse(o=>{if(o instanceof THREE.Light)o.layers.enable(1);});
   const shuttles=[0,1,2].map(()=>{const ship=createTitleShip('shuttle');ship.root.scale.setScalar(.12);scene.add(ship.root);return ship;});
   const cruiser=createTitleShip();cruiser.root.scale.setScalar(.68);scene.add(cruiser.root);
@@ -74,7 +74,10 @@ export function TitleScene({motion,quality,nebula,sunProfile}:{motion:boolean;qu
    const viewChanged=lastView!==p.view;lastView=p.view;if(!animate&&!viewChanged&&now-lastDraw<250)return;lastDraw=now;
    planet.rotation.y=.8+time*.025;clouds.rotation.y=.8+time*.029;moon.position.copy(moonPosition(time*.022+1.9));moon.rotation.y=time*.035;station.position.copy(stationPosition(time*.025+.4));station.rotation.z=.3+time*.025;relay.position.copy(stationPosition(time*.02+3.4));relay.rotation.y=time*.04;
    const mobile=width<700;root.position.set(mobile?.6:3.5,mobile?0:-1.15,0);
-   if(p.view===0){cameraTarget.set(0,.7,mobile?23:18.5);lookTarget.set(0,0,0);}else if(p.view===1){cameraTarget.copy(root.position).add(moon.position).add(new THREE.Vector3(-2.4,1.3,4.7));lookTarget.copy(root.position).add(moon.position.clone().multiplyScalar(.55));}else{cameraTarget.copy(root.position).add(station.position).add(new THREE.Vector3(-1.8,1.4,5.8));lookTarget.copy(root.position).add(station.position.clone().multiplyScalar(.8));}
+   if(p.view===0){
+    const age=time-orbitStart,framing=p.motion?THREE.MathUtils.smoothstep(age,0,2.5)*(1-THREE.MathUtils.smoothstep(age,TITLE_ORBIT_DURATION-2.5,TITLE_ORBIT_DURATION)):0;
+    cameraTarget.set(root.position.x*framing,.7,mobile?23+framing*5:18.5+framing*2.5);lookTarget.set(root.position.x*framing,0,0);
+   }else if(p.view===1){cameraTarget.copy(root.position).add(moon.position).add(new THREE.Vector3(-2.4,1.3,4.7));lookTarget.copy(root.position).add(moon.position.clone().multiplyScalar(.55));}else{cameraTarget.copy(root.position).add(station.position).add(new THREE.Vector3(-1.8,1.4,5.8));lookTarget.copy(root.position).add(station.position.clone().multiplyScalar(.8));}
    if(animate){cameraTarget.x+=pointer.x*.3;cameraTarget.y-=pointer.y*.15;const easing=1-Math.exp(-delta*2.4);camera.position.lerp(cameraTarget,easing);currentLook.lerp(lookTarget,easing);}else{camera.position.copy(cameraTarget);currentLook.copy(lookTarget);}camera.lookAt(currentLook);camera.updateMatrixWorld(true);root.updateMatrixWorld(true);
    if(animate&&(seenFlyby!==cues.current.flyby||time>nextFlyby)){
     const manual=seenFlyby!==cues.current.flyby,age=(time-flybyStart)*flybySpeed,preserve=manual&&age<flybyPlan.duration;seenFlyby=cues.current.flyby;
@@ -96,16 +99,23 @@ export function TitleScene({motion,quality,nebula,sunProfile}:{motion:boolean;qu
    if(flight.visible){cruiser.root.scale.setScalar(flybyPlan.scale);cruiser.root.position.copy(camera.localToWorld(flight.position));outsidePlanet(cruiser.root.position,root.position,5.2);cruiser.root.lookAt(cruiser.root.position.clone().add(flight.tangent.transformDirection(camera.matrixWorld)));cruiser.root.rotateZ(flybyPlan.bank*Math.sin(flight.progress*Math.PI));}
    if(animate&&p.view===0&&(time>nextOrbit||seenOrbit!==cues.current.orbit)){seenOrbit=cues.current.orbit;orbitStart=time;nextOrbit=time+TITLE_ORBIT_DURATION+40+Math.random()*40;}
    if(!p.motion||p.view!==0){orbitStart=-100;nextOrbit=time+30+Math.random()*25;seenOrbit=cues.current.orbit;}
-   const homeWorld=camera.localToWorld(letterHome.clone()),orbit=titleOrbitPose(time-orbitStart,root.position,homeWorld,mobile);
-   const layer=orbit.active?0:1;if(layer!==letterLayer){lettering.root.traverse(o=>o.layers.set(layer));letterLayer=layer;}
-   if(orbit.active){
-    lettering.root.position.copy(camera.worldToLocal(orbit.position));lettering.root.scale.setScalar(THREE.MathUtils.lerp(letterScale,mobile?.2:.34,orbit.amount));
-    const worldRotation=new THREE.Quaternion().setFromEuler(new THREE.Euler(.12,Math.sin(orbit.angle)*.5,-.06*Math.cos(orbit.angle)));
-    const localRotation=camera.quaternion.clone().invert().multiply(worldRotation);lettering.root.quaternion.copy(letterRotation).slerp(localRotation,orbit.amount);
-   }else{lettering.root.position.copy(letterHome);lettering.root.quaternion.copy(letterRotation);lettering.root.scale.setScalar(letterScale);}
+   const orbitAge=time-orbitStart,orbitActive=orbitAge>=0&&orbitAge<TITLE_ORBIT_DURATION;
+   lettering.root.position.copy(letterHome);lettering.root.quaternion.copy(letterRotation);lettering.root.scale.setScalar(letterScale);
+   lettering.update(time,orbitActive?-100:surprise);lettering.setOrbitActive(orbitActive);lettering.root.updateWorldMatrix(true,true);
+   const inverseRootRotation=lettering.root.getWorldQuaternion(new THREE.Quaternion()).invert();
+   const worldScale=lettering.root.getWorldScale(new THREE.Vector3()).x;let behindWorld=false,orbitCount=0;
+   lettering.letters.forEach((letter,i)=>{
+    const homeWorld=lettering.root.localToWorld(letter.position.clone()),pose=titleOrbitPose(orbitAge,root.position,homeWorld,mobile,i);
+    const layer=pose.active?0:1;if(letter.layers.mask!==(1<<layer))letter.traverse(o=>o.layers.set(layer));
+    if(!pose.active)return;
+    orbitCount++;if(Math.cos(pose.angle)<-.99)behindWorld=true;
+    letter.position.copy(lettering.root.worldToLocal(pose.position));
+    letter.scale.setScalar(THREE.MathUtils.lerp(1,ORBIT_LETTER_HEIGHT/lettering.letterHeight/worldScale,pose.amount));
+    const worldRotation=camera.quaternion.clone().multiply(new THREE.Quaternion().setFromEuler(new THREE.Euler(.08,Math.sin(pose.angle)*.3,-Math.sin(pose.angle)*.1)));
+    letter.quaternion.slerp(inverseRootRotation.clone().multiply(worldRotation),pose.amount);
+   });
    stellarDisk.update(time);
-   lettering.update(time,surprise);
-   container.dataset.traffic=phases.join(' ');container.dataset.flyby=flight.visible?flight.near?'close-pass':'approach':'waiting';container.dataset.sculpture=time-surprise<5?'reassembling':'idle';container.dataset.view=String(p.view);container.dataset.titleOrbit=orbit.active?'orbiting':'home';container.dataset.titleOrbitPhase=!orbit.active?'home':Math.cos(orbit.angle)<-.99?'behind-world':'in-flight';
+   container.dataset.traffic=phases.join(' ');container.dataset.flyby=flight.visible?flight.near?'close-pass':'approach':'waiting';container.dataset.sculpture=time-surprise<5?'reassembling':'idle';container.dataset.view=String(p.view);container.dataset.titleOrbit=orbitActive?'orbiting':'home';container.dataset.titleOrbitPhase=!orbitActive?'home':behindWorld?'behind-world':'in-flight';container.dataset.orbitLetters=String(orbitCount);
    renderer.render(scene,camera);
    // Keep the title intact even when a close viewpoint puts the planet nearer than it.
    renderer.autoClear=false;renderer.clearDepth();camera.layers.set(1);renderer.render(scene,camera);camera.layers.set(0);renderer.autoClear=true;
