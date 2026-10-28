@@ -1,6 +1,6 @@
 # Astralis — Design Plan
 
-**Status:** accepted specification v0.8, implemented as build 0.001. See [implementation decisions](implementation.md), [verification](verification.md) and [measured balance](balance/final-prices.md).
+**Status:** accepted specification v0.8, implemented as build 0.002. See [implementation decisions](implementation.md), [verification](verification.md) and [measured balance](balance/final-prices.md).
 **Changes in v0.8:** build versions from 0.001, a What's new button, and a hero title screen (D39–D41, new detail doc 7).
 **Changes in v0.7:** governments fixed per species (D36); Concord votes purely by population (D37); the other
 questions Q29–Q46 accepted (D38). Only Q16 (title) remains open.

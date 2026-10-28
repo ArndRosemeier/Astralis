@@ -1,0 +1,222 @@
+{
+  "schemaVersion": 1,
+  "engineVersion": "0.002",
+  "scope": "Reduced 12-seed upgrade regression after documented building effects were bound to the simulation",
+  "report": "production-upgrade-0.002.json",
+  "games": 324,
+  "checkedTurns": 38880,
+  "observedBattles": 1903,
+  "sourceAtPricing": {
+    "battle.ts": "5b2e5d98477bd324d7feb7dabd3a07f51cbe16c46def64821199a78c99b3d531",
+    "diplomacy.ts": "0a96d41a4ecd10900864fb24e987a70011d413ed11e6937cca4a5c456d3fd9ad",
+    "effects.ts": "c53cff210fabda51bcffe50456e15955ac1fc8db6844731c5ce9d1e99d846625",
+    "engine.ts": "c3985eafbd50b82a02c6d74b5a9153ed1b451cdc17679462d15b2222a158bccd",
+    "generation.ts": "3c013da8db57dcf81a6c495b462fb398e75c177b00f7e9b195f70047e5f8dde2",
+    "hazards.ts": "62c11cb3756afb6ce39f3e29750518d12d58d168b880badc3401e8338b253e7e",
+    "intel.ts": "07adc5aaa386ee957f30551d7697766fb1732e658ea39b2de435a4a7bd40a5d4",
+    "math.ts": "08c22bf692c19a6dba3cbfbe978096fcfa6775803c603adcd1d377bb4c3da94c",
+    "politics.ts": "cd49f5bb86afc84b29d14e865539c147893831f3abea656eadf39185420bab62",
+    "rules-data.json": "5d4eccbe11cf076db8672423d2fb0c41421aa6829333b9a50f3d5fa1c4980eac",
+    "rules.ts": "76e1fffbbece8551e26ed6e1565d7c969fcde45b50dd029ab0ce5c3bcc5876dc",
+    "species.ts": "0094265985146c1f88723b7f92cabceadf33c2fa80c254ee4f5cec9458928890",
+    "types.ts": "6b1b002acad5e275d95fce0463cf42d3cca22dac3f690598d0a89153366ba6fe",
+    "ai/controller.ts": "9b8f91adf0df2e70aef1df7b90fa37b3f78d3c151497c09c59c4b5b347c53670",
+    "sim/rules-data.json": "5d4eccbe11cf076db8672423d2fb0c41421aa6829333b9a50f3d5fa1c4980eac",
+    "catalog/systems.json": "7a3ba003882182b918e71efb6c5ef1d4f81290f2cfbccb16915a2a550371c56e",
+    "catalog/planets.json": "a93c558bd76aba0aa9e36ee2074a515a3b091fe8cf53048e1e8edfd08b5b1bc5",
+    "balance/costs.ts": "6452b44712de822ad26701c0461d0569f4f2bd95c4abdafb392a3d2ac7ee4943",
+    "balance/picks.ts": "a7cdfbd51de0be42df55776800f92c430e759309394e469cfaf2f4a76864e6ce"
+  },
+  "priorFullAuditSha256": "ee78dde3e07895b94419e33810999abd030e7062fac6ac5fcb9bf4106603ad1c",
+  "priorPhotoAuditSha256": "4d2808ab5b0afdb079ab870878003923575380e826d1ae27ea77b9d8dfa346fc",
+  "decisions": [
+    {
+      "id": "subterranean",
+      "oldCost": 7,
+      "cost": 7,
+      "supported": true,
+      "provisionalFloor": false,
+      "zeroObservedEffect": false,
+      "indicativePointInterval": [
+        5,
+        10
+      ],
+      "scorePercent": {
+        "n": 12,
+        "mean": 45.173269060827465,
+        "low": 27.32696851729135,
+        "high": 63.01956960436358
+      },
+      "actualWinFraction": 0.7916666666666666,
+      "decision": "Existing price retained within the mapped confidence interval."
+    },
+    {
+      "id": "photosynthetic",
+      "oldCost": 2,
+      "cost": 2,
+      "supported": true,
+      "provisionalFloor": false,
+      "zeroObservedEffect": false,
+      "indicativePointInterval": [
+        1,
+        2
+      ],
+      "scorePercent": {
+        "n": 12,
+        "mean": 6.500030269161559,
+        "low": 3.4870150284854873,
+        "high": 9.51304550983763
+      },
+      "actualWinFraction": 0.5416666666666666,
+      "decision": "Existing price retained within the mapped confidence interval."
+    },
+    {
+      "id": "spore-borne",
+      "oldCost": 1,
+      "cost": 1,
+      "supported": true,
+      "provisionalFloor": false,
+      "zeroObservedEffect": false,
+      "indicativePointInterval": [
+        0,
+        3
+      ],
+      "scorePercent": {
+        "n": 12,
+        "mean": 5.325221087737231,
+        "low": -5.870603834019357,
+        "high": 16.52104600949382
+      },
+      "actualWinFraction": 0.5,
+      "decision": "Existing price retained within the mapped confidence interval."
+    },
+    {
+      "id": "hive-mind",
+      "oldCost": 5,
+      "cost": 5,
+      "supported": true,
+      "provisionalFloor": false,
+      "zeroObservedEffect": false,
+      "indicativePointInterval": [
+        1,
+        8
+      ],
+      "scorePercent": {
+        "n": 12,
+        "mean": 25.97407040566131,
+        "low": 6.304623759434168,
+        "high": 45.64351705188845
+      },
+      "actualWinFraction": 0.625,
+      "decision": "Existing price retained within the mapped confidence interval."
+    },
+    {
+      "id": "terraformers",
+      "oldCost": 1,
+      "cost": 1,
+      "supported": true,
+      "provisionalFloor": false,
+      "zeroObservedEffect": false,
+      "indicativePointInterval": [
+        1,
+        1
+      ],
+      "scorePercent": {
+        "n": 12,
+        "mean": 4.597363132996232,
+        "low": 2.7601201241380204,
+        "high": 6.434606141854444
+      },
+      "actualWinFraction": 0.5,
+      "decision": "Existing price retained within the mapped confidence interval."
+    },
+    {
+      "id": "genetic-plasticity",
+      "oldCost": 2,
+      "cost": 2,
+      "supported": true,
+      "provisionalFloor": false,
+      "zeroObservedEffect": false,
+      "indicativePointInterval": [
+        0,
+        3
+      ],
+      "scorePercent": {
+        "n": 12,
+        "mean": 9.428003352505923,
+        "low": 1.3441269847662998,
+        "high": 17.511879720245545
+      },
+      "actualWinFraction": 0.5416666666666666,
+      "decision": "Existing price retained within the mapped confidence interval."
+    },
+    {
+      "id": "electrosense",
+      "oldCost": 1,
+      "cost": 1,
+      "supported": true,
+      "provisionalFloor": false,
+      "zeroObservedEffect": false,
+      "indicativePointInterval": [
+        0,
+        3
+      ],
+      "scorePercent": {
+        "n": 12,
+        "mean": 6.226887537185629,
+        "low": -3.7983463953165373,
+        "high": 16.252121469687793
+      },
+      "actualWinFraction": 0.5416666666666666,
+      "decision": "Existing price retained within the mapped confidence interval."
+    },
+    {
+      "id": "radiotrophic",
+      "oldCost": 1,
+      "cost": 1,
+      "supported": false,
+      "provisionalFloor": true,
+      "zeroObservedEffect": true,
+      "indicativePointInterval": [
+        0,
+        0
+      ],
+      "scorePercent": {
+        "n": 12,
+        "mean": 0,
+        "low": 0,
+        "high": 0
+      },
+      "actualWinFraction": 0.5,
+      "decision": "Provisional minimum retained despite no demonstrated marginal benefit in this narrow ecological sample; not described as empirical interval support."
+    },
+    {
+      "id": "cybernetic",
+      "oldCost": 0,
+      "cost": 0,
+      "supported": true,
+      "provisionalFloor": false,
+      "zeroObservedEffect": false,
+      "indicativePointInterval": [
+        0,
+        0
+      ],
+      "scorePercent": {
+        "n": 12,
+        "mean": -1.8698702914535683,
+        "low": -4.523954503813736,
+        "high": 0.7842139209065999
+      },
+      "actualWinFraction": 0.5416666666666666,
+      "decision": "Existing price retained within the mapped confidence interval."
+    }
+  ],
+  "changed": [],
+  "limitations": [
+    "This reduced upgrade sample has twelve independent map seeds, two seats and six styles; per-style evidence is especially small.",
+    "The earlier full 576-game experiment and later 72-game Photosynthetic replication remain separate, unchanged evidence at their own source revisions.",
+    "Retained prices are either compatible with the sampled interval or explicitly labeled provisional minima; neither proves universally optimal balance.",
+    "A zero-effect trait in a neutral-profile sample may remain useful in another environmental profile. Its provisional floor is not presented as measured nonzero value.",
+    "Only an existing integer outside the mapped uncertainty band is eligible for repricing; D49 exclusions and the six-point refund cap remain unchanged."
+  ]
+}

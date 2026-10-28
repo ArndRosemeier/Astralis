@@ -20,6 +20,7 @@ The accepted design in `docs/design.md` is the source of game rules. This file r
 - D54: The Approach and Custodian reprisals are physical fleets using ordinary movement and battle resolution.
 - D55: Human treaties require consent; contact components determine Concord membership. Allied Conquest is supported. Portable saves remember their commander's seat.
 - D56: GameHub snapshots use gzip, revisions and a checked transport limit. Optional timers use wall-clock time solely in the transport layer. Disconnected seats remain token-reserved and use temporary AI after 60 seconds.
+- D57: Build 0.002 binds the full stated building effects, shares actual travel speed and purchase-price calculations with the UI, delivers outpost deposits to the best-linked colony and calculates treaties from commerce. Manual orders are applied before automation inspects the state. These changes have a separate production validation rather than inheriting earlier balance evidence. Build numbers are checked against immutable player-facing changelog entries during every production build.
 
 The final 26-species roster follows the production pricing decisions and passes the same point validation as custom species. Corundi was revised to a legal crystalline/industrial build. Content includes 145 initial research projects plus six repeatables, 22 constructible buildings plus two starting Gardener structures, and 64 verified media assets.
 

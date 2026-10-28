@@ -4,7 +4,7 @@ import { createHash } from 'node:crypto';
 import { fileURLToPath, pathToFileURL } from 'node:url';
 import { createGame, DEFAULT_OPTIONS } from '../../sim/src/generation.ts';
 import { assertInvariants, processTurn, score } from '../../sim/src/engine.ts';
-import { colonies } from '../../sim/src/rules.ts';
+import { colonies, VERSION } from '../../sim/src/rules.ts';
 import type { Command, Focus, GameState, Species } from '../../sim/src/types.ts';
 import { SPECIALS } from './picks.ts';
 import { summarize } from './experiment.ts';
@@ -80,6 +80,8 @@ export async function productionMain(args = process.argv.slice(2)) {
   const option = (name: string, fallback: string) => { const index = args.indexOf(name); return index >= 0 ? args[index + 1]! : fallback; };
   const seedCount = Number(option('--seeds', '24'));
   const turns = Number(option('--turns', '120'));
+  const reportPrefix = option('--report-prefix', 'production');
+  if (!/^[a-z0-9][a-z0-9.-]*$/.test(reportPrefix)) throw new Error('Invalid report prefix');
   if (!Number.isInteger(seedCount) || seedCount < 2 || seedCount > 256) throw new Error('--seeds must be between 2 and 256');
   const only = option('--pick', 'all');
   const picks = only === 'all' ? SPECIALS : SPECIALS.filter(pick => pick.id === only);
@@ -103,7 +105,7 @@ export async function productionMain(args = process.argv.slice(2)) {
       observedBattles += result.observedBattles;
       return result;
     } catch (error) {
-      writeFileSync(root + 'docs/balance/production-failure.json', JSON.stringify({ options, error: String(error), sourceAtStart }, null, 2));
+      writeFileSync(root + 'docs/balance/' + reportPrefix + '-failure.json', JSON.stringify({ options, error: String(error), sourceAtStart }, null, 2));
       throw error;
     }
   };
@@ -124,7 +126,7 @@ export async function productionMain(args = process.argv.slice(2)) {
       comparisons.push({ pick: pick.id, seed: condition.seed, style: condition.style, scorePercent: swaps.reduce((sum, value) => sum + value.scorePercent, 0) / 2, populationPercent: swaps.reduce((sum, value) => sum + value.populationPercent, 0) / 2, winChange: swaps.reduce((sum, value) => sum + value.winChange, 0) / 2, outcomes: swaps });
     }
     console.log(`Production special complete: ${pick.id}. ${trials.length} treated games.`);
-    writeFileSync(root + 'docs/balance/production-checkpoint.json', JSON.stringify({ sourceAtStart, completed: [...new Set(comparisons.map(comparison => comparison.pick))], checkedTurns, comparisons }, null, 2));
+    writeFileSync(root + 'docs/balance/' + reportPrefix + '-checkpoint.json', JSON.stringify({ sourceAtStart, completed: [...new Set(comparisons.map(comparison => comparison.pick))], checkedTurns, comparisons }, null, 2));
   }
   const measurements = picks.map(pick => {
     const samples = comparisons.filter(comparison => comparison.pick === pick.id);
@@ -158,16 +160,16 @@ export async function productionMain(args = process.argv.slice(2)) {
     console.log(`Production interaction complete: ${pair.join(' + ')}.`);
   }
   const sourceAtEnd = sourceFingerprint();
-  const report = { schemaVersion: 2, method: 'actual productionOrders and processTurn; paired map seeds; both treatment seats; no supplemental policy orders', seedCount, turns, styles: PRODUCTION_STYLES, checkedTurns, observedBattles, games, treatedGames: trials.length, elapsedSeconds: (performance.now() - started) / 1000, sourceAtStart, sourceAtEnd, sourceFilesChangedDuringRun: JSON.stringify(sourceAtStart) !== JSON.stringify(sourceAtEnd), measurements, interactions, comparisons, baselines, trials,
+  const report = { schemaVersion: 2, engineVersion: VERSION, method: 'actual productionOrders and processTurn; paired map seeds; both treatment seats; no supplemental policy orders', seedCount, turns, styles: PRODUCTION_STYLES, checkedTurns, observedBattles, games, treatedGames: trials.length, elapsedSeconds: (performance.now() - started) / 1000, sourceAtStart, sourceAtEnd, sourceFilesChangedDuringRun: JSON.stringify(sourceAtStart) !== JSON.stringify(sourceAtEnd), measurements, interactions, comparisons, baselines, trials,
     limitations: ['The style schedule assigns each independent map to one policy; per-style samples are smaller than the pooled sample.', 'All environments use a neutral Carbon/Autocracy/Oxygen reference; ecology families and frame interactions require expanded tournaments.', 'The Approach is disabled and both empires use the legal Defy order, avoiding early two-player Concord victory.', 'Score is measured at the actual end of the game, which may occur before the configured turn limit.', 'Prices are not automatically changed by this validation; disagreement with research estimates must be reviewed.', 'Game-theoretic balance, human exploits and every victory configuration are not established by this finite sample.'] };
-  writeFileSync(root + 'docs/balance/production.json', JSON.stringify(report, null, 2) + '\n');
+  writeFileSync(root + 'docs/balance/' + reportPrefix + '.json', JSON.stringify(report, null, 2) + '\n');
   // Preserve each engine revision's evidence when a later balance pass replaces production.json.
-  writeFileSync(root + `docs/balance/production-${sourceAtStart['engine.ts']!.slice(0, 12)}-${sourceAtStart['ai/controller.ts']!.slice(0, 12)}-seeds${seedCount}.json`, JSON.stringify(report, null, 2) + '\n');
+  writeFileSync(root + `docs/balance/${reportPrefix}-${sourceAtStart['engine.ts']!.slice(0, 12)}-${sourceAtStart['ai/controller.ts']!.slice(0, 12)}-seeds${seedCount}.json`, JSON.stringify(report, null, 2) + '\n');
   const pct = (value: number) => `${value >= 0 ? '+' : ''}${value.toFixed(2)}%`;
   const rows = measurements.map(result => `| ${result.id} | ${result.cost} | ${pct(result.scorePercent.mean)} | ${pct(result.scorePercent.low)} … ${pct(result.scorePercent.high)} | ${(result.actualWinFraction * 100).toFixed(1)}% | ${pct(result.populationPercent.mean)} |`).join('\n');
-  writeFileSync(root + 'docs/balance/production.md', `# Production-engine special validation\n\nThis follows the pre-roster research calibration and uses the actual game engine, not the research proxy.\n\n- ${report.games} games; ${seedCount} independent paired seeds; both treatment seats.\n- ${checkedTurns.toLocaleString('en-US')} invariant-checked turns; ${observedBattles} observed battles.\n- ${PRODUCTION_STYLES.length} policy styles, scheduled evenly across seeds. Each paired seed averages both seats before the confidence interval.\n- Runtime: ${report.elapsedSeconds.toFixed(1)} seconds.\n- Engine source changed on disk during run: **${report.sourceFilesChangedDuringRun}**. Imports are loaded once; SHA-256 source fingerprints are stored with the evidence. Re-run if the source changes affect mechanics.\n\n| Special | Current cost | Paired score change | 95% seed interval | Treated actual win fraction | Paired population change |\n|---|---:|---:|---|---:|---:|\n${rows}\n\n## Interpretation and limitations\n\n${report.limitations.map(line => '- ' + line).join('\n')}\n\nDo not describe these measurements as comprehensive release balance. Mechanic hook tests complement the tournaments because an AI may fail to exploit a working special. Full results, per-style data, raw paired comparisons and actual outcomes are in [production.json](production.json).\n`);
+  writeFileSync(root + 'docs/balance/' + reportPrefix + '.md', `# Production-engine special validation\n\nThis follows the pre-roster research calibration and uses the actual game engine, not the research proxy.\n\n- ${report.games} games; ${seedCount} independent paired seeds; both treatment seats.\n- ${checkedTurns.toLocaleString('en-US')} invariant-checked turns; ${observedBattles} observed battles.\n- ${PRODUCTION_STYLES.length} policy styles, scheduled evenly across seeds. Each paired seed averages both seats before the confidence interval.\n- Runtime: ${report.elapsedSeconds.toFixed(1)} seconds.\n- Engine source changed on disk during run: **${report.sourceFilesChangedDuringRun}**. Imports are loaded once; SHA-256 source fingerprints are stored with the evidence. Re-run if the source changes affect mechanics.\n\n| Special | Current cost | Paired score change | 95% seed interval | Treated actual win fraction | Paired population change |\n|---|---:|---:|---|---:|---:|\n${rows}\n\n## Interpretation and limitations\n\n${report.limitations.map(line => '- ' + line).join('\n')}\n\nDo not describe these measurements as comprehensive release balance. Mechanic hook tests complement the tournaments because an AI may fail to exploit a working special. Full results, per-style data, raw paired comparisons and actual outcomes are in [${reportPrefix}.json](${reportPrefix}.json).\n`);
   const interactionText = interactions.map(result => `- ${result.picks.join(' + ')}: ${pct(result.residualPercent.mean)} residual (${pct(result.residualPercent.low)} … ${pct(result.residualPercent.high)}), ${result.seeds} paired seeds; flagged: ${result.flagged}.`).join('\n');
-  writeFileSync(root + 'docs/balance/production-interactions.md', '# Production special interactions\n\nThese three combinations were selected from the largest interactions of the first diagnostic research run. They are measured with the actual engine, both seats and up to twelve independent seeds. Positive residual means the pair adds more terminal score than the sum of its isolated effects. An interval wholly above +5 or below −5 percentage points is flagged.\n\n' + interactionText + '\n');
+  writeFileSync(root + 'docs/balance/' + reportPrefix + '-interactions.md', '# Production special interactions\n\nThese three combinations were selected from the largest interactions of the first diagnostic research run. They are measured with the actual engine, both seats and up to twelve independent seeds. Positive residual means the pair adds more terminal score than the sum of its isolated effects. An interval wholly above +5 or below −5 percentage points is flagged.\n\n' + interactionText + '\n');
   console.log(JSON.stringify({ games: report.games, checkedTurns, observedBattles, elapsedSeconds: report.elapsedSeconds, sourceFilesChangedDuringRun: report.sourceFilesChangedDuringRun, measurements: measurements.map(result => ({ id: result.id, cost: result.cost, scorePercent: result.scorePercent, winChange: result.winChange, actualWinFraction: result.actualWinFraction, zeroObservedEffect: result.zeroObservedEffect })), interactions }, null, 2));
   return report;
 }

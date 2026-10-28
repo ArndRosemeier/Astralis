@@ -6,15 +6,15 @@ The convention is one point per roughly 5% multiplicative terminal-score increas
 
 | Special | Prior price | Applied price | Mean paired score | 95% seed interval | Decision |
 |---|---:|---:|---:|---|---|
-| subterranean | 3 | **7** | 39.65% | 27.29% … 52.02% | Mean-score price with a provisional one-point minimum; finite neutral-profile evidence is not universal balance. |
-| photosynthetic | 2 | **2** | 9.53% | 5.78% … 13.27% | Explicit-light revision; separate 72-game validation. |
-| spore-borne | 2 | **1** | 2.30% | -3.49% … 8.08% | Mean-score price with a provisional one-point minimum; finite neutral-profile evidence is not universal balance. |
-| hive-mind | 4 | **5** | 25.36% | 15.20% … 35.51% | Retain at least four points conservatively for immunity and Unified package; the documented incompatible Subterranean pair is excluded. |
-| terraformers | 2 | **1** | 5.44% | 4.23% … 6.64% | Mean-score price with a provisional one-point minimum; finite neutral-profile evidence is not universal balance. |
-| genetic-plasticity | 2 | **2** | 8.34% | 2.45% … 14.23% | Mean-score price with a provisional one-point minimum; finite neutral-profile evidence is not universal balance. |
-| electrosense | 1 | **1** | 5.70% | -1.15% … 12.56% | Mean-score price with a provisional one-point minimum; finite neutral-profile evidence is not universal balance. |
-| radiotrophic | 1 | **1** | 1.19% | -0.74% … 3.11% | Mean-score price with a provisional one-point minimum; finite neutral-profile evidence is not universal balance. |
-| cybernetic | 1 | **0** | -3.12% | -4.96% … -1.28% | Zero-point sidegrade: extra upkeep outweighed repair/troop utility in these games. No refund is granted, since military/human exploitation remains uncertain. |
+| subterranean | 7 | **7** | 45.17% | 27.33% … 63.02% | Version 0.002, twelve-seed upgrade assessment. |
+| photosynthetic | 2 | **2** | 6.50% | 3.49% … 9.51% | Version 0.002, twelve-seed upgrade assessment. |
+| spore-borne | 1 | **1** | 5.33% | -5.87% … 16.52% | Version 0.002, twelve-seed upgrade assessment. |
+| hive-mind | 5 | **5** | 25.97% | 6.30% … 45.64% | Version 0.002, twelve-seed upgrade assessment. |
+| terraformers | 1 | **1** | 4.60% | 2.76% … 6.43% | Version 0.002, twelve-seed upgrade assessment. |
+| genetic-plasticity | 2 | **2** | 9.43% | 1.34% … 17.51% | Version 0.002, twelve-seed upgrade assessment. |
+| electrosense | 1 | **1** | 6.23% | -3.80% … 16.25% | Version 0.002, twelve-seed upgrade assessment. |
+| radiotrophic | 1 | **1** | 0.00% | 0.00% … 0.00% | Version 0.002, twelve-seed upgrade assessment; provisional minimum, no demonstrated marginal effect. |
+| cybernetic | 0 | **0** | -1.87% | -4.52% … 0.78% | Version 0.002, twelve-seed upgrade assessment. |
 
 ## Limits
 
@@ -29,3 +29,7 @@ The research command preserves this final table rather than silently overwriting
 ## Targeted light-profile revision
 
 Photosynthetic was subsequently validated in a separate 72-game pass after explicit planetary lighting was added. Its current row uses that later result; the other eight rows retain the earlier full 576-game source revision. See [the source boundary and measurements](photo-validation.md).
+
+## Building-effect binding upgrade
+
+A reduced twelve-seed full-special regression subsequently checked the economy and defense binding corrections in version 0.002. Current table rows now show that compatibility assessment. Earlier larger experiments remain unchanged at their own recorded source revisions. See [the upgrade assessment](production-upgrade-0.002-prices.md).

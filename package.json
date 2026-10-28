@@ -6,7 +6,7 @@
   "packageManager": "pnpm@11.24.0",
   "scripts": {
     "dev": "vite --host 127.0.0.1",
-    "build": "tsc --noEmit && vite build",
+    "build": "tsx tools/check-version.ts && tsc --noEmit && vite build",
     "preview": "vite preview --host 127.0.0.1",
     "typecheck": "tsc --noEmit",
     "test": "tsx --test tests/*.test.ts packages/balance/test/*.test.ts",

@@ -24,8 +24,14 @@ Screenshots and failure traces are generated under ignored `tmp/qa/`, `test-resu
 - Full production pricing: 576 games, 69,120 invariant-checked turns, 6,387 observed battles; unchanged mechanics/controller fingerprints during the run.
 - Later explicit-light validation: 72 games, 8,640 checked turns, 749 battles. Photosynthetic stays at two points; the earlier full experiment is retained unchanged.
 - All-species soak: 26 autonomous 120-turn campaigns, 3,120 checked turns. Every campaign reached a Score ending under the deliberate Defy-the-Concord policy.
-- Current rule/controller/regression suite: 65 tests pass. Targeted cases cover the physical Approach, defense before landings, sparse twelve-seat regions, synthetic assembly costs, replay and human treaty consent.
+- Current rule/controller/regression suite: 78 tests pass. Targeted cases cover the physical Approach, defense before landings, sparse twelve-seat regions, synthetic assembly costs, replay, human treaty consent, complete building bonuses, travel speed caps, discounted purchases and manual research with automation.
 - All 26 species pass calibrated budgets. Runtime media: 26 portraits, 26 identity motifs, two backgrounds, three music tracks and seven effects. Total confirmed cost USD 0.586505875.
+
+## Build 0.002 upgrade
+
+- After literal building/economy corrections, a separate twelve-seed production experiment completed 324 games, 38,880 invariant-checked turns and 1,903 battles with unchanged simulation/controller fingerprints. Existing prices were retained. Eight are compatible with mapped uncertainty intervals; Radiotrophic's one-point price remains provisional because this neutral ecological sample found zero marginal benefit. See `docs/balance/production-upgrade-0.002.md` and the matching pricing reports. Historical 576-game and 72-game evidence is preserved, not relabelled as the new engine.
+- TypeScript, all 78 unit/regression tests and the version-checked production build passed. Five browser scenarios passed again on 0.002, including a complete campaign, actual multiplayer/host migration and cross-engine determinism. A sixth targeted browser test passed for setup keyboard focus and the rendered changelog.
+- Build 0.001 was published successfully to the owner-private destination in README and exercised there through expedition creation. Build 0.002 uses the same destination; the native deployment result and final browser handoff verify its publication separately from local tests.
 
 ## Reproduce
 

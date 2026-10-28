@@ -2,7 +2,7 @@
 
 A TypeScript 4X game among real nearby stars. Explore a three-dimensional map, establish colonies suited to your biology, research technology, design fleets and prepare the strategies that fight your battles.
 
-**Build 0.001 · English interface · 26 species · single-player and private GameHub multiplayer.**
+**Build 0.002 · English interface · 26 species · single-player and private GameHub multiplayer.**
 
 ## Play
 

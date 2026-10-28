@@ -1,0 +1,44 @@
+/** Assess the separate v0.002 economy-binding upgrade validation without erasing earlier audits. */
+import { createHash } from 'node:crypto';
+import { readFileSync, writeFileSync } from 'node:fs';
+import { fileURLToPath } from 'node:url';
+import { PICK_COSTS } from './picks.ts';
+import { sourceFingerprint } from './production.ts';
+
+const root = fileURLToPath(new URL('../../../', import.meta.url));
+const prefix = process.argv[2] || 'production-upgrade-0.002';
+if (!/^[a-z0-9][a-z0-9.-]*$/.test(prefix)) throw new Error('Invalid report prefix');
+const report = JSON.parse(readFileSync(root + 'docs/balance/' + prefix + '.json', 'utf8'));
+if (report.seedCount < 12 || report.measurements.length !== 9 || report.sourceFilesChangedDuringRun) throw new Error('Complete unchanged-source upgrade validation is required.');
+if (JSON.stringify(sourceFingerprint()) !== JSON.stringify(report.sourceAtEnd)) throw new Error('Source changed after the upgrade validation; active prices were not touched.');
+const originalFull = readFileSync(root + 'docs/balance/production.json');
+const originalPhoto = readFileSync(root + 'docs/balance/photo-validation.json');
+const point = (percent: number) => Math.max(0, Math.round(Math.log1p(Math.max(0, percent) / 100) / Math.log(1.05)));
+const currentCosts = { ...PICK_COSTS };
+const decisions = report.measurements.map((measurement: any) => {
+  const oldCost = currentCosts[measurement.id]!;
+  const band = [point(measurement.scorePercent.low), point(measurement.scorePercent.high)];
+  const supported = oldCost >= band[0]! && oldCost <= band[1]!;
+  const floor = measurement.id === 'cybernetic' ? 0 : 1;
+  const cost = supported ? oldCost : Math.max(floor, point(measurement.scorePercent.mean));
+  currentCosts[measurement.id] = cost;
+  const provisionalFloor = !supported && cost === oldCost && cost === floor;
+  return { id: measurement.id, oldCost, cost, supported, provisionalFloor, zeroObservedEffect: measurement.zeroObservedEffect, indicativePointInterval: band, scorePercent: measurement.scorePercent, actualWinFraction: measurement.actualWinFraction, decision: supported ? 'Existing price retained within the mapped confidence interval.' : provisionalFloor ? 'Provisional minimum retained despite no demonstrated marginal benefit in this narrow ecological sample; not described as empirical interval support.' : 'Existing price outside the mapped confidence interval; rounded mean mapping applied.' };
+});
+const changed = decisions.filter((decision: any) => decision.cost !== decision.oldCost);
+const record = { schemaVersion: 1, engineVersion: report.engineVersion, scope: 'Reduced 12-seed upgrade regression after documented building effects were bound to the simulation', report: prefix + '.json', games: report.games, checkedTurns: report.checkedTurns, observedBattles: report.observedBattles, sourceAtPricing: report.sourceAtEnd, priorFullAuditSha256: createHash('sha256').update(originalFull).digest('hex'), priorPhotoAuditSha256: createHash('sha256').update(originalPhoto).digest('hex'), decisions, changed, limitations: ['This reduced upgrade sample has twelve independent map seeds, two seats and six styles; per-style evidence is especially small.', 'The earlier full 576-game experiment and later 72-game Photosynthetic replication remain separate, unchanged evidence at their own source revisions.', 'Retained prices are either compatible with the sampled interval or explicitly labeled provisional minima; neither proves universally optimal balance.', 'A zero-effect trait in a neutral-profile sample may remain useful in another environmental profile. Its provisional floor is not presented as measured nonzero value.', 'Only an existing integer outside the mapped uncertainty band is eligible for repricing; D49 exclusions and the six-point refund cap remain unchanged.'] };
+if (changed.length) writeFileSync(root + 'packages/balance/src/costs.ts', '// Final special prices with documented building-binding upgrade assessment.\n// See docs/balance/final-prices.json and ' + prefix + '.json.\nexport const CALIBRATED_COSTS: Record<string, number> = ' + JSON.stringify(currentCosts, null, 2) + ';\n');
+writeFileSync(root + 'docs/balance/' + prefix + '-prices.json', JSON.stringify(record, null, 2) + '\n');
+const rows = decisions.map((decision: any) => `| ${decision.id} | ${decision.oldCost} | **${decision.cost}** | ${decision.scorePercent.mean.toFixed(2)}% | ${decision.scorePercent.low.toFixed(2)}% … ${decision.scorePercent.high.toFixed(2)}% | ${decision.indicativePointInterval.join(' … ')} | ${decision.supported ? 'Retained within interval' : decision.provisionalFloor ? 'Provisional minimum; no marginal effect demonstrated' : 'Adjusted'} |`).join('\n');
+writeFileSync(root + 'docs/balance/' + prefix + '-prices.md', `# Building-effect upgrade: price compatibility\n\nVersion **${report.engineVersion}** completed **${report.games} games, ${report.checkedTurns.toLocaleString('en-US')} invariant-checked turns and ${report.observedBattles} battles**, with twelve independent paired seeds and unchanged source during the run. The original full experiment and Photosynthetic revision are preserved separately.\n\nThis checks whether current integer prices remain inside the sampled score interval mapped to point prices. It does not silently replace the earlier larger sample or claim every price is uniquely optimal.\n\n| Special | Prior | Active | Mean score | 95% seed interval | Mapped price interval | Decision |\n|---|---:|---:|---:|---|---|---|\n${rows}\n\n## Scope and limitations\n\n${record.limitations.map((limitation: string) => '- ' + limitation).join('\n')}\n\nComplete fingerprints, raw outcomes and the historical evidence hashes are in [the decision record](${prefix}-prices.json) and [the campaign report](${prefix}.json).\n`);
+const final = JSON.parse(readFileSync(root + 'docs/balance/final-prices.json', 'utf8'));
+final.upgradeRevisions ??= [];
+final.upgradeRevisions.push(record);
+final.costs = currentCosts;
+final.decisions = final.decisions.map((previous: any) => { const decision = decisions.find((decision: any) => decision.id === previous.id)!; return { ...previous, cost: decision.cost, latestCompatibilityAssessment: { engineVersion: report.engineVersion, report: prefix + '-prices.json', supported: decision.supported, provisionalFloor: decision.provisionalFloor, zeroObservedEffect: decision.zeroObservedEffect, scorePercent: decision.scorePercent, indicativePointInterval: decision.indicativePointInterval } }; });
+writeFileSync(root + 'docs/balance/final-prices.json', JSON.stringify(final, null, 2) + '\n');
+let markdown = readFileSync(root + 'docs/balance/final-prices.md', 'utf8');
+for (const decision of decisions) markdown = markdown.replace(new RegExp('^\\| ' + decision.id + ' \\|.*$', 'm'), `| ${decision.id} | ${decision.oldCost} | **${decision.cost}** | ${decision.scorePercent.mean.toFixed(2)}% | ${decision.scorePercent.low.toFixed(2)}% … ${decision.scorePercent.high.toFixed(2)}% | Version ${report.engineVersion}, twelve-seed upgrade assessment${decision.provisionalFloor ? '; provisional minimum, no demonstrated marginal effect' : ''}. |`);
+writeFileSync(root + 'docs/balance/final-prices.md', markdown + '\n## Building-effect binding upgrade\n\nA reduced twelve-seed full-special regression subsequently checked the economy and defense binding corrections in version ' + report.engineVersion + '. Current table rows now show that compatibility assessment. Earlier larger experiments remain unchanged at their own recorded source revisions. See [the upgrade assessment](' + prefix + '-prices.md).\n');
+if (!readFileSync(root + 'docs/balance/production.json').equals(originalFull) || !readFileSync(root + 'docs/balance/photo-validation.json').equals(originalPhoto)) throw new Error('Historical evidence changed unexpectedly.');
+console.log(JSON.stringify({ engineVersion: report.engineVersion, games: report.games, checkedTurns: report.checkedTurns, observedBattles: report.observedBattles, changed, decisions }, null, 2));
