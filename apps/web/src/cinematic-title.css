@@ -1,0 +1,38 @@
+/* The scenery and sculpture carry the story; navigation stays out of their way. */
+.app.mode-title{display:block;min-height:540px;height:100dvh;padding:0;overflow:hidden}
+.mode-title .title-observatory.cinematic-scene{height:100%;pointer-events:auto}
+.mode-title:has(.cinematic-scene):after,.mode-title:has(.cinematic-scene):not(.start-screen):after{background:linear-gradient(0deg,#030817b8,transparent 43%);pointer-events:none}
+.title-sculpture{position:absolute;z-index:4;left:5%;top:12%;width:90%;height:clamp(70px,17vw,200px);max-height:23vh}
+.title-sculpture h1{margin:0;width:100%;height:100%;padding:0;line-height:1}
+.title-sculpture h1 button{display:block;width:100%;height:100%;border:0;padding:0;background:none;font-family:var(--display);font-size:clamp(2rem,11vw,10rem);font-weight:700;letter-spacing:.025em;color:#eee3ce;text-shadow:0 3px 0 #70708e,0 8px 25px #050820;cursor:pointer;transition:none}
+.title-sculpture--rendered h1 button{color:transparent;text-shadow:none}
+.title-sculpture h1 button:focus-visible{outline:2px solid #bceeff;outline-offset:8px;border-radius:8px}
+.title-lore{position:absolute;left:50%;top:100%;transform:translateX(-50%);width:max-content;max-width:90vw;background:#0c1429ed;border:1px solid #90b4e74d;border-radius:10px;padding:12px 18px;text-align:center;font-size:.8rem;line-height:1.7;color:#dce5f5;opacity:0;visibility:hidden;pointer-events:none;transition:opacity .2s;box-shadow:0 8px 30px #02061080}
+.title-sculpture:hover .title-lore,.title-sculpture:has(button:focus-visible) .title-lore{opacity:1;visibility:visible}
+.mode-title .title-top{position:absolute;inset:24px 4% auto auto;padding:0;margin:0;display:block}
+.mode-title .title-main{position:absolute;top:auto;bottom:16%;left:7%;right:auto;margin:0;width:330px;max-width:86%;text-align:left;animation:none}
+.mode-title .title-actions{width:100%;max-width:none}
+.mode-title .title-links{display:flex;justify-content:flex-start;gap:12px;margin-top:16px}
+.mode-title .title-links button{width:44px;height:44px;padding:0;justify-content:center;border:1px solid #a1c9ff35;background:#0b17366b;backdrop-filter:blur(8px);border-radius:50%}
+.mode-title .title-links button:hover,.scene-tools button:hover{background:#294d6f9c;border-color:#a0e8ff}
+.scene-tools{position:absolute;right:4%;bottom:16%;z-index:4;display:flex;gap:8px}
+.scene-tools button{width:44px;height:44px;border:1px solid #a1c9ff35;background:#0b17366b;backdrop-filter:blur(8px);border-radius:50%;color:#d3e7ff}
+.scene-tools button:disabled{opacity:.4}
+.mode-title .title-footer{position:absolute;inset:auto 4% 20px;margin:0;padding:0;border:0;display:flex;gap:12px;min-height:44px;font-size:.65rem}
+.mode-title .title-footer>button:first-child{min-height:44px;padding:0 6px;color:#c9d8f0;text-shadow:0 1px 8px #030817}
+.mode-title.start-screen{display:block}
+.mode-title .start-card{position:absolute;left:50%;bottom:18%;transform:translateX(-50%);width:min(330px,86%);padding:0;margin:0}
+.start-screen .scene-tools{display:none}
+.start-card .start-button{margin:0 auto;width:100%}
+.start-card .start-sound{margin-top:20px}
+@media(max-width:700px){
+ .title-sculpture{top:14%;left:3%;width:94%;height:17vw}
+ .mode-title .title-main{left:8%;bottom:22%;width:84%;max-width:none}
+ .mode-title .title-main .hero-button{font-size:1rem;padding:17px 12px}
+ .mode-title .title-links{justify-content:center}
+ .scene-tools{bottom:10%;right:4%}
+ .mode-title .title-top{top:16px}
+ .mode-title .title-footer{bottom:12px}
+ .mode-title .start-card{bottom:20%}
+}
+@media(max-height:620px) and (min-width:701px){.title-sculpture{top:7%;height:22vh}.mode-title .title-main{bottom:16%}.mode-title .title-links{margin-top:8px}}

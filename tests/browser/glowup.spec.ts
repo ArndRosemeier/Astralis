@@ -1,21 +1,18 @@
 import {test,expect} from '@playwright/test';
 
-test('title probes work without motion and setup can be dismissed with Escape',async({page})=>{
+test('reduced motion keeps title spectacles still and setup can be dismissed',async({page})=>{
  await page.emulateMedia({reducedMotion:'reduce'});
  await page.goto('/');await page.getByRole('button',{name:'Click to start',exact:true}).click();
  await expect(page.locator('html')).toHaveAttribute('data-motion','off');
- await page.getByRole('button',{name:'Lunar approach',exact:true}).click();
- await expect(page.getByRole('button',{name:'Lunar approach',exact:true})).toHaveAttribute('aria-pressed','true');await page.getByRole('button',{name:'Homeworld',exact:true}).click();
- const probe=page.getByRole('button',{name:/Launch a probe/});
- await probe.focus();await page.keyboard.press('Enter');
- await expect(page.getByText(/Probe reports: space is enormous/)).toBeVisible();
+ await expect(page.getByRole('button',{name:'Send a close flyby',exact:true})).toBeDisabled();
+ await page.getByRole('button',{name:'Change viewpoint',exact:true}).click();
+ await expect(page.locator('.cinematic-scene')).toHaveAttribute('data-view','1');
  await page.getByRole('button',{name:'Begin an expedition',exact:true}).click();
  await page.keyboard.press('Escape');
  await expect(page.getByRole('heading',{name:'ASTRALIS',exact:true})).toBeVisible();
- await page.screenshot({path:'tmp/qa/glowup-title.png',animations:'disabled'});
  await page.setViewportSize({width:390,height:844});
- await expect(probe).toBeInViewport();
  await expect(page.getByRole('button',{name:'Begin an expedition',exact:true})).toBeInViewport();
+ await expect(page.getByRole('button',{name:/BUILD .*What's new/})).toBeInViewport();
  await page.screenshot({path:'tmp/qa/glowup-title-mobile.png',animations:'disabled'});
 });
 

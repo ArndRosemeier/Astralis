@@ -1,4 +1,5 @@
 import * as THREE from 'three';
+import {batchModel} from './title-model';
 
 /** Built as actual lit geometry: pressure ring, truss spokes, hub, docks and solar wings. */
 export function createStation(){
@@ -23,5 +24,5 @@ export function createStation(){
  mesh(new THREE.SphereGeometry(.055,8,8),new THREE.MeshBasicMaterial({color:'#ff785b'}),0,.87,0);
  const dish=mesh(new THREE.SphereGeometry(.22,16,12,0,Math.PI*2,0,.9),alloy,0,0,.75);dish.rotation.x=Math.PI/2;
  station.rotation.set(.45,-.5,.3);station.scale.setScalar(.44);
- return station;
+ batchModel(station);return station;
 }
