@@ -24,3 +24,11 @@ html[data-motion=off] .primary:not(:disabled):hover{transform:none}@media(prefer
 
 .fleet-course{background:#10263afa}
 @media(max-width:700px){.fleet-course{display:grid;grid-template-columns:40px minmax(0,1fr) 30px}.fleet-course>.ship-preview{grid-column:1;grid-row:1;width:40px}.fleet-course>div{grid-column:2;grid-row:1;min-width:0}.fleet-course .selection-add{grid-column:2;grid-row:2;justify-self:start}.fleet-course>button:last-child{grid-column:3;grid-row:1;padding:4px}.fleet-course p{font-size:.72rem}}
+.star-target{position:absolute;left:0;top:0;width:24px;height:24px;padding:0;border-radius:50%;z-index:4;background:transparent;border:0}
+.star-target:hover,.star-target:focus-visible{outline:1px solid #c7eeff;box-shadow:0 0 16px #80cfff77}
+.ship-marker.ordered{border-color:#ffc878;background:radial-gradient(circle,transparent 45%,#b5762333)}
+.ship-marker.ordered:after,.ship-marker.in-transit:after{content:'';position:absolute;left:50%;top:50%;width:0;height:0;border-top:4px solid transparent;border-bottom:4px solid transparent;border-left:8px solid #ffd691;transform:rotate(var(--course-angle,0rad)) translateX(24px);transform-origin:0 0;pointer-events:none;filter:drop-shadow(0 0 3px #fdb755)}
+.ship-marker.in-transit:after{border-left-color:#9ceaff;filter:drop-shadow(0 0 3px #75dfff)}
+.order-actions{display:flex;gap:10px;margin:20px 0;flex-wrap:wrap}.turn-order-list{display:flex;flex-direction:column;gap:12px;padding:0;list-style:none}.turn-order-list li{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:16px;border:1px solid #7298c344;border-radius:10px;background:#14294199}.turn-order-list strong{text-transform:capitalize}.turn-order-list p{margin-top:8px}.turn-state .orders-button{color:#b9fbe4}.fleet-course .cancel-course{padding:6px 8px;border:1px solid #ffc87877;border-radius:7px;color:#ffe2ac;font-size:.72rem}
+@media(max-width:700px){.turn-state{display:flex!important;position:absolute;right:12px;bottom:66px;background:#102038f5;border:1px solid #63839a55;border-radius:8px;padding:4px 8px;gap:8px}.turn-state>span{display:none}.turn-state button{min-height:30px}.fleet-course .cancel-course{grid-column:2;grid-row:3}.turn-order-list li{padding:12px;gap:12px}.turn-order-list strong{font-size:.85rem}}
+@media(max-width:700px){.turn-bar .report-button{margin-left:auto}}

@@ -14,10 +14,10 @@ test('selected ships split and move across fleets as a replayable batch',()=>{
  assert.ok(replay.fleets.every(f=>f.ships.length));assertInvariants(replay);assert.equal(serialize(deserialize(serialize(replay))),serialize(replay));
 });
 test('moving an entire fleet does not create a detachment',()=>{const {g,fleet,target}=setup(),result=planShipMoves(g,0,fleet.ships.map(s=>s.id),target);assert.equal(result.error,null);assert.deepEqual(result.orders,[{empire:0,type:'move',fleet:fleet.id,target}]);});
-test('invalid group movement is atomic, including foreign, missing and already travelling ships',()=>{
+test('invalid group movement is atomic, including foreign, missing and unavailable destinations',()=>{
  const {g,fleet,target}=setup(),id=fleet.ships[0].id;
  for(const ids of [[id,'missing'],[id,g.fleets.find(f=>f.owner===1)!.ships[0].id],[]])assert.equal(planShipMoves(g,0,ids,target).orders.length,0);
  assert.match(planShipMoves(g,0,[id],fleet.systemId).error!,/already here/);
  const other=g.fleets.find(f=>f.owner===0&&f.id!==fleet.id)!;other.destination=target;const before=serialize(g);
- const result=planShipMoves(g,0,[id,other.ships[0].id],target);assert.match(result.error!,/already in transit/);assert.deepEqual(result.orders,[]);assert.equal(serialize(g),before);
+ const result=planShipMoves(g,0,[id,other.ships[0].id],target);assert.match(result.error!,/already here/);assert.deepEqual(result.orders,[]);assert.equal(serialize(g),before);
 });

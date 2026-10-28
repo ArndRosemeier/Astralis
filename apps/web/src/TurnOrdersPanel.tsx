@@ -1,0 +1,7 @@
+import type {OrderAction,OrderHistory} from './turn-orders';
+export function TurnOrdersPanel({history,errors,locked,dispatch}:{history:OrderHistory;errors:Record<string,string>;locked:boolean;dispatch:(action:OrderAction)=>void}){
+ return <><p className="lede">Nothing is final until End turn. Cancel any order here, or undo and redo your changes.</p><div className="order-actions"><button className="secondary" disabled={locked||!history.past.length} onClick={()=>dispatch({type:'undo'})}>Undo</button><button className="secondary" disabled={locked||!history.future.length} onClick={()=>dispatch({type:'redo'})}>Redo</button><button className="secondary" disabled={locked||!history.orders.length} onClick={()=>dispatch({type:'replace',orders:[]})}>Cancel all orders</button></div>
+ {Object.keys(errors).length>0&&<p className="hint amber" role="alert">Some orders depended on a cancelled action. Undo the cancellation, or cancel and reissue the affected orders before ending the turn.</p>}
+ {!history.orders.length&&<p className="empty">No orders queued. Your turn has not advanced.</p>}
+ <ol className="turn-order-list">{history.orders.map(order=><li key={order.id}><div><strong>{order.label}</strong>{errors[order.id]&&<p className="amber">{errors[order.id]}</p>}</div><button className="secondary compact" disabled={locked} aria-label={`Cancel order: ${order.label}`} onClick={()=>dispatch({type:'remove',id:order.id})}>Cancel</button></li>)}</ol></>;
+}
