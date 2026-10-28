@@ -20,7 +20,10 @@ test('sound defaults on but starts only from the welcome gesture, then survives 
  expect(await page.evaluate(()=>(window as any).audioCalls[0].activated)).toBe(true);
  await expect.poll(()=>page.evaluate(()=>{const m=(window as any).audioCalls[0]?.media;return m&&!m.paused&&m.currentTime>0&&m.volume>0;})).toBe(true);
  await page.getByRole('button',{name:'Begin an expedition',exact:true}).click();
+ expect(await page.evaluate(()=>(window as any).audioCalls.some((call:any)=>/discovery/.test(call.media.src)))).toBe(false);
  await page.getByRole('button',{name:'Lift the Veil',exact:true}).click();
+ await expect.poll(()=>page.evaluate(()=>{const cue=(window as any).audioCalls.find((call:any)=>call.media.src.endsWith('/discovery-ethereal.wav'))?.media;return !!cue&&cue.readyState>=3&&!cue.paused&&cue.currentTime>0&&cue.volume>0;})).toBe(true);
+ expect(await page.evaluate(()=>(window as any).audioCalls.some((call:any)=>call.media.src.endsWith('/discovery.mp3')))).toBe(false);
  await expect.poll(()=>page.evaluate(()=>{const m=(window as any).audioCalls[0]?.media;return m?.src.endsWith('/exploration.mp3')&&!m.paused&&m.currentTime>0;})).toBe(true);
 });
 

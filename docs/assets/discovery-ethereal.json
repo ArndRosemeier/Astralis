@@ -1,0 +1,16 @@
+{
+  "asset": "public/assets/discovery-ethereal.wav",
+  "method": "Original local additive synthesis, filtered noise and diffuse stereo reflections",
+  "generator": "docs/assets/ethereal_cue.py",
+  "model": null,
+  "cost_usd": 0,
+  "description": "An ethereal open-fifth bloom with rounded onset and a fading airy tail; no bell strike.",
+  "duration_seconds": 3.4,
+  "sample_rate": 44100,
+  "channels": 2,
+  "bits_per_sample": 16,
+  "peak_dbfs": -12.4,
+  "rms_dbfs": -24.84,
+  "sha256": "4567e414c1a85875111b30822f5847b5dcba373724fed84d557305dcb182cba3",
+  "pcm_readback": "passed"
+}

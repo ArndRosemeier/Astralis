@@ -48,3 +48,21 @@ test('without WebGL the title stays readable and navigation still works',async({
  await page.keyboard.press('Escape');await page.getByRole('button',{name:'Begin an expedition',exact:true}).click();
  await expect(page.getByRole('button',{name:'Lift the Veil',exact:true})).toBeVisible();
 });
+
+test('the title orbits through world depth and returns while the sun persists',async({page})=>{
+ test.setTimeout(120000);
+ const errors:string[]=[];page.on('pageerror',e=>errors.push(e.message));
+ await page.goto('/');await page.getByRole('button',{name:'Click to start',exact:true}).click();
+ const scene=page.locator('.cinematic-scene'),sun=await scene.getAttribute('data-sun');
+ await page.screenshot({path:'tmp/qa/living-sky-sun.png'});
+ await scene.evaluate(el=>{const observer=new MutationObserver(()=>{if((el as HTMLElement).dataset.titleOrbitPhase==='behind-world'){document.querySelector<HTMLButtonElement>('[aria-label="Pause scene"]')!.click();observer.disconnect();}});observer.observe(el,{attributes:true,attributeFilter:['data-title-orbit-phase']});});
+ await page.getByRole('button',{name:'Orbit the title',exact:true}).click();
+ await expect(scene).toHaveAttribute('data-title-orbit','orbiting');
+ await expect(page.getByRole('button',{name:'Resume scene',exact:true})).toBeVisible({timeout:60000});
+ await page.screenshot({path:'tmp/qa/living-sky-title-behind.png'});
+ await page.getByRole('button',{name:'Resume scene',exact:true}).click();
+ await expect(scene).toHaveAttribute('data-title-orbit','home',{timeout:60000});
+ await expect(scene).toHaveAttribute('data-sun',sun!);
+ await page.screenshot({path:'tmp/qa/living-sky-title-return.png'});
+ expect(errors).toEqual([]);
+});

@@ -15,7 +15,8 @@ logos, characters, or musical themes are reproduced.
 | `exploration.mp3` | Quiet exploration underscore, 121 seconds |
 | `battle.mp3` | Restrained tactical tension, 119 seconds |
 | `ui-confirm.mp3` | Short instrument confirmation |
-| `discovery.mp3` | New star, planet, or research discovery |
+| `discovery-ethereal.wav` | Soft ethereal bloom for launch, discoveries and title interactions; original local synthesis |
+| `discovery.mp3` | Original discovery chime, retained as a legacy asset; no longer used by the game |
 | `turn.mp3` | Turn processing completes |
 | `alert.mp3` | Advisory requiring attention |
 | `weapon.mp3` | Restrained pulse weapon cue |
@@ -84,6 +85,12 @@ The twenty-six locally derived identity motifs add no inference cost. All charge
 have authoritative response/generation metadata; none are pending.
 
 ## Audio engineering and checks
+
+The replacement discovery cue is stereo 44.1 kHz, 16-bit PCM WAV. Run
+`python docs/assets/ethereal_cue.py` to reproduce it without extra packages or API
+calls. Its rounded attack, low harmonic voicing and diffuse reflections replace
+the original struck chime. `discovery-ethereal.json` records its level, format and
+PCM verification. It uses the same effects-volume and mute controls as other cues.
 
 Music is stereo 44.1 kHz MP3 at 160 kbps and should stream through an HTML audio
 element. Only short effects should be decoded into Web Audio buffers. Effects are
