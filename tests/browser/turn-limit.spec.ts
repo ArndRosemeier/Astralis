@@ -1,3 +1,4 @@
+import {finishTurn} from './turn-helpers';
 import {test,expect,type Page} from '@playwright/test';
 
 const savedOptions=(page:Page)=>page.evaluate(()=>new Promise<{limit:number|null|string;turn:number}>((resolve,reject)=>{
@@ -16,7 +17,7 @@ test('an unlimited expedition saves its setting and resumes with working turns',
  await page.getByText('Advanced expedition rules',{exact:true}).click();await page.getByLabel('Guided introduction').uncheck();
  await page.getByRole('button',{name:'Lift the Veil',exact:true}).click();
  await expect.poll(()=>savedOptions(page)).toEqual({limit:null,turn:0});
- await page.getByRole('button',{name:'End turn',exact:true}).click();await expect.poll(()=>savedOptions(page)).toEqual({limit:null,turn:1});
+ await finishTurn(page);await expect.poll(()=>savedOptions(page)).toEqual({limit:null,turn:1});
  await page.reload();await page.getByRole('button',{name:'Click to start',exact:true}).click();await page.getByRole('button',{name:'Continue expedition',exact:true}).click();
- await page.getByRole('button',{name:'End turn',exact:true}).click();await expect.poll(()=>savedOptions(page)).toEqual({limit:null,turn:2});
+ await finishTurn(page);await expect.poll(()=>savedOptions(page)).toEqual({limit:null,turn:2});
 });

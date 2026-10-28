@@ -1,3 +1,4 @@
+import {finishTurn} from './turn-helpers';
 import {test,expect,type Page} from '@playwright/test';
 import {portraitCases} from '../world-portrait-cases';
 
@@ -27,5 +28,5 @@ test('mobile and no-WebGL worlds retain the same portrait controls',async({page}
  for(const [name,label,fallback] of [['Coast','Surface','.world-fallback-orb'],['Giant','Atmosphere','.world-fallback-orb'],['Habitat','Habitat','.world-fallback-habitat'],['Belt','Belt','.world-fallback-belt']]){
   await page.locator('.planet-row').filter({hasText:'Study '+name}).click();const card=page.locator('.world-portrait');await card.getByRole('button',{name:label,exact:true}).click();await expect(card.locator('.world-landscape')).toBeVisible();await card.getByRole('button',{name:'Orbit',exact:true}).click();await expect(card.locator(fallback)).toBeVisible();await card.getByRole('button',{name:/^Expand /}).click();const dialog=page.getByRole('dialog');await expect(dialog).toBeVisible();expect((await dialog.boundingBox())!.width).toBeLessThan(390);await page.getByRole('button',{name:'Close world study',exact:true}).click();await expect(dialog).not.toBeVisible();
  }
- await page.locator('.planet-row').filter({hasText:'Study Giant'}).click();await page.locator('.world-portrait').getByRole('button',{name:/^Expand /}).click();await page.screenshot({path:'tmp/qa/world-portraits-mobile.png'});await page.keyboard.press('Escape');await page.getByRole('button',{name:'End turn',exact:true}).click();await expect(page.getByText('TURN 002',{exact:true})).toBeVisible();
+ await page.locator('.planet-row').filter({hasText:'Study Giant'}).click();await page.locator('.world-portrait').getByRole('button',{name:/^Expand /}).click();await page.screenshot({path:'tmp/qa/world-portraits-mobile.png'});await page.keyboard.press('Escape');await finishTurn(page);await expect(page.getByText('TURN 002',{exact:true})).toBeVisible();
 });

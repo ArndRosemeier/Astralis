@@ -1,0 +1,11 @@
+.research-required{display:flex;align-items:center;gap:12px;padding:16px 18px;border:1px solid #cba56e80;border-radius:8px;background:#b6873120;color:var(--amber);line-height:1.6}
+.research-required svg{flex-shrink:0}
+.trade-goods-list{display:grid;gap:12px;margin:24px 0}
+.trade-goods-list .list-card{width:100%;text-align:left;margin:0}
+.trade-goods-list .list-card>span{flex:1;min-width:0}
+.trade-goods-list strong,.trade-goods-list small{display:block}
+.trade-goods-list small{color:var(--teal);margin-top:7px;line-height:1.5}
+.trade-goods-list button:focus-visible{outline:2px solid var(--teal);outline-offset:4px}
+.dialog-frame:has(>.panel-turn-review){width:min(700px,95vw)}
+.panel-turn-review .actions{flex-wrap:wrap;gap:12px}
+@media(max-width:650px){.panel-turn-review .actions button{width:100%;justify-content:center;white-space:normal;line-height:1.5}.trade-goods-list .list-card{padding:14px}}

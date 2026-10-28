@@ -2,7 +2,7 @@ import {bonuses} from './effects';
 import data from './rules-data.json';
 import type {Empire,Fleet,GameState,Planet,ShipDesign,Species} from './types';
 import {clamp,quant} from './math';
-export const VERSION='0.015';
+export const VERSION='0.016';
 export const TECHS=[...data.techs,...['Propulsion','Energy & Weapons','Materials','Life Sciences','Computing','Society'].map((field,i)=>({id:['advanced-propulsion','advanced-weapons','advanced-materials','advanced-biology','advanced-computing','advanced-society'][i],name:['Advanced Propulsion','Advanced Weapons','Advanced Materials','Advanced Biology','Advanced Computing','Advanced Society'][i],field,tier:9,cost:2000,description:['Supply +1 ly; battle acceleration +5%.','Weapon damage +5%.','Armour +5%; building cost −2%.','Population capacity +3%.','Research +3%.','Stability +2; commerce +3%.'][i]}))];
 export const BUILDINGS=data.buildings;
 export const FIELDS=['Propulsion','Energy & Weapons','Materials','Life Sciences','Computing','Society'];
@@ -100,6 +100,12 @@ export function telescope(e:Empire){return has(e,'telescope-swarm')?30:has(e,'gr
 export function detection(e:Empire,s:Species){return telescope(e)*(pick(s,'electrosense')?1.5:1)*(has(e,'quantum-sensors')?1.5:1);}
 export function availableResearch(e:Empire){return TECHS.filter(t=>(t.tier===9||!has(e,t.id))&&(t.tier===1||TECHS.some(p=>p.field===t.field&&p.tier===t.tier-1&&has(e,p.id))));}
 export function researchCost(e:Empire,s:Species,id:string){const t=TECHS.find(t=>t.id===id);if(!t)return Infinity;if(t.tier===9)return 2000+500*(e.repeatables?.[id]||0);const chosen=TECHS.some(p=>p.field===t.field&&p.tier===t.tier&&has(e,p.id));if(chosen&&pick(s,'rigid'))return Infinity;return t.cost*(chosen&&!pick(s,'creative')?2:1)*(pick(s,'genetic-plasticity')&&['genetic-survey','adaptation-ii','adaptation-iii'].includes(id)?.5:1);}
+export function researchChoices(g:GameState,e:Empire){return availableResearch(e).filter(t=>Number.isFinite(researchCost(e,speciesFor(g,e),t.id)));}
+export function researchRequired(g:GameState,e:Empire){
+ if(e.ai||e.eliminated||e.threat||e.automation.research)return false;
+ const choices=researchChoices(g,e);return choices.length>0&&!choices.some(t=>e.research.includes(t.id));
+}
+export const TRADE_GOODS_RATE=.5;
 export function stability(g:GameState,p:Planet,e:Empire,s:Species){
  if(pick(s,'hive-mind'))return 75;
  const gov=government(speciesFor(g,e),e);const admin=(bonuses(e).admin||0)+gov.admin+(has(e,'administrative-ai')?2:0)+(has(e,'colonial-administration')?3:0)+(has(e,'bureaucratic-reform')?2:0);
@@ -119,7 +125,10 @@ export function output(g:GameState,p:Planet,e:Empire){
  let commerce=(working*shares[2]*(3+bc)+delivered.credits+(p.deposit==='exotics'?6*deposits:0))*Math.max(.1,1+aptitude(s,'commerce')*.25+gov.commerce+link+(bonuses(e).commerce||0));
  const taxes=working*(e.tax==='Low'?.5:e.tax==='High'?1.5:1);
  const upkeep=(pick(s,'photosynthetic')&&(p.light?p.light!=='Dim':!g.systems.find(st=>st.id===p.systemId)!.spectral.startsWith('M'))?0:p.buildings.reduce((n,b)=>n+(BUILDINGS.find(x=>x.id===b)?.upkeep||0),0))*(pick(s,'cybernetic')?1.1:1)+(pick(s,'cybernetic')?p.population*.1:0);
- return {commerce:quant(commerce*factor),industry:quant(industry*factor),research:quant(research*factor),credits:quant(commerce*factor+taxes-upkeep),stability:st,cap:capacity(p,s,e),upkeep,workers:shares.map(x=>quant(x*working)),links:link};
+ const cap=capacity(p,s,e),industrialOutput=quant(industry*factor);
+ const assemblyIndustry=s.frame==='Synthetic'&&p.population<cap?Math.min(industrialOutput*(p.assembly??.4),Math.max(0,cap-p.population)/.05):0;
+ const tradeGoods=!p.outpost&&!p.queue.length&&st>=25?quant(Math.max(0,industrialOutput-assemblyIndustry)*TRADE_GOODS_RATE):0;
+ return {commerce:quant(commerce*factor),industry:industrialOutput,assemblyIndustry,tradeGoods,research:quant(research*factor),credits:quant(commerce*factor+taxes-upkeep+tradeGoods),stability:st,cap,upkeep,workers:shares.map(x=>quant(x*working)),links:link};
 }
 export function designStats(d:ShipDesign,e?:Empire,s?:Species){
  const hull=HULLS.find(h=>h.id===d.hull)||HULLS[0];const weapon=WEAPONS.find(w=>w.id===d.weapon)||WEAPONS[0];const armourTier=e?has(e,'metamaterial-armour')?4:has(e,'diamondoid-armour')?3:has(e,'carbon-nanotube-armour')?2:has(e,'titanium-composite')?1:0:0;

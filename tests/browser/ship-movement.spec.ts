@@ -1,3 +1,4 @@
+import {finishTurn} from './turn-helpers';
 import {test,expect} from '@playwright/test';
 test('map ships support single selection, Shift groups, invalid destinations and one-click orders',async({page})=>{
  const errors:string[]=[];page.on('pageerror',error=>errors.push(error.message));
@@ -13,7 +14,7 @@ test('map ships support single selection, Shift groups, invalid destinations and
  const destination=page.locator('.star-label.reachable:visible').first(),target=await destination.getAttribute('data-system-id');await destination.click();
  await expect(page.locator('.fleet-course')).toHaveCount(0);await expect(page.locator('.ship-marker[aria-pressed=true]')).toHaveCount(0);await expect(page.locator('.toast')).toContainText('End turn to depart');
  await expect(page.locator('.reachability-legend')).toHaveCount(0);await expect(page.locator('.star-target[data-reachability=unreachable]')).toHaveCount(0);
- await page.getByRole('button',{name:'End turn',exact:true}).click();
+ await finishTurn(page);
  await expect.poll(()=>page.evaluate(async({ids,target})=>new Promise<boolean>(resolve=>{const r=indexedDB.open('astralis');r.onsuccess=()=>{const db=r.result,tx=db.transaction('saves'),q=tx.objectStore('saves').get('autosave');q.onsuccess=()=>{const g=q.result?JSON.parse(q.result).state:null;resolve(g?.turn===1&&ids.every(id=>g.fleets.some((f:any)=>f.ships.some((s:any)=>s.id===id)&&(f.destination===target||f.systemId===target))));};tx.oncomplete=()=>db.close();};}),{ids,target})).toBe(true);
  await page.getByRole('button',{name:'Fleets',exact:true}).click();await expect(page.locator('.ship-preview canvas[data-rendered=true]').first()).toBeVisible();await page.screenshot({path:'tmp/qa/ship-fleets.png',animations:'disabled'});
  await page.keyboard.press('Escape');await page.getByRole('button',{name:'Settings',exact:true}).click();await page.getByLabel('Animated interface & idle rotation').check();await page.keyboard.press('Escape');await page.getByRole('button',{name:'Fleets',exact:true}).click();
