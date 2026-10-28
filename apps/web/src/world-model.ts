@@ -4,6 +4,7 @@ import {seedHash} from '../../../packages/sim/src/math';
 import {noiseGLSL,sphereVertex} from './title-shaders';
 import {batchModel} from './title-model';
 import {TIDAL_SUN,worldRotation} from './tidal-profile';
+import {createWorldStructure} from './world-structures';
 export function worldPalette(p:Planet){return p.kind==='gas'?['#d69d63','#6f4591']:p.kind==='ice'||p.temperature<200?['#9ac7e0','#36618b']:p.temperature>380?['#bc754a','#622d3f']:p.water>.35?['#478963','#0a5485']:['#c69c6c','#57425e'];}
 const surfaceFragment=`uniform vec3 landColor,seaColor,sun;uniform float water,gas,ice,seed,settled,locked,frozen,wet,heatTransfer;varying vec3 vLocal,vWorld,vNormal;${noiseGLSL}
 void main(){vec3 p=normalize(vLocal),n=normalize(vNormal),eye=normalize(cameraPosition-vWorld);float terrain=fbm(p*3.4+seed),fine=fbm(p*31.+seed);float ocean=1.-smoothstep(.36+water*.24,.375+water*.24,terrain);vec3 land=landColor*(.5+fine*.8);land=mix(land,vec3(.8,.9,.95),smoothstep(.79,.96,abs(p.y)+ice*.28));vec3 col=mix(land,seaColor*(.6+fine*.6),ocean);float band=sin(p.y*32.+fbm(p*7.+seed)*4.);col=mix(col,mix(landColor,seaColor,.45+band*.3),gas);
@@ -11,11 +12,12 @@ float light=mix(dot(n,sun),dot(p,sun),locked);float nightside=1.-smoothstep(-.23
 float coast=1.-smoothstep(.0,.06,abs(terrain-(.375+water*.24)));float cityBelt=mix(coast,max(coast*.3,twilight*.85),locked);float cities=step(.76,noise3(p*130.+seed))*cityBelt*settled*(1.-gas);col+=vec3(1.,.64,.22)*cities*(.2+max(0.,-light)*2.);float rim=pow(1.-max(0.,dot(n,eye)),3.);col+=mix(vec3(.18,.5,.9),vec3(.6,.22,.7),gas)*rim*.22;gl_FragColor=vec4(col,1.);}`;
 const cloudFragment=`uniform float seed,locked;uniform vec3 sun;varying vec3 vLocal,vWorld,vNormal;${noiseGLSL}void main(){float cloud=smoothstep(.53,.68,fbm(normalize(vLocal)*5.+seed));float light=.10+.90*max(0.,dot(normalize(mix(vNormal,vLocal,locked)),sun));gl_FragColor=vec4(vec3(.8,.9,1.)*light,cloud*.42);}`;
 export function createWorld(p:Planet,color='#83f8d0'){
+ if(p.kind==='habitat'||p.kind==='belt')return createWorldStructure(p,color);
  const root=new THREE.Group(),planet=new THREE.Group();root.add(planet);const [land,sea]=worldPalette(p),seed=seedHash(p.id)%97;
  const material=new THREE.ShaderMaterial({vertexShader:sphereVertex,fragmentShader:surfaceFragment,uniforms:{landColor:{value:new THREE.Color(land)},seaColor:{value:new THREE.Color(sea)},sun:{value:p.locked?new THREE.Vector3(...TIDAL_SUN).normalize():new THREE.Vector3(-.6,.5,1).normalize()},water:{value:p.water},gas:{value:p.kind==='gas'?1:0},ice:{value:p.kind==='ice'?1:0},seed:{value:seed},settled:{value:p.owner===null?0:1},locked:{value:p.locked?1:0},frozen:{value:p.kind==='ice'||p.temperature<220?1:0},wet:{value:p.water>.15&&p.temperature<=380&&p.pressure>.05?1:0},heatTransfer:{value:Math.min(1,Math.max(0,p.pressure)/3)}}});
  const surface=new THREE.Mesh(new THREE.SphereGeometry(1.55,64,48),material);planet.add(surface);
- const cloud=new THREE.Mesh(new THREE.SphereGeometry(1.565,48,32),new THREE.ShaderMaterial({vertexShader:sphereVertex,fragmentShader:cloudFragment,uniforms:{seed:{value:seed},sun:material.uniforms.sun,locked:material.uniforms.locked},transparent:true,depthWrite:false}));cloud.visible=p.kind!=='gas'&&p.kind!=='belt';planet.add(cloud);
- const atmosphere=new THREE.Mesh(new THREE.SphereGeometry(1.60,48,32),new THREE.ShaderMaterial({vertexShader:sphereVertex,fragmentShader:'varying vec3 vWorld,vNormal;void main(){float rim=pow(1.-abs(dot(normalize(vNormal),normalize(cameraPosition-vWorld))),3.);gl_FragColor=vec4(.26,.65,1.,rim*.5);}',side:THREE.BackSide,transparent:true,depthWrite:false,blending:THREE.AdditiveBlending}));root.add(atmosphere);
+ const cloud=new THREE.Mesh(new THREE.SphereGeometry(1.565,48,32),new THREE.ShaderMaterial({vertexShader:sphereVertex,fragmentShader:cloudFragment,uniforms:{seed:{value:seed},sun:material.uniforms.sun,locked:material.uniforms.locked},transparent:true,depthWrite:false}));cloud.visible=p.kind!=='gas'&&p.pressure>.05;planet.add(cloud);
+ const atmosphere=new THREE.Mesh(new THREE.SphereGeometry(1.60,48,32),new THREE.ShaderMaterial({vertexShader:sphereVertex,fragmentShader:'varying vec3 vWorld,vNormal;void main(){float rim=pow(1.-abs(dot(normalize(vNormal),normalize(cameraPosition-vWorld))),3.);gl_FragColor=vec4(.26,.65,1.,rim*.5);}',side:THREE.BackSide,transparent:true,depthWrite:false,blending:THREE.AdditiveBlending}));atmosphere.visible=p.kind==='gas'||p.pressure>.05;root.add(atmosphere);
  const city=new THREE.Group(),alloy=new THREE.MeshStandardMaterial({color:'#b9cedd',metalness:.6,roughness:.35}),glass=new THREE.MeshStandardMaterial({color,emissive:color,emissiveIntensity:.65,metalness:.3,roughness:.25});
  const districts=Math.min(24,Math.max(3,Math.round(p.population*1.4)+p.buildings.length));
  for(let i=0;i<districts;i++){
@@ -27,10 +29,9 @@ export function createWorld(p:Planet,color='#83f8d0'){
  // Distinct facilities remain on the world after their construction scene.
  for(const [i,id] of p.buildings.slice(-5).entries()){const a=.65+i*.9,normal=new THREE.Vector3(Math.cos(a)*.88,.47,Math.sin(a)*.88).normalize(),facility=createFacility(id,color);facility.position.copy(normal.clone().multiplyScalar(1.55));facility.quaternion.setFromUnitVectors(new THREE.Vector3(0,1,0),normal);facility.scale.setScalar(.075);city.add(facility);}
  city.visible=p.owner!==null;planet.add(city);
- const ring=new THREE.Mesh(new THREE.TorusGeometry(1.95,.012,6,96),new THREE.MeshBasicMaterial({color,transparent:true,opacity:.4}));ring.rotation.x=Math.PI/2+.23;ring.visible=p.kind==='habitat'||p.buildings.includes('spaceport')||p.buildings.includes('space-elevator');root.add(ring);
+ const ring=new THREE.Mesh(new THREE.TorusGeometry(1.95,.012,6,96),new THREE.MeshBasicMaterial({color,transparent:true,opacity:.4}));ring.rotation.x=Math.PI/2+.23;ring.visible=p.buildings.includes('spaceport')||p.buildings.includes('space-elevator');root.add(ring);
  if(p.kind==='gas'){const belt=new THREE.Mesh(new THREE.RingGeometry(1.95,2.35,80),new THREE.MeshBasicMaterial({color:land,side:THREE.DoubleSide,transparent:true,opacity:.28}));belt.rotation.x=1.25;root.add(belt);}
- if(p.kind==='habitat'){surface.scale.setScalar(.65);cloud.scale.setScalar(.65);atmosphere.scale.setScalar(.65);city.scale.setScalar(.65);ring.visible=true;ring.material.opacity=.8;}
- const update=(time:number,progress=1)=>{planet.rotation.y=worldRotation(p.locked,time);cloud.rotation.y=p.locked?0:time*.013;material.uniforms.settled.value=(p.owner===null?0:1)*progress;city.scale.setScalar(Math.max(.001,progress)*(p.kind==='habitat'?.65:1));ring.rotation.z=time*.025;};
+ const update=(time:number,progress=1)=>{planet.rotation.y=worldRotation(p.locked,time);cloud.rotation.y=p.locked?0:time*.013;material.uniforms.settled.value=(p.owner===null?0:1)*progress;city.scale.setScalar(Math.max(.001,progress));ring.rotation.z=time*.025;};
  return {root,planet,city,update};
 }
 export function createFacility(id:string,color='#a8e9ff'){

@@ -908,6 +908,186 @@
         "composition visually inspected",
         "desktop/mobile integration checked"
       ]
+    },
+    {
+      "path": "/assets/planets/world-airless.png",
+      "model": "built-in image_gen",
+      "bytes": 3402906,
+      "dimensions": [
+        1672,
+        941
+      ],
+      "format": "PNG",
+      "cost_usd": null,
+      "openrouter_call": false,
+      "provenance": "docs/assets/world-art-prompts.json",
+      "sha256": "e036fce0cdbe0bba153bb88fe86f623af1b46b6030b1847e5b53f778d37c1d09",
+      "verification": [
+        "full PNG decode passed",
+        "composition visually inspected"
+      ]
+    },
+    {
+      "path": "/assets/planets/world-belt.png",
+      "model": "built-in image_gen",
+      "bytes": 2631466,
+      "dimensions": [
+        1672,
+        941
+      ],
+      "format": "PNG",
+      "cost_usd": null,
+      "openrouter_call": false,
+      "provenance": "docs/assets/world-art-prompts.json",
+      "sha256": "242760c346c3c6a9dc0a5385ff380f8b9947232d7674796af2923dcf28fc95da",
+      "verification": [
+        "full PNG decode passed",
+        "composition visually inspected"
+      ]
+    },
+    {
+      "path": "/assets/planets/world-clouded.png",
+      "model": "built-in image_gen",
+      "bytes": 2635885,
+      "dimensions": [
+        1672,
+        941
+      ],
+      "format": "PNG",
+      "cost_usd": null,
+      "openrouter_call": false,
+      "provenance": "docs/assets/world-art-prompts.json",
+      "sha256": "fd48acee10cb2dd31de884584edfef3be9fe03ebbc1dcb48f95e2a91db95261a",
+      "verification": [
+        "full PNG decode passed",
+        "composition visually inspected"
+      ]
+    },
+    {
+      "path": "/assets/planets/world-desert.png",
+      "model": "built-in image_gen",
+      "bytes": 2865139,
+      "dimensions": [
+        1672,
+        941
+      ],
+      "format": "PNG",
+      "cost_usd": null,
+      "openrouter_call": false,
+      "provenance": "docs/assets/world-art-prompts.json",
+      "sha256": "03a1289f7f32399aaebf1411c7cc83904b7a81274d912f37961c143cc9812d26",
+      "verification": [
+        "full PNG decode passed",
+        "composition visually inspected"
+      ]
+    },
+    {
+      "path": "/assets/planets/world-frozen.png",
+      "model": "built-in image_gen",
+      "bytes": 3140425,
+      "dimensions": [
+        1672,
+        940
+      ],
+      "format": "PNG",
+      "cost_usd": null,
+      "openrouter_call": false,
+      "provenance": "docs/assets/world-art-prompts.json",
+      "sha256": "c53d2a270205f8be179752d58777e60f681101ed9886983a911c79b1591f1bab",
+      "verification": [
+        "full PNG decode passed",
+        "composition visually inspected"
+      ]
+    },
+    {
+      "path": "/assets/planets/world-gas.png",
+      "model": "built-in image_gen",
+      "bytes": 2522094,
+      "dimensions": [
+        1672,
+        941
+      ],
+      "format": "PNG",
+      "cost_usd": null,
+      "openrouter_call": false,
+      "provenance": "docs/assets/world-art-prompts.json",
+      "sha256": "2fe428adece103d729eb5af7a3104d1d4f366d98ef0f3521bb827d13fdde2b0f",
+      "verification": [
+        "full PNG decode passed",
+        "composition visually inspected"
+      ]
+    },
+    {
+      "path": "/assets/planets/world-habitat.png",
+      "model": "built-in image_gen",
+      "bytes": 2507792,
+      "dimensions": [
+        1672,
+        941
+      ],
+      "format": "PNG",
+      "cost_usd": null,
+      "openrouter_call": false,
+      "provenance": "docs/assets/world-art-prompts.json",
+      "sha256": "42fca9f2f6ff7dcf7efe5dcc97b251a12e09dfbe92c82e5d819f9fbe52008ab3",
+      "verification": [
+        "full PNG decode passed",
+        "composition visually inspected"
+      ]
+    },
+    {
+      "path": "/assets/planets/world-ocean.png",
+      "model": "built-in image_gen",
+      "bytes": 2655537,
+      "dimensions": [
+        1672,
+        941
+      ],
+      "format": "PNG",
+      "cost_usd": null,
+      "openrouter_call": false,
+      "provenance": "docs/assets/world-art-prompts.json",
+      "sha256": "64d0f07568dfc3038f81c5badafcf7bfb70f62d5c346d969f83b57f8d8566601",
+      "verification": [
+        "full PNG decode passed",
+        "composition visually inspected"
+      ]
+    },
+    {
+      "path": "/assets/planets/world-temperate.png",
+      "model": "built-in image_gen",
+      "bytes": 3183507,
+      "dimensions": [
+        1672,
+        941
+      ],
+      "format": "PNG",
+      "cost_usd": null,
+      "openrouter_call": false,
+      "provenance": "docs/assets/world-art-prompts.json",
+      "sha256": "b45e4ec92ce71670d885769e4ff67e4b77acb58fcce5ebda54b5d912ea970cd3",
+      "verification": [
+        "full PNG decode passed",
+        "composition visually inspected"
+      ]
+    },
+    {
+      "path": "/assets/planets/world-volcanic.png",
+      "model": "built-in image_gen",
+      "bytes": 2626186,
+      "dimensions": [
+        1672,
+        941
+      ],
+      "format": "PNG",
+      "cost_usd": null,
+      "openrouter_call": false,
+      "provenance": "docs/assets/world-art-prompts.json",
+      "sha256": "b787048e80c7d71367137ac4d46b85534fc4239616390acae5413a98eb688a66",
+      "verification": [
+        "full PNG decode passed",
+        "composition visually inspected"
+      ]
     }
   ],
   "fonts": [

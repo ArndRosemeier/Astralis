@@ -2,7 +2,7 @@ import type {Planet} from '../../../packages/sim/src/types';
 
 /** Presentation classes only: never infer a habitability score or change the simulation. */
 export function tidalProfile(p:Planet){
- if(!p.locked||!['rocky','ice'].includes(p.kind))return null;
+ if(!p.locked||!['rocky','ocean','ice'].includes(p.kind))return null;
  const climate=p.kind==='ice'||p.temperature<220?'frost':p.temperature<=380&&p.water>.15&&p.pressure>.05?'ocean':'rock';
  const descriptions={
   frost:{title:'Stillness beneath the ice',description:'A frozen landscape between constant starlight and permanent night.',alt:'Amber starlight grazes fractured blue glaciers, fading into a dark, icy horizon.'},
