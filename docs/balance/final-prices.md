@@ -1,6 +1,8 @@
 # Applied special prices
 
-These prices are active in the game, following the initial pre-roster research calibration and the final frozen-engine experiment: **576 actual games, 69,120 invariant-checked turns, 6387 observed battles and 24 independent paired seeds**, both treatment seats. All simulation TS/JSON modules, the controller, catalog and pick data are fingerprinted in [the machine-readable decision](final-prices.json).
+Historical report: the active 0.003 price table and rebuilt roster are documented in [pricing-0.003.md](pricing-0.003.md). The measurements below remain evidence for the earlier rules and price decision.
+
+These prices were applied following the initial pre-roster research calibration and the final frozen-engine experiment: **576 actual games, 69,120 invariant-checked turns, 6387 observed battles and 24 independent paired seeds**, both treatment seats. All simulation TS/JSON modules, the controller, catalog and pick data are fingerprinted in [the machine-readable decision](final-prices.json).
 
 The convention is one point per roughly 5% multiplicative terminal-score increase, rounded, with conservative provisional floors. A zero-point sidegrade does not refund points. Hive mind and Subterranean remain mutually exclusive under [D49](decision-D49.md).
 

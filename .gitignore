@@ -11,3 +11,4 @@ outputs/
 *.tsbuildinfo
 __pycache__/
 *.pyc
+docs/balance/trait-audit-[0-9]*.json

@@ -89,6 +89,11 @@ export function evaluatePicks(ids: readonly string[], budget = 10) {
   const errors: string[] = [];
   const groups = new Set<string>();
   const selected = new Set(ids);
+  // Do not sell capped/redundant benefits, or refund drawbacks the biology ignores.
+  if(selected.has('hive-mind')&&['stability-minus','stability-1','stability-2'].some(id=>selected.has(id)))errors.push('Hive mind fixes stability at 75; stability aptitudes cannot be selected.');
+  if(selected.has('lithic')&&selected.has('industry-2'))errors.push('Lithic industry already reaches its aptitude cap with Industry +1.');
+  if(selected.has('lithic')&&selected.has('radiation-resistant'))errors.push('Lithic biology already includes radiation resistance.');
+  if(selected.has('synthetic')&&selected.has('sealed-metabolism'))errors.push('Synthetic biology already ignores atmospheric chemistry.');
   let spent = 0;
   let rawRefund = 0;
   if (selected.size !== ids.length) errors.push('A pick may only be selected once.');

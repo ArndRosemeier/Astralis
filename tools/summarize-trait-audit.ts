@@ -1,0 +1,10 @@
+import {readFileSync,writeFileSync} from 'node:fs';
+import {PICKS} from '../packages/balance/src/picks';
+const count=Number(process.argv[2]??4);
+const reports=Array.from({length:count},(_,i)=>JSON.parse(readFileSync(`docs/balance/trait-audit-${i}.json`,'utf8')));
+const measurements=reports.flatMap(r=>r.measurements);
+if(reports.some(r=>JSON.stringify(r.source)!==JSON.stringify(reports[0].source)))throw Error('Audit shards must use identical source.');
+if(measurements.length!==PICKS.length||new Set(measurements.map(r=>r.id)).size!==PICKS.length||PICKS.some(p=>!measurements.some(r=>r.id===p.id)))throw Error('Audit must cover every trait exactly once.');
+const report={...reports[0],games:reports.reduce((n,r)=>n+r.games,0),turns:reports.reduce((n,r)=>n+r.turns,0),measurements:PICKS.map(p=>measurements.find(r=>r.id===p.id))};
+writeFileSync('docs/balance/trait-pricing-audit-0.003.json',JSON.stringify(report)+'\n');
+console.log(`${report.measurements.length} traits; ${report.games} games; ${report.turns} invariant-checked turns.`);

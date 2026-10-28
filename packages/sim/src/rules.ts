@@ -2,7 +2,7 @@ import {bonuses} from './effects';
 import data from './rules-data.json';
 import type {Empire,Fleet,GameState,Planet,ShipDesign,Species} from './types';
 import {clamp,quant} from './math';
-export const VERSION='0.002';
+export const VERSION='0.003';
 export const TECHS=[...data.techs,...['Propulsion','Energy & Weapons','Materials','Life Sciences','Computing','Society'].map((field,i)=>({id:['advanced-propulsion','advanced-weapons','advanced-materials','advanced-biology','advanced-computing','advanced-society'][i],name:['Advanced Propulsion','Advanced Weapons','Advanced Materials','Advanced Biology','Advanced Computing','Advanced Society'][i],field,tier:9,cost:2000,description:['Supply +1 ly; battle acceleration +5%.','Weapon damage +5%.','Armour +5%; building cost −2%.','Population capacity +3%.','Research +3%.','Stability +2; commerce +3%.'][i]}))];
 export const BUILDINGS=data.buildings;
 export const FIELDS=['Propulsion','Energy & Weapons','Materials','Life Sciences','Computing','Society'];
@@ -75,7 +75,7 @@ export function habitability(p:Planet,s:Species,e?:Empire){
  let gravity=Math.max(0,Math.ceil((Math.abs(p.gravity-s.gravity)-.4)/(pick(s,'gravity-wide')?.8:pick(s,'gravity-narrow')?.25:.5)*(p.gravity>s.gravity?1.5:1)));
  let chemistry=s.frame==='Synthetic'||pick(s,'sealed-metabolism')?0:p.chemistry===s.chemistry?0:3;
  let pressure=p.pressure===0?3:p.pressure===1?2:p.pressure>=4&&s.medium!=='Aerial'?2:0;
- let medium=s.medium==='Aquatic'&&p.water<.3?3:s.medium==='Aerial'&&p.kind!=='gas'&&p.pressure<4?3:s.medium==='Land'&&p.water>.95&&!pick(s,'amphibious')?2:0;
+ let medium=s.medium==='Aquatic'&&p.water<.3&&!pick(s,'amphibious')?3:s.medium==='Aerial'&&p.kind!=='gas'&&p.pressure<4?3:s.medium==='Land'&&p.water>.95&&!pick(s,'amphibious')?2:0;
  let radiation=Math.max(0,p.radiation-(pick(s,'radiation-resistant')||s.frame==='Lithic'?1:0)+(pick(s,'radiation-vulnerable')?1:0));
  if(pick(s,'radiotrophic'))radiation=0;
  let light=p.light&&p.light!==s.light?(pick(s,'photosynthetic')&&p.light==='Dim'?2:1):p.locked&&pick(s,'photosynthetic')?2:0;

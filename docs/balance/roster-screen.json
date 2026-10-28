@@ -1,0 +1,1045 @@
+{
+  "method": "Two random maps, both seats, 90-turn limit, production Balanced AI against Humans with neutral IDs; four observations per species. Scores are screening signals, not win rates or proof of balance.",
+  "trials": [
+    {
+      "id": "humans",
+      "name": "Humans",
+      "remaining": 0,
+      "meanShare": 0.5,
+      "samples": [
+        {
+          "seed": 0,
+          "seat": 0,
+          "turn": 90,
+          "score": 2319,
+          "referenceScore": 2381,
+          "share": 0.49340425531914894
+        },
+        {
+          "seed": 0,
+          "seat": 1,
+          "turn": 90,
+          "score": 2381,
+          "referenceScore": 2319,
+          "share": 0.5065957446808511
+        },
+        {
+          "seed": 1,
+          "seat": 0,
+          "turn": 90,
+          "score": 1007,
+          "referenceScore": 2112,
+          "share": 0.32285989099070217
+        },
+        {
+          "seed": 1,
+          "seat": 1,
+          "turn": 90,
+          "score": 2112,
+          "referenceScore": 1007,
+          "share": 0.6771401090092979
+        }
+      ]
+    },
+    {
+      "id": "vael",
+      "name": "Vael",
+      "remaining": 0,
+      "meanShare": 0.510885146187626,
+      "samples": [
+        {
+          "seed": 0,
+          "seat": 0,
+          "turn": 90,
+          "score": 5043,
+          "referenceScore": 1906,
+          "share": 0.7257159303496906
+        },
+        {
+          "seed": 0,
+          "seat": 1,
+          "turn": 90,
+          "score": 1638,
+          "referenceScore": 2249,
+          "share": 0.4214046822742475
+        },
+        {
+          "seed": 1,
+          "seat": 0,
+          "turn": 90,
+          "score": 1984,
+          "referenceScore": 2467,
+          "share": 0.4457425297685913
+        },
+        {
+          "seed": 1,
+          "seat": 1,
+          "turn": 90,
+          "score": 1896,
+          "referenceScore": 2311,
+          "share": 0.4506774423579748
+        }
+      ]
+    },
+    {
+      "id": "oolu",
+      "name": "Oolu",
+      "remaining": 0,
+      "meanShare": 0.4528544213843838,
+      "samples": [
+        {
+          "seed": 0,
+          "seat": 0,
+          "turn": 90,
+          "score": 1118,
+          "referenceScore": 1962,
+          "share": 0.36298701298701297
+        },
+        {
+          "seed": 0,
+          "seat": 1,
+          "turn": 90,
+          "score": 2606,
+          "referenceScore": 1995,
+          "share": 0.566398608998044
+        },
+        {
+          "seed": 1,
+          "seat": 0,
+          "turn": 90,
+          "score": 1894,
+          "referenceScore": 2588,
+          "share": 0.42257920571173585
+        },
+        {
+          "seed": 1,
+          "seat": 1,
+          "turn": 90,
+          "score": 1881,
+          "referenceScore": 2213,
+          "share": 0.4594528578407425
+        }
+      ]
+    },
+    {
+      "id": "brathak",
+      "name": "Brathak",
+      "remaining": 0,
+      "meanShare": 0.5894725422095788,
+      "samples": [
+        {
+          "seed": 0,
+          "seat": 0,
+          "turn": 90,
+          "score": 1250,
+          "referenceScore": 2257,
+          "share": 0.35642999714856
+        },
+        {
+          "seed": 0,
+          "seat": 1,
+          "turn": 90,
+          "score": 4885,
+          "referenceScore": 2036,
+          "share": 0.7058228579685016
+        },
+        {
+          "seed": 1,
+          "seat": 0,
+          "turn": 90,
+          "score": 2957,
+          "referenceScore": 2166,
+          "share": 0.5772008588717549
+        },
+        {
+          "seed": 1,
+          "seat": 1,
+          "turn": 90,
+          "score": 3437,
+          "referenceScore": 1347,
+          "share": 0.7184364548494984
+        }
+      ]
+    },
+    {
+      "id": "sylphae",
+      "name": "Sylphae",
+      "remaining": 0,
+      "meanShare": 0.6313869132415639,
+      "samples": [
+        {
+          "seed": 0,
+          "seat": 0,
+          "turn": 90,
+          "score": 5781,
+          "referenceScore": 1779,
+          "share": 0.7646825396825396
+        },
+        {
+          "seed": 0,
+          "seat": 1,
+          "turn": 90,
+          "score": 4260,
+          "referenceScore": 2246,
+          "share": 0.6547802028896403
+        },
+        {
+          "seed": 1,
+          "seat": 0,
+          "turn": 90,
+          "score": 2809,
+          "referenceScore": 2371,
+          "share": 0.5422779922779922
+        },
+        {
+          "seed": 1,
+          "seat": 1,
+          "turn": 90,
+          "score": 2885,
+          "referenceScore": 2232,
+          "share": 0.5638069181160836
+        }
+      ]
+    },
+    {
+      "id": "corundi",
+      "name": "Corundi",
+      "remaining": 0,
+      "meanShare": 0.6415973798736919,
+      "samples": [
+        {
+          "seed": 0,
+          "seat": 0,
+          "turn": 90,
+          "score": 3336,
+          "referenceScore": 2007,
+          "share": 0.6243683323975294
+        },
+        {
+          "seed": 0,
+          "seat": 1,
+          "turn": 90,
+          "score": 3853,
+          "referenceScore": 2005,
+          "share": 0.6577330146807784
+        },
+        {
+          "seed": 1,
+          "seat": 0,
+          "turn": 90,
+          "score": 3375,
+          "referenceScore": 2096,
+          "share": 0.6168890513617254
+        },
+        {
+          "seed": 1,
+          "seat": 1,
+          "turn": 90,
+          "score": 3341,
+          "referenceScore": 1665,
+          "share": 0.6673991210547343
+        }
+      ]
+    },
+    {
+      "id": "myriad",
+      "name": "Myriad",
+      "remaining": 0,
+      "meanShare": 0.46959375239812584,
+      "samples": [
+        {
+          "seed": 0,
+          "seat": 0,
+          "turn": 90,
+          "score": 1223,
+          "referenceScore": 1964,
+          "share": 0.38374647003451523
+        },
+        {
+          "seed": 0,
+          "seat": 1,
+          "turn": 90,
+          "score": 2265,
+          "referenceScore": 2051,
+          "share": 0.5247914735866543
+        },
+        {
+          "seed": 1,
+          "seat": 0,
+          "turn": 90,
+          "score": 1224,
+          "referenceScore": 2127,
+          "share": 0.36526410026857653
+        },
+        {
+          "seed": 1,
+          "seat": 1,
+          "turn": 90,
+          "score": 1798,
+          "referenceScore": 1176,
+          "share": 0.6045729657027572
+        }
+      ]
+    },
+    {
+      "id": "lattice",
+      "name": "The Lattice",
+      "remaining": 0,
+      "meanShare": 0.5421004511112522,
+      "samples": [
+        {
+          "seed": 0,
+          "seat": 0,
+          "turn": 90,
+          "score": 2030,
+          "referenceScore": 1955,
+          "share": 0.5094102885821832
+        },
+        {
+          "seed": 0,
+          "seat": 1,
+          "turn": 90,
+          "score": 3322,
+          "referenceScore": 2392,
+          "share": 0.5813790689534477
+        },
+        {
+          "seed": 1,
+          "seat": 0,
+          "turn": 90,
+          "score": 2038,
+          "referenceScore": 2022,
+          "share": 0.5019704433497537
+        },
+        {
+          "seed": 1,
+          "seat": 1,
+          "turn": 90,
+          "score": 2264,
+          "referenceScore": 1669,
+          "share": 0.5756420035596237
+        }
+      ]
+    },
+    {
+      "id": "tessit",
+      "name": "Tessit",
+      "remaining": 0,
+      "meanShare": 0.3907615329678808,
+      "samples": [
+        {
+          "seed": 0,
+          "seat": 0,
+          "turn": 90,
+          "score": 924,
+          "referenceScore": 2171,
+          "share": 0.29854604200323104
+        },
+        {
+          "seed": 0,
+          "seat": 1,
+          "turn": 90,
+          "score": 2205,
+          "referenceScore": 2019,
+          "share": 0.5220170454545454
+        },
+        {
+          "seed": 1,
+          "seat": 0,
+          "turn": 90,
+          "score": 1246,
+          "referenceScore": 2015,
+          "share": 0.3820913830113462
+        },
+        {
+          "seed": 1,
+          "seat": 1,
+          "turn": 90,
+          "score": 1141,
+          "referenceScore": 2025,
+          "share": 0.36039166140240053
+        }
+      ]
+    },
+    {
+      "id": "skethi",
+      "name": "Skethi",
+      "remaining": 0,
+      "meanShare": 0.44914302395393446,
+      "samples": [
+        {
+          "seed": 0,
+          "seat": 0,
+          "turn": 90,
+          "score": 2550,
+          "referenceScore": 2091,
+          "share": 0.5494505494505495
+        },
+        {
+          "seed": 0,
+          "seat": 1,
+          "turn": 90,
+          "score": 2162,
+          "referenceScore": 2351,
+          "share": 0.47906049191225347
+        },
+        {
+          "seed": 1,
+          "seat": 0,
+          "turn": 90,
+          "score": 1317,
+          "referenceScore": 2223,
+          "share": 0.37203389830508476
+        },
+        {
+          "seed": 1,
+          "seat": 1,
+          "turn": 90,
+          "score": 1575,
+          "referenceScore": 2402,
+          "share": 0.3960271561478501
+        }
+      ]
+    },
+    {
+      "id": "hallowfleet",
+      "name": "Hallowfleet",
+      "remaining": 0,
+      "meanShare": 0.3761337582822344,
+      "samples": [
+        {
+          "seed": 0,
+          "seat": 0,
+          "turn": 90,
+          "score": 1080,
+          "referenceScore": 2167,
+          "share": 0.33261472128118263
+        },
+        {
+          "seed": 0,
+          "seat": 1,
+          "turn": 90,
+          "score": 1778,
+          "referenceScore": 2009,
+          "share": 0.46950092421441775
+        },
+        {
+          "seed": 1,
+          "seat": 0,
+          "turn": 90,
+          "score": 619,
+          "referenceScore": 1879,
+          "share": 0.2477982385908727
+        },
+        {
+          "seed": 1,
+          "seat": 1,
+          "turn": 90,
+          "score": 1092,
+          "referenceScore": 1310,
+          "share": 0.4546211490424646
+        }
+      ]
+    },
+    {
+      "id": "qelloth",
+      "name": "Qelloth",
+      "remaining": 0,
+      "meanShare": 0.5396779089403212,
+      "samples": [
+        {
+          "seed": 0,
+          "seat": 0,
+          "turn": 90,
+          "score": 3493,
+          "referenceScore": 2408,
+          "share": 0.5919335705812574
+        },
+        {
+          "seed": 0,
+          "seat": 1,
+          "turn": 90,
+          "score": 3479,
+          "referenceScore": 2088,
+          "share": 0.6249326387641458
+        },
+        {
+          "seed": 1,
+          "seat": 0,
+          "turn": 90,
+          "score": 2033,
+          "referenceScore": 2622,
+          "share": 0.43673469387755104
+        },
+        {
+          "seed": 1,
+          "seat": 1,
+          "turn": 90,
+          "score": 2372,
+          "referenceScore": 2324,
+          "share": 0.5051107325383305
+        }
+      ]
+    },
+    {
+      "id": "mur",
+      "name": "Mur",
+      "remaining": 0,
+      "meanShare": 0.6938665149365193,
+      "samples": [
+        {
+          "seed": 0,
+          "seat": 0,
+          "turn": 90,
+          "score": 7033,
+          "referenceScore": 1587,
+          "share": 0.815893271461717
+        },
+        {
+          "seed": 0,
+          "seat": 1,
+          "turn": 90,
+          "score": 6730,
+          "referenceScore": 1724,
+          "share": 0.796072864916016
+        },
+        {
+          "seed": 1,
+          "seat": 0,
+          "turn": 90,
+          "score": 1772,
+          "referenceScore": 2332,
+          "share": 0.4317738791423002
+        },
+        {
+          "seed": 1,
+          "seat": 1,
+          "turn": 90,
+          "score": 4765,
+          "referenceScore": 1747,
+          "share": 0.7317260442260443
+        }
+      ]
+    },
+    {
+      "id": "kiriel",
+      "name": "Kiriel",
+      "remaining": 0,
+      "meanShare": 0.3574507688298404,
+      "samples": [
+        {
+          "seed": 0,
+          "seat": 0,
+          "turn": 90,
+          "score": 911,
+          "referenceScore": 2245,
+          "share": 0.28865652724968316
+        },
+        {
+          "seed": 0,
+          "seat": 1,
+          "turn": 90,
+          "score": 2147,
+          "referenceScore": 2462,
+          "share": 0.4658277283575613
+        },
+        {
+          "seed": 1,
+          "seat": 0,
+          "turn": 90,
+          "score": 1187,
+          "referenceScore": 2358,
+          "share": 0.33483779971791255
+        },
+        {
+          "seed": 1,
+          "seat": 1,
+          "turn": 90,
+          "score": 1175,
+          "referenceScore": 2276,
+          "share": 0.3404810199942046
+        }
+      ]
+    },
+    {
+      "id": "ulqua",
+      "name": "Ulqua",
+      "remaining": 0,
+      "meanShare": 0.5381660011074959,
+      "samples": [
+        {
+          "seed": 0,
+          "seat": 0,
+          "turn": 90,
+          "score": 2225,
+          "referenceScore": 2489,
+          "share": 0.47199830292745015
+        },
+        {
+          "seed": 0,
+          "seat": 1,
+          "turn": 90,
+          "score": 2711,
+          "referenceScore": 2031,
+          "share": 0.5716997047659216
+        },
+        {
+          "seed": 1,
+          "seat": 0,
+          "turn": 90,
+          "score": 1081,
+          "referenceScore": 1761,
+          "share": 0.38036593947923997
+        },
+        {
+          "seed": 1,
+          "seat": 1,
+          "turn": 90,
+          "score": 2545,
+          "referenceScore": 948,
+          "share": 0.7286000572573719
+        }
+      ]
+    },
+    {
+      "id": "tharn",
+      "name": "Tharn",
+      "remaining": 0,
+      "meanShare": 0.49711635305572127,
+      "samples": [
+        {
+          "seed": 0,
+          "seat": 0,
+          "turn": 90,
+          "score": 2559,
+          "referenceScore": 2480,
+          "share": 0.5078388569160548
+        },
+        {
+          "seed": 0,
+          "seat": 1,
+          "turn": 90,
+          "score": 1954,
+          "referenceScore": 1983,
+          "share": 0.49631699263398527
+        },
+        {
+          "seed": 1,
+          "seat": 0,
+          "turn": 90,
+          "score": 1141,
+          "referenceScore": 1950,
+          "share": 0.3691362018764154
+        },
+        {
+          "seed": 1,
+          "seat": 1,
+          "turn": 90,
+          "score": 1792,
+          "referenceScore": 1121,
+          "share": 0.6151733607964298
+        }
+      ]
+    },
+    {
+      "id": "wardens",
+      "name": "Wardens",
+      "remaining": 0,
+      "meanShare": 0.6177374733438521,
+      "samples": [
+        {
+          "seed": 0,
+          "seat": 0,
+          "turn": 90,
+          "score": 2654,
+          "referenceScore": 2006,
+          "share": 0.5695278969957082
+        },
+        {
+          "seed": 0,
+          "seat": 1,
+          "turn": 90,
+          "score": 4676,
+          "referenceScore": 1937,
+          "share": 0.7070920913352488
+        },
+        {
+          "seed": 1,
+          "seat": 0,
+          "turn": 90,
+          "score": 2824,
+          "referenceScore": 2230,
+          "share": 0.5587653343886031
+        },
+        {
+          "seed": 1,
+          "seat": 1,
+          "turn": 90,
+          "score": 2820,
+          "referenceScore": 1617,
+          "share": 0.6355645706558486
+        }
+      ]
+    },
+    {
+      "id": "mycel",
+      "name": "Mycel",
+      "remaining": 0,
+      "meanShare": 0.5296935542226638,
+      "samples": [
+        {
+          "seed": 0,
+          "seat": 0,
+          "turn": 90,
+          "score": 4597,
+          "referenceScore": 1889,
+          "share": 0.7087573234659266
+        },
+        {
+          "seed": 0,
+          "seat": 1,
+          "turn": 90,
+          "score": 2062,
+          "referenceScore": 1985,
+          "share": 0.5095132196688905
+        },
+        {
+          "seed": 1,
+          "seat": 0,
+          "turn": 90,
+          "score": 2143,
+          "referenceScore": 2419,
+          "share": 0.4697501096010522
+        },
+        {
+          "seed": 1,
+          "seat": 1,
+          "turn": 90,
+          "score": 1692,
+          "referenceScore": 2236,
+          "share": 0.43075356415478616
+        }
+      ]
+    },
+    {
+      "id": "ixit",
+      "name": "Ixit",
+      "remaining": 0,
+      "meanShare": 0.5553644353284587,
+      "samples": [
+        {
+          "seed": 0,
+          "seat": 0,
+          "turn": 90,
+          "score": 4514,
+          "referenceScore": 1861,
+          "share": 0.708078431372549
+        },
+        {
+          "seed": 0,
+          "seat": 1,
+          "turn": 90,
+          "score": 4419,
+          "referenceScore": 1990,
+          "share": 0.6894991418317991
+        },
+        {
+          "seed": 1,
+          "seat": 0,
+          "turn": 90,
+          "score": 1342,
+          "referenceScore": 2102,
+          "share": 0.3896631823461092
+        },
+        {
+          "seed": 1,
+          "seat": 1,
+          "turn": 90,
+          "score": 1769,
+          "referenceScore": 2305,
+          "share": 0.4342169857633775
+        }
+      ]
+    },
+    {
+      "id": "vorr",
+      "name": "Vorr",
+      "remaining": 0,
+      "meanShare": 0.47271405053109994,
+      "samples": [
+        {
+          "seed": 0,
+          "seat": 0,
+          "turn": 90,
+          "score": 2226,
+          "referenceScore": 2266,
+          "share": 0.4955476402493321
+        },
+        {
+          "seed": 0,
+          "seat": 1,
+          "turn": 90,
+          "score": 2000,
+          "referenceScore": 2427,
+          "share": 0.451773209848656
+        },
+        {
+          "seed": 1,
+          "seat": 0,
+          "turn": 90,
+          "score": 856,
+          "referenceScore": 1699,
+          "share": 0.3350293542074364
+        },
+        {
+          "seed": 1,
+          "seat": 1,
+          "turn": 90,
+          "score": 1674,
+          "referenceScore": 1077,
+          "share": 0.608505997818975
+        }
+      ]
+    },
+    {
+      "id": "sorrin",
+      "name": "Sorrin",
+      "remaining": 0,
+      "meanShare": 0.4539207424393841,
+      "samples": [
+        {
+          "seed": 0,
+          "seat": 0,
+          "turn": 90,
+          "score": 1146,
+          "referenceScore": 1953,
+          "share": 0.3697967086156825
+        },
+        {
+          "seed": 0,
+          "seat": 1,
+          "turn": 90,
+          "score": 2132,
+          "referenceScore": 2027,
+          "share": 0.5126232267371964
+        },
+        {
+          "seed": 1,
+          "seat": 0,
+          "turn": 90,
+          "score": 1074,
+          "referenceScore": 2167,
+          "share": 0.33137920394939835
+        },
+        {
+          "seed": 1,
+          "seat": 1,
+          "turn": 90,
+          "score": 1917,
+          "referenceScore": 1268,
+          "share": 0.6018838304552591
+        }
+      ]
+    },
+    {
+      "id": "kith",
+      "name": "Kith",
+      "remaining": 0,
+      "meanShare": 0.5125989811962846,
+      "samples": [
+        {
+          "seed": 0,
+          "seat": 0,
+          "turn": 90,
+          "score": 1473,
+          "referenceScore": 1955,
+          "share": 0.4296966161026838
+        },
+        {
+          "seed": 0,
+          "seat": 1,
+          "turn": 90,
+          "score": 2620,
+          "referenceScore": 2445,
+          "share": 0.5172754195459033
+        },
+        {
+          "seed": 1,
+          "seat": 0,
+          "turn": 90,
+          "score": 1746,
+          "referenceScore": 1964,
+          "share": 0.4706199460916442
+        },
+        {
+          "seed": 1,
+          "seat": 1,
+          "turn": 90,
+          "score": 2311,
+          "referenceScore": 1341,
+          "share": 0.632803943044907
+        }
+      ]
+    },
+    {
+      "id": "aumaru",
+      "name": "Aumaru",
+      "remaining": 0,
+      "meanShare": 0.4181067659661474,
+      "samples": [
+        {
+          "seed": 0,
+          "seat": 0,
+          "turn": 90,
+          "score": 1216,
+          "referenceScore": 2129,
+          "share": 0.36352765321375186
+        },
+        {
+          "seed": 0,
+          "seat": 1,
+          "turn": 90,
+          "score": 2242,
+          "referenceScore": 2093,
+          "share": 0.5171856978085352
+        },
+        {
+          "seed": 1,
+          "seat": 0,
+          "turn": 90,
+          "score": 1523,
+          "referenceScore": 2375,
+          "share": 0.39071318624935863
+        },
+        {
+          "seed": 1,
+          "seat": 1,
+          "turn": 90,
+          "score": 1523,
+          "referenceScore": 2275,
+          "share": 0.40100052659294366
+        }
+      ]
+    },
+    {
+      "id": "abyssals",
+      "name": "Abyssals",
+      "remaining": 0,
+      "meanShare": 0.4773305514458084,
+      "samples": [
+        {
+          "seed": 0,
+          "seat": 0,
+          "turn": 90,
+          "score": 3719,
+          "referenceScore": 2326,
+          "share": 0.6152191894127378
+        },
+        {
+          "seed": 0,
+          "seat": 1,
+          "turn": 90,
+          "score": 1429,
+          "referenceScore": 2288,
+          "share": 0.38444982512779124
+        },
+        {
+          "seed": 1,
+          "seat": 0,
+          "turn": 90,
+          "score": 1467,
+          "referenceScore": 2329,
+          "share": 0.3864594309799789
+        },
+        {
+          "seed": 1,
+          "seat": 1,
+          "turn": 90,
+          "score": 2549,
+          "referenceScore": 2323,
+          "share": 0.5231937602627258
+        }
+      ]
+    },
+    {
+      "id": "keth-ra",
+      "name": "Keth’ra",
+      "remaining": 0,
+      "meanShare": 0.5724053186351319,
+      "samples": [
+        {
+          "seed": 0,
+          "seat": 0,
+          "turn": 90,
+          "score": 4384,
+          "referenceScore": 2106,
+          "share": 0.6755007704160246
+        },
+        {
+          "seed": 0,
+          "seat": 1,
+          "turn": 90,
+          "score": 4746,
+          "referenceScore": 1925,
+          "share": 0.7114375655823715
+        },
+        {
+          "seed": 1,
+          "seat": 0,
+          "turn": 90,
+          "score": 2546,
+          "referenceScore": 2525,
+          "share": 0.5020705975152829
+        },
+        {
+          "seed": 1,
+          "seat": 1,
+          "turn": 90,
+          "score": 1701,
+          "referenceScore": 2545,
+          "share": 0.4006123410268488
+        }
+      ]
+    },
+    {
+      "id": "seren",
+      "name": "Seren",
+      "remaining": 0,
+      "meanShare": 0.5474884324287862,
+      "samples": [
+        {
+          "seed": 0,
+          "seat": 0,
+          "turn": 90,
+          "score": 3609,
+          "referenceScore": 1994,
+          "share": 0.6441192218454399
+        },
+        {
+          "seed": 0,
+          "seat": 1,
+          "turn": 90,
+          "score": 3237,
+          "referenceScore": 2497,
+          "share": 0.5645273805371468
+        },
+        {
+          "seed": 1,
+          "seat": 0,
+          "turn": 90,
+          "score": 1821,
+          "referenceScore": 2297,
+          "share": 0.4422049538610976
+        },
+        {
+          "seed": 1,
+          "seat": 1,
+          "turn": 90,
+          "score": 2654,
+          "referenceScore": 2269,
+          "share": 0.5391021734714605
+        }
+      ]
+    }
+  ]
+}
