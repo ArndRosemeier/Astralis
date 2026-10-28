@@ -3,6 +3,10 @@
 .mode-title .title-observatory.cinematic-scene{height:100%;pointer-events:auto}
 .mode-title:has(.cinematic-scene):after,.mode-title:has(.cinematic-scene):not(.start-screen):after{background:linear-gradient(0deg,#030817b8,transparent 43%);pointer-events:none}
 .title-sculpture{position:absolute;z-index:4;left:5%;top:12%;width:90%;height:clamp(70px,17vw,200px);max-height:23vh}
+.title-alpha-badge{position:absolute;right:3%;top:-30px;display:inline-flex;align-items:center;gap:8px;padding:8px 14px;color:#ffe6ac;font-family:var(--display);font-size:12px;font-weight:700;letter-spacing:.22em;line-height:1;transform:rotate(5deg);isolation:isolate;filter:drop-shadow(0 0 12px #ffb84d55)}
+.title-alpha-badge:before,.title-alpha-badge:after{content:'';position:absolute;inset:0;z-index:-2;clip-path:polygon(9px 0,100% 0,100% calc(100% - 9px),calc(100% - 9px) 100%,0 100%,0 9px);background:linear-gradient(120deg,#fff1c4,#ffba55 55%,#ca7f3b)}
+.title-alpha-badge:after{inset:1px;z-index:-1;background:linear-gradient(125deg,#342544f2,#11152bf5 55%,#604021ee)}
+.title-alpha-badge svg{color:#ffd17f;filter:drop-shadow(0 0 4px #ffb34f88)}
 .title-sculpture h1{margin:0;width:100%;height:100%;padding:0;line-height:1}
 .title-sculpture h1 button{display:block;width:100%;height:100%;border:0;padding:0;background:none;font-family:var(--display);font-size:clamp(2rem,11vw,10rem);font-weight:700;letter-spacing:.025em;color:#eee3ce;text-shadow:0 3px 0 #70708e,0 8px 25px #050820;cursor:pointer;transition:none}
 .title-sculpture--rendered h1 button{color:transparent;text-shadow:none}
@@ -27,6 +31,7 @@
 .start-card .start-sound{margin-top:20px}
 @media(max-width:700px){
  .title-sculpture{top:14%;left:3%;width:94%;height:17vw}
+ .title-alpha-badge{top:-28px;right:4%;padding:6px 10px;font-size:10px;gap:6px}
  .mode-title .title-main{left:8%;bottom:22%;width:84%;max-width:none}
  .mode-title .title-main .hero-button{font-size:1rem;padding:17px 12px}
  .mode-title .title-links{justify-content:center}

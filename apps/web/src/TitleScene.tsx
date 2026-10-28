@@ -127,6 +127,7 @@ export function TitleScene({motion,quality,nebula,sunProfile}:{motion:boolean;qu
  return <>
   <div className={'title-observatory cinematic-scene'+(failed?' scene-unavailable':'')} style={{backgroundImage:`url(${asset(nebula.path)})`}} data-nebula={nebula.id} data-sun={sunProfile.name} ref={host} role="img" aria-label={`A sculptural ASTRALIS title above a living ocean world, docking shuttles and close-passing starships, a ${sunProfile.name.toLowerCase()} and a ${nebula.name.toLowerCase()} nebula`}/>
   <div className={'title-sculpture'+(ready&&!failed?' title-sculpture--rendered':'')}>
+   <span className="title-alpha-badge" aria-label="Alpha build" title="Alpha build — still evolving"><Orbit size={15} aria-hidden="true"/><span>ALPHA</span></span>
    <h1 ref={anchor} aria-label="ASTRALIS"><button aria-label="Animate ASTRALIS title" aria-describedby="title-scene-tooltip" onClick={()=>{if(active){cues.current.title++;effect('discovery');}}}>ASTRALIS</button></h1>
    <div className="title-lore" id="title-scene-tooltip" role="tooltip">Beyond the Veil. Build a civilization among real stars.<br/>An Arnd Rosemeier universe. Touch the letters, moon, or orbital station.</div>
   </div>
