@@ -1,0 +1,40 @@
+{
+  "asset": "public/assets/ui-confirm.mp3",
+  "model": "bytedance-seed/seed-audio-1-0",
+  "prompt": "The sound of a single very short refined starship instrument confirmation: two soft rounded glassy electronic notes rising gently, a tiny tactile tick, clean and pleasant, no voice, no speech, no music, dry studio sound effect.",
+  "seed": null,
+  "api_request": {
+    "model": "bytedance-seed/seed-audio-1-0",
+    "input": "The sound of a single very short refined starship instrument confirmation: two soft rounded glassy electronic notes rising gently, a tiny tactile tick, clean and pleasant, no voice, no speech, no music, dry studio sound effect.",
+    "response_format": "mp3"
+  },
+  "bytes": 15090,
+  "key_usage_before": 196.262747908,
+  "key_usage_after": 196.262747908,
+  "cost_delta_usd": 0.0,
+  "verification": [
+    "Duration: 00:00:01.23, start: 0.025057, bitrate: 98 kb/s",
+    "Stream #0:0: Audio: mp3 (mp3float), 44100 Hz, mono, fltp, 96 kb/s",
+    "Stream #0:0: Audio: pcm_s16le, 44100 Hz, mono, s16, 705 kb/s",
+    "[Parsed_volumedetect_0 @ 000001a4da8d3140] mean_volume: -23.5 dB",
+    "[Parsed_volumedetect_0 @ 000001a4da8d3140] max_volume: -11.0 dB"
+  ],
+  "full_decode": "passed",
+  "ffprobe": "unavailable; ffmpeg stream inspection used",
+  "billing_headers": {
+    "X-Generation-Id": "gen-tts-1793145281-FtasFkjcvYYvauONzK8Z"
+  },
+  "billing": {
+    "id": "gen-tts-1793145281-FtasFkjcvYYvauONzK8Z",
+    "model": "bytedance-seed/seed-audio-1-0-20260630",
+    "total_cost": 0.0075,
+    "generation_time": null,
+    "num_media_completion": null
+  },
+  "cost_usd": 0.0075,
+  "post_trim_level_polish": {
+    "gain_db": -1.7,
+    "target_mean_db": -23,
+    "peak_ceiling_db": -4
+  }
+}

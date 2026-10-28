@@ -1,0 +1,40 @@
+{
+  "asset": "public/assets/turn.mp3",
+  "model": "bytedance-seed/seed-audio-1-0",
+  "prompt": "The sound of an elegant futuristic starship interface completing a time transition: a quiet ascending electronic sweep, soft mechanical relay tick, then a single warm glass bell, reassuring and precise, no speech, no voice, no music, isolated sound effect.",
+  "seed": null,
+  "api_request": {
+    "model": "bytedance-seed/seed-audio-1-0",
+    "input": "The sound of an elegant futuristic starship interface completing a time transition: a quiet ascending electronic sweep, soft mechanical relay tick, then a single warm glass bell, reassuring and precise, no speech, no voice, no music, isolated sound effect.",
+    "response_format": "mp3"
+  },
+  "bytes": 24808,
+  "key_usage_before": 196.358997908,
+  "key_usage_after": 196.358997908,
+  "cost_delta_usd": 0.0,
+  "verification": [
+    "Duration: 00:00:02.04, start: 0.025057, bitrate: 97 kb/s",
+    "Stream #0:0: Audio: mp3 (mp3float), 44100 Hz, mono, fltp, 96 kb/s",
+    "Stream #0:0: Audio: pcm_s16le, 44100 Hz, mono, s16, 705 kb/s",
+    "[Parsed_volumedetect_0 @ 000001cec3354080] mean_volume: -23.5 dB",
+    "[Parsed_volumedetect_0 @ 000001cec3354080] max_volume: -12.1 dB"
+  ],
+  "full_decode": "passed",
+  "ffprobe": "unavailable; ffmpeg stream inspection used",
+  "billing_headers": {
+    "X-Generation-Id": "gen-tts-1793145399-TztOSFUJxrcljZP2ZXYI"
+  },
+  "billing": {
+    "id": "gen-tts-1793145399-TztOSFUJxrcljZP2ZXYI",
+    "model": "bytedance-seed/seed-audio-1-0-20260630",
+    "total_cost": 0.017255875,
+    "generation_time": null,
+    "num_media_completion": null
+  },
+  "cost_usd": 0.017255875,
+  "post_trim_level_polish": {
+    "gain_db": -6.1,
+    "target_mean_db": -23,
+    "peak_ceiling_db": -4
+  }
+}

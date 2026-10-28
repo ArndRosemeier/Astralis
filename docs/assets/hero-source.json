@@ -1,0 +1,33 @@
+{
+  "model": "meta/muse-image",
+  "prompt": "Cinematic science fiction concept art for Astralis, a grounded space exploration strategy game. A single elegant interstellar research ship coasts silently above the curved horizon of a rocky exoplanet. Its dark metallic hull catches warm light from a distant orange star. A fine blue atmospheric rim and delicate cloud bands surround the planet; a sparse realistic starfield fills deep black space. Wide composition, extraordinary sense of scale, realistic materials, restrained teal and amber accents, detailed painterly realism. No text, no logos, no watermark.",
+  "seed": null,
+  "request": {
+    "model": "meta/muse-image",
+    "prompt": "Cinematic science fiction concept art for Astralis, a grounded space exploration strategy game. A single elegant interstellar research ship coasts silently above the curved horizon of a rocky exoplanet. Its dark metallic hull catches warm light from a distant orange star. A fine blue atmospheric rim and delicate cloud bands surround the planet; a sparse realistic starfield fills deep black space. Wide composition, extraordinary sense of scale, realistic materials, restrained teal and amber accents, detailed painterly realism. No text, no logos, no watermark.",
+    "n": 1,
+    "size": "1536x1024"
+  },
+  "id": null,
+  "usage": {
+    "prompt_tokens": 141,
+    "completion_tokens": 2970,
+    "total_tokens": 3111,
+    "cost": 0.01,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.01,
+      "upstream_inference_prompt_cost": 0,
+      "upstream_inference_completions_cost": 0.01
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 2970
+    }
+  },
+  "bytes": 454158,
+  "output": "C:\\Projekte\\Astralis\\output\\imagegen\\astralis-muse-test.webp"
+}

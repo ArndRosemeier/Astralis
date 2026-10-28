@@ -1,6 +1,6 @@
 # Astralis — Design Plan
 
-**Status:** draft v0.8, planning only. No code yet.
+**Status:** accepted specification v0.8, implemented as build 0.001. See [implementation decisions](implementation.md), [verification](verification.md) and [measured balance](balance/final-prices.md).
 **Changes in v0.8:** build versions from 0.001, a What's new button, and a hero title screen (D39–D41, new detail doc 7).
 **Changes in v0.7:** governments fixed per species (D36); Concord votes purely by population (D37); the other
 questions Q29–Q46 accepted (D38). Only Q16 (title) remains open.
@@ -53,7 +53,7 @@ micromanagement, and complexity is revealed gradually.
 
 | ID | Decision |
 |----|----------|
-| D1 | Planning phase only. No implementation until the plan is agreed. |
+| D1 | Original planning gate; implementation authorized by the owner on 2026-10-28 (D42). |
 | D2 | Real stellar neighbourhood in 3D. Real planets where known, invented ones elsewhere. |
 | D3 | The 3D map slowly rotates by default for depth perception and stops when the player does something. |
 | D4 | No FTL travel. 1 turn = 5 years, so the hard speed cap is 5 ly/turn (c). Early ships are much slower. |

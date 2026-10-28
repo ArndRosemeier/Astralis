@@ -1,0 +1,40 @@
+{
+  "asset": "public/assets/weapon.mp3",
+  "model": "bytedance-seed/seed-audio-1-0",
+  "prompt": "The sound of a single subdued cinematic spacecraft pulse laser firing: a short precise synthetic energy snap with a low soft resonant thump and fast airy decay, restrained and polished, no speech, no voice, no music, isolated game sound effect.",
+  "seed": null,
+  "api_request": {
+    "model": "bytedance-seed/seed-audio-1-0",
+    "input": "The sound of a single subdued cinematic spacecraft pulse laser firing: a short precise synthetic energy snap with a low soft resonant thump and fast airy decay, restrained and polished, no speech, no voice, no music, isolated game sound effect.",
+    "response_format": "mp3"
+  },
+  "bytes": 22300,
+  "key_usage_before": 196.350247908,
+  "key_usage_after": 196.350247908,
+  "cost_delta_usd": 0.0,
+  "verification": [
+    "Duration: 00:00:01.83, start: 0.025057, bitrate: 97 kb/s",
+    "Stream #0:0: Audio: mp3 (mp3float), 44100 Hz, mono, fltp, 96 kb/s",
+    "Stream #0:0: Audio: pcm_s16le, 44100 Hz, mono, s16, 705 kb/s",
+    "[Parsed_volumedetect_0 @ 000002b7a4261780] mean_volume: -23.5 dB",
+    "[Parsed_volumedetect_0 @ 000002b7a4261780] max_volume: -7.9 dB"
+  ],
+  "full_decode": "passed",
+  "ffprobe": "unavailable; ffmpeg stream inspection used",
+  "billing_headers": {
+    "X-Generation-Id": "gen-tts-1793145372-uZWcZypsDu5f1nB6Nm61"
+  },
+  "billing": {
+    "id": "gen-tts-1793145372-uZWcZypsDu5f1nB6Nm61",
+    "model": "bytedance-seed/seed-audio-1-0-20260630",
+    "total_cost": 0.005,
+    "generation_time": null,
+    "num_media_completion": null
+  },
+  "cost_usd": 0.005,
+  "post_trim_level_polish": {
+    "gain_db": -2.4,
+    "target_mean_db": -23,
+    "peak_ceiling_db": -4
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "asset": "public/assets/battle.mp3",
+  "model": "google/lyria-3-pro-preview",
+  "prompt": "Original instrumental tactical battle underscore for Astralis, a grounded space strategy game. Around two minutes, restrained 95 BPM pulse, low strings ostinato, soft analog bass pulses, distant brass, ticking electronic texture, a clear sense of elegant strategic tension rather than panic. Gradually develops, one brief rising crescendo, then resolves to calm. Cinematic and detailed but not loud or fatiguing. No vocals, no lyrics, no spoken words, no recognizable franchise motifs. No overdriven electric guitar.",
+  "seed": null,
+  "api_request": {
+    "model": "google/lyria-3-pro-preview",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Original instrumental tactical battle underscore for Astralis, a grounded space strategy game. Around two minutes, restrained 95 BPM pulse, low strings ostinato, soft analog bass pulses, distant brass, ticking electronic texture, a clear sense of elegant strategic tension rather than panic. Gradually develops, one brief rising crescendo, then resolves to calm. Cinematic and detailed but not loud or fatiguing. No vocals, no lyrics, no spoken words, no recognizable franchise motifs. No overdriven electric guitar."
+      }
+    ],
+    "stream": true,
+    "modalities": [
+      "text",
+      "audio"
+    ],
+    "stream_options": {
+      "include_usage": true
+    }
+  },
+  "bytes": 2381366,
+  "key_usage_before": 196.182747908,
+  "key_usage_after": 196.182747908,
+  "cost_delta_usd": 0.0,
+  "usage": {
+    "prompt_tokens": 129,
+    "completion_tokens": 12,
+    "total_tokens": 141,
+    "cost": 0.08,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.08,
+      "upstream_inference_prompt_cost": 0,
+      "upstream_inference_completions_cost": 0.08
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 12
+    }
+  },
+  "verification": [
+    "Duration: 00:01:59.04, start: 0.025057, bitrate: 160 kb/s",
+    "Stream #0:0: Audio: mp3 (mp3float), 44100 Hz, stereo, fltp, 160 kb/s",
+    "Stream #0:0: Audio: pcm_s16le, 44100 Hz, stereo, s16, 1411 kb/s",
+    "[Parsed_volumedetect_0 @ 0000021c43e22780] mean_volume: -21.6 dB",
+    "[Parsed_volumedetect_0 @ 0000021c43e22780] max_volume: -3.9 dB"
+  ],
+  "full_decode": "passed",
+  "ffprobe": "unavailable; ffmpeg stream inspection used",
+  "cost_usd": 0.08
+}

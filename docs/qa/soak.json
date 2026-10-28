@@ -1,0 +1,574 @@
+{
+  "games": 26,
+  "checkedTurns": 3120,
+  "battlesRetained": 249,
+  "elapsedSeconds": 87.8700475,
+  "results": [
+    {
+      "seed": "SOAK-0",
+      "turn": 120,
+      "winner": 3,
+      "victory": "Score",
+      "scores": [
+        {
+          "species": "humans",
+          "score": 1120
+        },
+        {
+          "species": "mycel",
+          "score": 3655
+        },
+        {
+          "species": "skethi",
+          "score": 2371
+        },
+        {
+          "species": "brathak",
+          "score": 4852
+        },
+        {
+          "species": "brathak",
+          "score": 120
+        }
+      ],
+      "hash": "566b3b88"
+    },
+    {
+      "seed": "SOAK-1",
+      "turn": 120,
+      "winner": 1,
+      "victory": "Score",
+      "scores": [
+        {
+          "species": "vael",
+          "score": 3266
+        },
+        {
+          "species": "wardens",
+          "score": 4100
+        }
+      ],
+      "hash": "e040793e"
+    },
+    {
+      "seed": "SOAK-2",
+      "turn": 120,
+      "winner": 1,
+      "victory": "Score",
+      "scores": [
+        {
+          "species": "oolu",
+          "score": 3032
+        },
+        {
+          "species": "mycel",
+          "score": 3315
+        },
+        {
+          "species": "mycel",
+          "score": 120
+        }
+      ],
+      "hash": "f038eef4"
+    },
+    {
+      "seed": "SOAK-3",
+      "turn": 120,
+      "winner": 1,
+      "victory": "Score",
+      "scores": [
+        {
+          "species": "brathak",
+          "score": 3641
+        },
+        {
+          "species": "mycel",
+          "score": 4375
+        },
+        {
+          "species": "humans",
+          "score": 1892
+        },
+        {
+          "species": "skethi",
+          "score": 1452
+        }
+      ],
+      "hash": "3b0e0b51"
+    },
+    {
+      "seed": "SOAK-4",
+      "turn": 120,
+      "winner": 1,
+      "victory": "Score",
+      "scores": [
+        {
+          "species": "sylphae",
+          "score": 1712
+        },
+        {
+          "species": "oolu",
+          "score": 2582
+        },
+        {
+          "species": "oolu",
+          "score": 120
+        }
+      ],
+      "hash": "2837b8ee"
+    },
+    {
+      "seed": "SOAK-5",
+      "turn": 120,
+      "winner": 1,
+      "victory": "Score",
+      "scores": [
+        {
+          "species": "corundi",
+          "score": 4607
+        },
+        {
+          "species": "wardens",
+          "score": 6523
+        }
+      ],
+      "hash": "9e052028"
+    },
+    {
+      "seed": "SOAK-6",
+      "turn": 120,
+      "winner": 1,
+      "victory": "Score",
+      "scores": [
+        {
+          "species": "myriad",
+          "score": 4685
+        },
+        {
+          "species": "wardens",
+          "score": 6007
+        },
+        {
+          "species": "oolu",
+          "score": 2544
+        },
+        {
+          "species": "mycel",
+          "score": 4689
+        },
+        {
+          "species": "wardens",
+          "score": 120
+        }
+      ],
+      "hash": "b7c6ca21"
+    },
+    {
+      "seed": "SOAK-7",
+      "turn": 120,
+      "winner": 0,
+      "victory": "Score",
+      "scores": [
+        {
+          "species": "lattice",
+          "score": 3812
+        },
+        {
+          "species": "myriad",
+          "score": 2632
+        }
+      ],
+      "hash": "9c2ebb91"
+    },
+    {
+      "seed": "SOAK-8",
+      "turn": 120,
+      "winner": 1,
+      "victory": "Score",
+      "scores": [
+        {
+          "species": "tessit",
+          "score": 1783
+        },
+        {
+          "species": "mycel",
+          "score": 3736
+        },
+        {
+          "species": "mycel",
+          "score": 120
+        }
+      ],
+      "hash": "8bc23966"
+    },
+    {
+      "seed": "SOAK-9",
+      "turn": 120,
+      "winner": 2,
+      "victory": "Score",
+      "scores": [
+        {
+          "species": "skethi",
+          "score": 1453
+        },
+        {
+          "species": "mycel",
+          "score": 3322
+        },
+        {
+          "species": "wardens",
+          "score": 3552
+        },
+        {
+          "species": "humans",
+          "score": 1890
+        }
+      ],
+      "hash": "f51c64f9"
+    },
+    {
+      "seed": "SOAK-10",
+      "turn": 120,
+      "winner": 0,
+      "victory": "Score",
+      "scores": [
+        {
+          "species": "hallowfleet",
+          "score": 2685
+        },
+        {
+          "species": "ixit",
+          "score": 2203
+        },
+        {
+          "species": "hallowfleet",
+          "score": 120
+        }
+      ],
+      "hash": "9b57ee00"
+    },
+    {
+      "seed": "SOAK-11",
+      "turn": 120,
+      "winner": 0,
+      "victory": "Score",
+      "scores": [
+        {
+          "species": "qelloth",
+          "score": 4282
+        },
+        {
+          "species": "ixit",
+          "score": 3151
+        }
+      ],
+      "hash": "5373eb19"
+    },
+    {
+      "seed": "SOAK-12",
+      "turn": 120,
+      "winner": 0,
+      "victory": "Score",
+      "scores": [
+        {
+          "species": "mur",
+          "score": 6671
+        },
+        {
+          "species": "ixit",
+          "score": 1646
+        },
+        {
+          "species": "ulqua",
+          "score": 2700
+        },
+        {
+          "species": "kith",
+          "score": 3210
+        },
+        {
+          "species": "mur",
+          "score": 120
+        }
+      ],
+      "hash": "60018562"
+    },
+    {
+      "seed": "SOAK-13",
+      "turn": 120,
+      "winner": 1,
+      "victory": "Score",
+      "scores": [
+        {
+          "species": "kiriel",
+          "score": 1738
+        },
+        {
+          "species": "tharn",
+          "score": 3547
+        }
+      ],
+      "hash": "17a7243d"
+    },
+    {
+      "seed": "SOAK-14",
+      "turn": 120,
+      "winner": 1,
+      "victory": "Score",
+      "scores": [
+        {
+          "species": "ulqua",
+          "score": 2252
+        },
+        {
+          "species": "tharn",
+          "score": 2471
+        },
+        {
+          "species": "tharn",
+          "score": 120
+        }
+      ],
+      "hash": "734e4704"
+    },
+    {
+      "seed": "SOAK-15",
+      "turn": 120,
+      "winner": 2,
+      "victory": "Score",
+      "scores": [
+        {
+          "species": "tharn",
+          "score": 2611
+        },
+        {
+          "species": "ixit",
+          "score": 3922
+        },
+        {
+          "species": "mur",
+          "score": 6149
+        },
+        {
+          "species": "mycel",
+          "score": 2673
+        }
+      ],
+      "hash": "bca80a00"
+    },
+    {
+      "seed": "SOAK-16",
+      "turn": 120,
+      "winner": 0,
+      "victory": "Score",
+      "scores": [
+        {
+          "species": "wardens",
+          "score": 2045
+        },
+        {
+          "species": "tharn",
+          "score": 1829
+        },
+        {
+          "species": "tharn",
+          "score": 120
+        }
+      ],
+      "hash": "f27f8e8e"
+    },
+    {
+      "seed": "SOAK-17",
+      "turn": 120,
+      "winner": 0,
+      "victory": "Score",
+      "scores": [
+        {
+          "species": "mycel",
+          "score": 5686
+        },
+        {
+          "species": "tharn",
+          "score": 4101
+        }
+      ],
+      "hash": "0c7920d3"
+    },
+    {
+      "seed": "SOAK-18",
+      "turn": 120,
+      "winner": 1,
+      "victory": "Score",
+      "scores": [
+        {
+          "species": "ixit",
+          "score": 2888
+        },
+        {
+          "species": "mur",
+          "score": 4679
+        },
+        {
+          "species": "mycel",
+          "score": 2603
+        },
+        {
+          "species": "ulqua",
+          "score": 1118
+        },
+        {
+          "species": "mur",
+          "score": 120
+        }
+      ],
+      "hash": "afd3a26a"
+    },
+    {
+      "seed": "SOAK-19",
+      "turn": 120,
+      "winner": 1,
+      "victory": "Score",
+      "scores": [
+        {
+          "species": "vorr",
+          "score": 3628
+        },
+        {
+          "species": "ixit",
+          "score": 4271
+        }
+      ],
+      "hash": "6bbe0b96"
+    },
+    {
+      "seed": "SOAK-20",
+      "turn": 120,
+      "winner": 1,
+      "victory": "Score",
+      "scores": [
+        {
+          "species": "sorrin",
+          "score": 1749
+        },
+        {
+          "species": "skethi",
+          "score": 2712
+        },
+        {
+          "species": "skethi",
+          "score": 120
+        }
+      ],
+      "hash": "256e15c1"
+    },
+    {
+      "seed": "SOAK-21",
+      "turn": 120,
+      "winner": 0,
+      "victory": "Score",
+      "scores": [
+        {
+          "species": "kith",
+          "score": 2985
+        },
+        {
+          "species": "skethi",
+          "score": 2442
+        },
+        {
+          "species": "hallowfleet",
+          "score": 1923
+        },
+        {
+          "species": "tessit",
+          "score": 1773
+        }
+      ],
+      "hash": "0743b905"
+    },
+    {
+      "seed": "SOAK-22",
+      "turn": 120,
+      "winner": 1,
+      "victory": "Score",
+      "scores": [
+        {
+          "species": "aumaru",
+          "score": 1476
+        },
+        {
+          "species": "skethi",
+          "score": 2612
+        },
+        {
+          "species": "skethi",
+          "score": 120
+        }
+      ],
+      "hash": "0e091857"
+    },
+    {
+      "seed": "SOAK-23",
+      "turn": 120,
+      "winner": 0,
+      "victory": "Score",
+      "scores": [
+        {
+          "species": "abyssals",
+          "score": 3790
+        },
+        {
+          "species": "skethi",
+          "score": 2608
+        }
+      ],
+      "hash": "434709bb"
+    },
+    {
+      "seed": "SOAK-24",
+      "turn": 120,
+      "winner": 1,
+      "victory": "Score",
+      "scores": [
+        {
+          "species": "keth-ra",
+          "score": 2328
+        },
+        {
+          "species": "skethi",
+          "score": 2669
+        },
+        {
+          "species": "hallowfleet",
+          "score": 2193
+        },
+        {
+          "species": "tessit",
+          "score": 648
+        },
+        {
+          "species": "keth-ra",
+          "score": 120
+        }
+      ],
+      "hash": "6a08994a"
+    },
+    {
+      "seed": "SOAK-25",
+      "turn": 120,
+      "winner": 1,
+      "victory": "Score",
+      "scores": [
+        {
+          "species": "seren",
+          "score": 2244
+        },
+        {
+          "species": "skethi",
+          "score": 2413
+        }
+      ],
+      "hash": "ff43599a"
+    }
+  ]
+}

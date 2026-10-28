@@ -1,0 +1,53 @@
+{
+  "asset": "public/assets/species/seren.webp",
+  "model": "meta/muse-image",
+  "prompt": "Portrait artwork for Astralis, a premium grounded science-fiction strategy game.\nOne single species representative, composed centrally and filling most of a square image,\ndistinct silhouette readable at a small icon size. Subject: An aquatic alien with a natural electrical sense, evolved in a twilight sea. A long flexible blue-gray body with an elegant manta-like head, small recessed dark eyes and a broad collar of delicate translucent sensory frills threaded with faint sea-glass bioluminescent channels, fine electrosensory filaments fanning outward, graceful paired swimming limbs gathered below. Intelligent poised presence, beautifully plausible marine biology, no human face or torso, no familiar Earth fish silhouette.\nShared visual direction: realistic detailed painterly concept art, dark midnight-ink\nobservatory-like neutral background with a faint circular instrument halo, soft sea-glass\nteal rim light from the left, warm parchment and restrained amber key light from the right,\nrich tactile materials, dignified expression or intelligent presence, calm optimistic mystery.\nClose portrait or equivalent full organism framing for a nonhumanoid. Consistent sophisticated\nlighting and rendering across a set of 26 species. Original design with no franchise characters.\nNo letters, no labels, no logo, no watermark, no frame, no collage, no multiple portraits,\nno weapons, no visual interface, no Earth flags. Square 1:1 composition.",
+  "seed": null,
+  "api_request": {
+    "model": "meta/muse-image",
+    "prompt": "Portrait artwork for Astralis, a premium grounded science-fiction strategy game.\nOne single species representative, composed centrally and filling most of a square image,\ndistinct silhouette readable at a small icon size. Subject: An aquatic alien with a natural electrical sense, evolved in a twilight sea. A long flexible blue-gray body with an elegant manta-like head, small recessed dark eyes and a broad collar of delicate translucent sensory frills threaded with faint sea-glass bioluminescent channels, fine electrosensory filaments fanning outward, graceful paired swimming limbs gathered below. Intelligent poised presence, beautifully plausible marine biology, no human face or torso, no familiar Earth fish silhouette.\nShared visual direction: realistic detailed painterly concept art, dark midnight-ink\nobservatory-like neutral background with a faint circular instrument halo, soft sea-glass\nteal rim light from the left, warm parchment and restrained amber key light from the right,\nrich tactile materials, dignified expression or intelligent presence, calm optimistic mystery.\nClose portrait or equivalent full organism framing for a nonhumanoid. Consistent sophisticated\nlighting and rendering across a set of 26 species. Original design with no franchise characters.\nNo letters, no labels, no logo, no watermark, no frame, no collage, no multiple portraits,\nno weapons, no visual interface, no Earth flags. Square 1:1 composition.",
+    "size": "1024x1024",
+    "n": 1
+  },
+  "bytes": 116474,
+  "key_usage_before": 196.609253783,
+  "key_usage_after": 196.649253783,
+  "cost_delta_usd": 0.04,
+  "usage": {
+    "prompt_tokens": 365,
+    "completion_tokens": 2795,
+    "total_tokens": 3160,
+    "cost": 0.01,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.01,
+      "upstream_inference_prompt_cost": 0,
+      "upstream_inference_completions_cost": 0.01
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 2795
+    }
+  },
+  "cost_usd": 0.01,
+  "runtime_optimization": {
+    "source": "docs/assets/originals/species/seren.webp",
+    "source_dimensions": [
+      1600,
+      1600
+    ],
+    "source_sha256": "4596409ed028cd89bd71960235a188bcf4c76969c0ff1dc1e6bae39570340912",
+    "width": 768,
+    "height": 768,
+    "operation": "Lanczos downsample and WebP quality88 encoding; no creative edits"
+  },
+  "image_verification": {
+    "complete_decode": "passed",
+    "width": 768,
+    "height": 768,
+    "format": "WEBP"
+  }
+}

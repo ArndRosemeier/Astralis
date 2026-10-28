@@ -1,0 +1,18 @@
+{
+  "options": {
+    "seed": "PRODUCTION-PAIR-120567",
+    "style": "Scholar",
+    "region": "Sol",
+    "turns": 120
+  },
+  "error": "Error: Invalid empire 1",
+  "sourceAtStart": {
+    "engine.ts": "5353d353dedae5d01181beb625ca892fe38891afa480d9d09c94661d19467302",
+    "rules.ts": "9912eae6ff9de61e1962b0f9dd19fa0a7c3b9acaad104437197aaf5357ec877b",
+    "generation.ts": "38cafd9c29ef3cefc44b35493dfb11ccf997b2d2ee3a11ec2f22084acc4a7064",
+    "battle.ts": "29fe04f7a807ec461d28dfb0f30c3a4d3e08a29b25cac0fad3b7a783e6787dfb",
+    "math.ts": "08c22bf692c19a6dba3cbfbe978096fcfa6775803c603adcd1d377bb4c3da94c",
+    "types.ts": "aaf4fb14850e7197b770d7358be74b797a4b0f63b170e6fddd50332ba27b8351",
+    "ai/controller.ts": "81a7e24bb9a680dba9b9a0ed6211b9ac58d5c452f5f7ea6dc6014032dfaff8c7"
+  }
+}

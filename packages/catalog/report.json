@@ -1,0 +1,58 @@
+{
+  "generated": "2026-10-28",
+  "coordinateSystem": "IAU Galactic Cartesian; Sol origin; light-years",
+  "nearbySystems": 343,
+  "extendedSystems": 27506,
+  "nearbyKnownPlanets": 124,
+  "extendedKnownPlanets": 1616,
+  "candidatePlanets": 1,
+  "systemsPerRadiusLy": {
+    "15": 44,
+    "20": 101,
+    "25": 163,
+    "32": 343
+  },
+  "nearbyMultipleSystems": 85,
+  "nearbyBrownDwarfSystems": 76,
+  "sources": {
+    "retrieved": "2026-10-28",
+    "sources": [
+      {
+        "file": "hyg-v41.csv",
+        "url": "https://raw.githubusercontent.com/astronexus/HYG-Database/main/hyg/CURRENT/hygdata_v41.csv",
+        "sha256": "d9f69fd86bbf90a4e4d52b4c5c53eacfa6dfc0bfdef85bfd94f095e0bebe4ebd",
+        "bytes": 33932548
+      },
+      {
+        "file": "nasa-nearby-planets.json",
+        "url": "https://exoplanetarchive.ipac.caltech.edu/TAP/sync?query=select+pl_name%2Chostname%2Cpl_letter%2Cpl_orbsmax%2Cpl_orbper%2Cpl_rade%2Cpl_bmasse%2Cpl_eqt%2Cpl_orbeccen%2Cst_spectype%2Cst_teff%2Cst_mass%2Cst_lum%2Csy_dist%2Cra%2Cdec%2Chip_name%2Chd_name%2Cgaia_dr3_id%2Cdisc_year%2Cdiscoverymethod+from+pscomppars+where+sy_dist+%3C+100&format=json",
+        "sha256": "2cad6103589c3d99eb79a858ec336d7544dc1b6665993bca4cbc764681c3d9f4",
+        "bytes": 813891
+      },
+      {
+        "file": "cns5-updated.csv",
+        "url": "https://dc.g-vo.org/tap/sync?REQUEST=doQuery&LANG=ADQL&QUERY=select+cns5_id%2Cgj_id%2Ccomponent_id%2Cn_components%2Cprimary_flag%2Cgj_system_primary%2Cgaia_dr3_id%2Chip_id%2Cra%2Cdec%2Cepoch%2Cparallax%2Cg_mag_resulting%2Cg_rp_resulting%2Ccns6_system_id%2Cn_planets%2Creference_object_cns5_id%2Cnexa_id+from+cns5update.main&FORMAT=csv&MAXREC=10000",
+        "sha256": "3a7d33b859eeb76392024f09f386a7fc520b8230810a9507299cf79f88ef6387",
+        "bytes": 864473
+      },
+      {
+        "file": "tenpc-v2.csv",
+        "url": "https://dc.g-vo.org/tap/sync?REQUEST=doQuery&LANG=ADQL&QUERY=select+nb_obj%2Cnb_sys%2Csystem_name%2Cobj_cat%2Cobj_name%2Cra%2Cdec%2Cepoch%2Cparallax%2Csp_type%2Ccommon_name%2Cgj%2Chd%2Chip%2Cgaia_edr3%2Cexoplanet_count%2Ccomment+from+tenpc.main&FORMAT=csv&MAXREC=1000",
+        "sha256": "f0f72b8528403efa922c114100a8b0608cd0710a57fc70446aa3d1d4bc5927df",
+        "bytes": 78121
+      },
+      {
+        "file": "dwarf-calibration.txt",
+        "url": "https://www.pas.rochester.edu/~emamajek/EEM_dwarf_UBVIJHK_colors_Teff.txt",
+        "sha256": "1de2edeec17bb3346e0e4e70b999de5ee29947df38474e64cddb7cfacc164b7f",
+        "bytes": 55680
+      },
+      {
+        "file": "nasa-status.json",
+        "url": "https://exoplanetarchive.ipac.caltech.edu/TAP/sync?query=select+pl_name%2Cpl_controv_flag+from+pscomppars+where+sy_dist+%3C+100&format=json",
+        "sha256": "881887e4f13e192f749947479767e048afb3c56a7df85042e11253238cdfcd58",
+        "bytes": 78943
+      }
+    ]
+  }
+}

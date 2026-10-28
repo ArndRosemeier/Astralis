@@ -1,0 +1,5610 @@
+{
+  "schemaVersion": 1,
+  "method": "paired-seed reduced 4X economy/expansion/conflict simulation",
+  "disclaimer": "Research calibration only. Production-engine validation is required before declaring release balance.",
+  "baseSeed": 812421,
+  "seedCount": 128,
+  "turnsPerRun": 120,
+  "controllers": [
+    "balanced",
+    "expansionist",
+    "builder",
+    "scholar",
+    "militarist",
+    "trader",
+    "diplomat"
+  ],
+  "ecologicalRegimes": 5,
+  "uniqueSimulationRuns": 84224,
+  "pairedComparisons": 63616,
+  "specialInteractionPairs": 36,
+  "interactionSeeds": 64,
+  "invariantChecks": 100,
+  "elapsedSeconds": 24.003,
+  "measurements": [
+    {
+      "id": "carbon",
+      "name": "Carbon",
+      "category": "frame",
+      "draftCost": 0,
+      "cost": 0,
+      "scorePercent": {
+        "n": 128,
+        "mean": 0,
+        "low": 0,
+        "high": 0
+      },
+      "pairedWinFraction": {
+        "n": 128,
+        "mean": 0.5,
+        "low": 0.5,
+        "high": 0.5
+      },
+      "byController": [
+        {
+          "controller": "balanced",
+          "n": 128,
+          "mean": 0,
+          "low": 0,
+          "high": 0
+        },
+        {
+          "controller": "expansionist",
+          "n": 128,
+          "mean": 0,
+          "low": 0,
+          "high": 0
+        },
+        {
+          "controller": "builder",
+          "n": 128,
+          "mean": 0,
+          "low": 0,
+          "high": 0
+        },
+        {
+          "controller": "scholar",
+          "n": 128,
+          "mean": 0,
+          "low": 0,
+          "high": 0
+        },
+        {
+          "controller": "militarist",
+          "n": 128,
+          "mean": 0,
+          "low": 0,
+          "high": 0
+        },
+        {
+          "controller": "trader",
+          "n": 128,
+          "mean": 0,
+          "low": 0,
+          "high": 0
+        },
+        {
+          "controller": "diplomat",
+          "n": 128,
+          "mean": 0,
+          "low": 0,
+          "high": 0
+        }
+      ],
+      "status": "measured"
+    },
+    {
+      "id": "lithic",
+      "name": "Lithic",
+      "category": "frame",
+      "draftCost": 0,
+      "cost": 4,
+      "scorePercent": {
+        "n": 128,
+        "mean": 20.343247348195842,
+        "low": 18.606056245658003,
+        "high": 22.08043845073368
+      },
+      "pairedWinFraction": {
+        "n": 128,
+        "mean": 0.9832589285714287,
+        "low": 0.9741399253779801,
+        "high": 0.9923779317648773
+      },
+      "byController": [
+        {
+          "controller": "balanced",
+          "n": 128,
+          "mean": 18.04290732326045,
+          "low": 16.005607533877058,
+          "high": 20.080207112643844
+        },
+        {
+          "controller": "expansionist",
+          "n": 128,
+          "mean": 22.387891230055057,
+          "low": 20.01535698700189,
+          "high": 24.760425473108224
+        },
+        {
+          "controller": "builder",
+          "n": 128,
+          "mean": 25.103266004000677,
+          "low": 22.396978672201787,
+          "high": 27.809553335799567
+        },
+        {
+          "controller": "scholar",
+          "n": 128,
+          "mean": 12.288359782366008,
+          "low": 11.075450629327927,
+          "high": 13.50126893540409
+        },
+        {
+          "controller": "militarist",
+          "n": 128,
+          "mean": 29.004165888949917,
+          "low": 25.676346055149672,
+          "high": 32.33198572275016
+        },
+        {
+          "controller": "trader",
+          "n": 128,
+          "mean": 16.997595390358583,
+          "low": 14.890328523986113,
+          "high": 19.104862256731053
+        },
+        {
+          "controller": "diplomat",
+          "n": 128,
+          "mean": 18.578545818380093,
+          "low": 15.462195963093855,
+          "high": 21.69489567366633
+        }
+      ],
+      "status": "measured"
+    },
+    {
+      "id": "synthetic",
+      "name": "Synthetic",
+      "category": "frame",
+      "draftCost": 3,
+      "cost": 1,
+      "scorePercent": {
+        "n": 128,
+        "mean": -68.8225934925455,
+        "low": -69.56005988231824,
+        "high": -68.08512710277274
+      },
+      "pairedWinFraction": {
+        "n": 128,
+        "mean": 0,
+        "low": 0,
+        "high": 0
+      },
+      "byController": [
+        {
+          "controller": "balanced",
+          "n": 128,
+          "mean": -72.87721077345797,
+          "low": -73.60115297618506,
+          "high": -72.15326857073089
+        },
+        {
+          "controller": "expansionist",
+          "n": 128,
+          "mean": -59.81985774248895,
+          "low": -60.61036951548404,
+          "high": -59.02934596949386
+        },
+        {
+          "controller": "builder",
+          "n": 128,
+          "mean": -64.49275076756695,
+          "low": -65.36123908316361,
+          "high": -63.62426245197029
+        },
+        {
+          "controller": "scholar",
+          "n": 128,
+          "mean": -82.05408645363494,
+          "low": -82.70650678578812,
+          "high": -81.40166612148175
+        },
+        {
+          "controller": "militarist",
+          "n": 128,
+          "mean": -61.267313533396916,
+          "low": -62.50051268765639,
+          "high": -60.03411437913744
+        },
+        {
+          "controller": "trader",
+          "n": 128,
+          "mean": -69.27882258949951,
+          "low": -70.35791976068887,
+          "high": -68.19972541831015
+        },
+        {
+          "controller": "diplomat",
+          "n": 128,
+          "mean": -71.96811258777326,
+          "low": -73.0542042019216,
+          "high": -70.88202097362492
+        }
+      ],
+      "status": "measured"
+    },
+    {
+      "id": "temperature-narrow",
+      "name": "Narrow thermal tolerance",
+      "category": "tolerance",
+      "draftCost": -2,
+      "cost": 0,
+      "scorePercent": {
+        "n": 128,
+        "mean": -7.001173341739519,
+        "low": -8.240317629050695,
+        "high": -5.762029054428343
+      },
+      "pairedWinFraction": {
+        "n": 128,
+        "mean": 0.200892857142857,
+        "low": 0.17222771362750192,
+        "high": 0.2295580006582121
+      },
+      "byController": [
+        {
+          "controller": "balanced",
+          "n": 128,
+          "mean": -5.936317080675844,
+          "low": -7.61305781492867,
+          "high": -4.259576346423017
+        },
+        {
+          "controller": "expansionist",
+          "n": 128,
+          "mean": -7.420978938789429,
+          "low": -8.870084229882105,
+          "high": -5.971873647696753
+        },
+        {
+          "controller": "builder",
+          "n": 128,
+          "mean": -10.411715815482317,
+          "low": -12.434450581171955,
+          "high": -8.38898104979268
+        },
+        {
+          "controller": "scholar",
+          "n": 128,
+          "mean": -0.625596360205211,
+          "low": -1.3987115756168866,
+          "high": 0.14751885520646446
+        },
+        {
+          "controller": "militarist",
+          "n": 128,
+          "mean": -11.065524464090975,
+          "low": -13.37673605693924,
+          "high": -8.75431287124271
+        },
+        {
+          "controller": "trader",
+          "n": 128,
+          "mean": -6.330997175538916,
+          "low": -8.075933969750631,
+          "high": -4.586060381327202
+        },
+        {
+          "controller": "diplomat",
+          "n": 128,
+          "mean": -7.217083557393909,
+          "low": -8.911497547136895,
+          "high": -5.522669567650923
+        }
+      ],
+      "status": "measured"
+    },
+    {
+      "id": "temperature-wide",
+      "name": "Wide thermal tolerance",
+      "category": "tolerance",
+      "draftCost": 3,
+      "cost": 1,
+      "scorePercent": {
+        "n": 128,
+        "mean": 0.48350484357961737,
+        "low": 0.16115743800744115,
+        "high": 0.8058522491517937
+      },
+      "pairedWinFraction": {
+        "n": 128,
+        "mean": 0.5842633928571429,
+        "low": 0.5566836533338491,
+        "high": 0.6118431323804367
+      },
+      "byController": [
+        {
+          "controller": "balanced",
+          "n": 128,
+          "mean": 0.21052202291470448,
+          "low": -0.24928920835751675,
+          "high": 0.6703332541869257
+        },
+        {
+          "controller": "expansionist",
+          "n": 128,
+          "mean": 1.2752047718673933,
+          "low": 0.5539864049253513,
+          "high": 1.9964231388094353
+        },
+        {
+          "controller": "builder",
+          "n": 128,
+          "mean": 0.6440902343788836,
+          "low": -0.12163868882548767,
+          "high": 1.4098191575832548
+        },
+        {
+          "controller": "scholar",
+          "n": 128,
+          "mean": -0.370674054712073,
+          "low": -0.6738973477707408,
+          "high": -0.06745076165340508
+        },
+        {
+          "controller": "militarist",
+          "n": 128,
+          "mean": 1.0479550418646726,
+          "low": 0.2733967300615606,
+          "high": 1.8225133536677847
+        },
+        {
+          "controller": "trader",
+          "n": 128,
+          "mean": 0.4538204435421488,
+          "low": -0.0673126988813002,
+          "high": 0.9749535859655978
+        },
+        {
+          "controller": "diplomat",
+          "n": 128,
+          "mean": 0.1236154452015921,
+          "low": -0.45321110937952025,
+          "high": 0.7004419997827044
+        }
+      ],
+      "status": "measured"
+    },
+    {
+      "id": "gravity-narrow",
+      "name": "Narrow gravity tolerance",
+      "category": "tolerance",
+      "draftCost": -1,
+      "cost": 0,
+      "scorePercent": {
+        "n": 128,
+        "mean": -13.462530040149417,
+        "low": -14.696679119676656,
+        "high": -12.228380960622179
+      },
+      "pairedWinFraction": {
+        "n": 128,
+        "mean": 0.03292410714285714,
+        "low": 0.015991205104388107,
+        "high": 0.04985700918132617
+      },
+      "byController": [
+        {
+          "controller": "balanced",
+          "n": 128,
+          "mean": -13.429268606530693,
+          "low": -15.05259189754244,
+          "high": -11.805945315518946
+        },
+        {
+          "controller": "expansionist",
+          "n": 128,
+          "mean": -14.579021202885151,
+          "low": -16.072403096560304,
+          "high": -13.085639309209999
+        },
+        {
+          "controller": "builder",
+          "n": 128,
+          "mean": -15.97130094742351,
+          "low": -17.922897998364967,
+          "high": -14.019703896482053
+        },
+        {
+          "controller": "scholar",
+          "n": 128,
+          "mean": -6.712459954264787,
+          "low": -7.698857428471551,
+          "high": -5.726062480058023
+        },
+        {
+          "controller": "militarist",
+          "n": 128,
+          "mean": -17.284941549265813,
+          "low": -19.042582266460542,
+          "high": -15.527300832071083
+        },
+        {
+          "controller": "trader",
+          "n": 128,
+          "mean": -12.41416304426734,
+          "low": -14.169295332005959,
+          "high": -10.659030756528722
+        },
+        {
+          "controller": "diplomat",
+          "n": 128,
+          "mean": -13.84655497640868,
+          "low": -15.386867503163167,
+          "high": -12.306242449654192
+        }
+      ],
+      "status": "measured"
+    },
+    {
+      "id": "gravity-wide",
+      "name": "Wide gravity tolerance",
+      "category": "tolerance",
+      "draftCost": 2,
+      "cost": 3,
+      "scorePercent": {
+        "n": 128,
+        "mean": 13.520037081510212,
+        "low": 9.414010737664084,
+        "high": 17.626063425356342
+      },
+      "pairedWinFraction": {
+        "n": 128,
+        "mean": 0.9481026785714286,
+        "low": 0.9254012320015369,
+        "high": 0.9708041251413203
+      },
+      "byController": [
+        {
+          "controller": "balanced",
+          "n": 128,
+          "mean": 11.783286415805666,
+          "low": 8.251444474194239,
+          "high": 15.315128357417093
+        },
+        {
+          "controller": "expansionist",
+          "n": 128,
+          "mean": 15.006780457276163,
+          "low": 11.676404931679146,
+          "high": 18.337155982873178
+        },
+        {
+          "controller": "builder",
+          "n": 128,
+          "mean": 14.14218752575243,
+          "low": 10.85506026871321,
+          "high": 17.42931478279165
+        },
+        {
+          "controller": "scholar",
+          "n": 128,
+          "mean": 4.50608861033444,
+          "low": 2.9532859011291768,
+          "high": 6.058891319539703
+        },
+        {
+          "controller": "militarist",
+          "n": 128,
+          "mean": 22.732112833797643,
+          "low": 13.005867633171242,
+          "high": 32.458358034424045
+        },
+        {
+          "controller": "trader",
+          "n": 128,
+          "mean": 13.849604882562016,
+          "low": 9.800088973130393,
+          "high": 17.89912079199364
+        },
+        {
+          "controller": "diplomat",
+          "n": 128,
+          "mean": 12.620198845043143,
+          "low": 7.0537425011048205,
+          "high": 18.186655188981465
+        }
+      ],
+      "status": "measured"
+    },
+    {
+      "id": "amphibious",
+      "name": "Amphibious",
+      "category": "tolerance",
+      "draftCost": 3,
+      "cost": 2,
+      "scorePercent": {
+        "n": 128,
+        "mean": 8.894283056049721,
+        "low": 7.561437756246437,
+        "high": 10.227128355853006
+      },
+      "pairedWinFraction": {
+        "n": 128,
+        "mean": 0.9620535714285715,
+        "low": 0.9463751195487954,
+        "high": 0.9777320233083476
+      },
+      "byController": [
+        {
+          "controller": "balanced",
+          "n": 128,
+          "mean": 9.329830739030056,
+          "low": 7.9099183768808405,
+          "high": 10.749743101179272
+        },
+        {
+          "controller": "expansionist",
+          "n": 128,
+          "mean": 10.111085928235445,
+          "low": 8.65346437345013,
+          "high": 11.56870748302076
+        },
+        {
+          "controller": "builder",
+          "n": 128,
+          "mean": 10.009366417134528,
+          "low": 8.21805668331032,
+          "high": 11.800676150958736
+        },
+        {
+          "controller": "scholar",
+          "n": 128,
+          "mean": 5.744854589415025,
+          "low": 4.644758280115433,
+          "high": 6.844950898714618
+        },
+        {
+          "controller": "militarist",
+          "n": 128,
+          "mean": 10.962999636172901,
+          "low": 9.096962576541465,
+          "high": 12.829036695804337
+        },
+        {
+          "controller": "trader",
+          "n": 128,
+          "mean": 7.6792893270022775,
+          "low": 6.436674569167762,
+          "high": 8.921904084836793
+        },
+        {
+          "controller": "diplomat",
+          "n": 128,
+          "mean": 8.422554755357837,
+          "low": 6.938615035242522,
+          "high": 9.906494475473151
+        }
+      ],
+      "status": "measured"
+    },
+    {
+      "id": "radiation-vulnerable",
+      "name": "Radiation-vulnerable",
+      "category": "tolerance",
+      "draftCost": -2,
+      "cost": -1,
+      "scorePercent": {
+        "n": 128,
+        "mean": -14.748107178392159,
+        "low": -16.545188943632542,
+        "high": -12.951025413151775
+      },
+      "pairedWinFraction": {
+        "n": 128,
+        "mean": 0.02455357142857142,
+        "low": 0.012887622467707584,
+        "high": 0.03621952038943526
+      },
+      "byController": [
+        {
+          "controller": "balanced",
+          "n": 128,
+          "mean": -13.961909169507477,
+          "low": -15.871486197437838,
+          "high": -12.052332141577116
+        },
+        {
+          "controller": "expansionist",
+          "n": 128,
+          "mean": -15.394943030034153,
+          "low": -17.278207157309406,
+          "high": -13.511678902758897
+        },
+        {
+          "controller": "builder",
+          "n": 128,
+          "mean": -15.79618702885892,
+          "low": -18.060465149374725,
+          "high": -13.531908908343116
+        },
+        {
+          "controller": "scholar",
+          "n": 128,
+          "mean": -11.59229194672459,
+          "low": -12.96888036063076,
+          "high": -10.21570353281842
+        },
+        {
+          "controller": "militarist",
+          "n": 128,
+          "mean": -17.546088835197793,
+          "low": -19.91663741207754,
+          "high": -15.175540258318044
+        },
+        {
+          "controller": "trader",
+          "n": 128,
+          "mean": -14.28219764533632,
+          "low": -16.335153084060057,
+          "high": -12.229242206612582
+        },
+        {
+          "controller": "diplomat",
+          "n": 128,
+          "mean": -14.663132593085875,
+          "low": -16.757679994400164,
+          "high": -12.568585191771586
+        }
+      ],
+      "status": "measured"
+    },
+    {
+      "id": "radiation-resistant",
+      "name": "Radiation-resistant",
+      "category": "tolerance",
+      "draftCost": 2,
+      "cost": 2,
+      "scorePercent": {
+        "n": 128,
+        "mean": 9.210417237470098,
+        "low": 7.718095765038868,
+        "high": 10.702738709901329
+      },
+      "pairedWinFraction": {
+        "n": 128,
+        "mean": 0.9386160714285714,
+        "low": 0.91785545563662,
+        "high": 0.9593766872205228
+      },
+      "byController": [
+        {
+          "controller": "balanced",
+          "n": 128,
+          "mean": 8.938486485474957,
+          "low": 7.154184276794764,
+          "high": 10.72278869415515
+        },
+        {
+          "controller": "expansionist",
+          "n": 128,
+          "mean": 10.91947785317098,
+          "low": 8.833066845462465,
+          "high": 13.005888860879494
+        },
+        {
+          "controller": "builder",
+          "n": 128,
+          "mean": 9.570416356467346,
+          "low": 7.2094673826960225,
+          "high": 11.93136533023867
+        },
+        {
+          "controller": "scholar",
+          "n": 128,
+          "mean": 5.410094031095757,
+          "low": 4.465528037537085,
+          "high": 6.354660024654429
+        },
+        {
+          "controller": "militarist",
+          "n": 128,
+          "mean": 11.898405334031889,
+          "low": 9.043275526703656,
+          "high": 14.753535141360121
+        },
+        {
+          "controller": "trader",
+          "n": 128,
+          "mean": 8.287345179261683,
+          "low": 6.507318546919006,
+          "high": 10.06737181160436
+        },
+        {
+          "controller": "diplomat",
+          "n": 128,
+          "mean": 9.448695422788065,
+          "low": 7.682995577588591,
+          "high": 11.214395267987538
+        }
+      ],
+      "status": "measured"
+    },
+    {
+      "id": "hardy",
+      "name": "Hardy",
+      "category": "tolerance",
+      "draftCost": 3,
+      "cost": 1,
+      "scorePercent": {
+        "n": 128,
+        "mean": 2.3103571691356475,
+        "low": 1.7479649436322977,
+        "high": 2.8727493946389973
+      },
+      "pairedWinFraction": {
+        "n": 128,
+        "mean": 0.8197544642857142,
+        "low": 0.7889713157871645,
+        "high": 0.8505376127842639
+      },
+      "byController": [
+        {
+          "controller": "balanced",
+          "n": 128,
+          "mean": 1.1027278790650012,
+          "low": 0.45158709033074707,
+          "high": 1.7538686677992554
+        },
+        {
+          "controller": "expansionist",
+          "n": 128,
+          "mean": 3.1139832861758387,
+          "low": 2.1655741417170398,
+          "high": 4.062392430634638
+        },
+        {
+          "controller": "builder",
+          "n": 128,
+          "mean": 2.2133575851883305,
+          "low": 1.1188969083376377,
+          "high": 3.3078182620390235
+        },
+        {
+          "controller": "scholar",
+          "n": 128,
+          "mean": 1.9314289378946774,
+          "low": 1.4284696231143759,
+          "high": 2.434388252674979
+        },
+        {
+          "controller": "militarist",
+          "n": 128,
+          "mean": 3.705511071750179,
+          "low": 2.033423103464239,
+          "high": 5.377599040036119
+        },
+        {
+          "controller": "trader",
+          "n": 128,
+          "mean": 2.3468645467864415,
+          "low": 1.515210958871603,
+          "high": 3.17851813470128
+        },
+        {
+          "controller": "diplomat",
+          "n": 128,
+          "mean": 1.7586268770890623,
+          "low": 0.9096166797804021,
+          "high": 2.6076370743977226
+        }
+      ],
+      "status": "measured"
+    },
+    {
+      "id": "sealed-metabolism",
+      "name": "Sealed metabolism",
+      "category": "tolerance",
+      "draftCost": 5,
+      "cost": 1,
+      "scorePercent": {
+        "n": 128,
+        "mean": 1.4566921583464927,
+        "low": 0.9537277336050975,
+        "high": 1.9596565830878878
+      },
+      "pairedWinFraction": {
+        "n": 128,
+        "mean": 0.6305803571428572,
+        "low": 0.6005046984662351,
+        "high": 0.6606560158194793
+      },
+      "byController": [
+        {
+          "controller": "balanced",
+          "n": 128,
+          "mean": 1.2958685850737446,
+          "low": 0.4602788674216276,
+          "high": 2.1314583027258616
+        },
+        {
+          "controller": "expansionist",
+          "n": 128,
+          "mean": 2.4039093215003113,
+          "low": 1.593051915222294,
+          "high": 3.2147667277783287
+        },
+        {
+          "controller": "builder",
+          "n": 128,
+          "mean": 2.312685519980875,
+          "low": 1.1448317001910804,
+          "high": 3.4805393397706696
+        },
+        {
+          "controller": "scholar",
+          "n": 128,
+          "mean": -1.3193796570219773,
+          "low": -1.8702799142020499,
+          "high": -0.7684793998419048
+        },
+        {
+          "controller": "militarist",
+          "n": 128,
+          "mean": 2.8438993222985176,
+          "low": 1.6079036803635984,
+          "high": 4.079894964233437
+        },
+        {
+          "controller": "trader",
+          "n": 128,
+          "mean": 2.0146002138115366,
+          "low": 1.1233266452655701,
+          "high": 2.905873782357503
+        },
+        {
+          "controller": "diplomat",
+          "n": 128,
+          "mean": 0.6452618027824316,
+          "low": -0.3656839960105073,
+          "high": 1.6562076015753706
+        }
+      ],
+      "status": "measured"
+    },
+    {
+      "id": "growth-very-slow",
+      "name": "Very slow reproduction",
+      "category": "growth",
+      "draftCost": -4,
+      "cost": 0,
+      "scorePercent": {
+        "n": 128,
+        "mean": -7.650819745901171,
+        "low": -8.092579734593397,
+        "high": -7.209059757208945
+      },
+      "pairedWinFraction": {
+        "n": 128,
+        "mean": 0.09151785714285711,
+        "low": 0.07097893511872486,
+        "high": 0.11205677916698936
+      },
+      "byController": [
+        {
+          "controller": "balanced",
+          "n": 128,
+          "mean": -8.724388757535516,
+          "low": -9.938144211638882,
+          "high": -7.510633303432151
+        },
+        {
+          "controller": "expansionist",
+          "n": 128,
+          "mean": -6.238074494564301,
+          "low": -7.129933971653265,
+          "high": -5.346215017475337
+        },
+        {
+          "controller": "builder",
+          "n": 128,
+          "mean": -8.556847587004304,
+          "low": -9.717644620284485,
+          "high": -7.396050553724123
+        },
+        {
+          "controller": "scholar",
+          "n": 128,
+          "mean": -9.446441055107826,
+          "low": -10.104396082406382,
+          "high": -8.78848602780927
+        },
+        {
+          "controller": "militarist",
+          "n": 128,
+          "mean": -6.811486735104067,
+          "low": -8.206054096074183,
+          "high": -5.4169193741339505
+        },
+        {
+          "controller": "trader",
+          "n": 128,
+          "mean": -5.0069114358032945,
+          "low": -6.364577528320054,
+          "high": -3.649245343286535
+        },
+        {
+          "controller": "diplomat",
+          "n": 128,
+          "mean": -8.771588156188864,
+          "low": -9.78941501421396,
+          "high": -7.753761298163768
+        }
+      ],
+      "status": "measured"
+    },
+    {
+      "id": "growth-slow",
+      "name": "Slow reproduction",
+      "category": "growth",
+      "draftCost": -2,
+      "cost": 0,
+      "scorePercent": {
+        "n": 128,
+        "mean": -2.410453115567475,
+        "low": -2.7783212993367656,
+        "high": -2.0425849317981846
+      },
+      "pairedWinFraction": {
+        "n": 128,
+        "mean": 0.24107142857142835,
+        "low": 0.2105228033333426,
+        "high": 0.2716200538095141
+      },
+      "byController": [
+        {
+          "controller": "balanced",
+          "n": 128,
+          "mean": -2.3002088692388356,
+          "low": -3.368350427634051,
+          "high": -1.2320673108436204
+        },
+        {
+          "controller": "expansionist",
+          "n": 128,
+          "mean": -2.2162120152209788,
+          "low": -3.0102829200550234,
+          "high": -1.422141110386934
+        },
+        {
+          "controller": "builder",
+          "n": 128,
+          "mean": -2.565640755472291,
+          "low": -3.5866800206789913,
+          "high": -1.544601490265591
+        },
+        {
+          "controller": "scholar",
+          "n": 128,
+          "mean": -3.583560157770495,
+          "low": -4.207448159781619,
+          "high": -2.959672155759371
+        },
+        {
+          "controller": "militarist",
+          "n": 128,
+          "mean": -1.8315407540286504,
+          "low": -2.9499322051333587,
+          "high": -0.713149302923942
+        },
+        {
+          "controller": "trader",
+          "n": 128,
+          "mean": -1.1553598467459827,
+          "low": -2.4933112213250244,
+          "high": 0.182591527833059
+        },
+        {
+          "controller": "diplomat",
+          "n": 128,
+          "mean": -3.2206494104950956,
+          "low": -4.097724038293286,
+          "high": -2.3435747826969053
+        }
+      ],
+      "status": "measured"
+    },
+    {
+      "id": "growth-fast",
+      "name": "Fast reproduction",
+      "category": "growth",
+      "draftCost": 3,
+      "cost": 1,
+      "scorePercent": {
+        "n": 128,
+        "mean": 3.390742649099549,
+        "low": 2.9164436928782638,
+        "high": 3.8650416053208345
+      },
+      "pairedWinFraction": {
+        "n": 128,
+        "mean": 0.7812499999999998,
+        "low": 0.7505144711088212,
+        "high": 0.8119855288911784
+      },
+      "byController": [
+        {
+          "controller": "balanced",
+          "n": 128,
+          "mean": 2.849313526637985,
+          "low": 1.9468439559300585,
+          "high": 3.751783097345912
+        },
+        {
+          "controller": "expansionist",
+          "n": 128,
+          "mean": 3.510612385282735,
+          "low": 2.527117619030326,
+          "high": 4.494107151535144
+        },
+        {
+          "controller": "builder",
+          "n": 128,
+          "mean": 3.129276658801791,
+          "low": 1.7692840276048756,
+          "high": 4.489269289998706
+        },
+        {
+          "controller": "scholar",
+          "n": 128,
+          "mean": 4.594088349458318,
+          "low": 3.8838456731585858,
+          "high": 5.304331025758049
+        },
+        {
+          "controller": "militarist",
+          "n": 128,
+          "mean": 3.0725515426166488,
+          "low": 1.6434694503156118,
+          "high": 4.5016336349176855
+        },
+        {
+          "controller": "trader",
+          "n": 128,
+          "mean": 4.239706028715696,
+          "low": 3.133425033747378,
+          "high": 5.345987023684013
+        },
+        {
+          "controller": "diplomat",
+          "n": 128,
+          "mean": 2.339650052183671,
+          "low": 0.9721059513440535,
+          "high": 3.7071941530232886
+        }
+      ],
+      "status": "measured"
+    },
+    {
+      "id": "growth-very-fast",
+      "name": "Very fast reproduction",
+      "category": "growth",
+      "draftCost": 6,
+      "cost": 1,
+      "scorePercent": {
+        "n": 128,
+        "mean": 4.951685733735824,
+        "low": 4.371095458308225,
+        "high": 5.532276009163424
+      },
+      "pairedWinFraction": {
+        "n": 128,
+        "mean": 0.833705357142857,
+        "low": 0.8036296984662348,
+        "high": 0.8637810158194792
+      },
+      "byController": [
+        {
+          "controller": "balanced",
+          "n": 128,
+          "mean": 3.8592898935859723,
+          "low": 2.5807289375933355,
+          "high": 5.137850849578609
+        },
+        {
+          "controller": "expansionist",
+          "n": 128,
+          "mean": 4.915796543153879,
+          "low": 3.815375185111154,
+          "high": 6.016217901196603
+        },
+        {
+          "controller": "builder",
+          "n": 128,
+          "mean": 3.827578456592056,
+          "low": 2.4903117688806544,
+          "high": 5.164845144303458
+        },
+        {
+          "controller": "scholar",
+          "n": 128,
+          "mean": 6.789542893663715,
+          "low": 6.063223370531715,
+          "high": 7.5158624167957155
+        },
+        {
+          "controller": "militarist",
+          "n": 128,
+          "mean": 5.440910988408735,
+          "low": 3.8448632953919946,
+          "high": 7.036958681425475
+        },
+        {
+          "controller": "trader",
+          "n": 128,
+          "mean": 6.073118359820219,
+          "low": 4.732642481599179,
+          "high": 7.4135942380412585
+        },
+        {
+          "controller": "diplomat",
+          "n": 128,
+          "mean": 3.7555630009262075,
+          "low": 2.3595259612934587,
+          "high": 5.151600040558956
+        }
+      ],
+      "status": "measured"
+    },
+    {
+      "id": "lifespan-ephemeral",
+      "name": "Ephemeral",
+      "category": "lifespan",
+      "draftCost": -2,
+      "cost": 0,
+      "scorePercent": {
+        "n": 128,
+        "mean": -0.009830183274213585,
+        "low": -0.027114022950165215,
+        "high": 0.007453656401738045
+      },
+      "pairedWinFraction": {
+        "n": 128,
+        "mean": 0.4955357142857143,
+        "low": 0.4921513041032062,
+        "high": 0.4989201244682224
+      },
+      "byController": [
+        {
+          "controller": "balanced",
+          "n": 128,
+          "mean": 0,
+          "low": 0,
+          "high": 0
+        },
+        {
+          "controller": "expansionist",
+          "n": 128,
+          "mean": 0,
+          "low": 0,
+          "high": 0
+        },
+        {
+          "controller": "builder",
+          "n": 128,
+          "mean": 0,
+          "low": 0,
+          "high": 0
+        },
+        {
+          "controller": "scholar",
+          "n": 128,
+          "mean": -0.06662594084922502,
+          "low": -0.18746154621020886,
+          "high": 0.05420966451175882
+        },
+        {
+          "controller": "militarist",
+          "n": 128,
+          "mean": -0.0021853420702700604,
+          "low": -0.006468612527999364,
+          "high": 0.0020979283874592433
+        },
+        {
+          "controller": "trader",
+          "n": 128,
+          "mean": 0,
+          "low": 0,
+          "high": 0
+        },
+        {
+          "controller": "diplomat",
+          "n": 128,
+          "mean": 0,
+          "low": 0,
+          "high": 0
+        }
+      ],
+      "status": "uncertain"
+    },
+    {
+      "id": "lifespan-short",
+      "name": "Short-lived",
+      "category": "lifespan",
+      "draftCost": -1,
+      "cost": 0,
+      "scorePercent": {
+        "n": 128,
+        "mean": -0.00908730704549187,
+        "low": -0.026362825597358225,
+        "high": 0.008188211506374485
+      },
+      "pairedWinFraction": {
+        "n": 128,
+        "mean": 0.4988839285714286,
+        "low": 0.4962012855514137,
+        "high": 0.5015665715914435
+      },
+      "byController": [
+        {
+          "controller": "balanced",
+          "n": 128,
+          "mean": 0,
+          "low": 0,
+          "high": 0
+        },
+        {
+          "controller": "expansionist",
+          "n": 128,
+          "mean": 0,
+          "low": 0,
+          "high": 0
+        },
+        {
+          "controller": "builder",
+          "n": 128,
+          "mean": 0,
+          "low": 0,
+          "high": 0
+        },
+        {
+          "controller": "scholar",
+          "n": 128,
+          "mean": -0.06142580724817302,
+          "low": -0.18231215097606168,
+          "high": 0.05946053647971562
+        },
+        {
+          "controller": "militarist",
+          "n": 128,
+          "mean": -0.0021853420702700604,
+          "low": -0.006468612527999364,
+          "high": 0.0020979283874592433
+        },
+        {
+          "controller": "trader",
+          "n": 128,
+          "mean": 0,
+          "low": 0,
+          "high": 0
+        },
+        {
+          "controller": "diplomat",
+          "n": 128,
+          "mean": 0,
+          "low": 0,
+          "high": 0
+        }
+      ],
+      "status": "uncertain"
+    },
+    {
+      "id": "lifespan-long",
+      "name": "Long-lived",
+      "category": "lifespan",
+      "draftCost": 2,
+      "cost": 1,
+      "scorePercent": {
+        "n": 128,
+        "mean": 5.0973605325527584,
+        "low": 4.470209352965219,
+        "high": 5.7245117121402975
+      },
+      "pairedWinFraction": {
+        "n": 128,
+        "mean": 0.8392857142857143,
+        "low": 0.8088557249336211,
+        "high": 0.8697157036378075
+      },
+      "byController": [
+        {
+          "controller": "balanced",
+          "n": 128,
+          "mean": 4.649783724975588,
+          "low": 3.4627391028454877,
+          "high": 5.836828347105689
+        },
+        {
+          "controller": "expansionist",
+          "n": 128,
+          "mean": 6.848863918591195,
+          "low": 5.289993724668407,
+          "high": 8.407734112513982
+        },
+        {
+          "controller": "builder",
+          "n": 128,
+          "mean": 7.065091437663073,
+          "low": 5.410755406599813,
+          "high": 8.719427468726332
+        },
+        {
+          "controller": "scholar",
+          "n": 128,
+          "mean": 1.7573079715695081,
+          "low": 1.1155227402797547,
+          "high": 2.3990932028592615
+        },
+        {
+          "controller": "militarist",
+          "n": 128,
+          "mean": 7.366226188044479,
+          "low": 5.790473205291724,
+          "high": 8.941979170797234
+        },
+        {
+          "controller": "trader",
+          "n": 128,
+          "mean": 3.9950187405024034,
+          "low": 2.5294776407068476,
+          "high": 5.460559840297959
+        },
+        {
+          "controller": "diplomat",
+          "n": 128,
+          "mean": 3.999231746523037,
+          "low": 2.612260572583109,
+          "high": 5.386202920462965
+        }
+      ],
+      "status": "measured"
+    },
+    {
+      "id": "lifespan-ancient",
+      "name": "Ancient",
+      "category": "lifespan",
+      "draftCost": 3,
+      "cost": 1,
+      "scorePercent": {
+        "n": 128,
+        "mean": 5.0973605325527584,
+        "low": 4.470209352965219,
+        "high": 5.7245117121402975
+      },
+      "pairedWinFraction": {
+        "n": 128,
+        "mean": 0.8392857142857143,
+        "low": 0.8088557249336211,
+        "high": 0.8697157036378075
+      },
+      "byController": [
+        {
+          "controller": "balanced",
+          "n": 128,
+          "mean": 4.649783724975588,
+          "low": 3.4627391028454877,
+          "high": 5.836828347105689
+        },
+        {
+          "controller": "expansionist",
+          "n": 128,
+          "mean": 6.848863918591195,
+          "low": 5.289993724668407,
+          "high": 8.407734112513982
+        },
+        {
+          "controller": "builder",
+          "n": 128,
+          "mean": 7.065091437663073,
+          "low": 5.410755406599813,
+          "high": 8.719427468726332
+        },
+        {
+          "controller": "scholar",
+          "n": 128,
+          "mean": 1.7573079715695081,
+          "low": 1.1155227402797547,
+          "high": 2.3990932028592615
+        },
+        {
+          "controller": "militarist",
+          "n": 128,
+          "mean": 7.366226188044479,
+          "low": 5.790473205291724,
+          "high": 8.941979170797234
+        },
+        {
+          "controller": "trader",
+          "n": 128,
+          "mean": 3.9950187405024034,
+          "low": 2.5294776407068476,
+          "high": 5.460559840297959
+        },
+        {
+          "controller": "diplomat",
+          "n": 128,
+          "mean": 3.999231746523037,
+          "low": 2.612260572583109,
+          "high": 5.386202920462965
+        }
+      ],
+      "status": "measured"
+    },
+    {
+      "id": "rigid",
+      "name": "Rigid science",
+      "category": "science",
+      "draftCost": -3,
+      "cost": 0,
+      "scorePercent": {
+        "n": 128,
+        "mean": -2.203822876418037,
+        "low": -2.3356793193871828,
+        "high": -2.071966433448891
+      },
+      "pairedWinFraction": {
+        "n": 128,
+        "mean": 0.06250000000000004,
+        "low": 0.04674005126112502,
+        "high": 0.07825994873887507
+      },
+      "byController": [
+        {
+          "controller": "balanced",
+          "n": 128,
+          "mean": -2.1606060353726098,
+          "low": -2.4751717171608325,
+          "high": -1.846040353584387
+        },
+        {
+          "controller": "expansionist",
+          "n": 128,
+          "mean": -2.226537321964341,
+          "low": -2.566337262092002,
+          "high": -1.8867373818366795
+        },
+        {
+          "controller": "builder",
+          "n": 128,
+          "mean": -2.3911099699673346,
+          "low": -2.6601582177910266,
+          "high": -2.1220617221436426
+        },
+        {
+          "controller": "scholar",
+          "n": 128,
+          "mean": -3.026369928478698,
+          "low": -3.272069487575925,
+          "high": -2.7806703693814705
+        },
+        {
+          "controller": "militarist",
+          "n": 128,
+          "mean": -2.317444125629592,
+          "low": -2.6583029860627705,
+          "high": -1.9765852651964138
+        },
+        {
+          "controller": "trader",
+          "n": 128,
+          "mean": -1.4140219027241567,
+          "low": -1.9015738297013252,
+          "high": -0.9264699757469883
+        },
+        {
+          "controller": "diplomat",
+          "n": 128,
+          "mean": -1.890670850789534,
+          "low": -2.1619217041884182,
+          "high": -1.6194199973906496
+        }
+      ],
+      "status": "measured"
+    },
+    {
+      "id": "creative",
+      "name": "Creative science",
+      "category": "science",
+      "draftCost": 6,
+      "cost": 1,
+      "scorePercent": {
+        "n": 128,
+        "mean": 3.877027274707092,
+        "low": 3.6353113230817997,
+        "high": 4.118743226332384
+      },
+      "pairedWinFraction": {
+        "n": 128,
+        "mean": 0.9363839285714288,
+        "low": 0.919427400703013,
+        "high": 0.9533404564398447
+      },
+      "byController": [
+        {
+          "controller": "balanced",
+          "n": 128,
+          "mean": 3.1314565538971326,
+          "low": 2.6904893189936474,
+          "high": 3.572423788800618
+        },
+        {
+          "controller": "expansionist",
+          "n": 128,
+          "mean": 4.4753329237127915,
+          "low": 3.870531072760803,
+          "high": 5.0801347746647805
+        },
+        {
+          "controller": "builder",
+          "n": 128,
+          "mean": 3.6531029514076203,
+          "low": 2.7874238119759682,
+          "high": 4.518782090839272
+        },
+        {
+          "controller": "scholar",
+          "n": 128,
+          "mean": 5.518334836249245,
+          "low": 5.146853550156378,
+          "high": 5.889816122342112
+        },
+        {
+          "controller": "militarist",
+          "n": 128,
+          "mean": 4.1214683919524635,
+          "low": 3.40762276971044,
+          "high": 4.835314014194487
+        },
+        {
+          "controller": "trader",
+          "n": 128,
+          "mean": 2.9221884033039864,
+          "low": 2.5161415484888323,
+          "high": 3.3282352581191406
+        },
+        {
+          "controller": "diplomat",
+          "n": 128,
+          "mean": 3.3173068624264017,
+          "low": 2.622708248075288,
+          "high": 4.011905476777516
+        }
+      ],
+      "status": "measured"
+    },
+    {
+      "id": "origin-standard",
+      "name": "Standard homeworld",
+      "category": "origin",
+      "draftCost": 0,
+      "cost": 0,
+      "scorePercent": {
+        "n": 128,
+        "mean": 0,
+        "low": 0,
+        "high": 0
+      },
+      "pairedWinFraction": {
+        "n": 128,
+        "mean": 0.5,
+        "low": 0.5,
+        "high": 0.5
+      },
+      "byController": [
+        {
+          "controller": "balanced",
+          "n": 128,
+          "mean": 0,
+          "low": 0,
+          "high": 0
+        },
+        {
+          "controller": "expansionist",
+          "n": 128,
+          "mean": 0,
+          "low": 0,
+          "high": 0
+        },
+        {
+          "controller": "builder",
+          "n": 128,
+          "mean": 0,
+          "low": 0,
+          "high": 0
+        },
+        {
+          "controller": "scholar",
+          "n": 128,
+          "mean": 0,
+          "low": 0,
+          "high": 0
+        },
+        {
+          "controller": "militarist",
+          "n": 128,
+          "mean": 0,
+          "low": 0,
+          "high": 0
+        },
+        {
+          "controller": "trader",
+          "n": 128,
+          "mean": 0,
+          "low": 0,
+          "high": 0
+        },
+        {
+          "controller": "diplomat",
+          "n": 128,
+          "mean": 0,
+          "low": 0,
+          "high": 0
+        }
+      ],
+      "status": "measured"
+    },
+    {
+      "id": "origin-large",
+      "name": "Large homeworld",
+      "category": "origin",
+      "draftCost": 2,
+      "cost": 3,
+      "scorePercent": {
+        "n": 128,
+        "mean": 15.428014243687839,
+        "low": 12.957822457662964,
+        "high": 17.898206029712714
+      },
+      "pairedWinFraction": {
+        "n": 128,
+        "mean": 0.9720982142857142,
+        "low": 0.9613133541831861,
+        "high": 0.9828830743882423
+      },
+      "byController": [
+        {
+          "controller": "balanced",
+          "n": 128,
+          "mean": 13.50044426402632,
+          "low": 10.95536925227881,
+          "high": 16.04551927577383
+        },
+        {
+          "controller": "expansionist",
+          "n": 128,
+          "mean": 10.238199711801684,
+          "low": 8.503574478536951,
+          "high": 11.972824945066417
+        },
+        {
+          "controller": "builder",
+          "n": 128,
+          "mean": 14.560618750740879,
+          "low": 11.920789641013258,
+          "high": 17.2004478604685
+        },
+        {
+          "controller": "scholar",
+          "n": 128,
+          "mean": 15.942582814573194,
+          "low": 14.742205259223132,
+          "high": 17.142960369923255
+        },
+        {
+          "controller": "militarist",
+          "n": 128,
+          "mean": 18.142161988006848,
+          "low": 11.720361739467972,
+          "high": 24.563962236545724
+        },
+        {
+          "controller": "trader",
+          "n": 128,
+          "mean": 19.824360626685596,
+          "low": 17.724762423109368,
+          "high": 21.923958830261824
+        },
+        {
+          "controller": "diplomat",
+          "n": 128,
+          "mean": 15.787731549980347,
+          "low": 11.834817061054531,
+          "high": 19.74064603890616
+        }
+      ],
+      "status": "measured"
+    },
+    {
+      "id": "origin-small",
+      "name": "Small homeworld",
+      "category": "origin",
+      "draftCost": -1,
+      "cost": -1,
+      "scorePercent": {
+        "n": 128,
+        "mean": -17.802964689258705,
+        "low": -18.92902399673216,
+        "high": -16.67690538178525
+      },
+      "pairedWinFraction": {
+        "n": 128,
+        "mean": 0.011160714285714284,
+        "low": 0.003176239007247887,
+        "high": 0.01914518956418068
+      },
+      "byController": [
+        {
+          "controller": "balanced",
+          "n": 128,
+          "mean": -16.95694153792759,
+          "low": -18.5528395473122,
+          "high": -15.361043528542982
+        },
+        {
+          "controller": "expansionist",
+          "n": 128,
+          "mean": -12.26240306124516,
+          "low": -13.582578679808158,
+          "high": -10.942227442682164
+        },
+        {
+          "controller": "builder",
+          "n": 128,
+          "mean": -20.3821485277237,
+          "low": -22.75914647641048,
+          "high": -18.005150579036922
+        },
+        {
+          "controller": "scholar",
+          "n": 128,
+          "mean": -21.421924815917016,
+          "low": -22.944110021543406,
+          "high": -19.899739610290627
+        },
+        {
+          "controller": "militarist",
+          "n": 128,
+          "mean": -15.251914937153439,
+          "low": -16.876555628890284,
+          "high": -13.627274245416595
+        },
+        {
+          "controller": "trader",
+          "n": 128,
+          "mean": -18.69586102629704,
+          "low": -20.307179679810474,
+          "high": -17.08454237278361
+        },
+        {
+          "controller": "diplomat",
+          "n": 128,
+          "mean": -19.64955891854702,
+          "low": -21.134293733625256,
+          "high": -18.16482410346878
+        }
+      ],
+      "status": "measured"
+    },
+    {
+      "id": "origin-rich",
+      "name": "Rich homeworld",
+      "category": "origin",
+      "draftCost": 2,
+      "cost": 1,
+      "scorePercent": {
+        "n": 128,
+        "mean": 6.411849706665156,
+        "low": 5.775061387913437,
+        "high": 7.048638025416874
+      },
+      "pairedWinFraction": {
+        "n": 128,
+        "mean": 0.8035714285714282,
+        "low": 0.7726696283027946,
+        "high": 0.8344732288400617
+      },
+      "byController": [
+        {
+          "controller": "balanced",
+          "n": 128,
+          "mean": 4.347802394684293,
+          "low": 3.2237768794127906,
+          "high": 5.471827909955795
+        },
+        {
+          "controller": "expansionist",
+          "n": 128,
+          "mean": 3.5556422248107578,
+          "low": 2.486158213241035,
+          "high": 4.62512623638048
+        },
+        {
+          "controller": "builder",
+          "n": 128,
+          "mean": 2.8153832226545785,
+          "low": 1.284295722199389,
+          "high": 4.346470723109768
+        },
+        {
+          "controller": "scholar",
+          "n": 128,
+          "mean": 15.55365696401873,
+          "low": 14.75332788987806,
+          "high": 16.3539860381594
+        },
+        {
+          "controller": "militarist",
+          "n": 128,
+          "mean": 3.504603814630184,
+          "low": 2.0211024052942017,
+          "high": 4.9881052239661665
+        },
+        {
+          "controller": "trader",
+          "n": 128,
+          "mean": 8.656330554626601,
+          "low": 7.0467664213113315,
+          "high": 10.265894687941872
+        },
+        {
+          "controller": "diplomat",
+          "n": 128,
+          "mean": 6.4495287712309475,
+          "low": 4.793133957086076,
+          "high": 8.10592358537582
+        }
+      ],
+      "status": "measured"
+    },
+    {
+      "id": "origin-poor",
+      "name": "Poor homeworld",
+      "category": "origin",
+      "draftCost": -2,
+      "cost": 0,
+      "scorePercent": {
+        "n": 128,
+        "mean": -3.615995539506249,
+        "low": -4.04381668414199,
+        "high": -3.188174394870508
+      },
+      "pairedWinFraction": {
+        "n": 128,
+        "mean": 0.2499999999999998,
+        "low": 0.21909819973136627,
+        "high": 0.2809018002686334
+      },
+      "byController": [
+        {
+          "controller": "balanced",
+          "n": 128,
+          "mean": -1.8836528353060125,
+          "low": -3.007797227237152,
+          "high": -0.7595084433748729
+        },
+        {
+          "controller": "expansionist",
+          "n": 128,
+          "mean": -1.3626633532265675,
+          "low": -2.057271488320116,
+          "high": -0.6680552181330189
+        },
+        {
+          "controller": "builder",
+          "n": 128,
+          "mean": -2.481490712351093,
+          "low": -3.4811419353182047,
+          "high": -1.4818394893839817
+        },
+        {
+          "controller": "scholar",
+          "n": 128,
+          "mean": -10.009821997604224,
+          "low": -10.649311440214948,
+          "high": -9.3703325549935
+        },
+        {
+          "controller": "militarist",
+          "n": 128,
+          "mean": -0.5362704928979924,
+          "low": -1.6195589749226469,
+          "high": 0.547017989126662
+        },
+        {
+          "controller": "trader",
+          "n": 128,
+          "mean": -3.826071266422193,
+          "low": -5.051371804418886,
+          "high": -2.6007707284255
+        },
+        {
+          "controller": "diplomat",
+          "n": 128,
+          "mean": -5.211998118735645,
+          "low": -6.284763822123566,
+          "high": -4.139232415347723
+        }
+      ],
+      "status": "measured"
+    },
+    {
+      "id": "origin-twin",
+      "name": "Twin settlement",
+      "category": "origin",
+      "draftCost": 3,
+      "cost": 3,
+      "scorePercent": {
+        "n": 128,
+        "mean": 13.271124747277318,
+        "low": 11.648238823555154,
+        "high": 14.894010670999482
+      },
+      "pairedWinFraction": {
+        "n": 128,
+        "mean": 0.9709821428571428,
+        "low": 0.9584204104502256,
+        "high": 0.98354387526406
+      },
+      "byController": [
+        {
+          "controller": "balanced",
+          "n": 128,
+          "mean": 11.779332150696442,
+          "low": 10.017809388042343,
+          "high": 13.540854913350541
+        },
+        {
+          "controller": "expansionist",
+          "n": 128,
+          "mean": 9.862909443426956,
+          "low": 7.714466993764369,
+          "high": 12.011351893089543
+        },
+        {
+          "controller": "builder",
+          "n": 128,
+          "mean": 12.046709507879262,
+          "low": 10.347831292416492,
+          "high": 13.745587723342032
+        },
+        {
+          "controller": "scholar",
+          "n": 128,
+          "mean": 13.795416273905092,
+          "low": 12.78283538401398,
+          "high": 14.807997163796204
+        },
+        {
+          "controller": "militarist",
+          "n": 128,
+          "mean": 14.618304181478653,
+          "low": 11.091745420570714,
+          "high": 18.14486294238659
+        },
+        {
+          "controller": "trader",
+          "n": 128,
+          "mean": 16.98195191836589,
+          "low": 15.31901964344465,
+          "high": 18.64488419328713
+        },
+        {
+          "controller": "diplomat",
+          "n": 128,
+          "mean": 13.81324975518891,
+          "low": 10.584603962858097,
+          "high": 17.041895547519722
+        }
+      ],
+      "status": "measured"
+    },
+    {
+      "id": "origin-vault",
+      "name": "Gardener vault",
+      "category": "origin",
+      "draftCost": 4,
+      "cost": 1,
+      "scorePercent": {
+        "n": 128,
+        "mean": 1.1094704908872124,
+        "low": 1.0156716323217312,
+        "high": 1.2032693494526936
+      },
+      "pairedWinFraction": {
+        "n": 128,
+        "mean": 0.9832589285714286,
+        "low": 0.9736255548875385,
+        "high": 0.9928923022553187
+      },
+      "byController": [
+        {
+          "controller": "balanced",
+          "n": 128,
+          "mean": 1.0896336674558573,
+          "low": 1.0657671293373512,
+          "high": 1.1135002055743635
+        },
+        {
+          "controller": "expansionist",
+          "n": 128,
+          "mean": 0.8436034416504222,
+          "low": 0.7140259592511036,
+          "high": 0.9731809240497409
+        },
+        {
+          "controller": "builder",
+          "n": 128,
+          "mean": 0.8581186304830474,
+          "low": 0.3474566021803166,
+          "high": 1.368780658785778
+        },
+        {
+          "controller": "scholar",
+          "n": 128,
+          "mean": 1.7157672479577013,
+          "low": 1.5017058239945178,
+          "high": 1.9298286719208848
+        },
+        {
+          "controller": "militarist",
+          "n": 128,
+          "mean": 0.6178891235182956,
+          "low": 0.44362125930332785,
+          "high": 0.7921569877332634
+        },
+        {
+          "controller": "trader",
+          "n": 128,
+          "mean": 1.3810880352450279,
+          "low": 1.3340657465488936,
+          "high": 1.428110323941162
+        },
+        {
+          "controller": "diplomat",
+          "n": 128,
+          "mean": 1.2601932899001362,
+          "low": 1.2097708444787718,
+          "high": 1.3106157353215007
+        }
+      ],
+      "status": "measured"
+    },
+    {
+      "id": "origin-nomad",
+      "name": "Nomad fleet",
+      "category": "origin",
+      "draftCost": 0,
+      "cost": 0,
+      "scorePercent": {
+        "n": 128,
+        "mean": -1.2249318471929875,
+        "low": -2.312687130565756,
+        "high": -0.13717656382021914
+      },
+      "pairedWinFraction": {
+        "n": 128,
+        "mean": 0.34598214285714285,
+        "low": 0.31674694613534526,
+        "high": 0.37521733957894043
+      },
+      "byController": [
+        {
+          "controller": "balanced",
+          "n": 128,
+          "mean": -5.669003117411151,
+          "low": -7.359623614670867,
+          "high": -3.978382620151435
+        },
+        {
+          "controller": "expansionist",
+          "n": 128,
+          "mean": -6.327702957742582,
+          "low": -7.844574797774146,
+          "high": -4.810831117711017
+        },
+        {
+          "controller": "builder",
+          "n": 128,
+          "mean": -9.545234636501032,
+          "low": -11.916817640787874,
+          "high": -7.17365163221419
+        },
+        {
+          "controller": "scholar",
+          "n": 128,
+          "mean": 18.08713154815767,
+          "low": 15.906176456300912,
+          "high": 20.26808664001443
+        },
+        {
+          "controller": "militarist",
+          "n": 128,
+          "mean": -5.985543193845604,
+          "low": -8.606932925303873,
+          "high": -3.3641534623873364
+        },
+        {
+          "controller": "trader",
+          "n": 128,
+          "mean": 2.179366899311836,
+          "low": 0.07062008321117075,
+          "high": 4.288113715412502
+        },
+        {
+          "controller": "diplomat",
+          "n": 128,
+          "mean": -1.3135374723200446,
+          "low": -3.2643944465613215,
+          "high": 0.6373195019212323
+        }
+      ],
+      "status": "measured"
+    },
+    {
+      "id": "subterranean",
+      "name": "Subterranean",
+      "category": "special",
+      "draftCost": 3,
+      "cost": 3,
+      "scorePercent": {
+        "n": 128,
+        "mean": 17.986422777964897,
+        "low": 16.309977984054555,
+        "high": 19.66286757187524
+      },
+      "pairedWinFraction": {
+        "n": 128,
+        "mean": 0.9765625000000001,
+        "low": 0.9646235984250255,
+        "high": 0.9885014015749747
+      },
+      "byController": [
+        {
+          "controller": "balanced",
+          "n": 128,
+          "mean": 17.547562916567564,
+          "low": 15.57843346181554,
+          "high": 19.51669237131959
+        },
+        {
+          "controller": "expansionist",
+          "n": 128,
+          "mean": 21.26469207688336,
+          "low": 18.92492552976447,
+          "high": 23.604458624002252
+        },
+        {
+          "controller": "builder",
+          "n": 128,
+          "mean": 18.50337049020446,
+          "low": 15.974437378862595,
+          "high": 21.032303601546325
+        },
+        {
+          "controller": "scholar",
+          "n": 128,
+          "mean": 14.235968242349752,
+          "low": 12.992199998526981,
+          "high": 15.479736486172524
+        },
+        {
+          "controller": "militarist",
+          "n": 128,
+          "mean": 21.631608246285513,
+          "low": 18.527755336830296,
+          "high": 24.73546115574073
+        },
+        {
+          "controller": "trader",
+          "n": 128,
+          "mean": 15.778633417908,
+          "low": 13.634019157982946,
+          "high": 17.923247677833054
+        },
+        {
+          "controller": "diplomat",
+          "n": 128,
+          "mean": 16.94312405555562,
+          "low": 14.961584643814449,
+          "high": 18.924663467296792
+        }
+      ],
+      "status": "measured"
+    },
+    {
+      "id": "photosynthetic",
+      "name": "Photosynthetic",
+      "category": "special",
+      "draftCost": 2,
+      "cost": 1,
+      "scorePercent": {
+        "n": 128,
+        "mean": -4.561188594001625,
+        "low": -5.576461299732825,
+        "high": -3.5459158882704247
+      },
+      "pairedWinFraction": {
+        "n": 128,
+        "mean": 0.20982142857142844,
+        "low": 0.16303506223674558,
+        "high": 0.2566077949061113
+      },
+      "byController": [
+        {
+          "controller": "balanced",
+          "n": 128,
+          "mean": -6.556503498396888,
+          "low": -7.531492660332539,
+          "high": -5.581514336461238
+        },
+        {
+          "controller": "expansionist",
+          "n": 128,
+          "mean": -5.277011606689483,
+          "low": -6.490427703760403,
+          "high": -4.063595509618564
+        },
+        {
+          "controller": "builder",
+          "n": 128,
+          "mean": -3.9174158210625976,
+          "low": -5.522167803530377,
+          "high": -2.312663838594818
+        },
+        {
+          "controller": "scholar",
+          "n": 128,
+          "mean": -2.284372442311163,
+          "low": -3.206817628986644,
+          "high": -1.3619272556356818
+        },
+        {
+          "controller": "militarist",
+          "n": 128,
+          "mean": -3.884614894458266,
+          "low": -5.869630215005046,
+          "high": -1.899599573911487
+        },
+        {
+          "controller": "trader",
+          "n": 128,
+          "mean": -4.1651523396416295,
+          "low": -5.454860265238454,
+          "high": -2.8754444140448046
+        },
+        {
+          "controller": "diplomat",
+          "n": 128,
+          "mean": -5.843249555451348,
+          "low": -7.083076604317374,
+          "high": -4.603422506585322
+        }
+      ],
+      "status": "measured"
+    },
+    {
+      "id": "spore-borne",
+      "name": "Spore-borne",
+      "category": "special",
+      "draftCost": 3,
+      "cost": 2,
+      "scorePercent": {
+        "n": 128,
+        "mean": 12.695536135938935,
+        "low": 11.880060956308661,
+        "high": 13.51101131556921
+      },
+      "pairedWinFraction": {
+        "n": 128,
+        "mean": 0.8850446428571426,
+        "low": 0.8611770986993534,
+        "high": 0.9089121870149317
+      },
+      "byController": [
+        {
+          "controller": "balanced",
+          "n": 128,
+          "mean": 7.388964764463841,
+          "low": 6.287529413474502,
+          "high": 8.49040011545318
+        },
+        {
+          "controller": "expansionist",
+          "n": 128,
+          "mean": 2.907507416094935,
+          "low": 1.9947112063052514,
+          "high": 3.820303625884618
+        },
+        {
+          "controller": "builder",
+          "n": 128,
+          "mean": 5.734584982090637,
+          "low": 4.426647845328904,
+          "high": 7.042522118852371
+        },
+        {
+          "controller": "scholar",
+          "n": 128,
+          "mean": 37.20340301993641,
+          "low": 35.074460428809395,
+          "high": 39.332345611063424
+        },
+        {
+          "controller": "militarist",
+          "n": 128,
+          "mean": 5.847964860511087,
+          "low": 4.367000513590303,
+          "high": 7.328929207431872
+        },
+        {
+          "controller": "trader",
+          "n": 128,
+          "mean": 17.930997678562925,
+          "low": 16.190367618714703,
+          "high": 19.671627738411146
+        },
+        {
+          "controller": "diplomat",
+          "n": 128,
+          "mean": 11.855330229912663,
+          "low": 10.19266504646826,
+          "high": 13.517995413357067
+        }
+      ],
+      "status": "measured"
+    },
+    {
+      "id": "hive-mind",
+      "name": "Hive mind",
+      "category": "special",
+      "draftCost": 4,
+      "cost": 4,
+      "scorePercent": {
+        "n": 128,
+        "mean": 20.663009987128344,
+        "low": 19.42121814220173,
+        "high": 21.904801832054957
+      },
+      "pairedWinFraction": {
+        "n": 128,
+        "mean": 0.9854910714285714,
+        "low": 0.9773685797654837,
+        "high": 0.993613563091659
+      },
+      "byController": [
+        {
+          "controller": "balanced",
+          "n": 128,
+          "mean": 18.620752788178695,
+          "low": 16.805449023461087,
+          "high": 20.436056552896304
+        },
+        {
+          "controller": "expansionist",
+          "n": 128,
+          "mean": 18.521906373801777,
+          "low": 16.902475362839645,
+          "high": 20.141337384763908
+        },
+        {
+          "controller": "builder",
+          "n": 128,
+          "mean": 21.347772368797052,
+          "low": 19.586542312621628,
+          "high": 23.109002424972477
+        },
+        {
+          "controller": "scholar",
+          "n": 128,
+          "mean": 18.091882817157128,
+          "low": 17.120048530248535,
+          "high": 19.06371710406572
+        },
+        {
+          "controller": "militarist",
+          "n": 128,
+          "mean": 28.391212788182937,
+          "low": 23.5277807078519,
+          "high": 33.25464486851398
+        },
+        {
+          "controller": "trader",
+          "n": 128,
+          "mean": 20.127082402094924,
+          "low": 17.918050048301005,
+          "high": 22.336114755888843
+        },
+        {
+          "controller": "diplomat",
+          "n": 128,
+          "mean": 19.540460371685917,
+          "low": 17.623845501049527,
+          "high": 21.457075242322308
+        }
+      ],
+      "status": "measured"
+    },
+    {
+      "id": "terraformers",
+      "name": "Terraformers",
+      "category": "special",
+      "draftCost": 3,
+      "cost": 2,
+      "scorePercent": {
+        "n": 128,
+        "mean": 10.45192126534383,
+        "low": 9.781265375343509,
+        "high": 11.12257715534415
+      },
+      "pairedWinFraction": {
+        "n": 128,
+        "mean": 0.9771205357142857,
+        "low": 0.9670647217553134,
+        "high": 0.987176349673258
+      },
+      "byController": [
+        {
+          "controller": "balanced",
+          "n": 128,
+          "mean": 10.654915561292169,
+          "low": 9.676328260258805,
+          "high": 11.633502862325534
+        },
+        {
+          "controller": "expansionist",
+          "n": 128,
+          "mean": 11.213039439158859,
+          "low": 10.216707796049738,
+          "high": 12.20937108226798
+        },
+        {
+          "controller": "builder",
+          "n": 128,
+          "mean": 12.169894850340429,
+          "low": 10.954624762564874,
+          "high": 13.385164938115983
+        },
+        {
+          "controller": "scholar",
+          "n": 128,
+          "mean": 4.202007161445993,
+          "low": 3.571187588201664,
+          "high": 4.832826734690321
+        },
+        {
+          "controller": "militarist",
+          "n": 128,
+          "mean": 13.367029790488228,
+          "low": 11.846834442429822,
+          "high": 14.887225138546635
+        },
+        {
+          "controller": "trader",
+          "n": 128,
+          "mean": 11.133762999605972,
+          "low": 10.022251896364399,
+          "high": 12.245274102847546
+        },
+        {
+          "controller": "diplomat",
+          "n": 128,
+          "mean": 10.422799055075133,
+          "low": 9.083019154083026,
+          "high": 11.762578956067241
+        }
+      ],
+      "status": "measured"
+    },
+    {
+      "id": "genetic-plasticity",
+      "name": "Genetic plasticity",
+      "category": "special",
+      "draftCost": 3,
+      "cost": 2,
+      "scorePercent": {
+        "n": 128,
+        "mean": 7.675735061593711,
+        "low": 6.114354783480143,
+        "high": 9.23711533970728
+      },
+      "pairedWinFraction": {
+        "n": 128,
+        "mean": 0.8906250000000001,
+        "low": 0.8677003786771674,
+        "high": 0.9135496213228328
+      },
+      "byController": [
+        {
+          "controller": "balanced",
+          "n": 128,
+          "mean": 6.487012800767491,
+          "low": 5.131722600547695,
+          "high": 7.842303000987288
+        },
+        {
+          "controller": "expansionist",
+          "n": 128,
+          "mean": 8.090809514964015,
+          "low": 6.328296512347493,
+          "high": 9.853322517580537
+        },
+        {
+          "controller": "builder",
+          "n": 128,
+          "mean": 8.654158299310227,
+          "low": 6.73229713832673,
+          "high": 10.576019460293724
+        },
+        {
+          "controller": "scholar",
+          "n": 128,
+          "mean": 3.3312486786550943,
+          "low": 2.3518766915260745,
+          "high": 4.310620665784114
+        },
+        {
+          "controller": "militarist",
+          "n": 128,
+          "mean": 11.49039368980847,
+          "low": 7.15697653879225,
+          "high": 15.823810840824692
+        },
+        {
+          "controller": "trader",
+          "n": 128,
+          "mean": 7.556976684196187,
+          "low": 6.01942885742724,
+          "high": 9.094524510965135
+        },
+        {
+          "controller": "diplomat",
+          "n": 128,
+          "mean": 8.119545763454491,
+          "low": 5.435028534141434,
+          "high": 10.804062992767548
+        }
+      ],
+      "status": "measured"
+    },
+    {
+      "id": "electrosense",
+      "name": "Electrosense",
+      "category": "special",
+      "draftCost": 2,
+      "cost": 1,
+      "scorePercent": {
+        "n": 128,
+        "mean": 2.691186498334696,
+        "low": 2.362169177134443,
+        "high": 3.0202038195349488
+      },
+      "pairedWinFraction": {
+        "n": 128,
+        "mean": 0.7650669642857149,
+        "low": 0.7425555227025321,
+        "high": 0.7875784058688976
+      },
+      "byController": [
+        {
+          "controller": "balanced",
+          "n": 128,
+          "mean": 3.7960144063050736,
+          "low": 3.181721240016371,
+          "high": 4.410307572593776
+        },
+        {
+          "controller": "expansionist",
+          "n": 128,
+          "mean": 4.358896900945425,
+          "low": 3.641754719076216,
+          "high": 5.076039082814633
+        },
+        {
+          "controller": "builder",
+          "n": 128,
+          "mean": 4.568770626498413,
+          "low": 3.8818339711545637,
+          "high": 5.255707281842262
+        },
+        {
+          "controller": "scholar",
+          "n": 128,
+          "mean": 0.12117997744613765,
+          "low": -0.08566278019381002,
+          "high": 0.3280227350860853
+        },
+        {
+          "controller": "militarist",
+          "n": 128,
+          "mean": 4.63467875458631,
+          "low": 3.813775961118913,
+          "high": 5.455581548053707
+        },
+        {
+          "controller": "trader",
+          "n": 128,
+          "mean": 0.16594642533712795,
+          "low": 0.051583319520771165,
+          "high": 0.2803095311534847
+        },
+        {
+          "controller": "diplomat",
+          "n": 128,
+          "mean": 1.19281839722438,
+          "low": 0.873778185938837,
+          "high": 1.511858608509923
+        }
+      ],
+      "status": "measured"
+    },
+    {
+      "id": "radiotrophic",
+      "name": "Radiotrophic",
+      "category": "special",
+      "draftCost": 2,
+      "cost": 1,
+      "scorePercent": {
+        "n": 128,
+        "mean": 2.9707292703785266,
+        "low": 2.478695666299034,
+        "high": 3.4627628744580194
+      },
+      "pairedWinFraction": {
+        "n": 128,
+        "mean": 0.8722098214285716,
+        "low": 0.839760614569619,
+        "high": 0.9046590282875242
+      },
+      "byController": [
+        {
+          "controller": "balanced",
+          "n": 128,
+          "mean": 2.9848132894102117,
+          "low": 2.265309781715328,
+          "high": 3.7043167971050956
+        },
+        {
+          "controller": "expansionist",
+          "n": 128,
+          "mean": 3.3774176503364015,
+          "low": 2.444770756854535,
+          "high": 4.310064543818267
+        },
+        {
+          "controller": "builder",
+          "n": 128,
+          "mean": 3.4939584905332834,
+          "low": 2.7682940688881725,
+          "high": 4.219622912178394
+        },
+        {
+          "controller": "scholar",
+          "n": 128,
+          "mean": 1.8268742995644511,
+          "low": 1.3463699609434352,
+          "high": 2.307378638185467
+        },
+        {
+          "controller": "militarist",
+          "n": 128,
+          "mean": 3.926661230948709,
+          "low": 2.9114228938052213,
+          "high": 4.941899568092197
+        },
+        {
+          "controller": "trader",
+          "n": 128,
+          "mean": 2.360947656410052,
+          "low": 1.624610182755771,
+          "high": 3.097285130064333
+        },
+        {
+          "controller": "diplomat",
+          "n": 128,
+          "mean": 2.824432275446585,
+          "low": 2.153067317754069,
+          "high": 3.495797233139101
+        }
+      ],
+      "status": "measured"
+    },
+    {
+      "id": "cybernetic",
+      "name": "Cybernetic",
+      "category": "special",
+      "draftCost": 3,
+      "cost": 1,
+      "scorePercent": {
+        "n": 128,
+        "mean": 2.3748738185115075,
+        "low": 2.2712448440078212,
+        "high": 2.4785027930151937
+      },
+      "pairedWinFraction": {
+        "n": 128,
+        "mean": 0.9754464285714286,
+        "low": 0.9629810483630211,
+        "high": 0.9879118087798361
+      },
+      "byController": [
+        {
+          "controller": "balanced",
+          "n": 128,
+          "mean": 2.2543368860700097,
+          "low": 2.217456441793813,
+          "high": 2.2912173303462064
+        },
+        {
+          "controller": "expansionist",
+          "n": 128,
+          "mean": 2.8920839803390135,
+          "low": 2.690206808278204,
+          "high": 3.093961152399823
+        },
+        {
+          "controller": "builder",
+          "n": 128,
+          "mean": 2.9387457722157024,
+          "low": 2.5361147706791343,
+          "high": 3.3413767737522706
+        },
+        {
+          "controller": "scholar",
+          "n": 128,
+          "mean": 1.5488011807055404,
+          "low": 1.5194930144260885,
+          "high": 1.5781093469849923
+        },
+        {
+          "controller": "militarist",
+          "n": 128,
+          "mean": 2.781753444217643,
+          "low": 2.362274281572451,
+          "high": 3.2012326068628347
+        },
+        {
+          "controller": "trader",
+          "n": 128,
+          "mean": 2.177185663432743,
+          "low": 2.1352344813107687,
+          "high": 2.2191368455547176
+        },
+        {
+          "controller": "diplomat",
+          "n": 128,
+          "mean": 2.031209802599901,
+          "low": 1.9995199592137074,
+          "high": 2.062899645986094
+        }
+      ],
+      "status": "measured"
+    },
+    {
+      "id": "autocracy",
+      "name": "Autocracy",
+      "category": "government",
+      "draftCost": 0,
+      "cost": 0,
+      "scorePercent": {
+        "n": 128,
+        "mean": 0,
+        "low": 0,
+        "high": 0
+      },
+      "pairedWinFraction": {
+        "n": 128,
+        "mean": 0.5,
+        "low": 0.5,
+        "high": 0.5
+      },
+      "byController": [
+        {
+          "controller": "balanced",
+          "n": 128,
+          "mean": 0,
+          "low": 0,
+          "high": 0
+        },
+        {
+          "controller": "expansionist",
+          "n": 128,
+          "mean": 0,
+          "low": 0,
+          "high": 0
+        },
+        {
+          "controller": "builder",
+          "n": 128,
+          "mean": 0,
+          "low": 0,
+          "high": 0
+        },
+        {
+          "controller": "scholar",
+          "n": 128,
+          "mean": 0,
+          "low": 0,
+          "high": 0
+        },
+        {
+          "controller": "militarist",
+          "n": 128,
+          "mean": 0,
+          "low": 0,
+          "high": 0
+        },
+        {
+          "controller": "trader",
+          "n": 128,
+          "mean": 0,
+          "low": 0,
+          "high": 0
+        },
+        {
+          "controller": "diplomat",
+          "n": 128,
+          "mean": 0,
+          "low": 0,
+          "high": 0
+        }
+      ],
+      "status": "measured"
+    },
+    {
+      "id": "republic",
+      "name": "Republic",
+      "category": "government",
+      "draftCost": 3,
+      "cost": 2,
+      "scorePercent": {
+        "n": 128,
+        "mean": 12.103910030365194,
+        "low": 10.660917502640634,
+        "high": 13.546902558089753
+      },
+      "pairedWinFraction": {
+        "n": 128,
+        "mean": 0.9587053571428575,
+        "low": 0.9447632323672763,
+        "high": 0.9726474819184387
+      },
+      "byController": [
+        {
+          "controller": "balanced",
+          "n": 128,
+          "mean": 12.264638146157921,
+          "low": 10.38030325159702,
+          "high": 14.148973040718822
+        },
+        {
+          "controller": "expansionist",
+          "n": 128,
+          "mean": 9.808507639851136,
+          "low": 8.227729496926814,
+          "high": 11.389285782775458
+        },
+        {
+          "controller": "builder",
+          "n": 128,
+          "mean": 11.422685145632649,
+          "low": 9.117087265016872,
+          "high": 13.728283026248425
+        },
+        {
+          "controller": "scholar",
+          "n": 128,
+          "mean": 9.758012508792087,
+          "low": 9.058701610855756,
+          "high": 10.457323406728417
+        },
+        {
+          "controller": "militarist",
+          "n": 128,
+          "mean": 13.751321271366391,
+          "low": 8.632431424432653,
+          "high": 18.87021111830013
+        },
+        {
+          "controller": "trader",
+          "n": 128,
+          "mean": 14.1856573380923,
+          "low": 11.927754060895083,
+          "high": 16.443560615289517
+        },
+        {
+          "controller": "diplomat",
+          "n": 128,
+          "mean": 13.536548162663898,
+          "low": 11.867326781937766,
+          "high": 15.20576954339003
+        }
+      ],
+      "status": "measured"
+    },
+    {
+      "id": "communion",
+      "name": "Communion",
+      "category": "government",
+      "draftCost": 1,
+      "cost": 1,
+      "scorePercent": {
+        "n": 128,
+        "mean": 1.1824518995787787,
+        "low": 0.6721104094817417,
+        "high": 1.6927933896758156
+      },
+      "pairedWinFraction": {
+        "n": 128,
+        "mean": 0.5513392857142857,
+        "low": 0.517213579079163,
+        "high": 0.5854649923494084
+      },
+      "byController": [
+        {
+          "controller": "balanced",
+          "n": 128,
+          "mean": 0.6311721886630359,
+          "low": -0.1718716534716559,
+          "high": 1.4342160307977276
+        },
+        {
+          "controller": "expansionist",
+          "n": 128,
+          "mean": 1.1133733535524373,
+          "low": 0.10487522142559036,
+          "high": 2.121871485679284
+        },
+        {
+          "controller": "builder",
+          "n": 128,
+          "mean": 1.056874796181372,
+          "low": -0.25564086257598917,
+          "high": 2.369390454938733
+        },
+        {
+          "controller": "scholar",
+          "n": 128,
+          "mean": -1.0685658686319057,
+          "low": -1.6666193624432362,
+          "high": -0.4705123748205752
+        },
+        {
+          "controller": "militarist",
+          "n": 128,
+          "mean": 2.4417921117247845,
+          "low": 0.8745089671774249,
+          "high": 4.009075256272144
+        },
+        {
+          "controller": "trader",
+          "n": 128,
+          "mean": 2.882095871360791,
+          "low": 1.633121615688906,
+          "high": 4.131070127032676
+        },
+        {
+          "controller": "diplomat",
+          "n": 128,
+          "mean": 1.2204208442009374,
+          "low": -0.11674087735642402,
+          "high": 2.557582565758299
+        }
+      ],
+      "status": "measured"
+    },
+    {
+      "id": "federation",
+      "name": "Federation",
+      "category": "government",
+      "draftCost": 3,
+      "cost": 1,
+      "scorePercent": {
+        "n": 128,
+        "mean": 4.2361149256524655,
+        "low": 3.247468183592757,
+        "high": 5.224761667712174
+      },
+      "pairedWinFraction": {
+        "n": 128,
+        "mean": 0.715401785714286,
+        "low": 0.6779397088432142,
+        "high": 0.7528638625853579
+      },
+      "byController": [
+        {
+          "controller": "balanced",
+          "n": 128,
+          "mean": 3.6579290407921135,
+          "low": 2.0638563235928857,
+          "high": 5.252001757991341
+        },
+        {
+          "controller": "expansionist",
+          "n": 128,
+          "mean": 4.486533721686835,
+          "low": 3.144725089925106,
+          "high": 5.828342353448565
+        },
+        {
+          "controller": "builder",
+          "n": 128,
+          "mean": 3.0685602159794714,
+          "low": 1.3478747758253187,
+          "high": 4.789245656133624
+        },
+        {
+          "controller": "scholar",
+          "n": 128,
+          "mean": 3.0978515384094023,
+          "low": 2.2872808528129562,
+          "high": 3.9084222240058484
+        },
+        {
+          "controller": "militarist",
+          "n": 128,
+          "mean": 5.78837385933447,
+          "low": 2.4531314189229856,
+          "high": 9.123616299745954
+        },
+        {
+          "controller": "trader",
+          "n": 128,
+          "mean": 5.053547336328638,
+          "low": 3.232092302806092,
+          "high": 6.875002369851184
+        },
+        {
+          "controller": "diplomat",
+          "n": 128,
+          "mean": 4.500008767036336,
+          "low": 2.9770477391705317,
+          "high": 6.02296979490214
+        }
+      ],
+      "status": "measured"
+    },
+    {
+      "id": "technocracy",
+      "name": "Technocracy",
+      "category": "government",
+      "draftCost": 4,
+      "cost": 2,
+      "scorePercent": {
+        "n": 128,
+        "mean": 10.705802271895099,
+        "low": 9.341871248492494,
+        "high": 12.069733295297704
+      },
+      "pairedWinFraction": {
+        "n": 128,
+        "mean": 0.9296875000000001,
+        "low": 0.9113146736849994,
+        "high": 0.9480603263150008
+      },
+      "byController": [
+        {
+          "controller": "balanced",
+          "n": 128,
+          "mean": 12.286684786872003,
+          "low": 10.539969536829568,
+          "high": 14.033400036914438
+        },
+        {
+          "controller": "expansionist",
+          "n": 128,
+          "mean": 10.164424140389833,
+          "low": 8.271937714686306,
+          "high": 12.05691056609336
+        },
+        {
+          "controller": "builder",
+          "n": 128,
+          "mean": 7.936531731593874,
+          "low": 6.186979029464234,
+          "high": 9.686084433723515
+        },
+        {
+          "controller": "scholar",
+          "n": 128,
+          "mean": 13.295412597861128,
+          "low": 12.348880890340123,
+          "high": 14.241944305382134
+        },
+        {
+          "controller": "militarist",
+          "n": 128,
+          "mean": 8.751239968321933,
+          "low": 5.431267987446921,
+          "high": 12.071211949196945
+        },
+        {
+          "controller": "trader",
+          "n": 128,
+          "mean": 12.123447725227631,
+          "low": 10.214768373918162,
+          "high": 14.032127076537101
+        },
+        {
+          "controller": "diplomat",
+          "n": 128,
+          "mean": 10.382874952999273,
+          "low": 7.904729947480565,
+          "high": 12.861019958517982
+        }
+      ],
+      "status": "measured"
+    },
+    {
+      "id": "directorate",
+      "name": "Directorate",
+      "category": "government",
+      "draftCost": 3,
+      "cost": 1,
+      "scorePercent": {
+        "n": 128,
+        "mean": 6.373685896503009,
+        "low": 5.21276777048794,
+        "high": 7.534604022518078
+      },
+      "pairedWinFraction": {
+        "n": 128,
+        "mean": 0.7857142857142854,
+        "low": 0.7529932024293667,
+        "high": 0.818435368999204
+      },
+      "byController": [
+        {
+          "controller": "balanced",
+          "n": 128,
+          "mean": 5.260428723082872,
+          "low": 3.6720246405950467,
+          "high": 6.848832805570697
+        },
+        {
+          "controller": "expansionist",
+          "n": 128,
+          "mean": 4.001132001399184,
+          "low": 2.659798169810922,
+          "high": 5.342465832987446
+        },
+        {
+          "controller": "builder",
+          "n": 128,
+          "mean": 4.5944205464649475,
+          "low": 2.6094806874755765,
+          "high": 6.579360405454318
+        },
+        {
+          "controller": "scholar",
+          "n": 128,
+          "mean": 6.8627959638223235,
+          "low": 5.945578518299867,
+          "high": 7.78001340934478
+        },
+        {
+          "controller": "militarist",
+          "n": 128,
+          "mean": 7.464124215107694,
+          "low": 3.0341747771932486,
+          "high": 11.89407365302214
+        },
+        {
+          "controller": "trader",
+          "n": 128,
+          "mean": 10.071510721494414,
+          "low": 8.220959480102447,
+          "high": 11.922061962886382
+        },
+        {
+          "controller": "diplomat",
+          "n": 128,
+          "mean": 6.361389104149614,
+          "low": 4.8589570591486595,
+          "high": 7.863821149150569
+        }
+      ],
+      "status": "measured"
+    },
+    {
+      "id": "xenophobic",
+      "name": "Xenophobic",
+      "category": "attitude",
+      "draftCost": -1,
+      "cost": 0,
+      "scorePercent": {
+        "n": 128,
+        "mean": 1.2418176245222878,
+        "low": 0.7491322705656406,
+        "high": 1.7345029784789352
+      },
+      "pairedWinFraction": {
+        "n": 128,
+        "mean": 0.6116071428571428,
+        "low": 0.5766157561217005,
+        "high": 0.6465985295925851
+      },
+      "byController": [
+        {
+          "controller": "balanced",
+          "n": 128,
+          "mean": 1.0451015114008078,
+          "low": 0.32324127112874856,
+          "high": 1.7669617516728668
+        },
+        {
+          "controller": "expansionist",
+          "n": 128,
+          "mean": 1.140748877428873,
+          "low": 0.31555140239894797,
+          "high": 1.965946352458798
+        },
+        {
+          "controller": "builder",
+          "n": 128,
+          "mean": 1.5655197304824988,
+          "low": 0.8553751904784174,
+          "high": 2.27566427048658
+        },
+        {
+          "controller": "scholar",
+          "n": 128,
+          "mean": -0.43890184866420184,
+          "low": -0.8405993008865889,
+          "high": -0.03720439644181489
+        },
+        {
+          "controller": "militarist",
+          "n": 128,
+          "mean": 2.6233510496731065,
+          "low": 0.6225685553579341,
+          "high": 4.624133543988279
+        },
+        {
+          "controller": "trader",
+          "n": 128,
+          "mean": 2.5159438170336728,
+          "low": 1.3936540258635077,
+          "high": 3.638233608203838
+        },
+        {
+          "controller": "diplomat",
+          "n": 128,
+          "mean": 0.24096023430125843,
+          "low": -0.5508132519275115,
+          "high": 1.0327337205300284
+        }
+      ],
+      "status": "measured"
+    },
+    {
+      "id": "cosmopolitan",
+      "name": "Cosmopolitan",
+      "category": "attitude",
+      "draftCost": 1,
+      "cost": 1,
+      "scorePercent": {
+        "n": 128,
+        "mean": 0.02677351155870303,
+        "low": -0.007169917952239393,
+        "high": 0.06071694106964545
+      },
+      "pairedWinFraction": {
+        "n": 128,
+        "mean": 0.6339285714285714,
+        "low": 0.6040988380719692,
+        "high": 0.6637583047851736
+      },
+      "byController": [
+        {
+          "controller": "balanced",
+          "n": 128,
+          "mean": -0.026276271326377068,
+          "low": -0.09836723493508236,
+          "high": 0.04581469228232822
+        },
+        {
+          "controller": "expansionist",
+          "n": 128,
+          "mean": 0.00045364714924469446,
+          "low": -0.016851585943419727,
+          "high": 0.017758880241909115
+        },
+        {
+          "controller": "builder",
+          "n": 128,
+          "mean": 0.025815686165440825,
+          "low": -0.13311129351473047,
+          "high": 0.18474266584561214
+        },
+        {
+          "controller": "scholar",
+          "n": 128,
+          "mean": 0.019415076538108027,
+          "low": -0.06537714735694447,
+          "high": 0.10420730043316054
+        },
+        {
+          "controller": "militarist",
+          "n": 128,
+          "mean": 0.011487854020946191,
+          "low": -0.053565111974179444,
+          "high": 0.07654082001607183
+        },
+        {
+          "controller": "trader",
+          "n": 128,
+          "mean": 0.0862946346521363,
+          "low": 0.01559941966278014,
+          "high": 0.15698984964149246
+        },
+        {
+          "controller": "diplomat",
+          "n": 128,
+          "mean": 0.07022395371142223,
+          "low": -0.02139460841469369,
+          "high": 0.16184251583753817
+        }
+      ],
+      "status": "uncertain"
+    },
+    {
+      "id": "industry-minus",
+      "name": "Industry -1",
+      "category": "aptitude",
+      "draftCost": -2,
+      "cost": -1,
+      "scorePercent": {
+        "n": 128,
+        "mean": -12.91095720370127,
+        "low": -13.423989233162688,
+        "high": -12.397925174239854
+      },
+      "pairedWinFraction": {
+        "n": 128,
+        "mean": 0.041294642857142856,
+        "low": 0.025718661677308106,
+        "high": 0.05687062403697761
+      },
+      "byController": [
+        {
+          "controller": "balanced",
+          "n": 128,
+          "mean": -12.197253349529447,
+          "low": -13.294341346228034,
+          "high": -11.10016535283086
+        },
+        {
+          "controller": "expansionist",
+          "n": 128,
+          "mean": -12.001151837481473,
+          "low": -12.923219015405273,
+          "high": -11.079084659557672
+        },
+        {
+          "controller": "builder",
+          "n": 128,
+          "mean": -14.498457122614063,
+          "low": -15.767266613005095,
+          "high": -13.229647632223031
+        },
+        {
+          "controller": "scholar",
+          "n": 128,
+          "mean": -15.291543798442044,
+          "low": -15.989442163006634,
+          "high": -14.593645433877453
+        },
+        {
+          "controller": "militarist",
+          "n": 128,
+          "mean": -13.383667874653707,
+          "low": -14.724104041365928,
+          "high": -12.043231707941485
+        },
+        {
+          "controller": "trader",
+          "n": 128,
+          "mean": -9.966250649143303,
+          "low": -11.137936813535202,
+          "high": -8.794564484751405
+        },
+        {
+          "controller": "diplomat",
+          "n": 128,
+          "mean": -13.038375794044873,
+          "low": -14.078383182152896,
+          "high": -11.99836840593685
+        }
+      ],
+      "status": "measured"
+    },
+    {
+      "id": "industry-1",
+      "name": "Industry +1",
+      "category": "aptitude",
+      "draftCost": 3,
+      "cost": 2,
+      "scorePercent": {
+        "n": 128,
+        "mean": 12.044696144027029,
+        "low": 11.342312037081523,
+        "high": 12.747080250972534
+      },
+      "pairedWinFraction": {
+        "n": 128,
+        "mean": 0.931919642857143,
+        "low": 0.9152048199778005,
+        "high": 0.9486344657364856
+      },
+      "byController": [
+        {
+          "controller": "balanced",
+          "n": 128,
+          "mean": 10.054270727660418,
+          "low": 8.89871129519841,
+          "high": 11.209830160122426
+        },
+        {
+          "controller": "expansionist",
+          "n": 128,
+          "mean": 12.371310088163309,
+          "low": 11.19634530827486,
+          "high": 13.546274868051757
+        },
+        {
+          "controller": "builder",
+          "n": 128,
+          "mean": 11.615602388446568,
+          "low": 9.743923026231887,
+          "high": 13.48728175066125
+        },
+        {
+          "controller": "scholar",
+          "n": 128,
+          "mean": 17.3142038681881,
+          "low": 16.44920996844064,
+          "high": 18.179197767935555
+        },
+        {
+          "controller": "militarist",
+          "n": 128,
+          "mean": 10.714667351009538,
+          "low": 8.798369798965172,
+          "high": 12.630964903053904
+        },
+        {
+          "controller": "trader",
+          "n": 128,
+          "mean": 11.728345779894184,
+          "low": 10.260242065155321,
+          "high": 13.196449494633047
+        },
+        {
+          "controller": "diplomat",
+          "n": 128,
+          "mean": 10.514472804827133,
+          "low": 8.927795008135266,
+          "high": 12.101150601518999
+        }
+      ],
+      "status": "measured"
+    },
+    {
+      "id": "industry-2",
+      "name": "Industry +2",
+      "category": "aptitude",
+      "draftCost": 7,
+      "cost": 5,
+      "scorePercent": {
+        "n": 128,
+        "mean": 22.807278689419743,
+        "low": 21.804138231314592,
+        "high": 23.810419147524893
+      },
+      "pairedWinFraction": {
+        "n": 128,
+        "mean": 0.9810267857142858,
+        "low": 0.9720409745700823,
+        "high": 0.9900125968584893
+      },
+      "byController": [
+        {
+          "controller": "balanced",
+          "n": 128,
+          "mean": 20.342014068887057,
+          "low": 18.822866113900155,
+          "high": 21.86116202387396
+        },
+        {
+          "controller": "expansionist",
+          "n": 128,
+          "mean": 22.666866089723978,
+          "low": 20.926936531376583,
+          "high": 24.406795648071373
+        },
+        {
+          "controller": "builder",
+          "n": 128,
+          "mean": 25.056046788968473,
+          "low": 22.873159103022637,
+          "high": 27.23893447491431
+        },
+        {
+          "controller": "scholar",
+          "n": 128,
+          "mean": 33.12754434601202,
+          "low": 31.75924421009762,
+          "high": 34.495844481926426
+        },
+        {
+          "controller": "militarist",
+          "n": 128,
+          "mean": 15.916236436204807,
+          "low": 13.09292927688038,
+          "high": 18.739543595529234
+        },
+        {
+          "controller": "trader",
+          "n": 128,
+          "mean": 21.757355929248913,
+          "low": 20.07582837743805,
+          "high": 23.438883481059776
+        },
+        {
+          "controller": "diplomat",
+          "n": 128,
+          "mean": 20.784887166892805,
+          "low": 18.88533295091663,
+          "high": 22.68444138286898
+        }
+      ],
+      "status": "measured"
+    },
+    {
+      "id": "research-minus",
+      "name": "Research -1",
+      "category": "aptitude",
+      "draftCost": -2,
+      "cost": -1,
+      "scorePercent": {
+        "n": 128,
+        "mean": -12.135129361527564,
+        "low": -12.896676579245932,
+        "high": -11.373582143809196
+      },
+      "pairedWinFraction": {
+        "n": 128,
+        "mean": 0.036830357142857144,
+        "low": 0.01974984726559286,
+        "high": 0.05391086702012143
+      },
+      "byController": [
+        {
+          "controller": "balanced",
+          "n": 128,
+          "mean": -12.390389131250789,
+          "low": -13.580054953932411,
+          "high": -11.200723308569167
+        },
+        {
+          "controller": "expansionist",
+          "n": 128,
+          "mean": -12.31524772012786,
+          "low": -13.715919877386069,
+          "high": -10.914575562869652
+        },
+        {
+          "controller": "builder",
+          "n": 128,
+          "mean": -13.192307934481956,
+          "low": -15.083115552298638,
+          "high": -11.301500316665274
+        },
+        {
+          "controller": "scholar",
+          "n": 128,
+          "mean": -11.376405338780923,
+          "low": -12.180403312860978,
+          "high": -10.572407364700869
+        },
+        {
+          "controller": "militarist",
+          "n": 128,
+          "mean": -12.49081645617467,
+          "low": -14.403883085134428,
+          "high": -10.577749827214912
+        },
+        {
+          "controller": "trader",
+          "n": 128,
+          "mean": -11.031135710082298,
+          "low": -12.375633540052986,
+          "high": -9.68663788011161
+        },
+        {
+          "controller": "diplomat",
+          "n": 128,
+          "mean": -12.149603239794466,
+          "low": -14.056307699004332,
+          "high": -10.2428987805846
+        }
+      ],
+      "status": "measured"
+    },
+    {
+      "id": "research-1",
+      "name": "Research +1",
+      "category": "aptitude",
+      "draftCost": 3,
+      "cost": 2,
+      "scorePercent": {
+        "n": 128,
+        "mean": 11.834070606092459,
+        "low": 10.840421986843918,
+        "high": 12.827719225341
+      },
+      "pairedWinFraction": {
+        "n": 128,
+        "mean": 0.970982142857143,
+        "low": 0.9584204104502259,
+        "high": 0.9835438752640602
+      },
+      "byController": [
+        {
+          "controller": "balanced",
+          "n": 128,
+          "mean": 12.013877914658584,
+          "low": 10.143421447798584,
+          "high": 13.884334381518585
+        },
+        {
+          "controller": "expansionist",
+          "n": 128,
+          "mean": 11.13526410634237,
+          "low": 9.552611354785025,
+          "high": 12.717916857899716
+        },
+        {
+          "controller": "builder",
+          "n": 128,
+          "mean": 11.35835103562532,
+          "low": 9.616983820408235,
+          "high": 13.099718250842406
+        },
+        {
+          "controller": "scholar",
+          "n": 128,
+          "mean": 10.070991922434825,
+          "low": 9.399234599246945,
+          "high": 10.742749245622704
+        },
+        {
+          "controller": "militarist",
+          "n": 128,
+          "mean": 13.555148749906866,
+          "low": 11.149814769846417,
+          "high": 15.960482729967316
+        },
+        {
+          "controller": "trader",
+          "n": 128,
+          "mean": 12.308516429770881,
+          "low": 10.030929184252399,
+          "high": 14.586103675289364
+        },
+        {
+          "controller": "diplomat",
+          "n": 128,
+          "mean": 12.39634408390839,
+          "low": 10.810198338056786,
+          "high": 13.982489829759995
+        }
+      ],
+      "status": "measured"
+    },
+    {
+      "id": "research-2",
+      "name": "Research +2",
+      "category": "aptitude",
+      "draftCost": 7,
+      "cost": 5,
+      "scorePercent": {
+        "n": 128,
+        "mean": 21.260930493123947,
+        "low": 19.372497255910485,
+        "high": 23.14936373033741
+      },
+      "pairedWinFraction": {
+        "n": 128,
+        "mean": 0.9933035714285715,
+        "low": 0.9872022392034538,
+        "high": 0.9994049036536892
+      },
+      "byController": [
+        {
+          "controller": "balanced",
+          "n": 128,
+          "mean": 21.902886766344643,
+          "low": 19.823527394936328,
+          "high": 23.98224613775296
+        },
+        {
+          "controller": "expansionist",
+          "n": 128,
+          "mean": 19.58694287478661,
+          "low": 17.891281007888896,
+          "high": 21.282604741684327
+        },
+        {
+          "controller": "builder",
+          "n": 128,
+          "mean": 20.01223125539306,
+          "low": 17.651378655118375,
+          "high": 22.373083855667748
+        },
+        {
+          "controller": "scholar",
+          "n": 128,
+          "mean": 20.650946959280827,
+          "low": 19.79455305916152,
+          "high": 21.507340859400134
+        },
+        {
+          "controller": "militarist",
+          "n": 128,
+          "mean": 24.631554480199153,
+          "low": 19.658868095422633,
+          "high": 29.604240864975672
+        },
+        {
+          "controller": "trader",
+          "n": 128,
+          "mean": 20.98781723950868,
+          "low": 18.408257650894427,
+          "high": 23.56737682812293
+        },
+        {
+          "controller": "diplomat",
+          "n": 128,
+          "mean": 21.054133876354655,
+          "low": 17.564049016382345,
+          "high": 24.544218736326965
+        }
+      ],
+      "status": "measured"
+    },
+    {
+      "id": "commerce-minus",
+      "name": "Commerce -1",
+      "category": "aptitude",
+      "draftCost": -1,
+      "cost": 0,
+      "scorePercent": {
+        "n": 128,
+        "mean": -7.5061395935989665,
+        "low": -8.030655666271233,
+        "high": -6.981623520926701
+      },
+      "pairedWinFraction": {
+        "n": 128,
+        "mean": 0.005580357142857142,
+        "low": 0.0007666046215268011,
+        "high": 0.010394109664187483
+      },
+      "byController": [
+        {
+          "controller": "balanced",
+          "n": 128,
+          "mean": -2.296500705366472,
+          "low": -2.5472552143108773,
+          "high": -2.0457461964220665
+        },
+        {
+          "controller": "expansionist",
+          "n": 128,
+          "mean": -5.363270825784456,
+          "low": -6.332582708456194,
+          "high": -4.393958943112718
+        },
+        {
+          "controller": "builder",
+          "n": 128,
+          "mean": -13.808795740559544,
+          "low": -15.7647652906872,
+          "high": -11.85282619043189
+        },
+        {
+          "controller": "scholar",
+          "n": 128,
+          "mean": -3.0739400588380628,
+          "low": -3.6034820993607304,
+          "high": -2.544398018315395
+        },
+        {
+          "controller": "militarist",
+          "n": 128,
+          "mean": -21.7296152414725,
+          "low": -23.201026264091432,
+          "high": -20.25820421885357
+        },
+        {
+          "controller": "trader",
+          "n": 128,
+          "mean": -3.336590691353538,
+          "low": -3.4433906244518946,
+          "high": -3.2297907582551817
+        },
+        {
+          "controller": "diplomat",
+          "n": 128,
+          "mean": -2.9342638918182344,
+          "low": -3.031293774899108,
+          "high": -2.837234008737361
+        }
+      ],
+      "status": "measured"
+    },
+    {
+      "id": "commerce-1",
+      "name": "Commerce +1",
+      "category": "aptitude",
+      "draftCost": 2,
+      "cost": 1,
+      "scorePercent": {
+        "n": 128,
+        "mean": 2.5628987075112857,
+        "low": 2.2491863119449134,
+        "high": 2.876611103077658
+      },
+      "pairedWinFraction": {
+        "n": 128,
+        "mean": 0.9955357142857144,
+        "low": 0.9912126963292437,
+        "high": 0.9998587322421851
+      },
+      "byController": [
+        {
+          "controller": "balanced",
+          "n": 128,
+          "mean": 1.99711853744825,
+          "low": 1.9657247338281467,
+          "high": 2.028512341068353
+        },
+        {
+          "controller": "expansionist",
+          "n": 128,
+          "mean": 2.0548794420526058,
+          "low": 1.5582610470866474,
+          "high": 2.551497837018564
+        },
+        {
+          "controller": "builder",
+          "n": 128,
+          "mean": 3.1698497915628154,
+          "low": 2.271388483014642,
+          "high": 4.068311100110989
+        },
+        {
+          "controller": "scholar",
+          "n": 128,
+          "mean": 1.6761824122896738,
+          "low": 1.4615384400327742,
+          "high": 1.8908263845465734
+        },
+        {
+          "controller": "militarist",
+          "n": 128,
+          "mean": 3.2420720116513913,
+          "low": 2.1303116747892084,
+          "high": 4.353832348513574
+        },
+        {
+          "controller": "trader",
+          "n": 128,
+          "mean": 3.1076607038600454,
+          "low": 3.0616688222474937,
+          "high": 3.153652585472597
+        },
+        {
+          "controller": "diplomat",
+          "n": 128,
+          "mean": 2.692528053714232,
+          "low": 2.612388506445149,
+          "high": 2.772667600983315
+        }
+      ],
+      "status": "measured"
+    },
+    {
+      "id": "commerce-2",
+      "name": "Commerce +2",
+      "category": "aptitude",
+      "draftCost": 5,
+      "cost": 3,
+      "scorePercent": {
+        "n": 128,
+        "mean": 4.56120627941382,
+        "low": 4.13930276383869,
+        "high": 4.983109794988951
+      },
+      "pairedWinFraction": {
+        "n": 128,
+        "mean": 0.9977678571428572,
+        "low": 0.9946864685421349,
+        "high": 1.0008492457435796
+      },
+      "byController": [
+        {
+          "controller": "balanced",
+          "n": 128,
+          "mean": 3.9032752715055956,
+          "low": 3.8532430898176466,
+          "high": 3.9533074531935446
+        },
+        {
+          "controller": "expansionist",
+          "n": 128,
+          "mean": 3.535671896015692,
+          "low": 3.0067438940457176,
+          "high": 4.064599897985667
+        },
+        {
+          "controller": "builder",
+          "n": 128,
+          "mean": 4.990972165927911,
+          "low": 3.8100026888773826,
+          "high": 6.171941642978439
+        },
+        {
+          "controller": "scholar",
+          "n": 128,
+          "mean": 3.132664836471336,
+          "low": 2.913191618620043,
+          "high": 3.3521380543226287
+        },
+        {
+          "controller": "militarist",
+          "n": 128,
+          "mean": 4.874711003547507,
+          "low": 3.4196441611375343,
+          "high": 6.329777845957479
+        },
+        {
+          "controller": "trader",
+          "n": 128,
+          "mean": 6.170498563726298,
+          "low": 6.108470900164017,
+          "high": 6.232526227288579
+        },
+        {
+          "controller": "diplomat",
+          "n": 128,
+          "mean": 5.320650218702423,
+          "low": 5.146921367754585,
+          "high": 5.494379069650261
+        }
+      ],
+      "status": "measured"
+    },
+    {
+      "id": "piloting-minus",
+      "name": "Piloting -1",
+      "category": "aptitude",
+      "draftCost": -2,
+      "cost": 0,
+      "scorePercent": {
+        "n": 128,
+        "mean": -0.07040963379885926,
+        "low": -0.12093172931358588,
+        "high": -0.01988753828413263
+      },
+      "pairedWinFraction": {
+        "n": 128,
+        "mean": 0.486607142857143,
+        "low": 0.4815157053174621,
+        "high": 0.49169858039682396
+      },
+      "byController": [
+        {
+          "controller": "balanced",
+          "n": 128,
+          "mean": 0,
+          "low": 0,
+          "high": 0
+        },
+        {
+          "controller": "expansionist",
+          "n": 128,
+          "mean": 0,
+          "low": 0,
+          "high": 0
+        },
+        {
+          "controller": "builder",
+          "n": 128,
+          "mean": 0,
+          "low": 0,
+          "high": 0
+        },
+        {
+          "controller": "scholar",
+          "n": 128,
+          "mean": -0.4906820945217448,
+          "low": -0.8443643066761413,
+          "high": -0.1369998823673484
+        },
+        {
+          "controller": "militarist",
+          "n": 128,
+          "mean": -0.0021853420702700604,
+          "low": -0.006468612527999364,
+          "high": 0.0020979283874592433
+        },
+        {
+          "controller": "trader",
+          "n": 128,
+          "mean": 0,
+          "low": 0,
+          "high": 0
+        },
+        {
+          "controller": "diplomat",
+          "n": 128,
+          "mean": 0,
+          "low": 0,
+          "high": 0
+        }
+      ],
+      "status": "measured"
+    },
+    {
+      "id": "piloting-1",
+      "name": "Piloting +1",
+      "category": "aptitude",
+      "draftCost": 3,
+      "cost": 1,
+      "scorePercent": {
+        "n": 128,
+        "mean": 0.017425154505230935,
+        "low": -0.012123900927913853,
+        "high": 0.04697420993837573
+      },
+      "pairedWinFraction": {
+        "n": 128,
+        "mean": 0.5072544642857142,
+        "low": 0.5035018251635233,
+        "high": 0.5110071034079051
+      },
+      "byController": [
+        {
+          "controller": "balanced",
+          "n": 128,
+          "mean": 0,
+          "low": 0,
+          "high": 0
+        },
+        {
+          "controller": "expansionist",
+          "n": 128,
+          "mean": 0,
+          "low": 0,
+          "high": 0
+        },
+        {
+          "controller": "builder",
+          "n": 128,
+          "mean": 0,
+          "low": 0,
+          "high": 0
+        },
+        {
+          "controller": "scholar",
+          "n": 128,
+          "mean": 0.12197608153661654,
+          "low": -0.08486730649539734,
+          "high": 0.3288194695686304
+        },
+        {
+          "controller": "militarist",
+          "n": 128,
+          "mean": 0,
+          "low": 0,
+          "high": 0
+        },
+        {
+          "controller": "trader",
+          "n": 128,
+          "mean": 0,
+          "low": 0,
+          "high": 0
+        },
+        {
+          "controller": "diplomat",
+          "n": 128,
+          "mean": 0,
+          "low": 0,
+          "high": 0
+        }
+      ],
+      "status": "uncertain"
+    },
+    {
+      "id": "piloting-2",
+      "name": "Piloting +2",
+      "category": "aptitude",
+      "draftCost": 6,
+      "cost": 3,
+      "scorePercent": {
+        "n": 128,
+        "mean": 0.01753015550844744,
+        "low": -0.01222446768366604,
+        "high": 0.047284778700560914
+      },
+      "pairedWinFraction": {
+        "n": 128,
+        "mean": 0.5072544642857142,
+        "low": 0.5035018251635233,
+        "high": 0.5110071034079051
+      },
+      "byController": [
+        {
+          "controller": "balanced",
+          "n": 128,
+          "mean": 0,
+          "low": 0,
+          "high": 0
+        },
+        {
+          "controller": "expansionist",
+          "n": 128,
+          "mean": 0,
+          "low": 0,
+          "high": 0
+        },
+        {
+          "controller": "builder",
+          "n": 128,
+          "mean": 0,
+          "low": 0,
+          "high": 0
+        },
+        {
+          "controller": "scholar",
+          "n": 128,
+          "mean": 0.12271108855913207,
+          "low": -0.08557127378566268,
+          "high": 0.33099345090392684
+        },
+        {
+          "controller": "militarist",
+          "n": 128,
+          "mean": 0,
+          "low": 0,
+          "high": 0
+        },
+        {
+          "controller": "trader",
+          "n": 128,
+          "mean": 0,
+          "low": 0,
+          "high": 0
+        },
+        {
+          "controller": "diplomat",
+          "n": 128,
+          "mean": 0,
+          "low": 0,
+          "high": 0
+        }
+      ],
+      "status": "uncertain"
+    },
+    {
+      "id": "troops-minus",
+      "name": "Troops -1",
+      "category": "aptitude",
+      "draftCost": -1,
+      "cost": 0,
+      "scorePercent": {
+        "n": 128,
+        "mean": -0.010357940645122786,
+        "low": -0.09476960400267549,
+        "high": 0.07405372271242992
+      },
+      "pairedWinFraction": {
+        "n": 128,
+        "mean": 0.12444196428571422,
+        "low": 0.100372614643231,
+        "high": 0.14851131392819744
+      },
+      "byController": [
+        {
+          "controller": "balanced",
+          "n": 128,
+          "mean": -0.006202303771325919,
+          "low": -0.008022561730961057,
+          "high": -0.004382045811690782
+        },
+        {
+          "controller": "expansionist",
+          "n": 128,
+          "mean": -0.019497599119529512,
+          "low": -0.09618544157732467,
+          "high": 0.05719024333826564
+        },
+        {
+          "controller": "builder",
+          "n": 128,
+          "mean": -0.04482903256112153,
+          "low": -0.5781590466343114,
+          "high": 0.4885009815120684
+        },
+        {
+          "controller": "scholar",
+          "n": 128,
+          "mean": -0.00520722665842124,
+          "low": -0.006870383554835191,
+          "high": -0.003544069762007289
+        },
+        {
+          "controller": "militarist",
+          "n": 128,
+          "mean": 0.012071163896144804,
+          "low": -0.10477499729951692,
+          "high": 0.12891732509180653
+        },
+        {
+          "controller": "trader",
+          "n": 128,
+          "mean": -0.0064062060922876266,
+          "low": -0.007581776126547172,
+          "high": -0.005230636058028081
+        },
+        {
+          "controller": "diplomat",
+          "n": 128,
+          "mean": -0.0024343802093185728,
+          "low": -0.0030157536258981475,
+          "high": -0.001853006792738998
+        }
+      ],
+      "status": "uncertain"
+    },
+    {
+      "id": "troops-1",
+      "name": "Troops +1",
+      "category": "aptitude",
+      "draftCost": 2,
+      "cost": 1,
+      "scorePercent": {
+        "n": 128,
+        "mean": 0.019983309352273805,
+        "low": -0.03636590606814946,
+        "high": 0.07633252477269707
+      },
+      "pairedWinFraction": {
+        "n": 128,
+        "mean": 0.8794642857142856,
+        "low": 0.8555202996529813,
+        "high": 0.9034082717755899
+      },
+      "byController": [
+        {
+          "controller": "balanced",
+          "n": 128,
+          "mean": 0.0066440124832105665,
+          "low": 0.002383135944107712,
+          "high": 0.010904889022313421
+        },
+        {
+          "controller": "expansionist",
+          "n": 128,
+          "mean": -0.028500362829118536,
+          "low": -0.09851306588959775,
+          "high": 0.041512340231360675
+        },
+        {
+          "controller": "builder",
+          "n": 128,
+          "mean": 0.06373657931609206,
+          "low": -0.26182988420859993,
+          "high": 0.38930304284078404
+        },
+        {
+          "controller": "scholar",
+          "n": 128,
+          "mean": 0.007725693879323536,
+          "low": 0.004477227322256121,
+          "high": 0.010974160436390951
+        },
+        {
+          "controller": "militarist",
+          "n": 128,
+          "mean": 0.07936167341275235,
+          "low": -0.029941197143078177,
+          "high": 0.1886645439685829
+        },
+        {
+          "controller": "trader",
+          "n": 128,
+          "mean": 0.00871454272474443,
+          "low": 0.0035965425546971184,
+          "high": 0.01383254289479174
+        },
+        {
+          "controller": "diplomat",
+          "n": 128,
+          "mean": 0.002201026478912231,
+          "low": 0.001849331539960798,
+          "high": 0.0025527214178636642
+        }
+      ],
+      "status": "uncertain"
+    },
+    {
+      "id": "troops-2",
+      "name": "Troops +2",
+      "category": "aptitude",
+      "draftCost": 4,
+      "cost": 3,
+      "scorePercent": {
+        "n": 128,
+        "mean": 0.03079371575136131,
+        "low": -0.05087422842478788,
+        "high": 0.11246165992751049
+      },
+      "pairedWinFraction": {
+        "n": 128,
+        "mean": 0.9135044642857144,
+        "low": 0.8899205914639924,
+        "high": 0.9370883371074364
+      },
+      "byController": [
+        {
+          "controller": "balanced",
+          "n": 128,
+          "mean": 0.013372085013808356,
+          "low": 0.009067862966489364,
+          "high": 0.01767630706112735
+        },
+        {
+          "controller": "expansionist",
+          "n": 128,
+          "mean": 0.13202606541608514,
+          "low": -0.11520767756377492,
+          "high": 0.3792598083959452
+        },
+        {
+          "controller": "builder",
+          "n": 128,
+          "mean": -0.05026243738492446,
+          "low": -0.49986223482903597,
+          "high": 0.399337360059187
+        },
+        {
+          "controller": "scholar",
+          "n": 128,
+          "mean": 0.013717354770350233,
+          "low": 0.009970790719864502,
+          "high": 0.017463918820835964
+        },
+        {
+          "controller": "militarist",
+          "n": 128,
+          "mean": 0.08618679760913497,
+          "low": -0.08588211926848077,
+          "high": 0.2582557144867507
+        },
+        {
+          "controller": "trader",
+          "n": 128,
+          "mean": 0.01493493019573515,
+          "low": 0.009522988379107237,
+          "high": 0.020346872012363064
+        },
+        {
+          "controller": "diplomat",
+          "n": 128,
+          "mean": 0.005581214639339537,
+          "low": 0.0034125167187512187,
+          "high": 0.007749912559927855
+        }
+      ],
+      "status": "uncertain"
+    },
+    {
+      "id": "espionage-minus",
+      "name": "Espionage -1",
+      "category": "aptitude",
+      "draftCost": -1,
+      "cost": 0,
+      "scorePercent": {
+        "n": 128,
+        "mean": 0.0237064479932573,
+        "low": -0.08461852361760519,
+        "high": 0.1320314196041198
+      },
+      "pairedWinFraction": {
+        "n": 128,
+        "mean": 0.3454241071428572,
+        "low": 0.3101572045081717,
+        "high": 0.3806910097775427
+      },
+      "byController": [
+        {
+          "controller": "balanced",
+          "n": 128,
+          "mean": -0.1141932087515295,
+          "low": -0.282037210381457,
+          "high": 0.053650792878398024
+        },
+        {
+          "controller": "expansionist",
+          "n": 128,
+          "mean": -0.04727903205826264,
+          "low": -0.06867811216705247,
+          "high": -0.025879951949472815
+        },
+        {
+          "controller": "builder",
+          "n": 128,
+          "mean": 0.08324866259526274,
+          "low": -0.16962764149434512,
+          "high": 0.33612496668487063
+        },
+        {
+          "controller": "scholar",
+          "n": 128,
+          "mean": -0.07768344192669599,
+          "low": -0.12008425335271256,
+          "high": -0.03528263050067943
+        },
+        {
+          "controller": "militarist",
+          "n": 128,
+          "mean": 0.1924385552590317,
+          "low": -0.344479256511327,
+          "high": 0.7293563670293903
+        },
+        {
+          "controller": "trader",
+          "n": 128,
+          "mean": 0.09915444387511617,
+          "low": -0.187128702266742,
+          "high": 0.38543759001697436
+        },
+        {
+          "controller": "diplomat",
+          "n": 128,
+          "mean": 0.0302591569598787,
+          "low": -0.08716474995098135,
+          "high": 0.14768306387073876
+        }
+      ],
+      "status": "uncertain"
+    },
+    {
+      "id": "espionage-1",
+      "name": "Espionage +1",
+      "category": "aptitude",
+      "draftCost": 2,
+      "cost": 1,
+      "scorePercent": {
+        "n": 128,
+        "mean": 0.8540910069845437,
+        "low": 0.4410910514011784,
+        "high": 1.267090962567909
+      },
+      "pairedWinFraction": {
+        "n": 128,
+        "mean": 0.7075892857142849,
+        "low": 0.6763986432684952,
+        "high": 0.7387799281600747
+      },
+      "byController": [
+        {
+          "controller": "balanced",
+          "n": 128,
+          "mean": -0.08322174340707893,
+          "low": -0.6152209058921844,
+          "high": 0.44877741907802654
+        },
+        {
+          "controller": "expansionist",
+          "n": 128,
+          "mean": 1.5203897047347958,
+          "low": 0.6044437275872313,
+          "high": 2.4363356818823605
+        },
+        {
+          "controller": "builder",
+          "n": 128,
+          "mean": 0.015441084362769683,
+          "low": -1.118983326404577,
+          "high": 1.1498654951301164
+        },
+        {
+          "controller": "scholar",
+          "n": 128,
+          "mean": 0.8419813488113573,
+          "low": 0.3178255996508469,
+          "high": 1.3661370979718677
+        },
+        {
+          "controller": "militarist",
+          "n": 128,
+          "mean": 2.1040765467405014,
+          "low": 0.5855656811845424,
+          "high": 3.6225874122964603
+        },
+        {
+          "controller": "trader",
+          "n": 128,
+          "mean": 1.0725343979672715,
+          "low": -0.0437120566220186,
+          "high": 2.1887808525565617
+        },
+        {
+          "controller": "diplomat",
+          "n": 128,
+          "mean": 0.5074357096821895,
+          "low": -0.6850683713712997,
+          "high": 1.6999397907356788
+        }
+      ],
+      "status": "measured"
+    },
+    {
+      "id": "espionage-2",
+      "name": "Espionage +2",
+      "category": "aptitude",
+      "draftCost": 4,
+      "cost": 3,
+      "scorePercent": {
+        "n": 128,
+        "mean": 1.6509023472920907,
+        "low": 1.0354012421193661,
+        "high": 2.2664034524648153
+      },
+      "pairedWinFraction": {
+        "n": 128,
+        "mean": 0.6473214285714282,
+        "low": 0.6146095586003019,
+        "high": 0.6800332985425545
+      },
+      "byController": [
+        {
+          "controller": "balanced",
+          "n": 128,
+          "mean": 0.3525715250259611,
+          "low": -0.5767951282591782,
+          "high": 1.2819381783111004
+        },
+        {
+          "controller": "expansionist",
+          "n": 128,
+          "mean": 1.9905495550259051,
+          "low": 0.8897947091341745,
+          "high": 3.091304400917636
+        },
+        {
+          "controller": "builder",
+          "n": 128,
+          "mean": 0.7674834737671872,
+          "low": -0.8131525720942179,
+          "high": 2.3481195196285922
+        },
+        {
+          "controller": "scholar",
+          "n": 128,
+          "mean": 1.1573084861072422,
+          "low": 0.5689720366006412,
+          "high": 1.7456449356138433
+        },
+        {
+          "controller": "militarist",
+          "n": 128,
+          "mean": 4.016839063887726,
+          "low": 1.571743867641501,
+          "high": 6.461934260133951
+        },
+        {
+          "controller": "trader",
+          "n": 128,
+          "mean": 2.1211920588147097,
+          "low": 0.6681384008328317,
+          "high": 3.5742457167965878
+        },
+        {
+          "controller": "diplomat",
+          "n": 128,
+          "mean": 1.1503722684159021,
+          "low": -0.2839729699899205,
+          "high": 2.5847175068217245
+        }
+      ],
+      "status": "measured"
+    },
+    {
+      "id": "diplomacy-minus",
+      "name": "Diplomacy -1",
+      "category": "aptitude",
+      "draftCost": -1,
+      "cost": 0,
+      "scorePercent": {
+        "n": 128,
+        "mean": -0.44104808607507506,
+        "low": -0.7423870966113595,
+        "high": -0.13970907553879064
+      },
+      "pairedWinFraction": {
+        "n": 128,
+        "mean": 0.22209821428571405,
+        "low": 0.19107047366951607,
+        "high": 0.25312595490191203
+      },
+      "byController": [
+        {
+          "controller": "balanced",
+          "n": 128,
+          "mean": -0.685287035322337,
+          "low": -1.3276245964812383,
+          "high": -0.04294947416343564
+        },
+        {
+          "controller": "expansionist",
+          "n": 128,
+          "mean": -0.9567469047568368,
+          "low": -1.4432841936193046,
+          "high": -0.4702096158943689
+        },
+        {
+          "controller": "builder",
+          "n": 128,
+          "mean": -0.6995570602896538,
+          "low": -1.1862531486216563,
+          "high": -0.2128609719576513
+        },
+        {
+          "controller": "scholar",
+          "n": 128,
+          "mean": -0.34401468022088744,
+          "low": -0.7383390248698343,
+          "high": 0.05030966442805945
+        },
+        {
+          "controller": "militarist",
+          "n": 128,
+          "mean": 0.030763590179989475,
+          "low": -0.9414920025342448,
+          "high": 1.0030191828942239
+        },
+        {
+          "controller": "trader",
+          "n": 128,
+          "mean": 1.0805699304077478,
+          "low": -0.010400241602266824,
+          "high": 2.1715401024177625
+        },
+        {
+          "controller": "diplomat",
+          "n": 128,
+          "mean": -1.5130644425235489,
+          "low": -2.2016916890069003,
+          "high": -0.8244371960401974
+        }
+      ],
+      "status": "measured"
+    },
+    {
+      "id": "diplomacy-1",
+      "name": "Diplomacy +1",
+      "category": "aptitude",
+      "draftCost": 2,
+      "cost": 1,
+      "scorePercent": {
+        "n": 128,
+        "mean": 1.1283503079172534,
+        "low": 0.797103791306305,
+        "high": 1.4595968245282018
+      },
+      "pairedWinFraction": {
+        "n": 128,
+        "mean": 0.7968749999999994,
+        "low": 0.7666662141404149,
+        "high": 0.827083785859584
+      },
+      "byController": [
+        {
+          "controller": "balanced",
+          "n": 128,
+          "mean": 0.5052559679779707,
+          "low": 0.09669313867284163,
+          "high": 0.9138187972830998
+        },
+        {
+          "controller": "expansionist",
+          "n": 128,
+          "mean": 1.5612716053508173,
+          "low": 0.846352580798442,
+          "high": 2.2761906299031924
+        },
+        {
+          "controller": "builder",
+          "n": 128,
+          "mean": 0.7877009808486973,
+          "low": 0.016991530403697497,
+          "high": 1.558410431293697
+        },
+        {
+          "controller": "scholar",
+          "n": 128,
+          "mean": 1.0810166529148229,
+          "low": 0.5098698878523403,
+          "high": 1.6521634179773055
+        },
+        {
+          "controller": "militarist",
+          "n": 128,
+          "mean": 1.4439874232631198,
+          "low": 0.47171041262439706,
+          "high": 2.4162644339018424
+        },
+        {
+          "controller": "trader",
+          "n": 128,
+          "mean": 1.6578469510608707,
+          "low": 0.5978685915551663,
+          "high": 2.717825310566575
+        },
+        {
+          "controller": "diplomat",
+          "n": 128,
+          "mean": 0.8613725740044726,
+          "low": -0.3194672141172592,
+          "high": 2.0422123621262047
+        }
+      ],
+      "status": "measured"
+    },
+    {
+      "id": "diplomacy-2",
+      "name": "Diplomacy +2",
+      "category": "aptitude",
+      "draftCost": 4,
+      "cost": 3,
+      "scorePercent": {
+        "n": 128,
+        "mean": 1.9736356019591625,
+        "low": 1.5406388520288894,
+        "high": 2.406632351889436
+      },
+      "pairedWinFraction": {
+        "n": 128,
+        "mean": 0.7600446428571426,
+        "low": 0.7264603790664885,
+        "high": 0.7936289066477966
+      },
+      "byController": [
+        {
+          "controller": "balanced",
+          "n": 128,
+          "mean": 0.8873205218583451,
+          "low": 0.2873279883606632,
+          "high": 1.487313055356027
+        },
+        {
+          "controller": "expansionist",
+          "n": 128,
+          "mean": 2.784067321643356,
+          "low": 1.8475811095073058,
+          "high": 3.720553533779406
+        },
+        {
+          "controller": "builder",
+          "n": 128,
+          "mean": 1.6978486045700072,
+          "low": 0.6673612130850837,
+          "high": 2.7283359960549305
+        },
+        {
+          "controller": "scholar",
+          "n": 128,
+          "mean": 1.3858240542027978,
+          "low": 0.7829399134992622,
+          "high": 1.9887081949063332
+        },
+        {
+          "controller": "militarist",
+          "n": 128,
+          "mean": 2.1016081932777304,
+          "low": 0.9128585404185916,
+          "high": 3.290357846136869
+        },
+        {
+          "controller": "trader",
+          "n": 128,
+          "mean": 2.9442717422680738,
+          "low": 1.6963596916736206,
+          "high": 4.192183792862527
+        },
+        {
+          "controller": "diplomat",
+          "n": 128,
+          "mean": 2.014508775893823,
+          "low": 0.6384412192751872,
+          "high": 3.390576332512459
+        }
+      ],
+      "status": "measured"
+    },
+    {
+      "id": "stability-minus",
+      "name": "Stability -1",
+      "category": "aptitude",
+      "draftCost": -2,
+      "cost": 0,
+      "scorePercent": {
+        "n": 128,
+        "mean": -6.517457318184861,
+        "low": -7.072775669374799,
+        "high": -5.962138966994923
+      },
+      "pairedWinFraction": {
+        "n": 128,
+        "mean": 0.11160714285714285,
+        "low": 0.08677329538408782,
+        "high": 0.13644099033019788
+      },
+      "byController": [
+        {
+          "controller": "balanced",
+          "n": 128,
+          "mean": -7.125563643074997,
+          "low": -8.601367725815157,
+          "high": -5.6497595603348385
+        },
+        {
+          "controller": "expansionist",
+          "n": 128,
+          "mean": -7.141082890495124,
+          "low": -8.357035267391659,
+          "high": -5.925130513598588
+        },
+        {
+          "controller": "builder",
+          "n": 128,
+          "mean": -7.8698707249702045,
+          "low": -9.310466775877241,
+          "high": -6.429274674063167
+        },
+        {
+          "controller": "scholar",
+          "n": 128,
+          "mean": -4.906544054629234,
+          "low": -5.614046916030699,
+          "high": -4.199041193227768
+        },
+        {
+          "controller": "militarist",
+          "n": 128,
+          "mean": -5.614205269660132,
+          "low": -8.898373739160666,
+          "high": -2.330036800159597
+        },
+        {
+          "controller": "trader",
+          "n": 128,
+          "mean": -5.6382067553744815,
+          "low": -7.178769097188211,
+          "high": -4.097644413560752
+        },
+        {
+          "controller": "diplomat",
+          "n": 128,
+          "mean": -7.326727889089845,
+          "low": -8.565371329838893,
+          "high": -6.088084448340797
+        }
+      ],
+      "status": "measured"
+    },
+    {
+      "id": "stability-1",
+      "name": "Stability +1",
+      "category": "aptitude",
+      "draftCost": 3,
+      "cost": 1,
+      "scorePercent": {
+        "n": 128,
+        "mean": 5.078760507118919,
+        "low": 4.450968540299613,
+        "high": 5.706552473938226
+      },
+      "pairedWinFraction": {
+        "n": 128,
+        "mean": 0.8392857142857143,
+        "low": 0.8088557249336211,
+        "high": 0.8697157036378075
+      },
+      "byController": [
+        {
+          "controller": "balanced",
+          "n": 128,
+          "mean": 4.649783724975588,
+          "low": 3.4627391028454877,
+          "high": 5.836828347105689
+        },
+        {
+          "controller": "expansionist",
+          "n": 128,
+          "mean": 6.848863918591195,
+          "low": 5.289993724668407,
+          "high": 8.407734112513982
+        },
+        {
+          "controller": "builder",
+          "n": 128,
+          "mean": 7.065091437663073,
+          "low": 5.410755406599813,
+          "high": 8.719427468726332
+        },
+        {
+          "controller": "scholar",
+          "n": 128,
+          "mean": 1.6271077935326357,
+          "low": 1.0003279785429275,
+          "high": 2.253887608522344
+        },
+        {
+          "controller": "militarist",
+          "n": 128,
+          "mean": 7.366226188044479,
+          "low": 5.790473205291724,
+          "high": 8.941979170797234
+        },
+        {
+          "controller": "trader",
+          "n": 128,
+          "mean": 3.9950187405024034,
+          "low": 2.5294776407068476,
+          "high": 5.460559840297959
+        },
+        {
+          "controller": "diplomat",
+          "n": 128,
+          "mean": 3.999231746523037,
+          "low": 2.612260572583109,
+          "high": 5.386202920462965
+        }
+      ],
+      "status": "measured"
+    },
+    {
+      "id": "stability-2",
+      "name": "Stability +2",
+      "category": "aptitude",
+      "draftCost": 5,
+      "cost": 3,
+      "scorePercent": {
+        "n": 128,
+        "mean": 9.437145596940896,
+        "low": 8.537024479426059,
+        "high": 10.337266714455733
+      },
+      "pairedWinFraction": {
+        "n": 128,
+        "mean": 0.8828124999999999,
+        "low": 0.8560176902511261,
+        "high": 0.9096073097488737
+      },
+      "byController": [
+        {
+          "controller": "balanced",
+          "n": 128,
+          "mean": 8.625838024804734,
+          "low": 7.278804436746232,
+          "high": 9.972871612863237
+        },
+        {
+          "controller": "expansionist",
+          "n": 128,
+          "mean": 10.77917966998926,
+          "low": 9.471878644904088,
+          "high": 12.086480695074432
+        },
+        {
+          "controller": "builder",
+          "n": 128,
+          "mean": 11.268138616156286,
+          "low": 9.410170052889194,
+          "high": 13.126107179423377
+        },
+        {
+          "controller": "scholar",
+          "n": 128,
+          "mean": 3.197969517029849,
+          "low": 2.2681299149823486,
+          "high": 4.12780911907735
+        },
+        {
+          "controller": "militarist",
+          "n": 128,
+          "mean": 15.518203191726874,
+          "low": 12.999476297598342,
+          "high": 18.036930085855406
+        },
+        {
+          "controller": "trader",
+          "n": 128,
+          "mean": 8.257462992286293,
+          "low": 6.486834934750485,
+          "high": 10.0280910498221
+        },
+        {
+          "controller": "diplomat",
+          "n": 128,
+          "mean": 8.413227166592998,
+          "low": 5.920179126715865,
+          "high": 10.90627520647013
+        }
+      ],
+      "status": "measured"
+    }
+  ],
+  "interactions": [
+    {
+      "picks": [
+        "subterranean",
+        "photosynthetic"
+      ],
+      "scoreResidualPercent": {
+        "n": 64,
+        "mean": 1.724834279846441,
+        "low": 0.5583830076869267,
+        "high": 2.8912855520059555
+      },
+      "flagged": false
+    },
+    {
+      "picks": [
+        "subterranean",
+        "spore-borne"
+      ],
+      "scoreResidualPercent": {
+        "n": 64,
+        "mean": 2.427942298967118,
+        "low": 1.1582924053145354,
+        "high": 3.697592192619701
+      },
+      "flagged": false
+    },
+    {
+      "picks": [
+        "subterranean",
+        "hive-mind"
+      ],
+      "scoreResidualPercent": {
+        "n": 64,
+        "mean": 3.853870202249299,
+        "low": 2.7578066243922255,
+        "high": 4.949933780106373
+      },
+      "flagged": false
+    },
+    {
+      "picks": [
+        "subterranean",
+        "terraformers"
+      ],
+      "scoreResidualPercent": {
+        "n": 64,
+        "mean": -2.2397396010855597,
+        "low": -3.1867337732791916,
+        "high": -1.2927454288919278
+      },
+      "flagged": false
+    },
+    {
+      "picks": [
+        "subterranean",
+        "genetic-plasticity"
+      ],
+      "scoreResidualPercent": {
+        "n": 64,
+        "mean": 0.238661628331569,
+        "low": -0.8893603057151425,
+        "high": 1.3666835623782805
+      },
+      "flagged": false
+    },
+    {
+      "picks": [
+        "subterranean",
+        "electrosense"
+      ],
+      "scoreResidualPercent": {
+        "n": 64,
+        "mean": 0.834228251627118,
+        "low": 0.32374499704982496,
+        "high": 1.344711506204411
+      },
+      "flagged": false
+    },
+    {
+      "picks": [
+        "subterranean",
+        "radiotrophic"
+      ],
+      "scoreResidualPercent": {
+        "n": 64,
+        "mean": -0.8531522929368961,
+        "low": -1.4080096702884544,
+        "high": -0.29829491558533794
+      },
+      "flagged": false
+    },
+    {
+      "picks": [
+        "subterranean",
+        "cybernetic"
+      ],
+      "scoreResidualPercent": {
+        "n": 64,
+        "mean": 0.4168504247982796,
+        "low": 0.2637101112423874,
+        "high": 0.5699907383541718
+      },
+      "flagged": false
+    },
+    {
+      "picks": [
+        "photosynthetic",
+        "spore-borne"
+      ],
+      "scoreResidualPercent": {
+        "n": 64,
+        "mean": -1.8406412810088628,
+        "low": -2.600467321779472,
+        "high": -1.0808152402382536
+      },
+      "flagged": false
+    },
+    {
+      "picks": [
+        "photosynthetic",
+        "hive-mind"
+      ],
+      "scoreResidualPercent": {
+        "n": 64,
+        "mean": -2.1608143318879,
+        "low": -3.127595716226535,
+        "high": -1.1940329475492653
+      },
+      "flagged": false
+    },
+    {
+      "picks": [
+        "photosynthetic",
+        "terraformers"
+      ],
+      "scoreResidualPercent": {
+        "n": 64,
+        "mean": 1.0713244273330624,
+        "low": 0.3751993028055679,
+        "high": 1.7674495518605569
+      },
+      "flagged": false
+    },
+    {
+      "picks": [
+        "photosynthetic",
+        "genetic-plasticity"
+      ],
+      "scoreResidualPercent": {
+        "n": 64,
+        "mean": -2.7306490754992305,
+        "low": -3.634172973427565,
+        "high": -1.8271251775708959
+      },
+      "flagged": false
+    },
+    {
+      "picks": [
+        "photosynthetic",
+        "electrosense"
+      ],
+      "scoreResidualPercent": {
+        "n": 64,
+        "mean": -0.2412815853485847,
+        "low": -0.4786914694760529,
+        "high": -0.0038717012211164914
+      },
+      "flagged": false
+    },
+    {
+      "picks": [
+        "photosynthetic",
+        "radiotrophic"
+      ],
+      "scoreResidualPercent": {
+        "n": 64,
+        "mean": -1.051569322333225,
+        "low": -1.4613467837173204,
+        "high": -0.6417918609491295
+      },
+      "flagged": false
+    },
+    {
+      "picks": [
+        "photosynthetic",
+        "cybernetic"
+      ],
+      "scoreResidualPercent": {
+        "n": 64,
+        "mean": 0.10507771836594733,
+        "low": -0.04915693204691281,
+        "high": 0.2593123687788075
+      },
+      "flagged": false
+    },
+    {
+      "picks": [
+        "spore-borne",
+        "hive-mind"
+      ],
+      "scoreResidualPercent": {
+        "n": 64,
+        "mean": -0.6743466090012824,
+        "low": -1.913891328344259,
+        "high": 0.5651981103416941
+      },
+      "flagged": false
+    },
+    {
+      "picks": [
+        "spore-borne",
+        "terraformers"
+      ],
+      "scoreResidualPercent": {
+        "n": 64,
+        "mean": 1.9751977660370588,
+        "low": 1.224626725770488,
+        "high": 2.7257688063036296
+      },
+      "flagged": false
+    },
+    {
+      "picks": [
+        "spore-borne",
+        "genetic-plasticity"
+      ],
+      "scoreResidualPercent": {
+        "n": 64,
+        "mean": 0.7207465648959417,
+        "low": -0.2195469514159697,
+        "high": 1.6610400812078532
+      },
+      "flagged": false
+    },
+    {
+      "picks": [
+        "spore-borne",
+        "electrosense"
+      ],
+      "scoreResidualPercent": {
+        "n": 64,
+        "mean": 2.240737761230892,
+        "low": 1.8189941250400294,
+        "high": 2.6624813974217543
+      },
+      "flagged": false
+    },
+    {
+      "picks": [
+        "spore-borne",
+        "radiotrophic"
+      ],
+      "scoreResidualPercent": {
+        "n": 64,
+        "mean": 1.0144540272977793,
+        "low": 0.5232134058158242,
+        "high": 1.5056946487797345
+      },
+      "flagged": false
+    },
+    {
+      "picks": [
+        "spore-borne",
+        "cybernetic"
+      ],
+      "scoreResidualPercent": {
+        "n": 64,
+        "mean": 0.09546892677443071,
+        "low": -0.0852514728848092,
+        "high": 0.2761893264336706
+      },
+      "flagged": false
+    },
+    {
+      "picks": [
+        "hive-mind",
+        "terraformers"
+      ],
+      "scoreResidualPercent": {
+        "n": 64,
+        "mean": 2.910705758575259,
+        "low": 1.9455805737861942,
+        "high": 3.875830943364324
+      },
+      "flagged": false
+    },
+    {
+      "picks": [
+        "hive-mind",
+        "genetic-plasticity"
+      ],
+      "scoreResidualPercent": {
+        "n": 64,
+        "mean": 1.0489300083093247,
+        "low": -0.19091206013165674,
+        "high": 2.2887720767503064
+      },
+      "flagged": false
+    },
+    {
+      "picks": [
+        "hive-mind",
+        "electrosense"
+      ],
+      "scoreResidualPercent": {
+        "n": 64,
+        "mean": 2.988106015461928,
+        "low": 2.482518044802329,
+        "high": 3.4936939861215266
+      },
+      "flagged": false
+    },
+    {
+      "picks": [
+        "hive-mind",
+        "radiotrophic"
+      ],
+      "scoreResidualPercent": {
+        "n": 64,
+        "mean": 0.8854079460709433,
+        "low": 0.4124136899256981,
+        "high": 1.3584022022161886
+      },
+      "flagged": false
+    },
+    {
+      "picks": [
+        "hive-mind",
+        "cybernetic"
+      ],
+      "scoreResidualPercent": {
+        "n": 64,
+        "mean": 0.6054628896378552,
+        "low": 0.3482275210688284,
+        "high": 0.8626982582068821
+      },
+      "flagged": false
+    },
+    {
+      "picks": [
+        "terraformers",
+        "genetic-plasticity"
+      ],
+      "scoreResidualPercent": {
+        "n": 64,
+        "mean": -1.0329142952136343,
+        "low": -1.8685023906204399,
+        "high": -0.19732619980682864
+      },
+      "flagged": false
+    },
+    {
+      "picks": [
+        "terraformers",
+        "electrosense"
+      ],
+      "scoreResidualPercent": {
+        "n": 64,
+        "mean": 0.29748828161494634,
+        "low": 0.040560274292398335,
+        "high": 0.5544162889374944
+      },
+      "flagged": false
+    },
+    {
+      "picks": [
+        "terraformers",
+        "radiotrophic"
+      ],
+      "scoreResidualPercent": {
+        "n": 64,
+        "mean": -0.5362201259752185,
+        "low": -0.8863774025805093,
+        "high": -0.18606284936992767
+      },
+      "flagged": false
+    },
+    {
+      "picks": [
+        "terraformers",
+        "cybernetic"
+      ],
+      "scoreResidualPercent": {
+        "n": 64,
+        "mean": 0.11979364059335487,
+        "low": -0.12673246107213584,
+        "high": 0.36631974225884556
+      },
+      "flagged": false
+    },
+    {
+      "picks": [
+        "genetic-plasticity",
+        "electrosense"
+      ],
+      "scoreResidualPercent": {
+        "n": 64,
+        "mean": 0.3403010860299698,
+        "low": 0.015745506736036807,
+        "high": 0.6648566653239028
+      },
+      "flagged": false
+    },
+    {
+      "picks": [
+        "genetic-plasticity",
+        "radiotrophic"
+      ],
+      "scoreResidualPercent": {
+        "n": 64,
+        "mean": 0.37952755719039605,
+        "low": 0.07399717718505533,
+        "high": 0.6850579371957368
+      },
+      "flagged": false
+    },
+    {
+      "picks": [
+        "genetic-plasticity",
+        "cybernetic"
+      ],
+      "scoreResidualPercent": {
+        "n": 64,
+        "mean": 0.11347085745302464,
+        "low": -0.03233248313828767,
+        "high": 0.25927419804433693
+      },
+      "flagged": false
+    },
+    {
+      "picks": [
+        "electrosense",
+        "radiotrophic"
+      ],
+      "scoreResidualPercent": {
+        "n": 64,
+        "mean": 0.2178913426764757,
+        "low": 0.0595180586731639,
+        "high": 0.3762646266797875
+      },
+      "flagged": false
+    },
+    {
+      "picks": [
+        "electrosense",
+        "cybernetic"
+      ],
+      "scoreResidualPercent": {
+        "n": 64,
+        "mean": -0.006565024389863495,
+        "low": -0.07331574495795487,
+        "high": 0.06018569617822789
+      },
+      "flagged": false
+    },
+    {
+      "picks": [
+        "radiotrophic",
+        "cybernetic"
+      ],
+      "scoreResidualPercent": {
+        "n": 64,
+        "mean": 0.07397858898369991,
+        "low": 0.031977371118201,
+        "high": 0.11597980684919881
+      },
+      "flagged": false
+    }
+  ],
+  "costs": {
+    "carbon": 0,
+    "lithic": 4,
+    "synthetic": 1,
+    "temperature-narrow": 0,
+    "temperature-wide": 1,
+    "gravity-narrow": 0,
+    "gravity-wide": 3,
+    "amphibious": 2,
+    "radiation-vulnerable": -1,
+    "radiation-resistant": 2,
+    "hardy": 1,
+    "sealed-metabolism": 1,
+    "growth-very-slow": 0,
+    "growth-slow": 0,
+    "growth-fast": 1,
+    "growth-very-fast": 1,
+    "lifespan-ephemeral": 0,
+    "lifespan-short": 0,
+    "lifespan-long": 1,
+    "lifespan-ancient": 1,
+    "rigid": 0,
+    "creative": 1,
+    "origin-standard": 0,
+    "origin-large": 3,
+    "origin-small": -1,
+    "origin-rich": 1,
+    "origin-poor": 0,
+    "origin-twin": 3,
+    "origin-vault": 1,
+    "origin-nomad": 0,
+    "subterranean": 3,
+    "photosynthetic": 1,
+    "spore-borne": 2,
+    "hive-mind": 4,
+    "terraformers": 2,
+    "genetic-plasticity": 2,
+    "electrosense": 1,
+    "radiotrophic": 1,
+    "cybernetic": 1,
+    "autocracy": 0,
+    "republic": 2,
+    "communion": 1,
+    "federation": 1,
+    "technocracy": 2,
+    "directorate": 1,
+    "xenophobic": 0,
+    "cosmopolitan": 1,
+    "industry-minus": -1,
+    "industry-1": 2,
+    "industry-2": 5,
+    "research-minus": -1,
+    "research-1": 2,
+    "research-2": 5,
+    "commerce-minus": 0,
+    "commerce-1": 1,
+    "commerce-2": 3,
+    "piloting-minus": 0,
+    "piloting-1": 1,
+    "piloting-2": 3,
+    "troops-minus": 0,
+    "troops-1": 1,
+    "troops-2": 3,
+    "espionage-minus": 0,
+    "espionage-1": 1,
+    "espionage-2": 3,
+    "diplomacy-minus": 0,
+    "diplomacy-1": 1,
+    "diplomacy-2": 3,
+    "stability-minus": 0,
+    "stability-1": 1,
+    "stability-2": 3
+  }
+}

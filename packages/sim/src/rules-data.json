@@ -1,0 +1,1342 @@
+{
+  "techs": [
+    {
+      "id": "improved-fusion",
+      "name": "Improved Fusion",
+      "field": "Propulsion",
+      "tier": 1,
+      "cost": 40,
+      "description": "drive speed 1.5 ly/turn"
+    },
+    {
+      "id": "extended-tankage",
+      "name": "Extended Tankage",
+      "field": "Propulsion",
+      "tier": 1,
+      "cost": 40,
+      "description": "supply range +2 ly"
+    },
+    {
+      "id": "lightweight-probes",
+      "name": "Lightweight Probes",
+      "field": "Propulsion",
+      "tier": 1,
+      "cost": 40,
+      "description": "probes −50% cost, probe sensors reveal moons"
+    },
+    {
+      "id": "fuel-skimming",
+      "name": "Fuel Skimming",
+      "field": "Propulsion",
+      "tier": 2,
+      "cost": 80,
+      "description": "gas giant outposts become fuel depots (+3 ly supply from that system)"
+    },
+    {
+      "id": "orbital-tugs",
+      "name": "Orbital Tugs",
+      "field": "Propulsion",
+      "tier": 2,
+      "cost": 80,
+      "description": "in-system settlement projects (system links) −30% cost"
+    },
+    {
+      "id": "cryo-stabilisation",
+      "name": "Cryo Stabilisation",
+      "field": "Propulsion",
+      "tier": 2,
+      "cost": 80,
+      "description": "colony ships carry +1 pop, transports +50% capacity"
+    },
+    {
+      "id": "antimatter-catalysis",
+      "name": "Antimatter Catalysis",
+      "field": "Propulsion",
+      "tier": 3,
+      "cost": 150,
+      "description": "speed 2.25"
+    },
+    {
+      "id": "deep-space-depots",
+      "name": "Deep-Space Depots",
+      "field": "Propulsion",
+      "tier": 3,
+      "cost": 150,
+      "description": "Fuel Depot station, a supply node in any system"
+    },
+    {
+      "id": "combat-thrusters",
+      "name": "Combat Thrusters",
+      "field": "Propulsion",
+      "tier": 3,
+      "cost": 150,
+      "description": "battle acceleration +20%"
+    },
+    {
+      "id": "magnetic-sails",
+      "name": "Magnetic Sails",
+      "field": "Propulsion",
+      "tier": 4,
+      "cost": 260,
+      "description": "supply range +3 ly"
+    },
+    {
+      "id": "interstellar-logistics",
+      "name": "Interstellar Logistics",
+      "field": "Propulsion",
+      "tier": 4,
+      "cost": 260,
+      "description": "population transfers −50% cost and travel one speed tier faster"
+    },
+    {
+      "id": "vectored-thrust",
+      "name": "Vectored Thrust",
+      "field": "Propulsion",
+      "tier": 4,
+      "cost": 260,
+      "description": "turn rate +30%, evasion against kinetics +10%"
+    },
+    {
+      "id": "antimatter-beam-core",
+      "name": "Antimatter Beam Core",
+      "field": "Propulsion",
+      "tier": 5,
+      "cost": 420,
+      "description": "speed 3.0"
+    },
+    {
+      "id": "laser-launch-network",
+      "name": "Laser Launch Network",
+      "field": "Propulsion",
+      "tier": 5,
+      "cost": 420,
+      "description": "Launch Laser building; civil ships starting there travel one tier faster"
+    },
+    {
+      "id": "fusion-afterburners",
+      "name": "Fusion Afterburners",
+      "field": "Propulsion",
+      "tier": 5,
+      "cost": 420,
+      "description": "battle top speed +25%"
+    },
+    {
+      "id": "ramscoop",
+      "name": "Ramscoop",
+      "field": "Propulsion",
+      "tier": 6,
+      "cost": 650,
+      "description": "speed 3.75, supply +2 ly"
+    },
+    {
+      "id": "deep-hibernation",
+      "name": "Deep Hibernation",
+      "field": "Propulsion",
+      "tier": 6,
+      "cost": 650,
+      "description": "supply range +4 ly"
+    },
+    {
+      "id": "battle-drive",
+      "name": "Battle Drive",
+      "field": "Propulsion",
+      "tier": 6,
+      "cost": 650,
+      "description": "battle acceleration +30% (stacks with Combat Thrusters)"
+    },
+    {
+      "id": "relativistic-drive",
+      "name": "Relativistic Drive",
+      "field": "Propulsion",
+      "tier": 7,
+      "cost": 1000,
+      "description": "speed 4.5"
+    },
+    {
+      "id": "starlifting",
+      "name": "Starlifting",
+      "field": "Propulsion",
+      "tier": 7,
+      "cost": 1000,
+      "description": "every system with your colony extends supply +3 ly; ships built there −10% cost"
+    },
+    {
+      "id": "strategic-redeployment",
+      "name": "Strategic Redeployment",
+      "field": "Propulsion",
+      "tier": 7,
+      "cost": 1000,
+      "description": "fleets moving between your own systems travel one tier faster"
+    },
+    {
+      "id": "field-theory",
+      "name": "Field Theory",
+      "field": "Propulsion",
+      "tier": 8,
+      "cost": 1500,
+      "description": "with a Gardener drive artifact unlocks the Field Drive (5 ly/turn), otherwise speed +10%"
+    },
+    {
+      "id": "relativistic-impactors",
+      "name": "Relativistic Impactors",
+      "field": "Propulsion",
+      "tier": 8,
+      "cost": 1500,
+      "description": "the RKV weapon (optional rule, see ground combat doc)"
+    },
+    {
+      "id": "beamed-power-network",
+      "name": "Beamed Power Network",
+      "field": "Propulsion",
+      "tier": 8,
+      "cost": 1500,
+      "description": "all ships leaving your colony systems travel one tier faster"
+    },
+    {
+      "id": "point-defence-laser",
+      "name": "Point-Defence Laser",
+      "field": "Energy & Weapons",
+      "tier": 1,
+      "cost": 40,
+      "description": "PD component against missiles"
+    },
+    {
+      "id": "railgun",
+      "name": "Railgun",
+      "field": "Energy & Weapons",
+      "tier": 1,
+      "cost": 40,
+      "description": "kinetic line tier 2"
+    },
+    {
+      "id": "fusion-missile",
+      "name": "Fusion Missile",
+      "field": "Energy & Weapons",
+      "tier": 1,
+      "cost": 40,
+      "description": "missile line tier 2"
+    },
+    {
+      "id": "uv-laser",
+      "name": "UV Laser",
+      "field": "Energy & Weapons",
+      "tier": 2,
+      "cost": 80,
+      "description": "laser line tier 2"
+    },
+    {
+      "id": "high-output-reactor",
+      "name": "High-Output Reactor",
+      "field": "Energy & Weapons",
+      "tier": 2,
+      "cost": 80,
+      "description": "ship power ×1.3"
+    },
+    {
+      "id": "guided-slugs",
+      "name": "Guided Slugs",
+      "field": "Energy & Weapons",
+      "tier": 2,
+      "cost": 80,
+      "description": "kinetic accuracy at long range +20%"
+    },
+    {
+      "id": "x-ray-laser",
+      "name": "X-Ray Laser",
+      "field": "Energy & Weapons",
+      "tier": 3,
+      "cost": 150,
+      "description": "laser tier 3"
+    },
+    {
+      "id": "mass-driver",
+      "name": "Mass Driver",
+      "field": "Energy & Weapons",
+      "tier": 3,
+      "cost": 150,
+      "description": "spinal kinetic weapon"
+    },
+    {
+      "id": "droplet-radiators",
+      "name": "Droplet Radiators",
+      "field": "Energy & Weapons",
+      "tier": 3,
+      "cost": 150,
+      "description": "heat dissipation +50%, laser damage +10%"
+    },
+    {
+      "id": "neutral-particle-beam",
+      "name": "Neutral Particle Beam",
+      "field": "Energy & Weapons",
+      "tier": 4,
+      "cost": 260,
+      "description": "particle line tier 1"
+    },
+    {
+      "id": "antimatter-warhead",
+      "name": "Antimatter Warhead",
+      "field": "Energy & Weapons",
+      "tier": 4,
+      "cost": 260,
+      "description": "missile tier 3"
+    },
+    {
+      "id": "magnetic-deflectors",
+      "name": "Magnetic Deflectors",
+      "field": "Energy & Weapons",
+      "tier": 4,
+      "cost": 260,
+      "description": "deflector component (particle beams −40%, kinetics −15%), Planetary Deflector building"
+    },
+    {
+      "id": "antimatter-reactor",
+      "name": "Antimatter Reactor",
+      "field": "Energy & Weapons",
+      "tier": 5,
+      "cost": 420,
+      "description": "ship power ×1.7 (replaces ×1.3), Antimatter Plant building"
+    },
+    {
+      "id": "hypervelocity-railgun",
+      "name": "Hypervelocity Railgun",
+      "field": "Energy & Weapons",
+      "tier": 5,
+      "cost": 420,
+      "description": "kinetic tier 3"
+    },
+    {
+      "id": "swarm-missile",
+      "name": "Swarm Missile",
+      "field": "Energy & Weapons",
+      "tier": 5,
+      "cost": 420,
+      "description": "missile tier 4 (splits into several warheads)"
+    },
+    {
+      "id": "gamma-ray-laser-graser",
+      "name": "Gamma-Ray Laser (graser)",
+      "field": "Energy & Weapons",
+      "tier": 6,
+      "cost": 650,
+      "description": "laser tier 4"
+    },
+    {
+      "id": "proton-lance",
+      "name": "Proton Lance",
+      "field": "Energy & Weapons",
+      "tier": 6,
+      "cost": 650,
+      "description": "particle tier 2, spinal"
+    },
+    {
+      "id": "flak-railgun",
+      "name": "Flak Railgun",
+      "field": "Energy & Weapons",
+      "tier": 6,
+      "cost": 650,
+      "description": "kinetic point defence, strong against swarms"
+    },
+    {
+      "id": "antiproton-beam",
+      "name": "Antiproton Beam",
+      "field": "Energy & Weapons",
+      "tier": 7,
+      "cost": 1000,
+      "description": "particle tier 3"
+    },
+    {
+      "id": "autonomous-missile",
+      "name": "Autonomous Missile",
+      "field": "Energy & Weapons",
+      "tier": 7,
+      "cost": 1000,
+      "description": "missile tier 5 (re-targets, evades point defence)"
+    },
+    {
+      "id": "graser-point-defence",
+      "name": "Graser Point Defence",
+      "field": "Energy & Weapons",
+      "tier": 7,
+      "cost": 1000,
+      "description": "best point defence"
+    },
+    {
+      "id": "relativistic-slug-thrower",
+      "name": "Relativistic Slug Thrower",
+      "field": "Energy & Weapons",
+      "tier": 8,
+      "cost": 1500,
+      "description": "ultimate spinal kinetic"
+    },
+    {
+      "id": "planetary-laser-grid",
+      "name": "Planetary Laser Grid",
+      "field": "Energy & Weapons",
+      "tier": 8,
+      "cost": 1500,
+      "description": "huge planet-based laser battery"
+    },
+    {
+      "id": "coherent-arrays",
+      "name": "Coherent Arrays",
+      "field": "Energy & Weapons",
+      "tier": 8,
+      "cost": 1500,
+      "description": "all lasers +25% range"
+    },
+    {
+      "id": "destroyer-hull",
+      "name": "Destroyer Hull",
+      "field": "Materials",
+      "tier": 1,
+      "cost": 40,
+      "description": ""
+    },
+    {
+      "id": "titanium-composite",
+      "name": "Titanium Composite",
+      "field": "Materials",
+      "tier": 1,
+      "cost": 40,
+      "description": "armour tier 2"
+    },
+    {
+      "id": "automated-mining",
+      "name": "Automated Mining",
+      "field": "Materials",
+      "tier": 1,
+      "cost": 40,
+      "description": "deposits +25%"
+    },
+    {
+      "id": "orbital-construction",
+      "name": "Orbital Construction",
+      "field": "Materials",
+      "tier": 2,
+      "cost": 80,
+      "description": "Orbital Shipyard building (ship cost −15%; needed for Cruiser and larger)"
+    },
+    {
+      "id": "whipple-shielding",
+      "name": "Whipple Shielding",
+      "field": "Materials",
+      "tier": 2,
+      "cost": 80,
+      "description": "armour layer that halves kinetic and missile penetration"
+    },
+    {
+      "id": "deep-core-mining",
+      "name": "Deep Core Mining",
+      "field": "Materials",
+      "tier": 2,
+      "cost": 80,
+      "description": "Deep Mine building"
+    },
+    {
+      "id": "cruiser-hull",
+      "name": "Cruiser Hull",
+      "field": "Materials",
+      "tier": 3,
+      "cost": 150,
+      "description": ""
+    },
+    {
+      "id": "carbon-nanotube-armour",
+      "name": "Carbon Nanotube Armour",
+      "field": "Materials",
+      "tier": 3,
+      "cost": 150,
+      "description": "armour tier 3"
+    },
+    {
+      "id": "asteroid-mining",
+      "name": "Asteroid Mining",
+      "field": "Materials",
+      "tier": 3,
+      "cost": 150,
+      "description": "belt outposts give +industry to the system, belt habitats −30% cost"
+    },
+    {
+      "id": "environmental-assault-gear",
+      "name": "Environmental Assault Gear",
+      "field": "Materials",
+      "tier": 3,
+      "cost": 150,
+      "description": "invasions of Aerial and Aquatic colonies possible, troops +10% on Hostile worlds"
+    },
+    {
+      "id": "reflective-armour",
+      "name": "Reflective Armour",
+      "field": "Materials",
+      "tier": 4,
+      "cost": 260,
+      "description": "lasers −30%"
+    },
+    {
+      "id": "nanofabrication",
+      "name": "Nanofabrication",
+      "field": "Materials",
+      "tier": 4,
+      "cost": 260,
+      "description": "buildings −20% cost"
+    },
+    {
+      "id": "robotic-factories",
+      "name": "Robotic Factories",
+      "field": "Materials",
+      "tier": 4,
+      "cost": 260,
+      "description": "Robotic Factory building"
+    },
+    {
+      "id": "battleship-hull",
+      "name": "Battleship Hull",
+      "field": "Materials",
+      "tier": 5,
+      "cost": 420,
+      "description": ""
+    },
+    {
+      "id": "diamondoid-armour",
+      "name": "Diamondoid Armour",
+      "field": "Materials",
+      "tier": 5,
+      "cost": 420,
+      "description": "armour tier 4"
+    },
+    {
+      "id": "self-repairing-hulls",
+      "name": "Self-Repairing Hulls",
+      "field": "Materials",
+      "tier": 5,
+      "cost": 420,
+      "description": "ships repair 2% hull per battle second after 10 s without hits, and fully between turns anywhere"
+    },
+    {
+      "id": "space-elevators",
+      "name": "Space Elevators",
+      "field": "Materials",
+      "tier": 6,
+      "cost": 650,
+      "description": "Space Elevator building"
+    },
+    {
+      "id": "metamaterial-armour",
+      "name": "Metamaterial Armour",
+      "field": "Materials",
+      "tier": 6,
+      "cost": 650,
+      "description": "armour tier 5, ECM +1"
+    },
+    {
+      "id": "megastructure-engineering",
+      "name": "Megastructure Engineering",
+      "field": "Materials",
+      "tier": 6,
+      "cost": 650,
+      "description": "Habitat Rings hold twice the population"
+    },
+    {
+      "id": "dreadnought-hull",
+      "name": "Dreadnought Hull",
+      "field": "Materials",
+      "tier": 7,
+      "cost": 1000,
+      "description": ""
+    },
+    {
+      "id": "programmable-matter",
+      "name": "Programmable Matter",
+      "field": "Materials",
+      "tier": 7,
+      "cost": 1000,
+      "description": "armour adapts, −20% from the weapon family that hit most this battle"
+    },
+    {
+      "id": "molecular-assemblers",
+      "name": "Molecular Assemblers",
+      "field": "Materials",
+      "tier": 7,
+      "cost": 1000,
+      "description": "Nanoforge building"
+    },
+    {
+      "id": "dyson-swarm",
+      "name": "Dyson Swarm",
+      "field": "Materials",
+      "tier": 8,
+      "cost": 1500,
+      "description": "system megaproject"
+    },
+    {
+      "id": "fortress-stations",
+      "name": "Fortress Stations",
+      "field": "Materials",
+      "tier": 8,
+      "cost": 1500,
+      "description": "Star Fortress hull"
+    },
+    {
+      "id": "monocrystal-hulls",
+      "name": "Monocrystal Hulls",
+      "field": "Materials",
+      "tier": 8,
+      "cost": 1500,
+      "description": "hull points +50%"
+    },
+    {
+      "id": "arcologies",
+      "name": "Arcologies",
+      "field": "Life Sciences",
+      "tier": 1,
+      "cost": 40,
+      "description": "Good +10%, Harsh +15% cap"
+    },
+    {
+      "id": "closed-ecologies",
+      "name": "Closed Ecologies",
+      "field": "Life Sciences",
+      "tier": 1,
+      "cost": 40,
+      "description": "growth +25% on Hostile/Lethal colonies, dome stress halved"
+    },
+    {
+      "id": "genetic-survey",
+      "name": "Genetic Survey",
+      "field": "Life Sciences",
+      "tier": 1,
+      "cost": 40,
+      "description": "genetic adaptation I (widen one axis of all your species by one step; you choose the axis)"
+    },
+    {
+      "id": "ecopoiesis",
+      "name": "Ecopoiesis",
+      "field": "Life Sciences",
+      "tier": 2,
+      "cost": 80,
+      "description": "terraforming level 1 (Terraforming Station building, one-step projects)"
+    },
+    {
+      "id": "cloning-vats",
+      "name": "Cloning Vats",
+      "field": "Life Sciences",
+      "tier": 2,
+      "cost": 80,
+      "description": "Cloning Centre building"
+    },
+    {
+      "id": "xenobiology",
+      "name": "Xenobiology",
+      "field": "Life Sciences",
+      "tier": 2,
+      "cost": 80,
+      "description": "native biospheres +3 research each, natives join peacefully more easily"
+    },
+    {
+      "id": "sealed-undercities",
+      "name": "Sealed Undercities",
+      "field": "Life Sciences",
+      "tier": 3,
+      "cost": 150,
+      "description": "Hostile +10%, Lethal 0 → 10% (Lethal worlds become colonisable)"
+    },
+    {
+      "id": "gene-therapy",
+      "name": "Gene Therapy",
+      "field": "Life Sciences",
+      "tier": 3,
+      "cost": 150,
+      "description": "leader tenure +50%, stability +5"
+    },
+    {
+      "id": "adaptation-ii",
+      "name": "Adaptation II",
+      "field": "Life Sciences",
+      "tier": 3,
+      "cost": 150,
+      "description": "another axis step"
+    },
+    {
+      "id": "paraterraforming",
+      "name": "Paraterraforming",
+      "field": "Life Sciences",
+      "tier": 4,
+      "cost": 260,
+      "description": "Hostile +10%, Lethal +10% (world-houses)"
+    },
+    {
+      "id": "atmosphere-processors",
+      "name": "Atmosphere Processors",
+      "field": "Life Sciences",
+      "tier": 4,
+      "cost": 260,
+      "description": "terraforming −40% time, chemistry changes become possible"
+    },
+    {
+      "id": "universal-antidotes",
+      "name": "Universal Antidotes",
+      "field": "Life Sciences",
+      "tier": 4,
+      "cost": 260,
+      "description": "immune to plague events, conquered populations assimilate 25% faster"
+    },
+    {
+      "id": "orbital-habitats",
+      "name": "Orbital Habitats",
+      "field": "Life Sciences",
+      "tier": 5,
+      "cost": 420,
+      "description": "Habitat Ring project (population in orbit around any body in a system with your colony)"
+    },
+    {
+      "id": "neural-lace",
+      "name": "Neural Lace",
+      "field": "Life Sciences",
+      "tier": 5,
+      "cost": 420,
+      "description": "research +10%, stability +5"
+    },
+    {
+      "id": "engineered-microbiomes",
+      "name": "Engineered Microbiomes",
+      "field": "Life Sciences",
+      "tier": 5,
+      "cost": 420,
+      "description": "Harsh worlds count as Good for growth speed"
+    },
+    {
+      "id": "full-terraforming",
+      "name": "Full Terraforming",
+      "field": "Life Sciences",
+      "tier": 6,
+      "cost": 650,
+      "description": "terraforming may reach your Ideal temperature and chemistry"
+    },
+    {
+      "id": "adaptation-iii",
+      "name": "Adaptation III",
+      "field": "Life Sciences",
+      "tier": 6,
+      "cost": 650,
+      "description": "another axis step"
+    },
+    {
+      "id": "bioindustry",
+      "name": "Bioindustry",
+      "field": "Life Sciences",
+      "tier": 6,
+      "cost": 650,
+      "description": "industry +10%"
+    },
+    {
+      "id": "gaia-transformation",
+      "name": "Gaia Transformation",
+      "field": "Life Sciences",
+      "tier": 7,
+      "cost": 1000,
+      "description": "project turning an Ideal world into a Gaia world (+25% cap, +10 stability)"
+    },
+    {
+      "id": "longevity-treatment",
+      "name": "Longevity Treatment",
+      "field": "Life Sciences",
+      "tier": 7,
+      "cost": 1000,
+      "description": "leader tenure ×2, stability +10"
+    },
+    {
+      "id": "pantropy",
+      "name": "Pantropy",
+      "field": "Life Sciences",
+      "tier": 7,
+      "cost": 1000,
+      "description": "settle Hostile worlds with an engineered variant of your species that rates them Harsh"
+    },
+    {
+      "id": "ecumenopolis",
+      "name": "Ecumenopolis",
+      "field": "Life Sciences",
+      "tier": 8,
+      "cost": 1500,
+      "description": "city-world project for Ideal/Good worlds (+50% cap, +10% industry)"
+    },
+    {
+      "id": "mind-uploading",
+      "name": "Mind Uploading",
+      "field": "Life Sciences",
+      "tier": 8,
+      "cost": 1500,
+      "description": "bombardment and invasion kill no population (minds are backed up); leaders never die of age"
+    },
+    {
+      "id": "seedships",
+      "name": "Seedships",
+      "field": "Life Sciences",
+      "tier": 8,
+      "cost": 1500,
+      "description": "colony ships −50% cost and carry +2 pop"
+    },
+    {
+      "id": "interferometry",
+      "name": "Interferometry",
+      "field": "Computing",
+      "tier": 1,
+      "cost": 40,
+      "description": "telescope range 12 ly, resolves rocky planets"
+    },
+    {
+      "id": "targeting-computers",
+      "name": "Targeting Computers",
+      "field": "Computing",
+      "tier": 1,
+      "cost": 40,
+      "description": "Battle Computer II (+10% accuracy)"
+    },
+    {
+      "id": "research-networks",
+      "name": "Research Networks",
+      "field": "Computing",
+      "tier": 1,
+      "cost": 40,
+      "description": "Research Institute building"
+    },
+    {
+      "id": "ecm-suite",
+      "name": "ECM Suite",
+      "field": "Computing",
+      "tier": 2,
+      "cost": 80,
+      "description": "ECM component (missiles and kinetics −20% accuracy against the ship)"
+    },
+    {
+      "id": "planetary-defence-network",
+      "name": "Planetary Defence Network",
+      "field": "Computing",
+      "tier": 2,
+      "cost": 80,
+      "description": "planet batteries +25% accuracy, detection +2 ly"
+    },
+    {
+      "id": "administrative-ai",
+      "name": "Administrative AI",
+      "field": "Computing",
+      "tier": 2,
+      "cost": 80,
+      "description": "administration limit +2 colonies"
+    },
+    {
+      "id": "gravitational-lens-telescope",
+      "name": "Gravitational Lens Telescope",
+      "field": "Computing",
+      "tier": 3,
+      "cost": 150,
+      "description": "telescope range 18 ly, resolves moons"
+    },
+    {
+      "id": "quantum-sensors",
+      "name": "Quantum Sensors",
+      "field": "Computing",
+      "tier": 3,
+      "cost": 150,
+      "description": "fleet detection range ×1.5"
+    },
+    {
+      "id": "battle-computer-iii",
+      "name": "Battle Computer III",
+      "field": "Computing",
+      "tier": 3,
+      "cost": 150,
+      "description": "+20% accuracy (replaces II)"
+    },
+    {
+      "id": "machine-learning-labs",
+      "name": "Machine Learning Labs",
+      "field": "Computing",
+      "tier": 4,
+      "cost": 260,
+      "description": "AI Lab building"
+    },
+    {
+      "id": "cyberwarfare",
+      "name": "Cyberwarfare",
+      "field": "Computing",
+      "tier": 4,
+      "cost": 260,
+      "description": "espionage +1"
+    },
+    {
+      "id": "deep-space-tracking",
+      "name": "Deep-Space Tracking",
+      "field": "Computing",
+      "tier": 4,
+      "cost": 260,
+      "description": "drive plumes seen at 2× range, relativistic impactors can be detected"
+    },
+    {
+      "id": "quantum-computing",
+      "name": "Quantum Computing",
+      "field": "Computing",
+      "tier": 5,
+      "cost": 420,
+      "description": "Quantum Research Centre building"
+    },
+    {
+      "id": "predictive-tactics",
+      "name": "Predictive Tactics",
+      "field": "Computing",
+      "tier": 5,
+      "cost": 420,
+      "description": "strategy rules re-evaluate twice as often, evasion +10%"
+    },
+    {
+      "id": "automated-governance",
+      "name": "Automated Governance",
+      "field": "Computing",
+      "tier": 5,
+      "cost": 420,
+      "description": "colonies without a governor get +10 stability"
+    },
+    {
+      "id": "battle-computer-iv",
+      "name": "Battle Computer IV",
+      "field": "Computing",
+      "tier": 6,
+      "cost": 650,
+      "description": "+30% accuracy"
+    },
+    {
+      "id": "advanced-ecm",
+      "name": "Advanced ECM",
+      "field": "Computing",
+      "tier": 6,
+      "cost": 650,
+      "description": "ECM −35%"
+    },
+    {
+      "id": "telescope-swarm",
+      "name": "Telescope Swarm",
+      "field": "Computing",
+      "tier": 6,
+      "cost": 650,
+      "description": "telescope range 30 ly, resolves everything"
+    },
+    {
+      "id": "artificial-general-intelligence",
+      "name": "Artificial General Intelligence",
+      "field": "Computing",
+      "tier": 7,
+      "cost": 1000,
+      "description": "research +25%, industry +10%, stability −5 (not for Synthetic species)"
+    },
+    {
+      "id": "neural-net-defence",
+      "name": "Neural Net Defence",
+      "field": "Computing",
+      "tier": 7,
+      "cost": 1000,
+      "description": "planet defences +30% accuracy"
+    },
+    {
+      "id": "sentient-ships",
+      "name": "Sentient Ships",
+      "field": "Computing",
+      "tier": 7,
+      "cost": 1000,
+      "description": "crews gain experience twice as fast; unmanned warships possible (no crew experience, battle acceleration +30%)"
+    },
+    {
+      "id": "archive-decryption",
+      "name": "Archive Decryption",
+      "field": "Computing",
+      "tier": 8,
+      "cost": 1500,
+      "description": "progress toward the Gardener Archive (Legacy victory)"
+    },
+    {
+      "id": "hyperintelligence",
+      "name": "Hyperintelligence",
+      "field": "Computing",
+      "tier": 8,
+      "cost": 1500,
+      "description": "research +30% (replaces AGI's +25%)"
+    },
+    {
+      "id": "total-awareness",
+      "name": "Total Awareness",
+      "field": "Computing",
+      "tier": 8,
+      "cost": 1500,
+      "description": "espionage defence +3, all known species' colonies visible"
+    },
+    {
+      "id": "interstellar-law",
+      "name": "Interstellar Law",
+      "field": "Society",
+      "tier": 1,
+      "cost": 40,
+      "description": "stability +5, administration limit +1"
+    },
+    {
+      "id": "trade-charters",
+      "name": "Trade Charters",
+      "field": "Society",
+      "tier": 1,
+      "cost": 40,
+      "description": "Commerce Exchange building, trade treaties +25%"
+    },
+    {
+      "id": "intelligence-service",
+      "name": "Intelligence Service",
+      "field": "Society",
+      "tier": 1,
+      "cost": 40,
+      "description": "Intelligence Bureau building, espionage +1"
+    },
+    {
+      "id": "colonial-administration",
+      "name": "Colonial Administration",
+      "field": "Society",
+      "tier": 2,
+      "cost": 80,
+      "description": "administration limit +3, one extra governor"
+    },
+    {
+      "id": "xenolinguistics",
+      "name": "Xenolinguistics",
+      "field": "Society",
+      "tier": 2,
+      "cost": 80,
+      "description": "attitude +10 with all, contacts can be shared"
+    },
+    {
+      "id": "propaganda",
+      "name": "Propaganda",
+      "field": "Society",
+      "tier": 2,
+      "cost": 80,
+      "description": "Holo-Commons building"
+    },
+    {
+      "id": "bureaucratic-reform",
+      "name": "Bureaucratic Reform",
+      "field": "Society",
+      "tier": 3,
+      "cost": 150,
+      "description": "administration limit +2, governors +1 skill level"
+    },
+    {
+      "id": "academies",
+      "name": "Academies",
+      "field": "Society",
+      "tier": 3,
+      "cost": 150,
+      "description": "new leaders start one level higher, research +5%"
+    },
+    {
+      "id": "civil-defence",
+      "name": "Civil Defence",
+      "field": "Society",
+      "tier": 3,
+      "cost": 150,
+      "description": "+2 garrison units per colony, militia strength +25%"
+    },
+    {
+      "id": "interstellar-banking",
+      "name": "Interstellar Banking",
+      "field": "Society",
+      "tier": 4,
+      "cost": 260,
+      "description": "credits +15%, buying −25%"
+    },
+    {
+      "id": "counterintelligence",
+      "name": "Counterintelligence",
+      "field": "Society",
+      "tier": 4,
+      "cost": 260,
+      "description": "espionage defence +2"
+    },
+    {
+      "id": "cultural-exchange",
+      "name": "Cultural Exchange",
+      "field": "Society",
+      "tier": 4,
+      "cost": 260,
+      "description": "research treaties +50%, assimilation +25%"
+    },
+    {
+      "id": "mass-media",
+      "name": "Mass Media",
+      "field": "Society",
+      "tier": 5,
+      "cost": 420,
+      "description": "Media Network building"
+    },
+    {
+      "id": "diplomatic-corps",
+      "name": "Diplomatic Corps",
+      "field": "Society",
+      "tier": 5,
+      "cost": 420,
+      "description": "reputation +10, AI treaty acceptance +"
+    },
+    {
+      "id": "sector-governance",
+      "name": "Sector Governance",
+      "field": "Society",
+      "tier": 5,
+      "cost": 420,
+      "description": "sectors with a governor count half towards the administration limit"
+    },
+    {
+      "id": "constitutional-reform",
+      "name": "Constitutional Reform",
+      "field": "Society",
+      "tier": 6,
+      "cost": 650,
+      "description": "your (fixed) government becomes its mature form"
+    },
+    {
+      "id": "deep-cover-operations",
+      "name": "Deep Cover Operations",
+      "field": "Society",
+      "tier": 6,
+      "cost": 650,
+      "description": "espionage +2"
+    },
+    {
+      "id": "post-scarcity-commerce",
+      "name": "Post-Scarcity Commerce",
+      "field": "Society",
+      "tier": 6,
+      "cost": 650,
+      "description": "credits +25%"
+    },
+    {
+      "id": "cluster-media",
+      "name": "Cluster Media",
+      "field": "Society",
+      "tier": 7,
+      "cost": 1000,
+      "description": "stability +10, enemies' war weariness +50%"
+    },
+    {
+      "id": "xeno-integration",
+      "name": "Xeno-Integration",
+      "field": "Society",
+      "tier": 7,
+      "cost": 1000,
+      "description": "mixed-species colonies have no penalty, assimilation ×2"
+    },
+    {
+      "id": "free-trade-zone",
+      "name": "Free Trade Zone",
+      "field": "Society",
+      "tier": 7,
+      "cost": 1000,
+      "description": "trade treaties +50%, foreign system links give the full bonus"
+    },
+    {
+      "id": "grand-embassies",
+      "name": "Grand Embassies",
+      "field": "Society",
+      "tier": 8,
+      "cost": 1500,
+      "description": "attitude +15 with everyone, other members' Concord vote intentions shown"
+    },
+    {
+      "id": "utopia-project",
+      "name": "Utopia Project",
+      "field": "Society",
+      "tier": 8,
+      "cost": 1500,
+      "description": "stability +20"
+    },
+    {
+      "id": "psychohistory",
+      "name": "Psychohistory",
+      "field": "Society",
+      "tier": 8,
+      "cost": 1500,
+      "description": "industry and credits +10%, AI intentions shown"
+    }
+  ],
+  "buildings": [
+    {
+      "id": "spaceport",
+      "name": "Spaceport",
+      "requires": "start",
+      "cost": 50,
+      "upkeep": 1.0,
+      "description": "can build warships; fleet capacity +2"
+    },
+    {
+      "id": "fusion-plant",
+      "name": "Fusion Plant",
+      "requires": "start",
+      "cost": 60,
+      "upkeep": 1.0,
+      "description": "+1 industry per industry worker"
+    },
+    {
+      "id": "planetary-defence-grid",
+      "name": "Planetary Defence Grid",
+      "requires": "start",
+      "cost": 80,
+      "upkeep": 1.0,
+      "description": "planet battery in battles; garrison +25%"
+    },
+    {
+      "id": "militia-barracks",
+      "name": "Militia Barracks",
+      "requires": "start",
+      "cost": 50,
+      "upkeep": 1.0,
+      "description": "+4 garrison troops; troops raised here are Trained"
+    },
+    {
+      "id": "research-institute",
+      "name": "Research Institute",
+      "requires": "Research Networks (Computing 1)",
+      "cost": 80,
+      "upkeep": 1.0,
+      "description": "+1 research per scientist"
+    },
+    {
+      "id": "commerce-exchange",
+      "name": "Commerce Exchange",
+      "requires": "Trade Charters (Society 1)",
+      "cost": 70,
+      "upkeep": 1.0,
+      "description": "+1 credit per merchant; trade treaty income +10%"
+    },
+    {
+      "id": "intelligence-bureau",
+      "name": "Intelligence Bureau",
+      "requires": "Intelligence Service (Society 1)",
+      "cost": 100,
+      "upkeep": 2.0,
+      "description": "capital only; +1 agent; espionage +1"
+    },
+    {
+      "id": "orbital-shipyard",
+      "name": "Orbital Shipyard",
+      "requires": "Orbital Construction (Materials 2)",
+      "cost": 120,
+      "upkeep": 2.0,
+      "description": "ships −15% cost; needed for Cruiser and larger; fleet capacity +3"
+    },
+    {
+      "id": "deep-mine",
+      "name": "Deep Mine",
+      "requires": "Deep Core Mining (Materials 2)",
+      "cost": 100,
+      "upkeep": 1.0,
+      "description": "+3 industry, +6 if the world has a metals deposit"
+    },
+    {
+      "id": "cloning-centre",
+      "name": "Cloning Centre",
+      "requires": "Cloning Vats (Life 2)",
+      "cost": 80,
+      "upkeep": 1.0,
+      "description": "growth ×1.5 while below half the cap"
+    },
+    {
+      "id": "terraforming-station",
+      "name": "Terraforming Station",
+      "requires": "Ecopoiesis (Life 2)",
+      "cost": 120,
+      "upkeep": 2.0,
+      "description": "allows terraforming projects at this colony"
+    },
+    {
+      "id": "holo-commons",
+      "name": "Holo-Commons",
+      "requires": "Propaganda (Society 2)",
+      "cost": 60,
+      "upkeep": 1.0,
+      "description": "stability +10"
+    },
+    {
+      "id": "planetary-deflector",
+      "name": "Planetary Deflector",
+      "requires": "Magnetic Deflectors (Weapons 4)",
+      "cost": 150,
+      "upkeep": 2.0,
+      "description": "planet takes −40% damage in battle; bombardment halved"
+    },
+    {
+      "id": "robotic-factory",
+      "name": "Robotic Factory",
+      "requires": "Robotic Factories (Materials 4)",
+      "cost": 150,
+      "upkeep": 2.0,
+      "description": "+1 industry per worker, +3 industry"
+    },
+    {
+      "id": "ai-lab",
+      "name": "AI Lab",
+      "requires": "Machine Learning Labs (Computing 4)",
+      "cost": 180,
+      "upkeep": 2.0,
+      "description": "+1 research per scientist, +3 research"
+    },
+    {
+      "id": "antimatter-plant",
+      "name": "Antimatter Plant",
+      "requires": "Antimatter Reactor (Weapons 5)",
+      "cost": 250,
+      "upkeep": 3.0,
+      "description": "industry +20%"
+    },
+    {
+      "id": "launch-laser",
+      "name": "Launch Laser",
+      "requires": "Laser Launch Network (Propulsion 5)",
+      "cost": 200,
+      "upkeep": 2.0,
+      "description": "civil ships launched here travel one speed tier faster"
+    },
+    {
+      "id": "quantum-research-centre",
+      "name": "Quantum Research Centre",
+      "requires": "Quantum Computing (Computing 5)",
+      "cost": 400,
+      "upkeep": 3.0,
+      "description": "+2 research per scientist; one per system"
+    },
+    {
+      "id": "media-network",
+      "name": "Media Network",
+      "requires": "Mass Media (Society 5)",
+      "cost": 150,
+      "upkeep": 2.0,
+      "description": "stability +10; war weariness halved here"
+    },
+    {
+      "id": "space-elevator",
+      "name": "Space Elevator",
+      "requires": "Space Elevators (Materials 6)",
+      "cost": 250,
+      "upkeep": 2.0,
+      "description": "colony, outpost and transport ships −30% here; industry +10%"
+    },
+    {
+      "id": "nanoforge",
+      "name": "Nanoforge",
+      "requires": "Molecular Assemblers (Materials 7)",
+      "cost": 400,
+      "upkeep": 3.0,
+      "description": "+2 industry per worker"
+    },
+    {
+      "id": "planetary-laser-grid",
+      "name": "Planetary Laser Grid",
+      "requires": "Planetary Laser Grid (Weapons 8)",
+      "cost": 300,
+      "upkeep": 3.0,
+      "description": "very strong planet battery"
+    }
+  ]
+}

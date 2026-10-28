@@ -1,0 +1,9 @@
+import type {Empire,Fleet,GameState} from './types';
+import {autoDesign,colonies,designStats} from './rules';
+import {distance} from './math';
+/** Non-player adversaries use ordinary fleets, weapons and battle resolution. */
+export function spawnAdversary(g:GameState,name:string,targetOwner:number,shipCount:number):Fleet|null{
+ const targets=colonies(g,targetOwner).sort((a,b)=>b.population-a.population);if(!targets.length)return null;const target=targets[0],destination=g.systems.find(s=>s.id===target.systemId)!;const start=[...g.systems].sort((a,b)=>distance(b,destination)-distance(a,destination))[0];const template=g.empires[targetOwner];const id=g.empires.length;
+ const empire:Empire={...structuredClone(template),id,name,ai:false,threat:true,color:'#ec9b80',credits:0,techs:['x-ray-laser','antimatter-reactor','titanium-composite','point-defence-laser','cruiser-hull','combat-thrusters'],research:[],researchProgress:0,known:g.systems.map(s=>s.id),capital:'',leaders:[],keys:0,artifacts:[],eliminated:false,observations:{},pendingObservations:[],automation:{colonies:false,research:false,fleets:false}};g.empires.push(empire);const design=autoDesign(empire,'Brawler','cruiser');design.id='guardian-'+id;design.name=name+' Spear';g.designs[id]=[design];for(const e of g.empires.filter(e=>e.id!==id))g.relations.push({a:e.id,b:id,state:'War',trade:false,research:false,contact:true,attitude:-100,breaches:0,since:g.turn,ceasefireUntil:0});
+ const fleet:Fleet={id:`f${g.nextId++}`,owner:id,name,systemId:start.id,destination:destination.id,origin:start.id,remaining:distance(start,destination),ships:Array.from({length:shipCount},()=>({id:`s${g.nextId++}`,designId:design.id,kind:'warship',hp:designStats(design,empire,g.species.find(s=>s.id===empire.speciesId)!).hp,experience:3,troops:0})),order:'bombard-population',targetPlanet:target.id,strategy:'Brawler'};g.fleets.push(fleet);return fleet;
+}

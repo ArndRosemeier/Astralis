@@ -1,0 +1,3428 @@
+{
+  "schemaVersion": 1,
+  "scope": "Photosynthetic only after explicit planet.light revision",
+  "preservedFullAudit": "production.json",
+  "fullAuditGames": 576,
+  "seedCount": 24,
+  "games": 72,
+  "checkedTurns": 8640,
+  "observedBattles": 749,
+  "elapsedSeconds": 46.1872764,
+  "sourceAtStart": {
+    "battle.ts": "664c9dba68101a40b90617f545d5faa8565ce918b4beafaa4991340cd55b8f69",
+    "diplomacy.ts": "0a96d41a4ecd10900864fb24e987a70011d413ed11e6937cca4a5c456d3fd9ad",
+    "effects.ts": "c53cff210fabda51bcffe50456e15955ac1fc8db6844731c5ce9d1e99d846625",
+    "engine.ts": "f6969ec09273de3aa5f842ce1b599e3b4d21a9f61f5914fcc3244788a7ae2018",
+    "generation.ts": "3c013da8db57dcf81a6c495b462fb398e75c177b00f7e9b195f70047e5f8dde2",
+    "hazards.ts": "62c11cb3756afb6ce39f3e29750518d12d58d168b880badc3401e8338b253e7e",
+    "intel.ts": "07adc5aaa386ee957f30551d7697766fb1732e658ea39b2de435a4a7bd40a5d4",
+    "math.ts": "08c22bf692c19a6dba3cbfbe978096fcfa6775803c603adcd1d377bb4c3da94c",
+    "politics.ts": "cd49f5bb86afc84b29d14e865539c147893831f3abea656eadf39185420bab62",
+    "rules-data.json": "5d4eccbe11cf076db8672423d2fb0c41421aa6829333b9a50f3d5fa1c4980eac",
+    "rules.ts": "a3f47b42ce86c9d532dcc0a28fd765afbe8bf6e0a3b4f35c4b8350347087a07e",
+    "species.ts": "0094265985146c1f88723b7f92cabceadf33c2fa80c254ee4f5cec9458928890",
+    "types.ts": "6b1b002acad5e275d95fce0463cf42d3cca22dac3f690598d0a89153366ba6fe",
+    "ai/controller.ts": "9b8f91adf0df2e70aef1df7b90fa37b3f78d3c151497c09c59c4b5b347c53670",
+    "sim/rules-data.json": "5d4eccbe11cf076db8672423d2fb0c41421aa6829333b9a50f3d5fa1c4980eac",
+    "catalog/systems.json": "7a3ba003882182b918e71efb6c5ef1d4f81290f2cfbccb16915a2a550371c56e",
+    "catalog/planets.json": "a93c558bd76aba0aa9e36ee2074a515a3b091fe8cf53048e1e8edfd08b5b1bc5",
+    "balance/costs.ts": "6452b44712de822ad26701c0461d0569f4f2bd95c4abdafb392a3d2ac7ee4943",
+    "balance/picks.ts": "a7cdfbd51de0be42df55776800f92c430e759309394e469cfaf2f4a76864e6ce"
+  },
+  "sourceAtEnd": {
+    "battle.ts": "664c9dba68101a40b90617f545d5faa8565ce918b4beafaa4991340cd55b8f69",
+    "diplomacy.ts": "0a96d41a4ecd10900864fb24e987a70011d413ed11e6937cca4a5c456d3fd9ad",
+    "effects.ts": "c53cff210fabda51bcffe50456e15955ac1fc8db6844731c5ce9d1e99d846625",
+    "engine.ts": "f6969ec09273de3aa5f842ce1b599e3b4d21a9f61f5914fcc3244788a7ae2018",
+    "generation.ts": "3c013da8db57dcf81a6c495b462fb398e75c177b00f7e9b195f70047e5f8dde2",
+    "hazards.ts": "62c11cb3756afb6ce39f3e29750518d12d58d168b880badc3401e8338b253e7e",
+    "intel.ts": "07adc5aaa386ee957f30551d7697766fb1732e658ea39b2de435a4a7bd40a5d4",
+    "math.ts": "08c22bf692c19a6dba3cbfbe978096fcfa6775803c603adcd1d377bb4c3da94c",
+    "politics.ts": "cd49f5bb86afc84b29d14e865539c147893831f3abea656eadf39185420bab62",
+    "rules-data.json": "5d4eccbe11cf076db8672423d2fb0c41421aa6829333b9a50f3d5fa1c4980eac",
+    "rules.ts": "a3f47b42ce86c9d532dcc0a28fd765afbe8bf6e0a3b4f35c4b8350347087a07e",
+    "species.ts": "0094265985146c1f88723b7f92cabceadf33c2fa80c254ee4f5cec9458928890",
+    "types.ts": "6b1b002acad5e275d95fce0463cf42d3cca22dac3f690598d0a89153366ba6fe",
+    "ai/controller.ts": "9b8f91adf0df2e70aef1df7b90fa37b3f78d3c151497c09c59c4b5b347c53670",
+    "sim/rules-data.json": "5d4eccbe11cf076db8672423d2fb0c41421aa6829333b9a50f3d5fa1c4980eac",
+    "catalog/systems.json": "7a3ba003882182b918e71efb6c5ef1d4f81290f2cfbccb16915a2a550371c56e",
+    "catalog/planets.json": "a93c558bd76aba0aa9e36ee2074a515a3b091fe8cf53048e1e8edfd08b5b1bc5",
+    "balance/costs.ts": "6452b44712de822ad26701c0461d0569f4f2bd95c4abdafb392a3d2ac7ee4943",
+    "balance/picks.ts": "a7cdfbd51de0be42df55776800f92c430e759309394e469cfaf2f4a76864e6ce"
+  },
+  "sourceFilesChangedDuringRun": false,
+  "changedSinceFullAudit": [
+    "engine.ts",
+    "generation.ts",
+    "rules.ts",
+    "species.ts",
+    "types.ts",
+    "balance/costs.ts"
+  ],
+  "oldCost": 2,
+  "cost": 2,
+  "intervalPrices": [
+    1,
+    3
+  ],
+  "scorePercent": {
+    "n": 24,
+    "mean": 9.52532316945117,
+    "low": 5.782887413600864,
+    "high": 13.267758925301475
+  },
+  "populationPercent": {
+    "n": 24,
+    "mean": 0.26477258247544944,
+    "low": -6.332939945560213,
+    "high": 6.862485110511111
+  },
+  "winChange": {
+    "n": 24,
+    "mean": 0.0625,
+    "low": -0.005080467335002878,
+    "high": 0.1300804673350029
+  },
+  "actualWinFraction": 0.5625,
+  "comparisons": [
+    {
+      "seed": "PRODUCTION-PAIR-104729",
+      "style": "Balanced",
+      "region": "Sol",
+      "seats": [
+        {
+          "seat": 0,
+          "scorePercent": 0.2131438721136858,
+          "populationPercent": -9.147222795787735,
+          "winChange": 0,
+          "won": true
+        },
+        {
+          "seat": 1,
+          "scorePercent": 21.839080459770123,
+          "populationPercent": -2.453496136602118,
+          "winChange": 0,
+          "won": false
+        }
+      ],
+      "scorePercent": 11.026112165941905,
+      "populationPercent": -5.8003594661949265,
+      "winChange": 0
+    },
+    {
+      "seed": "PRODUCTION-PAIR-112648",
+      "style": "Expansionist",
+      "region": "Sol",
+      "seats": [
+        {
+          "seat": 0,
+          "scorePercent": 4.164820558263171,
+          "populationPercent": 3.858753990492514,
+          "winChange": 0,
+          "won": true
+        },
+        {
+          "seat": 1,
+          "scorePercent": -4.211956521739135,
+          "populationPercent": -14.502955043495591,
+          "winChange": 0,
+          "won": false
+        }
+      ],
+      "scorePercent": -0.023567981737981913,
+      "populationPercent": -5.322100526501538,
+      "winChange": 0
+    },
+    {
+      "seed": "PRODUCTION-PAIR-120567",
+      "style": "Scholar",
+      "region": "Sol",
+      "seats": [
+        {
+          "seat": 0,
+          "scorePercent": 6.721763085399446,
+          "populationPercent": -4.207573632538574,
+          "winChange": 0,
+          "won": false
+        },
+        {
+          "seat": 1,
+          "scorePercent": 1.0605391073795767,
+          "populationPercent": -18.577667049239977,
+          "winChange": 0,
+          "won": true
+        }
+      ],
+      "scorePercent": 3.8911510963895113,
+      "populationPercent": -11.392620340889277,
+      "winChange": 0
+    },
+    {
+      "seed": "PRODUCTION-PAIR-128486",
+      "style": "Militarist",
+      "region": "Sol",
+      "seats": [
+        {
+          "seat": 0,
+          "scorePercent": 23.60417612346799,
+          "populationPercent": 22.450532724505322,
+          "winChange": 0,
+          "won": true
+        },
+        {
+          "seat": 1,
+          "scorePercent": -7.236180904522616,
+          "populationPercent": -5.96184419713831,
+          "winChange": 0,
+          "won": false
+        }
+      ],
+      "scorePercent": 8.183997609472687,
+      "populationPercent": 8.244344263683505,
+      "winChange": 0
+    },
+    {
+      "seed": "PRODUCTION-PAIR-136405",
+      "style": "Trader",
+      "region": "Sol",
+      "seats": [
+        {
+          "seat": 0,
+          "scorePercent": 2.1789883268482413,
+          "populationPercent": 13.321739130434773,
+          "winChange": 0,
+          "won": true
+        },
+        {
+          "seat": 1,
+          "scorePercent": 13.630406290956753,
+          "populationPercent": -1.4749262536873142,
+          "winChange": 0,
+          "won": false
+        }
+      ],
+      "scorePercent": 7.904697308902497,
+      "populationPercent": 5.923406438373729,
+      "winChange": 0
+    },
+    {
+      "seed": "PRODUCTION-PAIR-144324",
+      "style": "Diplomat",
+      "region": "Sol",
+      "seats": [
+        {
+          "seat": 0,
+          "scorePercent": 14.398943196829595,
+          "populationPercent": 0,
+          "winChange": 0,
+          "won": true
+        },
+        {
+          "seat": 1,
+          "scorePercent": 15.085024684585857,
+          "populationPercent": 0,
+          "winChange": 0,
+          "won": false
+        }
+      ],
+      "scorePercent": 14.741983940707726,
+      "populationPercent": 0,
+      "winChange": 0
+    },
+    {
+      "seed": "PRODUCTION-PAIR-152243",
+      "style": "Balanced",
+      "region": "Random",
+      "seats": [
+        {
+          "seat": 0,
+          "scorePercent": 24.620573355817864,
+          "populationPercent": 0,
+          "winChange": 0,
+          "won": false
+        },
+        {
+          "seat": 1,
+          "scorePercent": 8.33902939166098,
+          "populationPercent": 2.4041878862380406,
+          "winChange": 0,
+          "won": true
+        }
+      ],
+      "scorePercent": 16.47980137373942,
+      "populationPercent": 1.2020939431190203,
+      "winChange": 0
+    },
+    {
+      "seed": "PRODUCTION-PAIR-160162",
+      "style": "Expansionist",
+      "region": "Random",
+      "seats": [
+        {
+          "seat": 0,
+          "scorePercent": -4.06654343807763,
+          "populationPercent": -12.098765432098757,
+          "winChange": 0,
+          "won": false
+        },
+        {
+          "seat": 1,
+          "scorePercent": -0.21862702229995534,
+          "populationPercent": -2.3474178403755985,
+          "winChange": 0,
+          "won": true
+        }
+      ],
+      "scorePercent": -2.142585230188793,
+      "populationPercent": -7.223091636237178,
+      "winChange": 0
+    },
+    {
+      "seed": "PRODUCTION-PAIR-168081",
+      "style": "Scholar",
+      "region": "Random",
+      "seats": [
+        {
+          "seat": 0,
+          "scorePercent": 17.716894977168952,
+          "populationPercent": 0.520984081041953,
+          "winChange": 0,
+          "won": false
+        },
+        {
+          "seat": 1,
+          "scorePercent": -8.18181818181818,
+          "populationPercent": -27.38579693646087,
+          "winChange": 0,
+          "won": true
+        }
+      ],
+      "scorePercent": 4.767538397675386,
+      "populationPercent": -13.43240642770946,
+      "winChange": 0
+    },
+    {
+      "seed": "PRODUCTION-PAIR-176000",
+      "style": "Militarist",
+      "region": "Random",
+      "seats": [
+        {
+          "seat": 0,
+          "scorePercent": -10.279667422524563,
+          "populationPercent": -17.988107036669966,
+          "winChange": 0,
+          "won": false
+        },
+        {
+          "seat": 1,
+          "scorePercent": 18.045112781954884,
+          "populationPercent": 8.95924553721792,
+          "winChange": 0,
+          "won": true
+        }
+      ],
+      "scorePercent": 3.882722679715161,
+      "populationPercent": -4.514430749726023,
+      "winChange": 0
+    },
+    {
+      "seed": "PRODUCTION-PAIR-183919",
+      "style": "Trader",
+      "region": "Random",
+      "seats": [
+        {
+          "seat": 0,
+          "scorePercent": 19.85630306988897,
+          "populationPercent": 2.991144826790504,
+          "winChange": 0,
+          "won": false
+        },
+        {
+          "seat": 1,
+          "scorePercent": -3.292826342610744,
+          "populationPercent": -17.421816447502902,
+          "winChange": 0,
+          "won": true
+        }
+      ],
+      "scorePercent": 8.281738363639112,
+      "populationPercent": -7.2153358103561995,
+      "winChange": 0
+    },
+    {
+      "seed": "PRODUCTION-PAIR-191838",
+      "style": "Diplomat",
+      "region": "Random",
+      "seats": [
+        {
+          "seat": 0,
+          "scorePercent": 13.167013167013163,
+          "populationPercent": -5.372068191023227,
+          "winChange": 0,
+          "won": false
+        },
+        {
+          "seat": 1,
+          "scorePercent": -0.33806626098715764,
+          "populationPercent": -9.917014119684985,
+          "winChange": 0,
+          "won": true
+        }
+      ],
+      "scorePercent": 6.414473453013002,
+      "populationPercent": -7.644541155354107,
+      "winChange": 0
+    },
+    {
+      "seed": "PRODUCTION-PAIR-199757",
+      "style": "Balanced",
+      "region": "Sol",
+      "seats": [
+        {
+          "seat": 0,
+          "scorePercent": 17.11051930758989,
+          "populationPercent": -7.395038167938939,
+          "winChange": 0,
+          "won": false
+        },
+        {
+          "seat": 1,
+          "scorePercent": 8.009708737864084,
+          "populationPercent": -4.345692169620841,
+          "winChange": 0,
+          "won": true
+        }
+      ],
+      "scorePercent": 12.560114022726987,
+      "populationPercent": -5.870365168779889,
+      "winChange": 0
+    },
+    {
+      "seed": "PRODUCTION-PAIR-207676",
+      "style": "Expansionist",
+      "region": "Sol",
+      "seats": [
+        {
+          "seat": 0,
+          "scorePercent": 32.784354091610915,
+          "populationPercent": 12.607341303249697,
+          "winChange": 0,
+          "won": true
+        },
+        {
+          "seat": 1,
+          "scorePercent": 10.5781057810578,
+          "populationPercent": -4.570383912248632,
+          "winChange": 0,
+          "won": false
+        }
+      ],
+      "scorePercent": 21.681229936334358,
+      "populationPercent": 4.018478695500533,
+      "winChange": 0
+    },
+    {
+      "seed": "PRODUCTION-PAIR-215595",
+      "style": "Scholar",
+      "region": "Sol",
+      "seats": [
+        {
+          "seat": 0,
+          "scorePercent": -9.701774254435636,
+          "populationPercent": -31.365758754863805,
+          "winChange": 0,
+          "won": true
+        },
+        {
+          "seat": 1,
+          "scorePercent": 14.427860696517403,
+          "populationPercent": 14.62555904462841,
+          "winChange": 0,
+          "won": false
+        }
+      ],
+      "scorePercent": 2.3630432210408836,
+      "populationPercent": -8.370099855117697,
+      "winChange": 0
+    },
+    {
+      "seed": "PRODUCTION-PAIR-223514",
+      "style": "Militarist",
+      "region": "Sol",
+      "seats": [
+        {
+          "seat": 0,
+          "scorePercent": -4.690026954177895,
+          "populationPercent": -6.341513714167868,
+          "winChange": 0,
+          "won": true
+        },
+        {
+          "seat": 1,
+          "scorePercent": 0.7848266841072649,
+          "populationPercent": 0,
+          "winChange": 0,
+          "won": false
+        }
+      ],
+      "scorePercent": -1.9526001350353153,
+      "populationPercent": -3.170756857083934,
+      "winChange": 0
+    },
+    {
+      "seed": "PRODUCTION-PAIR-231433",
+      "style": "Trader",
+      "region": "Sol",
+      "seats": [
+        {
+          "seat": 0,
+          "scorePercent": 75.0815394651011,
+          "populationPercent": 139.4885485457356,
+          "winChange": 1,
+          "won": true
+        },
+        {
+          "seat": 1,
+          "scorePercent": 5.1585423568386135,
+          "populationPercent": 4.025734983704554,
+          "winChange": 0,
+          "won": true
+        }
+      ],
+      "scorePercent": 40.120040910969855,
+      "populationPercent": 71.75714176472007,
+      "winChange": 0.5
+    },
+    {
+      "seed": "PRODUCTION-PAIR-239352",
+      "style": "Diplomat",
+      "region": "Sol",
+      "seats": [
+        {
+          "seat": 0,
+          "scorePercent": 13.141609028030587,
+          "populationPercent": -1.7601206939904301,
+          "winChange": 0,
+          "won": false
+        },
+        {
+          "seat": 1,
+          "scorePercent": 8.51875397329942,
+          "populationPercent": -4.988530257503787,
+          "winChange": 0,
+          "won": true
+        }
+      ],
+      "scorePercent": 10.830181500665002,
+      "populationPercent": -3.3743254757471086,
+      "winChange": 0
+    },
+    {
+      "seed": "PRODUCTION-PAIR-247271",
+      "style": "Balanced",
+      "region": "Random",
+      "seats": [
+        {
+          "seat": 0,
+          "scorePercent": 20.69698257543562,
+          "populationPercent": -5.290943046630292,
+          "winChange": 0,
+          "won": false
+        },
+        {
+          "seat": 1,
+          "scorePercent": 6.3340991138824965,
+          "populationPercent": 0.9366860348627659,
+          "winChange": 0,
+          "won": true
+        }
+      ],
+      "scorePercent": 13.515540844659057,
+      "populationPercent": -2.177128505883763,
+      "winChange": 0
+    },
+    {
+      "seed": "PRODUCTION-PAIR-255190",
+      "style": "Expansionist",
+      "region": "Random",
+      "seats": [
+        {
+          "seat": 0,
+          "scorePercent": -0.24177949709864865,
+          "populationPercent": -5.570821883587318,
+          "winChange": 1,
+          "won": true
+        },
+        {
+          "seat": 1,
+          "scorePercent": 17.422096317280445,
+          "populationPercent": 15.92427304367352,
+          "winChange": 0,
+          "won": true
+        }
+      ],
+      "scorePercent": 8.590158410090899,
+      "populationPercent": 5.176725580043101,
+      "winChange": 0.5
+    },
+    {
+      "seed": "PRODUCTION-PAIR-263109",
+      "style": "Scholar",
+      "region": "Random",
+      "seats": [
+        {
+          "seat": 0,
+          "scorePercent": 15.86867305061559,
+          "populationPercent": 2.2743854529128082,
+          "winChange": 0,
+          "won": true
+        },
+        {
+          "seat": 1,
+          "scorePercent": 22.158548233046794,
+          "populationPercent": 6.652629403330179,
+          "winChange": 1,
+          "won": true
+        }
+      ],
+      "scorePercent": 19.013610641831193,
+      "populationPercent": 4.463507428121494,
+      "winChange": 0.5
+    },
+    {
+      "seed": "PRODUCTION-PAIR-271028",
+      "style": "Militarist",
+      "region": "Random",
+      "seats": [
+        {
+          "seat": 0,
+          "scorePercent": -5.444305381727155,
+          "populationPercent": 1.241642788920716,
+          "winChange": 0,
+          "won": true
+        },
+        {
+          "seat": 1,
+          "scorePercent": -2.321724709784412,
+          "populationPercent": -4.837929366231252,
+          "winChange": 0,
+          "won": false
+        }
+      ],
+      "scorePercent": -3.8830150457557835,
+      "populationPercent": -1.7981432886552682,
+      "winChange": 0
+    },
+    {
+      "seed": "PRODUCTION-PAIR-278947",
+      "style": "Trader",
+      "region": "Random",
+      "seats": [
+        {
+          "seat": 0,
+          "scorePercent": 21.144278606965173,
+          "populationPercent": 21.02161823739548,
+          "winChange": 0,
+          "won": false
+        },
+        {
+          "seat": 1,
+          "scorePercent": 9.659090909090917,
+          "populationPercent": -6.911889296808804,
+          "winChange": 0,
+          "won": true
+        }
+      ],
+      "scorePercent": 15.401684758028045,
+      "populationPercent": 7.054864470293338,
+      "winChange": 0
+    },
+    {
+      "seed": "PRODUCTION-PAIR-286866",
+      "style": "Diplomat",
+      "region": "Random",
+      "seats": [
+        {
+          "seat": 0,
+          "scorePercent": -0.7550335570469802,
+          "populationPercent": -28.360630680415277,
+          "winChange": 0,
+          "won": true
+        },
+        {
+          "seat": 1,
+          "scorePercent": 14.674441205053457,
+          "populationPercent": 0,
+          "winChange": 0,
+          "won": false
+        }
+      ],
+      "scorePercent": 6.959703824003238,
+      "populationPercent": -14.180315340207638,
+      "winChange": 0
+    }
+  ],
+  "trials": [
+    {
+      "seed": "PRODUCTION-PAIR-104729",
+      "style": "Balanced",
+      "picks": [],
+      "treatmentSeat": 0,
+      "region": "Sol",
+      "turnsChecked": 120,
+      "winner": 0,
+      "victory": "Score",
+      "observedBattles": 28,
+      "totalTechs": 74,
+      "outcomes": [
+        {
+          "seat": 0,
+          "score": 2815,
+          "population": 96.86,
+          "colonies": 23,
+          "techs": 36,
+          "credits": 157.928,
+          "ships": 12,
+          "known": 44,
+          "eliminated": false
+        },
+        {
+          "seat": 1,
+          "score": 1740,
+          "population": 52.415000000000006,
+          "colonies": 11,
+          "techs": 38,
+          "credits": 611.691,
+          "ships": 13,
+          "known": 44,
+          "eliminated": false
+        }
+      ],
+      "finalHash": "98384db4"
+    },
+    {
+      "seed": "PRODUCTION-PAIR-104729",
+      "style": "Balanced",
+      "picks": [
+        "photosynthetic"
+      ],
+      "treatmentSeat": 0,
+      "region": "Sol",
+      "turnsChecked": 120,
+      "winner": 0,
+      "victory": "Score",
+      "observedBattles": 0,
+      "totalTechs": 73,
+      "outcomes": [
+        {
+          "seat": 0,
+          "score": 2821,
+          "population": 88,
+          "colonies": 21,
+          "techs": 36,
+          "credits": 636.936,
+          "ships": 11,
+          "known": 44,
+          "eliminated": false
+        },
+        {
+          "seat": 1,
+          "score": 1657,
+          "population": 47.2,
+          "colonies": 9,
+          "techs": 37,
+          "credits": 875.083,
+          "ships": 15,
+          "known": 44,
+          "eliminated": false
+        }
+      ],
+      "finalHash": "3d37346b"
+    },
+    {
+      "seed": "PRODUCTION-PAIR-104729",
+      "style": "Balanced",
+      "picks": [
+        "photosynthetic"
+      ],
+      "treatmentSeat": 1,
+      "region": "Sol",
+      "turnsChecked": 120,
+      "winner": 0,
+      "victory": "Score",
+      "observedBattles": 2,
+      "totalTechs": 74,
+      "outcomes": [
+        {
+          "seat": 0,
+          "score": 2811,
+          "population": 96.86,
+          "colonies": 23,
+          "techs": 36,
+          "credits": 154.329,
+          "ships": 11,
+          "known": 44,
+          "eliminated": false
+        },
+        {
+          "seat": 1,
+          "score": 2120,
+          "population": 51.129000000000005,
+          "colonies": 11,
+          "techs": 38,
+          "credits": 4457.72,
+          "ships": 13,
+          "known": 44,
+          "eliminated": false
+        }
+      ],
+      "finalHash": "ade506ab"
+    },
+    {
+      "seed": "PRODUCTION-PAIR-112648",
+      "style": "Expansionist",
+      "picks": [],
+      "treatmentSeat": 0,
+      "region": "Sol",
+      "turnsChecked": 120,
+      "winner": 0,
+      "victory": "Score",
+      "observedBattles": 0,
+      "totalTechs": 64,
+      "outcomes": [
+        {
+          "seat": 0,
+          "score": 2257,
+          "population": 71.73299999999999,
+          "colonies": 14,
+          "techs": 37,
+          "credits": 95.302,
+          "ships": 8,
+          "known": 44,
+          "eliminated": false
+        },
+        {
+          "seat": 1,
+          "score": 2208,
+          "population": 75.295,
+          "colonies": 19,
+          "techs": 27,
+          "credits": 118.41,
+          "ships": 6,
+          "known": 44,
+          "eliminated": false
+        }
+      ],
+      "finalHash": "9a385f5f"
+    },
+    {
+      "seed": "PRODUCTION-PAIR-112648",
+      "style": "Expansionist",
+      "picks": [
+        "photosynthetic"
+      ],
+      "treatmentSeat": 0,
+      "region": "Sol",
+      "turnsChecked": 120,
+      "winner": 0,
+      "victory": "Score",
+      "observedBattles": 0,
+      "totalTechs": 59,
+      "outcomes": [
+        {
+          "seat": 0,
+          "score": 2351,
+          "population": 74.50099999999999,
+          "colonies": 16,
+          "techs": 31,
+          "credits": 340.486,
+          "ships": 7,
+          "known": 44,
+          "eliminated": false
+        },
+        {
+          "seat": 1,
+          "score": 2342,
+          "population": 80.32100000000001,
+          "colonies": 21,
+          "techs": 28,
+          "credits": 135.66,
+          "ships": 5,
+          "known": 44,
+          "eliminated": false
+        }
+      ],
+      "finalHash": "8bf1159a"
+    },
+    {
+      "seed": "PRODUCTION-PAIR-112648",
+      "style": "Expansionist",
+      "picks": [
+        "photosynthetic"
+      ],
+      "treatmentSeat": 1,
+      "region": "Sol",
+      "turnsChecked": 120,
+      "winner": 0,
+      "victory": "Score",
+      "observedBattles": 0,
+      "totalTechs": 64,
+      "outcomes": [
+        {
+          "seat": 0,
+          "score": 2255,
+          "population": 71.61299999999999,
+          "colonies": 14,
+          "techs": 37,
+          "credits": 126.096,
+          "ships": 7,
+          "known": 44,
+          "eliminated": false
+        },
+        {
+          "seat": 1,
+          "score": 2115,
+          "population": 64.375,
+          "colonies": 18,
+          "techs": 27,
+          "credits": 170.205,
+          "ships": 9,
+          "known": 44,
+          "eliminated": false
+        }
+      ],
+      "finalHash": "b310aade"
+    },
+    {
+      "seed": "PRODUCTION-PAIR-120567",
+      "style": "Scholar",
+      "picks": [],
+      "treatmentSeat": 0,
+      "region": "Sol",
+      "turnsChecked": 120,
+      "winner": 1,
+      "victory": "Score",
+      "observedBattles": 0,
+      "totalTechs": 135,
+      "outcomes": [
+        {
+          "seat": 0,
+          "score": 1815,
+          "population": 42.78,
+          "colonies": 6,
+          "techs": 65,
+          "credits": 1609.288,
+          "ships": 7,
+          "known": 37,
+          "eliminated": false
+        },
+        {
+          "seat": 1,
+          "score": 2263,
+          "population": 71.446,
+          "colonies": 10,
+          "techs": 70,
+          "credits": 1027.089,
+          "ships": 6,
+          "known": 44,
+          "eliminated": false
+        }
+      ],
+      "finalHash": "8dc3d3fd"
+    },
+    {
+      "seed": "PRODUCTION-PAIR-120567",
+      "style": "Scholar",
+      "picks": [
+        "photosynthetic"
+      ],
+      "treatmentSeat": 0,
+      "region": "Sol",
+      "turnsChecked": 120,
+      "winner": 1,
+      "victory": "Score",
+      "observedBattles": 0,
+      "totalTechs": 130,
+      "outcomes": [
+        {
+          "seat": 0,
+          "score": 1937,
+          "population": 40.98,
+          "colonies": 6,
+          "techs": 60,
+          "credits": 3370.365,
+          "ships": 7,
+          "known": 37,
+          "eliminated": false
+        },
+        {
+          "seat": 1,
+          "score": 2256,
+          "population": 70.233,
+          "colonies": 10,
+          "techs": 70,
+          "credits": 1076.437,
+          "ships": 6,
+          "known": 44,
+          "eliminated": false
+        }
+      ],
+      "finalHash": "c9458e94"
+    },
+    {
+      "seed": "PRODUCTION-PAIR-120567",
+      "style": "Scholar",
+      "picks": [
+        "photosynthetic"
+      ],
+      "treatmentSeat": 1,
+      "region": "Sol",
+      "turnsChecked": 120,
+      "winner": 1,
+      "victory": "Score",
+      "observedBattles": 0,
+      "totalTechs": 133,
+      "outcomes": [
+        {
+          "seat": 0,
+          "score": 1722,
+          "population": 36.28,
+          "colonies": 6,
+          "techs": 65,
+          "credits": 1408.634,
+          "ships": 7,
+          "known": 37,
+          "eliminated": false
+        },
+        {
+          "seat": 1,
+          "score": 2287,
+          "population": 58.173,
+          "colonies": 8,
+          "techs": 68,
+          "credits": 3851.016,
+          "ships": 6,
+          "known": 44,
+          "eliminated": false
+        }
+      ],
+      "finalHash": "70518453"
+    },
+    {
+      "seed": "PRODUCTION-PAIR-128486",
+      "style": "Militarist",
+      "picks": [],
+      "treatmentSeat": 0,
+      "region": "Sol",
+      "turnsChecked": 120,
+      "winner": 0,
+      "victory": "Score",
+      "observedBattles": 44,
+      "totalTechs": 48,
+      "outcomes": [
+        {
+          "seat": 0,
+          "score": 2203,
+          "population": 78.84,
+          "colonies": 19,
+          "techs": 25,
+          "credits": 0,
+          "ships": 38,
+          "known": 39,
+          "eliminated": false
+        },
+        {
+          "seat": 1,
+          "score": 995,
+          "population": 25.160000000000004,
+          "colonies": 7,
+          "techs": 23,
+          "credits": 0,
+          "ships": 20,
+          "known": 31,
+          "eliminated": false
+        }
+      ],
+      "finalHash": "e723d97d"
+    },
+    {
+      "seed": "PRODUCTION-PAIR-128486",
+      "style": "Militarist",
+      "picks": [
+        "photosynthetic"
+      ],
+      "treatmentSeat": 0,
+      "region": "Sol",
+      "turnsChecked": 120,
+      "winner": 0,
+      "victory": "Score",
+      "observedBattles": 0,
+      "totalTechs": 51,
+      "outcomes": [
+        {
+          "seat": 0,
+          "score": 2723,
+          "population": 96.54,
+          "colonies": 22,
+          "techs": 27,
+          "credits": 235.031,
+          "ships": 28,
+          "known": 43,
+          "eliminated": false
+        },
+        {
+          "seat": 1,
+          "score": 1018,
+          "population": 25.160000000000004,
+          "colonies": 7,
+          "techs": 24,
+          "credits": 70.278,
+          "ships": 16,
+          "known": 34,
+          "eliminated": false
+        }
+      ],
+      "finalHash": "d3e85a06"
+    },
+    {
+      "seed": "PRODUCTION-PAIR-128486",
+      "style": "Militarist",
+      "picks": [
+        "photosynthetic"
+      ],
+      "treatmentSeat": 1,
+      "region": "Sol",
+      "turnsChecked": 120,
+      "winner": 0,
+      "victory": "Score",
+      "observedBattles": 0,
+      "totalTechs": 51,
+      "outcomes": [
+        {
+          "seat": 0,
+          "score": 2730,
+          "population": 104.82000000000001,
+          "colonies": 22,
+          "techs": 29,
+          "credits": 0,
+          "ships": 39,
+          "known": 44,
+          "eliminated": false
+        },
+        {
+          "seat": 1,
+          "score": 923,
+          "population": 23.660000000000004,
+          "colonies": 6,
+          "techs": 22,
+          "credits": 0,
+          "ships": 22,
+          "known": 23,
+          "eliminated": false
+        }
+      ],
+      "finalHash": "eef8dc5f"
+    },
+    {
+      "seed": "PRODUCTION-PAIR-136405",
+      "style": "Trader",
+      "picks": [],
+      "treatmentSeat": 0,
+      "region": "Sol",
+      "turnsChecked": 120,
+      "winner": 0,
+      "victory": "Score",
+      "observedBattles": 2,
+      "totalTechs": 71,
+      "outcomes": [
+        {
+          "seat": 0,
+          "score": 2570,
+          "population": 69.00000000000001,
+          "colonies": 10,
+          "techs": 35,
+          "credits": 7020.178,
+          "ships": 7,
+          "known": 43,
+          "eliminated": false
+        },
+        {
+          "seat": 1,
+          "score": 1526,
+          "population": 33.9,
+          "colonies": 10,
+          "techs": 36,
+          "credits": 2011.956,
+          "ships": 9,
+          "known": 43,
+          "eliminated": false
+        }
+      ],
+      "finalHash": "2fb66a92"
+    },
+    {
+      "seed": "PRODUCTION-PAIR-136405",
+      "style": "Trader",
+      "picks": [
+        "photosynthetic"
+      ],
+      "treatmentSeat": 0,
+      "region": "Sol",
+      "turnsChecked": 120,
+      "winner": 0,
+      "victory": "Score",
+      "observedBattles": 6,
+      "totalTechs": 59,
+      "outcomes": [
+        {
+          "seat": 0,
+          "score": 2626,
+          "population": 78.19200000000001,
+          "colonies": 16,
+          "techs": 24,
+          "credits": 6683.133,
+          "ships": 9,
+          "known": 44,
+          "eliminated": false
+        },
+        {
+          "seat": 1,
+          "score": 1520,
+          "population": 34.139,
+          "colonies": 10,
+          "techs": 35,
+          "credits": 2082.846,
+          "ships": 6,
+          "known": 44,
+          "eliminated": false
+        }
+      ],
+      "finalHash": "56c2739a"
+    },
+    {
+      "seed": "PRODUCTION-PAIR-136405",
+      "style": "Trader",
+      "picks": [
+        "photosynthetic"
+      ],
+      "treatmentSeat": 1,
+      "region": "Sol",
+      "turnsChecked": 120,
+      "winner": 0,
+      "victory": "Score",
+      "observedBattles": 2,
+      "totalTechs": 71,
+      "outcomes": [
+        {
+          "seat": 0,
+          "score": 2588,
+          "population": 69.00000000000001,
+          "colonies": 10,
+          "techs": 35,
+          "credits": 7195.961,
+          "ships": 7,
+          "known": 43,
+          "eliminated": false
+        },
+        {
+          "seat": 1,
+          "score": 1734,
+          "population": 33.4,
+          "colonies": 11,
+          "techs": 36,
+          "credits": 3886.384,
+          "ships": 8,
+          "known": 43,
+          "eliminated": false
+        }
+      ],
+      "finalHash": "2c3545ee"
+    },
+    {
+      "seed": "PRODUCTION-PAIR-144324",
+      "style": "Diplomat",
+      "picks": [],
+      "treatmentSeat": 0,
+      "region": "Sol",
+      "turnsChecked": 120,
+      "winner": 0,
+      "victory": "Score",
+      "observedBattles": 0,
+      "totalTechs": 49,
+      "outcomes": [
+        {
+          "seat": 0,
+          "score": 2271,
+          "population": 60.6,
+          "colonies": 9,
+          "techs": 24,
+          "credits": 6798.087,
+          "ships": 7,
+          "known": 41,
+          "eliminated": false
+        },
+        {
+          "seat": 1,
+          "score": 1823,
+          "population": 34.5,
+          "colonies": 7,
+          "techs": 25,
+          "credits": 4988.114,
+          "ships": 6,
+          "known": 44,
+          "eliminated": false
+        }
+      ],
+      "finalHash": "cc0fa9f1"
+    },
+    {
+      "seed": "PRODUCTION-PAIR-144324",
+      "style": "Diplomat",
+      "picks": [
+        "photosynthetic"
+      ],
+      "treatmentSeat": 0,
+      "region": "Sol",
+      "turnsChecked": 120,
+      "winner": 0,
+      "victory": "Score",
+      "observedBattles": 0,
+      "totalTechs": 49,
+      "outcomes": [
+        {
+          "seat": 0,
+          "score": 2598,
+          "population": 60.6,
+          "colonies": 9,
+          "techs": 24,
+          "credits": 10108.354,
+          "ships": 6,
+          "known": 41,
+          "eliminated": false
+        },
+        {
+          "seat": 1,
+          "score": 1823,
+          "population": 34.5,
+          "colonies": 7,
+          "techs": 25,
+          "credits": 4988.114,
+          "ships": 6,
+          "known": 44,
+          "eliminated": false
+        }
+      ],
+      "finalHash": "b8af66b6"
+    },
+    {
+      "seed": "PRODUCTION-PAIR-144324",
+      "style": "Diplomat",
+      "picks": [
+        "photosynthetic"
+      ],
+      "treatmentSeat": 1,
+      "region": "Sol",
+      "turnsChecked": 120,
+      "winner": 0,
+      "victory": "Score",
+      "observedBattles": 0,
+      "totalTechs": 49,
+      "outcomes": [
+        {
+          "seat": 0,
+          "score": 2271,
+          "population": 60.6,
+          "colonies": 9,
+          "techs": 24,
+          "credits": 6798.087,
+          "ships": 7,
+          "known": 41,
+          "eliminated": false
+        },
+        {
+          "seat": 1,
+          "score": 2098,
+          "population": 34.5,
+          "colonies": 7,
+          "techs": 25,
+          "credits": 7742.065,
+          "ships": 6,
+          "known": 44,
+          "eliminated": false
+        }
+      ],
+      "finalHash": "61e0a3bf"
+    },
+    {
+      "seed": "PRODUCTION-PAIR-152243",
+      "style": "Balanced",
+      "picks": [],
+      "treatmentSeat": 0,
+      "region": "Random",
+      "turnsChecked": 120,
+      "winner": 1,
+      "victory": "Score",
+      "observedBattles": 0,
+      "totalTechs": 76,
+      "outcomes": [
+        {
+          "seat": 0,
+          "score": 1186,
+          "population": 30.1,
+          "colonies": 3,
+          "techs": 34,
+          "credits": 2496.357,
+          "ships": 5,
+          "known": 22,
+          "eliminated": false
+        },
+        {
+          "seat": 1,
+          "score": 2926,
+          "population": 119.583,
+          "colonies": 26,
+          "techs": 42,
+          "credits": 285,
+          "ships": 4,
+          "known": 25,
+          "eliminated": false
+        }
+      ],
+      "finalHash": "f13ebeac"
+    },
+    {
+      "seed": "PRODUCTION-PAIR-152243",
+      "style": "Balanced",
+      "picks": [
+        "photosynthetic"
+      ],
+      "treatmentSeat": 0,
+      "region": "Random",
+      "turnsChecked": 120,
+      "winner": 1,
+      "victory": "Score",
+      "observedBattles": 0,
+      "totalTechs": 77,
+      "outcomes": [
+        {
+          "seat": 0,
+          "score": 1478,
+          "population": 30.1,
+          "colonies": 3,
+          "techs": 35,
+          "credits": 5219.562,
+          "ships": 6,
+          "known": 22,
+          "eliminated": false
+        },
+        {
+          "seat": 1,
+          "score": 2936,
+          "population": 119.71199999999999,
+          "colonies": 26,
+          "techs": 42,
+          "credits": 284.241,
+          "ships": 4,
+          "known": 25,
+          "eliminated": false
+        }
+      ],
+      "finalHash": "f9f4933c"
+    },
+    {
+      "seed": "PRODUCTION-PAIR-152243",
+      "style": "Balanced",
+      "picks": [
+        "photosynthetic"
+      ],
+      "treatmentSeat": 1,
+      "region": "Random",
+      "turnsChecked": 120,
+      "winner": 1,
+      "victory": "Score",
+      "observedBattles": 11,
+      "totalTechs": 76,
+      "outcomes": [
+        {
+          "seat": 0,
+          "score": 1104,
+          "population": 30.1,
+          "colonies": 3,
+          "techs": 34,
+          "credits": 1201.489,
+          "ships": 17,
+          "known": 25,
+          "eliminated": false
+        },
+        {
+          "seat": 1,
+          "score": 3170,
+          "population": 122.45800000000003,
+          "colonies": 25,
+          "techs": 42,
+          "credits": 244.892,
+          "ships": 12,
+          "known": 25,
+          "eliminated": false
+        }
+      ],
+      "finalHash": "ac00d773"
+    },
+    {
+      "seed": "PRODUCTION-PAIR-160162",
+      "style": "Expansionist",
+      "picks": [],
+      "treatmentSeat": 0,
+      "region": "Random",
+      "turnsChecked": 120,
+      "winner": 1,
+      "victory": "Score",
+      "observedBattles": 0,
+      "totalTechs": 55,
+      "outcomes": [
+        {
+          "seat": 0,
+          "score": 1623,
+          "population": 48.599999999999994,
+          "colonies": 9,
+          "techs": 27,
+          "credits": 316.719,
+          "ships": 6,
+          "known": 29,
+          "eliminated": false
+        },
+        {
+          "seat": 1,
+          "score": 2287,
+          "population": 76.68,
+          "colonies": 18,
+          "techs": 28,
+          "credits": 178.693,
+          "ships": 7,
+          "known": 29,
+          "eliminated": false
+        }
+      ],
+      "finalHash": "2c76d3c4"
+    },
+    {
+      "seed": "PRODUCTION-PAIR-160162",
+      "style": "Expansionist",
+      "picks": [
+        "photosynthetic"
+      ],
+      "treatmentSeat": 0,
+      "region": "Random",
+      "turnsChecked": 120,
+      "winner": 1,
+      "victory": "Score",
+      "observedBattles": 0,
+      "totalTechs": 49,
+      "outcomes": [
+        {
+          "seat": 0,
+          "score": 1557,
+          "population": 42.72,
+          "colonies": 7,
+          "techs": 21,
+          "credits": 1668.272,
+          "ships": 7,
+          "known": 29,
+          "eliminated": false
+        },
+        {
+          "seat": 1,
+          "score": 2289,
+          "population": 76.68,
+          "colonies": 18,
+          "techs": 28,
+          "credits": 157.373,
+          "ships": 7,
+          "known": 29,
+          "eliminated": false
+        }
+      ],
+      "finalHash": "11ec5414"
+    },
+    {
+      "seed": "PRODUCTION-PAIR-160162",
+      "style": "Expansionist",
+      "picks": [
+        "photosynthetic"
+      ],
+      "treatmentSeat": 1,
+      "region": "Random",
+      "turnsChecked": 120,
+      "winner": 1,
+      "victory": "Score",
+      "observedBattles": 0,
+      "totalTechs": 56,
+      "outcomes": [
+        {
+          "seat": 0,
+          "score": 1643,
+          "population": 48.599999999999994,
+          "colonies": 9,
+          "techs": 28,
+          "credits": 235.461,
+          "ships": 6,
+          "known": 29,
+          "eliminated": false
+        },
+        {
+          "seat": 1,
+          "score": 2282,
+          "population": 74.88,
+          "colonies": 18,
+          "techs": 28,
+          "credits": 276.144,
+          "ships": 9,
+          "known": 29,
+          "eliminated": false
+        }
+      ],
+      "finalHash": "7bb12986"
+    },
+    {
+      "seed": "PRODUCTION-PAIR-168081",
+      "style": "Scholar",
+      "picks": [],
+      "treatmentSeat": 0,
+      "region": "Random",
+      "turnsChecked": 120,
+      "winner": 1,
+      "victory": "Score",
+      "observedBattles": 0,
+      "totalTechs": 147,
+      "outcomes": [
+        {
+          "seat": 0,
+          "score": 2190,
+          "population": 58.73500000000001,
+          "colonies": 10,
+          "techs": 76,
+          "credits": 1804.196,
+          "ships": 7,
+          "known": 25,
+          "eliminated": false
+        },
+        {
+          "seat": 1,
+          "score": 3300,
+          "population": 117.70700000000001,
+          "colonies": 20,
+          "techs": 71,
+          "credits": 546.951,
+          "ships": 8,
+          "known": 25,
+          "eliminated": false
+        }
+      ],
+      "finalHash": "4408c00c"
+    },
+    {
+      "seed": "PRODUCTION-PAIR-168081",
+      "style": "Scholar",
+      "picks": [
+        "photosynthetic"
+      ],
+      "treatmentSeat": 0,
+      "region": "Random",
+      "turnsChecked": 120,
+      "winner": 1,
+      "victory": "Score",
+      "observedBattles": 0,
+      "totalTechs": 146,
+      "outcomes": [
+        {
+          "seat": 0,
+          "score": 2578,
+          "population": 59.041,
+          "colonies": 10,
+          "techs": 76,
+          "credits": 5535.81,
+          "ships": 7,
+          "known": 25,
+          "eliminated": false
+        },
+        {
+          "seat": 1,
+          "score": 3260,
+          "population": 117.61099999999999,
+          "colonies": 20,
+          "techs": 70,
+          "credits": 363.625,
+          "ships": 6,
+          "known": 25,
+          "eliminated": false
+        }
+      ],
+      "finalHash": "be4ebc68"
+    },
+    {
+      "seed": "PRODUCTION-PAIR-168081",
+      "style": "Scholar",
+      "picks": [
+        "photosynthetic"
+      ],
+      "treatmentSeat": 1,
+      "region": "Random",
+      "turnsChecked": 120,
+      "winner": 1,
+      "victory": "Score",
+      "observedBattles": 0,
+      "totalTechs": 136,
+      "outcomes": [
+        {
+          "seat": 0,
+          "score": 2208,
+          "population": 72.633,
+          "colonies": 12,
+          "techs": 72,
+          "credits": 580.508,
+          "ships": 5,
+          "known": 25,
+          "eliminated": false
+        },
+        {
+          "seat": 1,
+          "score": 3030,
+          "population": 85.47200000000001,
+          "colonies": 15,
+          "techs": 64,
+          "credits": 4122.928,
+          "ships": 7,
+          "known": 25,
+          "eliminated": false
+        }
+      ],
+      "finalHash": "d0d28395"
+    },
+    {
+      "seed": "PRODUCTION-PAIR-176000",
+      "style": "Militarist",
+      "picks": [],
+      "treatmentSeat": 0,
+      "region": "Random",
+      "turnsChecked": 120,
+      "winner": 1,
+      "victory": "Score",
+      "observedBattles": 0,
+      "totalTechs": 59,
+      "outcomes": [
+        {
+          "seat": 0,
+          "score": 1323,
+          "population": 40.36,
+          "colonies": 8,
+          "techs": 26,
+          "credits": 74.405,
+          "ships": 24,
+          "known": 20,
+          "eliminated": false
+        },
+        {
+          "seat": 1,
+          "score": 1862,
+          "population": 59.38,
+          "colonies": 8,
+          "techs": 33,
+          "credits": 77.97,
+          "ships": 26,
+          "known": 29,
+          "eliminated": false
+        }
+      ],
+      "finalHash": "cb08af23"
+    },
+    {
+      "seed": "PRODUCTION-PAIR-176000",
+      "style": "Militarist",
+      "picks": [
+        "photosynthetic"
+      ],
+      "treatmentSeat": 0,
+      "region": "Random",
+      "turnsChecked": 120,
+      "winner": 1,
+      "victory": "Score",
+      "observedBattles": 0,
+      "totalTechs": 58,
+      "outcomes": [
+        {
+          "seat": 0,
+          "score": 1187,
+          "population": 33.1,
+          "colonies": 6,
+          "techs": 25,
+          "credits": 418.961,
+          "ships": 20,
+          "known": 20,
+          "eliminated": false
+        },
+        {
+          "seat": 1,
+          "score": 1877,
+          "population": 59.38,
+          "colonies": 8,
+          "techs": 33,
+          "credits": 109.514,
+          "ships": 26,
+          "known": 29,
+          "eliminated": false
+        }
+      ],
+      "finalHash": "21af057a"
+    },
+    {
+      "seed": "PRODUCTION-PAIR-176000",
+      "style": "Militarist",
+      "picks": [
+        "photosynthetic"
+      ],
+      "treatmentSeat": 1,
+      "region": "Random",
+      "turnsChecked": 120,
+      "winner": 1,
+      "victory": "Score",
+      "observedBattles": 0,
+      "totalTechs": 59,
+      "outcomes": [
+        {
+          "seat": 0,
+          "score": 1323,
+          "population": 40.36,
+          "colonies": 8,
+          "techs": 26,
+          "credits": 74.405,
+          "ships": 24,
+          "known": 20,
+          "eliminated": false
+        },
+        {
+          "seat": 1,
+          "score": 2198,
+          "population": 64.7,
+          "colonies": 10,
+          "techs": 33,
+          "credits": 1571.604,
+          "ships": 28,
+          "known": 29,
+          "eliminated": false
+        }
+      ],
+      "finalHash": "a953f494"
+    },
+    {
+      "seed": "PRODUCTION-PAIR-183919",
+      "style": "Trader",
+      "picks": [],
+      "treatmentSeat": 0,
+      "region": "Random",
+      "turnsChecked": 120,
+      "winner": 1,
+      "victory": "Score",
+      "observedBattles": 0,
+      "totalTechs": 52,
+      "outcomes": [
+        {
+          "seat": 0,
+          "score": 1531,
+          "population": 34.669000000000004,
+          "colonies": 9,
+          "techs": 24,
+          "credits": 2995.813,
+          "ships": 8,
+          "known": 36,
+          "eliminated": false
+        },
+        {
+          "seat": 1,
+          "score": 2551,
+          "population": 58.70800000000001,
+          "colonies": 11,
+          "techs": 28,
+          "credits": 7804.48,
+          "ships": 9,
+          "known": 36,
+          "eliminated": false
+        }
+      ],
+      "finalHash": "3b5d0bf1"
+    },
+    {
+      "seed": "PRODUCTION-PAIR-183919",
+      "style": "Trader",
+      "picks": [
+        "photosynthetic"
+      ],
+      "treatmentSeat": 0,
+      "region": "Random",
+      "turnsChecked": 120,
+      "winner": 1,
+      "victory": "Score",
+      "observedBattles": 0,
+      "totalTechs": 52,
+      "outcomes": [
+        {
+          "seat": 0,
+          "score": 1835,
+          "population": 35.706,
+          "colonies": 9,
+          "techs": 24,
+          "credits": 5973.946,
+          "ships": 7,
+          "known": 36,
+          "eliminated": false
+        },
+        {
+          "seat": 1,
+          "score": 2632,
+          "population": 61.763000000000005,
+          "colonies": 12,
+          "techs": 28,
+          "credits": 7981.569,
+          "ships": 8,
+          "known": 36,
+          "eliminated": false
+        }
+      ],
+      "finalHash": "651534a1"
+    },
+    {
+      "seed": "PRODUCTION-PAIR-183919",
+      "style": "Trader",
+      "picks": [
+        "photosynthetic"
+      ],
+      "treatmentSeat": 1,
+      "region": "Random",
+      "turnsChecked": 120,
+      "winner": 1,
+      "victory": "Score",
+      "observedBattles": 0,
+      "totalTechs": 54,
+      "outcomes": [
+        {
+          "seat": 0,
+          "score": 1741,
+          "population": 37.63700000000001,
+          "colonies": 11,
+          "techs": 28,
+          "credits": 2417.664,
+          "ships": 8,
+          "known": 36,
+          "eliminated": false
+        },
+        {
+          "seat": 1,
+          "score": 2467,
+          "population": 48.480000000000004,
+          "colonies": 8,
+          "techs": 26,
+          "credits": 9377.91,
+          "ships": 8,
+          "known": 36,
+          "eliminated": false
+        }
+      ],
+      "finalHash": "a9c9bbbd"
+    },
+    {
+      "seed": "PRODUCTION-PAIR-191838",
+      "style": "Diplomat",
+      "picks": [],
+      "treatmentSeat": 0,
+      "region": "Random",
+      "turnsChecked": 120,
+      "winner": 1,
+      "victory": "Score",
+      "observedBattles": 0,
+      "totalTechs": 48,
+      "outcomes": [
+        {
+          "seat": 0,
+          "score": 1443,
+          "population": 27.159,
+          "colonies": 4,
+          "techs": 22,
+          "credits": 5750.466,
+          "ships": 8,
+          "known": 34,
+          "eliminated": false
+        },
+        {
+          "seat": 1,
+          "score": 2958,
+          "population": 99.29400000000001,
+          "colonies": 21,
+          "techs": 26,
+          "credits": 4843.726,
+          "ships": 10,
+          "known": 39,
+          "eliminated": false
+        }
+      ],
+      "finalHash": "bcdf7443"
+    },
+    {
+      "seed": "PRODUCTION-PAIR-191838",
+      "style": "Diplomat",
+      "picks": [
+        "photosynthetic"
+      ],
+      "treatmentSeat": 0,
+      "region": "Random",
+      "turnsChecked": 120,
+      "winner": 1,
+      "victory": "Score",
+      "observedBattles": 0,
+      "totalTechs": 48,
+      "outcomes": [
+        {
+          "seat": 0,
+          "score": 1633,
+          "population": 25.7,
+          "colonies": 3,
+          "techs": 22,
+          "credits": 8010.464,
+          "ships": 9,
+          "known": 23,
+          "eliminated": false
+        },
+        {
+          "seat": 1,
+          "score": 2958,
+          "population": 99.29400000000001,
+          "colonies": 21,
+          "techs": 26,
+          "credits": 4843.726,
+          "ships": 10,
+          "known": 39,
+          "eliminated": false
+        }
+      ],
+      "finalHash": "c4cf8243"
+    },
+    {
+      "seed": "PRODUCTION-PAIR-191838",
+      "style": "Diplomat",
+      "picks": [
+        "photosynthetic"
+      ],
+      "treatmentSeat": 1,
+      "region": "Random",
+      "turnsChecked": 120,
+      "winner": 1,
+      "victory": "Score",
+      "observedBattles": 0,
+      "totalTechs": 47,
+      "outcomes": [
+        {
+          "seat": 0,
+          "score": 1408,
+          "population": 25.7,
+          "colonies": 3,
+          "techs": 22,
+          "credits": 5796.408,
+          "ships": 8,
+          "known": 23,
+          "eliminated": false
+        },
+        {
+          "seat": 1,
+          "score": 2948,
+          "population": 89.447,
+          "colonies": 20,
+          "techs": 25,
+          "credits": 5776.212,
+          "ships": 11,
+          "known": 39,
+          "eliminated": false
+        }
+      ],
+      "finalHash": "596d3089"
+    },
+    {
+      "seed": "PRODUCTION-PAIR-199757",
+      "style": "Balanced",
+      "picks": [],
+      "treatmentSeat": 0,
+      "region": "Sol",
+      "turnsChecked": 120,
+      "winner": 1,
+      "victory": "Score",
+      "observedBattles": 0,
+      "totalTechs": 74,
+      "outcomes": [
+        {
+          "seat": 0,
+          "score": 1502,
+          "population": 41.92,
+          "colonies": 5,
+          "techs": 36,
+          "credits": 1857.001,
+          "ships": 5,
+          "known": 41,
+          "eliminated": false
+        },
+        {
+          "seat": 1,
+          "score": 2060,
+          "population": 71.31200000000001,
+          "colonies": 12,
+          "techs": 38,
+          "credits": 510.954,
+          "ships": 9,
+          "known": 34,
+          "eliminated": false
+        }
+      ],
+      "finalHash": "234d2b86"
+    },
+    {
+      "seed": "PRODUCTION-PAIR-199757",
+      "style": "Balanced",
+      "picks": [
+        "photosynthetic"
+      ],
+      "treatmentSeat": 0,
+      "region": "Sol",
+      "turnsChecked": 120,
+      "winner": 1,
+      "victory": "Score",
+      "observedBattles": 0,
+      "totalTechs": 74,
+      "outcomes": [
+        {
+          "seat": 0,
+          "score": 1759,
+          "population": 38.82,
+          "colonies": 5,
+          "techs": 35,
+          "credits": 5020.328,
+          "ships": 5,
+          "known": 41,
+          "eliminated": false
+        },
+        {
+          "seat": 1,
+          "score": 1950,
+          "population": 64.447,
+          "colonies": 9,
+          "techs": 39,
+          "credits": 961.124,
+          "ships": 7,
+          "known": 41,
+          "eliminated": false
+        }
+      ],
+      "finalHash": "4749620e"
+    },
+    {
+      "seed": "PRODUCTION-PAIR-199757",
+      "style": "Balanced",
+      "picks": [
+        "photosynthetic"
+      ],
+      "treatmentSeat": 1,
+      "region": "Sol",
+      "turnsChecked": 120,
+      "winner": 1,
+      "victory": "Score",
+      "observedBattles": 0,
+      "totalTechs": 74,
+      "outcomes": [
+        {
+          "seat": 0,
+          "score": 1532,
+          "population": 41.92,
+          "colonies": 5,
+          "techs": 36,
+          "credits": 2319.429,
+          "ships": 5,
+          "known": 41,
+          "eliminated": false
+        },
+        {
+          "seat": 1,
+          "score": 2225,
+          "population": 68.213,
+          "colonies": 10,
+          "techs": 38,
+          "credits": 2932.938,
+          "ships": 7,
+          "known": 41,
+          "eliminated": false
+        }
+      ],
+      "finalHash": "21b723c4"
+    },
+    {
+      "seed": "PRODUCTION-PAIR-207676",
+      "style": "Expansionist",
+      "picks": [],
+      "treatmentSeat": 0,
+      "region": "Sol",
+      "turnsChecked": 120,
+      "winner": 0,
+      "victory": "Score",
+      "observedBattles": 0,
+      "totalTechs": 72,
+      "outcomes": [
+        {
+          "seat": 0,
+          "score": 1943,
+          "population": 71.268,
+          "colonies": 7,
+          "techs": 36,
+          "credits": 2110.017,
+          "ships": 6,
+          "known": 43,
+          "eliminated": false
+        },
+        {
+          "seat": 1,
+          "score": 1626,
+          "population": 54.7,
+          "colonies": 9,
+          "techs": 36,
+          "credits": 142.461,
+          "ships": 7,
+          "known": 43,
+          "eliminated": false
+        }
+      ],
+      "finalHash": "869355ef"
+    },
+    {
+      "seed": "PRODUCTION-PAIR-207676",
+      "style": "Expansionist",
+      "picks": [
+        "photosynthetic"
+      ],
+      "treatmentSeat": 0,
+      "region": "Sol",
+      "turnsChecked": 120,
+      "winner": 0,
+      "victory": "Score",
+      "observedBattles": 0,
+      "totalTechs": 72,
+      "outcomes": [
+        {
+          "seat": 0,
+          "score": 2580,
+          "population": 80.253,
+          "colonies": 9,
+          "techs": 36,
+          "credits": 5683.411,
+          "ships": 6,
+          "known": 43,
+          "eliminated": false
+        },
+        {
+          "seat": 1,
+          "score": 1621,
+          "population": 53.763,
+          "colonies": 9,
+          "techs": 36,
+          "credits": 144.064,
+          "ships": 7,
+          "known": 43,
+          "eliminated": false
+        }
+      ],
+      "finalHash": "e167e069"
+    },
+    {
+      "seed": "PRODUCTION-PAIR-207676",
+      "style": "Expansionist",
+      "picks": [
+        "photosynthetic"
+      ],
+      "treatmentSeat": 1,
+      "region": "Sol",
+      "turnsChecked": 120,
+      "winner": 0,
+      "victory": "Score",
+      "observedBattles": 0,
+      "totalTechs": 73,
+      "outcomes": [
+        {
+          "seat": 0,
+          "score": 1960,
+          "population": 71.268,
+          "colonies": 7,
+          "techs": 36,
+          "credits": 2280.85,
+          "ships": 6,
+          "known": 43,
+          "eliminated": false
+        },
+        {
+          "seat": 1,
+          "score": 1798,
+          "population": 52.2,
+          "colonies": 9,
+          "techs": 37,
+          "credits": 1793.04,
+          "ships": 7,
+          "known": 43,
+          "eliminated": false
+        }
+      ],
+      "finalHash": "5ff52c3a"
+    },
+    {
+      "seed": "PRODUCTION-PAIR-215595",
+      "style": "Scholar",
+      "picks": [],
+      "treatmentSeat": 0,
+      "region": "Sol",
+      "turnsChecked": 120,
+      "winner": 0,
+      "victory": "Score",
+      "observedBattles": 0,
+      "totalTechs": 112,
+      "outcomes": [
+        {
+          "seat": 0,
+          "score": 2649,
+          "population": 77.1,
+          "colonies": 9,
+          "techs": 66,
+          "credits": 3047.712,
+          "ships": 6,
+          "known": 44,
+          "eliminated": false
+        },
+        {
+          "seat": 1,
+          "score": 1407,
+          "population": 42.036,
+          "colonies": 10,
+          "techs": 46,
+          "credits": 129.02,
+          "ships": 5,
+          "known": 30,
+          "eliminated": false
+        }
+      ],
+      "finalHash": "de78242b"
+    },
+    {
+      "seed": "PRODUCTION-PAIR-215595",
+      "style": "Scholar",
+      "picks": [
+        "photosynthetic"
+      ],
+      "treatmentSeat": 0,
+      "region": "Sol",
+      "turnsChecked": 120,
+      "winner": 0,
+      "victory": "Score",
+      "observedBattles": 0,
+      "totalTechs": 107,
+      "outcomes": [
+        {
+          "seat": 0,
+          "score": 2392,
+          "population": 52.917,
+          "colonies": 5,
+          "techs": 61,
+          "credits": 4981.267,
+          "ships": 5,
+          "known": 44,
+          "eliminated": false
+        },
+        {
+          "seat": 1,
+          "score": 1199,
+          "population": 32.369,
+          "colonies": 6,
+          "techs": 46,
+          "credits": 90.149,
+          "ships": 6,
+          "known": 30,
+          "eliminated": false
+        }
+      ],
+      "finalHash": "1032ee53"
+    },
+    {
+      "seed": "PRODUCTION-PAIR-215595",
+      "style": "Scholar",
+      "picks": [
+        "photosynthetic"
+      ],
+      "treatmentSeat": 1,
+      "region": "Sol",
+      "turnsChecked": 120,
+      "winner": 0,
+      "victory": "Score",
+      "observedBattles": 0,
+      "totalTechs": 115,
+      "outcomes": [
+        {
+          "seat": 0,
+          "score": 2639,
+          "population": 77.1,
+          "colonies": 9,
+          "techs": 66,
+          "credits": 2950.249,
+          "ships": 6,
+          "known": 44,
+          "eliminated": false
+        },
+        {
+          "seat": 1,
+          "score": 1610,
+          "population": 48.184000000000005,
+          "colonies": 11,
+          "techs": 49,
+          "credits": 247.134,
+          "ships": 5,
+          "known": 34,
+          "eliminated": false
+        }
+      ],
+      "finalHash": "014fa36f"
+    },
+    {
+      "seed": "PRODUCTION-PAIR-223514",
+      "style": "Militarist",
+      "picks": [],
+      "treatmentSeat": 0,
+      "region": "Sol",
+      "turnsChecked": 120,
+      "winner": 0,
+      "victory": "Score",
+      "observedBattles": 55,
+      "totalTechs": 51,
+      "outcomes": [
+        {
+          "seat": 0,
+          "score": 1855,
+          "population": 58.188,
+          "colonies": 13,
+          "techs": 27,
+          "credits": 0,
+          "ships": 28,
+          "known": 43,
+          "eliminated": false
+        },
+        {
+          "seat": 1,
+          "score": 1529,
+          "population": 43.75000000000001,
+          "colonies": 11,
+          "techs": 24,
+          "credits": 4.732,
+          "ships": 37,
+          "known": 15,
+          "eliminated": false
+        }
+      ],
+      "finalHash": "491773fd"
+    },
+    {
+      "seed": "PRODUCTION-PAIR-223514",
+      "style": "Militarist",
+      "picks": [
+        "photosynthetic"
+      ],
+      "treatmentSeat": 0,
+      "region": "Sol",
+      "turnsChecked": 120,
+      "winner": 0,
+      "victory": "Score",
+      "observedBattles": 54,
+      "totalTechs": 50,
+      "outcomes": [
+        {
+          "seat": 0,
+          "score": 1768,
+          "population": 54.498000000000005,
+          "colonies": 11,
+          "techs": 26,
+          "credits": 0,
+          "ships": 34,
+          "known": 43,
+          "eliminated": false
+        },
+        {
+          "seat": 1,
+          "score": 1509,
+          "population": 43.75000000000001,
+          "colonies": 11,
+          "techs": 24,
+          "credits": 0,
+          "ships": 32,
+          "known": 15,
+          "eliminated": false
+        }
+      ],
+      "finalHash": "0e8dc798"
+    },
+    {
+      "seed": "PRODUCTION-PAIR-223514",
+      "style": "Militarist",
+      "picks": [
+        "photosynthetic"
+      ],
+      "treatmentSeat": 1,
+      "region": "Sol",
+      "turnsChecked": 120,
+      "winner": 0,
+      "victory": "Score",
+      "observedBattles": 62,
+      "totalTechs": 51,
+      "outcomes": [
+        {
+          "seat": 0,
+          "score": 1992,
+          "population": 61.37800000000001,
+          "colonies": 16,
+          "techs": 28,
+          "credits": 99.896,
+          "ships": 27,
+          "known": 43,
+          "eliminated": false
+        },
+        {
+          "seat": 1,
+          "score": 1541,
+          "population": 43.75000000000001,
+          "colonies": 11,
+          "techs": 23,
+          "credits": 0,
+          "ships": 38,
+          "known": 15,
+          "eliminated": false
+        }
+      ],
+      "finalHash": "75d38305"
+    },
+    {
+      "seed": "PRODUCTION-PAIR-231433",
+      "style": "Trader",
+      "picks": [],
+      "treatmentSeat": 0,
+      "region": "Sol",
+      "turnsChecked": 120,
+      "winner": 1,
+      "victory": "Score",
+      "observedBattles": 0,
+      "totalTechs": 56,
+      "outcomes": [
+        {
+          "seat": 0,
+          "score": 1533,
+          "population": 35.585,
+          "colonies": 9,
+          "techs": 24,
+          "credits": 3245.002,
+          "ships": 7,
+          "known": 41,
+          "eliminated": false
+        },
+        {
+          "seat": 1,
+          "score": 2113,
+          "population": 59.21900000000001,
+          "colonies": 12,
+          "techs": 32,
+          "credits": 3372.814,
+          "ships": 8,
+          "known": 34,
+          "eliminated": false
+        }
+      ],
+      "finalHash": "86cc64c0"
+    },
+    {
+      "seed": "PRODUCTION-PAIR-231433",
+      "style": "Trader",
+      "picks": [
+        "photosynthetic"
+      ],
+      "treatmentSeat": 0,
+      "region": "Sol",
+      "turnsChecked": 120,
+      "winner": 0,
+      "victory": "Score",
+      "observedBattles": 0,
+      "totalTechs": 56,
+      "outcomes": [
+        {
+          "seat": 0,
+          "score": 2684,
+          "population": 85.22200000000001,
+          "colonies": 23,
+          "techs": 28,
+          "credits": 683.17,
+          "ships": 5,
+          "known": 43,
+          "eliminated": false
+        },
+        {
+          "seat": 1,
+          "score": 2103,
+          "population": 62.273,
+          "colonies": 12,
+          "techs": 28,
+          "credits": 3200.951,
+          "ships": 9,
+          "known": 34,
+          "eliminated": false
+        }
+      ],
+      "finalHash": "db97627c"
+    },
+    {
+      "seed": "PRODUCTION-PAIR-231433",
+      "style": "Trader",
+      "picks": [
+        "photosynthetic"
+      ],
+      "treatmentSeat": 1,
+      "region": "Sol",
+      "turnsChecked": 120,
+      "winner": 1,
+      "victory": "Score",
+      "observedBattles": 0,
+      "totalTechs": 57,
+      "outcomes": [
+        {
+          "seat": 0,
+          "score": 1533,
+          "population": 35.585,
+          "colonies": 9,
+          "techs": 24,
+          "credits": 3245.002,
+          "ships": 7,
+          "known": 41,
+          "eliminated": false
+        },
+        {
+          "seat": 1,
+          "score": 2222,
+          "population": 61.60300000000001,
+          "colonies": 12,
+          "techs": 33,
+          "credits": 4178.691,
+          "ships": 8,
+          "known": 34,
+          "eliminated": false
+        }
+      ],
+      "finalHash": "77cc42b6"
+    },
+    {
+      "seed": "PRODUCTION-PAIR-239352",
+      "style": "Diplomat",
+      "picks": [],
+      "treatmentSeat": 0,
+      "region": "Sol",
+      "turnsChecked": 120,
+      "winner": 1,
+      "victory": "Score",
+      "observedBattles": 0,
+      "totalTechs": 59,
+      "outcomes": [
+        {
+          "seat": 0,
+          "score": 2747,
+          "population": 79.53999999999999,
+          "colonies": 17,
+          "techs": 29,
+          "credits": 6947.275,
+          "ships": 9,
+          "known": 44,
+          "eliminated": false
+        },
+        {
+          "seat": 1,
+          "score": 3146,
+          "population": 92.853,
+          "colonies": 21,
+          "techs": 30,
+          "credits": 4649.548,
+          "ships": 7,
+          "known": 44,
+          "eliminated": false
+        }
+      ],
+      "finalHash": "1864d3c1"
+    },
+    {
+      "seed": "PRODUCTION-PAIR-239352",
+      "style": "Diplomat",
+      "picks": [
+        "photosynthetic"
+      ],
+      "treatmentSeat": 0,
+      "region": "Sol",
+      "turnsChecked": 120,
+      "winner": 1,
+      "victory": "Score",
+      "observedBattles": 0,
+      "totalTechs": 58,
+      "outcomes": [
+        {
+          "seat": 0,
+          "score": 3108,
+          "population": 78.14,
+          "colonies": 17,
+          "techs": 28,
+          "credits": 10931.614,
+          "ships": 8,
+          "known": 44,
+          "eliminated": false
+        },
+        {
+          "seat": 1,
+          "score": 3173,
+          "population": 92.853,
+          "colonies": 21,
+          "techs": 30,
+          "credits": 4994.648,
+          "ships": 7,
+          "known": 44,
+          "eliminated": false
+        }
+      ],
+      "finalHash": "a98d02d9"
+    },
+    {
+      "seed": "PRODUCTION-PAIR-239352",
+      "style": "Diplomat",
+      "picks": [
+        "photosynthetic"
+      ],
+      "treatmentSeat": 1,
+      "region": "Sol",
+      "turnsChecked": 120,
+      "winner": 1,
+      "victory": "Score",
+      "observedBattles": 0,
+      "totalTechs": 56,
+      "outcomes": [
+        {
+          "seat": 0,
+          "score": 2522,
+          "population": 79.64,
+          "colonies": 17,
+          "techs": 26,
+          "credits": 5727.366,
+          "ships": 11,
+          "known": 44,
+          "eliminated": false
+        },
+        {
+          "seat": 1,
+          "score": 3414,
+          "population": 88.221,
+          "colonies": 19,
+          "techs": 30,
+          "credits": 8285.158,
+          "ships": 9,
+          "known": 44,
+          "eliminated": false
+        }
+      ],
+      "finalHash": "9db28b08"
+    },
+    {
+      "seed": "PRODUCTION-PAIR-247271",
+      "style": "Balanced",
+      "picks": [],
+      "treatmentSeat": 0,
+      "region": "Random",
+      "turnsChecked": 120,
+      "winner": 1,
+      "victory": "Score",
+      "observedBattles": 0,
+      "totalTechs": 91,
+      "outcomes": [
+        {
+          "seat": 0,
+          "score": 2353,
+          "population": 68.003,
+          "colonies": 10,
+          "techs": 44,
+          "credits": 2705.134,
+          "ships": 6,
+          "known": 28,
+          "eliminated": false
+        },
+        {
+          "seat": 1,
+          "score": 3047,
+          "population": 99.82,
+          "colonies": 24,
+          "techs": 47,
+          "credits": 91.668,
+          "ships": 5,
+          "known": 28,
+          "eliminated": false
+        }
+      ],
+      "finalHash": "eed5fe3a"
+    },
+    {
+      "seed": "PRODUCTION-PAIR-247271",
+      "style": "Balanced",
+      "picks": [
+        "photosynthetic"
+      ],
+      "treatmentSeat": 0,
+      "region": "Random",
+      "turnsChecked": 120,
+      "winner": 1,
+      "victory": "Score",
+      "observedBattles": 0,
+      "totalTechs": 92,
+      "outcomes": [
+        {
+          "seat": 0,
+          "score": 2840,
+          "population": 64.405,
+          "colonies": 10,
+          "techs": 45,
+          "credits": 7820.283,
+          "ships": 6,
+          "known": 28,
+          "eliminated": false
+        },
+        {
+          "seat": 1,
+          "score": 3030,
+          "population": 97.763,
+          "colonies": 24,
+          "techs": 47,
+          "credits": 164.805,
+          "ships": 5,
+          "known": 28,
+          "eliminated": false
+        }
+      ],
+      "finalHash": "a5433ce8"
+    },
+    {
+      "seed": "PRODUCTION-PAIR-247271",
+      "style": "Balanced",
+      "picks": [
+        "photosynthetic"
+      ],
+      "treatmentSeat": 1,
+      "region": "Random",
+      "turnsChecked": 120,
+      "winner": 1,
+      "victory": "Score",
+      "observedBattles": 0,
+      "totalTechs": 92,
+      "outcomes": [
+        {
+          "seat": 0,
+          "score": 2347,
+          "population": 68.003,
+          "colonies": 10,
+          "techs": 44,
+          "credits": 2650.55,
+          "ships": 6,
+          "known": 28,
+          "eliminated": false
+        },
+        {
+          "seat": 1,
+          "score": 3240,
+          "population": 100.755,
+          "colonies": 22,
+          "techs": 48,
+          "credits": 1623.819,
+          "ships": 7,
+          "known": 28,
+          "eliminated": false
+        }
+      ],
+      "finalHash": "8d3958d1"
+    },
+    {
+      "seed": "PRODUCTION-PAIR-255190",
+      "style": "Expansionist",
+      "picks": [],
+      "treatmentSeat": 0,
+      "region": "Random",
+      "turnsChecked": 120,
+      "winner": 1,
+      "victory": "Score",
+      "observedBattles": 0,
+      "totalTechs": 68,
+      "outcomes": [
+        {
+          "seat": 0,
+          "score": 2068,
+          "population": 64.04800000000002,
+          "colonies": 17,
+          "techs": 30,
+          "credits": 104.262,
+          "ships": 6,
+          "known": 18,
+          "eliminated": false
+        },
+        {
+          "seat": 1,
+          "score": 2118,
+          "population": 71.256,
+          "colonies": 15,
+          "techs": 38,
+          "credits": 60,
+          "ships": 8,
+          "known": 18,
+          "eliminated": false
+        }
+      ],
+      "finalHash": "d98b7b29"
+    },
+    {
+      "seed": "PRODUCTION-PAIR-255190",
+      "style": "Expansionist",
+      "picks": [
+        "photosynthetic"
+      ],
+      "treatmentSeat": 0,
+      "region": "Random",
+      "turnsChecked": 120,
+      "winner": 0,
+      "victory": "Score",
+      "observedBattles": 0,
+      "totalTechs": 63,
+      "outcomes": [
+        {
+          "seat": 0,
+          "score": 2063,
+          "population": 60.48000000000001,
+          "colonies": 17,
+          "techs": 26,
+          "credits": 410.027,
+          "ships": 4,
+          "known": 18,
+          "eliminated": false
+        },
+        {
+          "seat": 1,
+          "score": 2036,
+          "population": 66.121,
+          "colonies": 15,
+          "techs": 37,
+          "credits": 78.254,
+          "ships": 10,
+          "known": 18,
+          "eliminated": false
+        }
+      ],
+      "finalHash": "52427d8b"
+    },
+    {
+      "seed": "PRODUCTION-PAIR-255190",
+      "style": "Expansionist",
+      "picks": [
+        "photosynthetic"
+      ],
+      "treatmentSeat": 1,
+      "region": "Random",
+      "turnsChecked": 120,
+      "winner": 1,
+      "victory": "Score",
+      "observedBattles": 0,
+      "totalTechs": 67,
+      "outcomes": [
+        {
+          "seat": 0,
+          "score": 2028,
+          "population": 66.59400000000001,
+          "colonies": 16,
+          "techs": 29,
+          "credits": 181.849,
+          "ships": 7,
+          "known": 18,
+          "eliminated": false
+        },
+        {
+          "seat": 1,
+          "score": 2487,
+          "population": 82.60300000000001,
+          "colonies": 16,
+          "techs": 38,
+          "credits": 1853.099,
+          "ships": 8,
+          "known": 18,
+          "eliminated": false
+        }
+      ],
+      "finalHash": "d3c3bb50"
+    },
+    {
+      "seed": "PRODUCTION-PAIR-263109",
+      "style": "Scholar",
+      "picks": [],
+      "treatmentSeat": 0,
+      "region": "Random",
+      "turnsChecked": 120,
+      "winner": 0,
+      "victory": "Score",
+      "observedBattles": 0,
+      "totalTechs": 120,
+      "outcomes": [
+        {
+          "seat": 0,
+          "score": 2193,
+          "population": 71.272,
+          "colonies": 12,
+          "techs": 59,
+          "credits": 247.354,
+          "ships": 4,
+          "known": 28,
+          "eliminated": false
+        },
+        {
+          "seat": 1,
+          "score": 2094,
+          "population": 77.41300000000001,
+          "colonies": 11,
+          "techs": 61,
+          "credits": 570.817,
+          "ships": 5,
+          "known": 28,
+          "eliminated": false
+        }
+      ],
+      "finalHash": "cabbcce4"
+    },
+    {
+      "seed": "PRODUCTION-PAIR-263109",
+      "style": "Scholar",
+      "picks": [
+        "photosynthetic"
+      ],
+      "treatmentSeat": 0,
+      "region": "Random",
+      "turnsChecked": 120,
+      "winner": 0,
+      "victory": "Score",
+      "observedBattles": 0,
+      "totalTechs": 128,
+      "outcomes": [
+        {
+          "seat": 0,
+          "score": 2541,
+          "population": 72.89300000000001,
+          "colonies": 12,
+          "techs": 62,
+          "credits": 3079.585,
+          "ships": 5,
+          "known": 28,
+          "eliminated": false
+        },
+        {
+          "seat": 1,
+          "score": 2269,
+          "population": 81.19000000000001,
+          "colonies": 12,
+          "techs": 66,
+          "credits": 1093.253,
+          "ships": 5,
+          "known": 28,
+          "eliminated": false
+        }
+      ],
+      "finalHash": "71d74430"
+    },
+    {
+      "seed": "PRODUCTION-PAIR-263109",
+      "style": "Scholar",
+      "picks": [
+        "photosynthetic"
+      ],
+      "treatmentSeat": 1,
+      "region": "Random",
+      "turnsChecked": 120,
+      "winner": 1,
+      "victory": "Score",
+      "observedBattles": 0,
+      "totalTechs": 134,
+      "outcomes": [
+        {
+          "seat": 0,
+          "score": 2310,
+          "population": 75.747,
+          "colonies": 11,
+          "techs": 65,
+          "credits": 377.446,
+          "ships": 5,
+          "known": 28,
+          "eliminated": false
+        },
+        {
+          "seat": 1,
+          "score": 2558,
+          "population": 82.563,
+          "colonies": 12,
+          "techs": 69,
+          "credits": 3438.847,
+          "ships": 5,
+          "known": 28,
+          "eliminated": false
+        }
+      ],
+      "finalHash": "ac9afd62"
+    },
+    {
+      "seed": "PRODUCTION-PAIR-271028",
+      "style": "Militarist",
+      "picks": [],
+      "treatmentSeat": 0,
+      "region": "Random",
+      "turnsChecked": 120,
+      "winner": 0,
+      "victory": "Score",
+      "observedBattles": 141,
+      "totalTechs": 53,
+      "outcomes": [
+        {
+          "seat": 0,
+          "score": 1598,
+          "population": 52.35000000000001,
+          "colonies": 14,
+          "techs": 28,
+          "credits": 0.008,
+          "ships": 34,
+          "known": 24,
+          "eliminated": false
+        },
+        {
+          "seat": 1,
+          "score": 1206,
+          "population": 31.005,
+          "colonies": 8,
+          "techs": 25,
+          "credits": 0,
+          "ships": 19,
+          "known": 21,
+          "eliminated": false
+        }
+      ],
+      "finalHash": "2e67c53e"
+    },
+    {
+      "seed": "PRODUCTION-PAIR-271028",
+      "style": "Militarist",
+      "picks": [
+        "photosynthetic"
+      ],
+      "treatmentSeat": 0,
+      "region": "Random",
+      "turnsChecked": 120,
+      "winner": 0,
+      "victory": "Score",
+      "observedBattles": 81,
+      "totalTechs": 50,
+      "outcomes": [
+        {
+          "seat": 0,
+          "score": 1511,
+          "population": 53.00000000000001,
+          "colonies": 13,
+          "techs": 26,
+          "credits": 0,
+          "ships": 30,
+          "known": 22,
+          "eliminated": false
+        },
+        {
+          "seat": 1,
+          "score": 1080,
+          "population": 23.305,
+          "colonies": 7,
+          "techs": 24,
+          "credits": 0,
+          "ships": 18,
+          "known": 21,
+          "eliminated": false
+        }
+      ],
+      "finalHash": "32b36413"
+    },
+    {
+      "seed": "PRODUCTION-PAIR-271028",
+      "style": "Militarist",
+      "picks": [
+        "photosynthetic"
+      ],
+      "treatmentSeat": 1,
+      "region": "Random",
+      "turnsChecked": 120,
+      "winner": 0,
+      "victory": "Score",
+      "observedBattles": 140,
+      "totalTechs": 54,
+      "outcomes": [
+        {
+          "seat": 0,
+          "score": 1620,
+          "population": 50.50000000000001,
+          "colonies": 15,
+          "techs": 29,
+          "credits": 0,
+          "ships": 34,
+          "known": 24,
+          "eliminated": false
+        },
+        {
+          "seat": 1,
+          "score": 1178,
+          "population": 29.505,
+          "colonies": 7,
+          "techs": 25,
+          "credits": 0,
+          "ships": 19,
+          "known": 24,
+          "eliminated": false
+        }
+      ],
+      "finalHash": "45fc1bee"
+    },
+    {
+      "seed": "PRODUCTION-PAIR-278947",
+      "style": "Trader",
+      "picks": [],
+      "treatmentSeat": 0,
+      "region": "Random",
+      "turnsChecked": 120,
+      "winner": 1,
+      "victory": "Score",
+      "observedBattles": 30,
+      "totalTechs": 51,
+      "outcomes": [
+        {
+          "seat": 0,
+          "score": 1206,
+          "population": 27.153000000000002,
+          "colonies": 5,
+          "techs": 23,
+          "credits": 3653.815,
+          "ships": 17,
+          "known": 23,
+          "eliminated": false
+        },
+        {
+          "seat": 1,
+          "score": 2816,
+          "population": 70.82,
+          "colonies": 11,
+          "techs": 28,
+          "credits": 8727.758,
+          "ships": 23,
+          "known": 22,
+          "eliminated": false
+        }
+      ],
+      "finalHash": "8390b64b"
+    },
+    {
+      "seed": "PRODUCTION-PAIR-278947",
+      "style": "Trader",
+      "picks": [
+        "photosynthetic"
+      ],
+      "treatmentSeat": 0,
+      "region": "Random",
+      "turnsChecked": 120,
+      "winner": 1,
+      "victory": "Score",
+      "observedBattles": 48,
+      "totalTechs": 54,
+      "outcomes": [
+        {
+          "seat": 0,
+          "score": 1461,
+          "population": 32.861,
+          "colonies": 6,
+          "techs": 22,
+          "credits": 5507.408,
+          "ships": 14,
+          "known": 23,
+          "eliminated": false
+        },
+        {
+          "seat": 1,
+          "score": 2574,
+          "population": 66.06,
+          "colonies": 11,
+          "techs": 32,
+          "credits": 7624.778,
+          "ships": 18,
+          "known": 22,
+          "eliminated": false
+        }
+      ],
+      "finalHash": "52324813"
+    },
+    {
+      "seed": "PRODUCTION-PAIR-278947",
+      "style": "Trader",
+      "picks": [
+        "photosynthetic"
+      ],
+      "treatmentSeat": 1,
+      "region": "Random",
+      "turnsChecked": 120,
+      "winner": 1,
+      "victory": "Score",
+      "observedBattles": 43,
+      "totalTechs": 58,
+      "outcomes": [
+        {
+          "seat": 0,
+          "score": 1340,
+          "population": 32.653000000000006,
+          "colonies": 6,
+          "techs": 23,
+          "credits": 4152.572,
+          "ships": 14,
+          "known": 23,
+          "eliminated": false
+        },
+        {
+          "seat": 1,
+          "score": 3088,
+          "population": 65.925,
+          "colonies": 11,
+          "techs": 35,
+          "credits": 12338.411,
+          "ships": 19,
+          "known": 22,
+          "eliminated": false
+        }
+      ],
+      "finalHash": "a057438b"
+    },
+    {
+      "seed": "PRODUCTION-PAIR-286866",
+      "style": "Diplomat",
+      "picks": [],
+      "treatmentSeat": 0,
+      "region": "Random",
+      "turnsChecked": 120,
+      "winner": 0,
+      "victory": "Score",
+      "observedBattles": 0,
+      "totalTechs": 60,
+      "outcomes": [
+        {
+          "seat": 0,
+          "score": 2384,
+          "population": 85.051,
+          "colonies": 16,
+          "techs": 25,
+          "credits": 1575.481,
+          "ships": 7,
+          "known": 39,
+          "eliminated": false
+        },
+        {
+          "seat": 1,
+          "score": 2058,
+          "population": 50.96,
+          "colonies": 10,
+          "techs": 35,
+          "credits": 5900.447,
+          "ships": 7,
+          "known": 30,
+          "eliminated": false
+        }
+      ],
+      "finalHash": "f88adb34"
+    },
+    {
+      "seed": "PRODUCTION-PAIR-286866",
+      "style": "Diplomat",
+      "picks": [
+        "photosynthetic"
+      ],
+      "treatmentSeat": 0,
+      "region": "Random",
+      "turnsChecked": 120,
+      "winner": 0,
+      "victory": "Score",
+      "observedBattles": 0,
+      "totalTechs": 58,
+      "outcomes": [
+        {
+          "seat": 0,
+          "score": 2366,
+          "population": 60.93000000000001,
+          "colonies": 14,
+          "techs": 23,
+          "credits": 5303.443,
+          "ships": 6,
+          "known": 39,
+          "eliminated": false
+        },
+        {
+          "seat": 1,
+          "score": 2056,
+          "population": 50.96,
+          "colonies": 10,
+          "techs": 35,
+          "credits": 5881.015,
+          "ships": 7,
+          "known": 30,
+          "eliminated": false
+        }
+      ],
+      "finalHash": "79491b4b"
+    },
+    {
+      "seed": "PRODUCTION-PAIR-286866",
+      "style": "Diplomat",
+      "picks": [
+        "photosynthetic"
+      ],
+      "treatmentSeat": 1,
+      "region": "Random",
+      "turnsChecked": 120,
+      "winner": 0,
+      "victory": "Score",
+      "observedBattles": 0,
+      "totalTechs": 60,
+      "outcomes": [
+        {
+          "seat": 0,
+          "score": 2384,
+          "population": 85.051,
+          "colonies": 16,
+          "techs": 25,
+          "credits": 1575.481,
+          "ships": 7,
+          "known": 39,
+          "eliminated": false
+        },
+        {
+          "seat": 1,
+          "score": 2360,
+          "population": 50.96,
+          "colonies": 10,
+          "techs": 35,
+          "credits": 8839.164,
+          "ships": 7,
+          "known": 30,
+          "eliminated": false
+        }
+      ],
+      "finalHash": "81568f28"
+    }
+  ],
+  "interpretation": "The earlier full 576-game audit remains intact. These 72 games validate only the light-profile-dependent Photosynthetic revision; other special estimates are retained from that earlier source revision. An existing integer price is retained when inside the mapped 95% score interval; otherwise the rounded mean mapping is applied. This is finite neutral-profile evidence, not a universal balance proof."
+}

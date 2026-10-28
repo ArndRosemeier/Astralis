@@ -1,0 +1,40 @@
+{
+  "asset": "public/assets/impact.mp3",
+  "model": "bytedance-seed/seed-audio-1-0",
+  "prompt": "The sound of a subdued cinematic spacecraft hull impact: a short deep metallic thud, faint rattling resonant debris and a soft bass tail, distant and restrained, no voice, no speech, no music, isolated game sound effect.",
+  "seed": null,
+  "api_request": {
+    "model": "bytedance-seed/seed-audio-1-0",
+    "input": "The sound of a subdued cinematic spacecraft hull impact: a short deep metallic thud, faint rattling resonant debris and a soft bass tail, distant and restrained, no voice, no speech, no music, isolated game sound effect.",
+    "response_format": "mp3"
+  },
+  "bytes": 22300,
+  "key_usage_before": 196.391253783,
+  "key_usage_after": 196.391253783,
+  "cost_delta_usd": 0.0,
+  "verification": [
+    "Duration: 00:00:01.83, start: 0.025057, bitrate: 97 kb/s",
+    "Stream #0:0: Audio: mp3 (mp3float), 44100 Hz, mono, fltp, 96 kb/s",
+    "Stream #0:0: Audio: pcm_s16le, 44100 Hz, mono, s16, 705 kb/s",
+    "[Parsed_volumedetect_0 @ 000002236024ed80] mean_volume: -23.5 dB",
+    "[Parsed_volumedetect_0 @ 000002236024ed80] max_volume: -10.6 dB"
+  ],
+  "full_decode": "passed",
+  "ffprobe": "unavailable; ffmpeg stream inspection used",
+  "billing_headers": {
+    "X-Generation-Id": "gen-tts-1793145467-HUH001N74XYSuozPPyHj"
+  },
+  "cost_usd": 0.01375,
+  "post_trim_level_polish": {
+    "gain_db": -10.3,
+    "target_mean_db": -23,
+    "peak_ceiling_db": -4
+  },
+  "billing": {
+    "id": "gen-tts-1793145467-HUH001N74XYSuozPPyHj",
+    "model": "bytedance-seed/seed-audio-1-0-20260630",
+    "total_cost": 0.01375,
+    "generation_time": null,
+    "num_media_completion": null
+  }
+}

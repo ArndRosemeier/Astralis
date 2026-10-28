@@ -1,0 +1,42 @@
+{
+  "asset": "public/assets/title-panorama.webp",
+  "model": "meta/muse-image",
+  "prompt": "Use case: stylized-concept. Asset type: background art for a premium grounded science-fiction strategy game called Astralis. A vast realistic stellar neighborhood seen from deep space. In the far right half, the curved limb of a beautiful temperate exoplanet glows in soft sea-glass teal, with delicate clouds, a warm amber sunrise and one very small elegant research ship for scale. The left half is mostly deep midnight ink space, sparsely scattered with tiny realistic stars, leaving quiet negative space for a readable menu and constellation logo. Fine painterly realism, cinematic detail, restrained warm parchment highlights, calm optimistic wonder, subtle ancient mystery. Wide horizontal composition. No letters, no logos, no interface, no border, no watermark, no oversaturated nebula, no lens flare over the left half.",
+  "seed": null,
+  "api_request": {
+    "model": "meta/muse-image",
+    "prompt": "Use case: stylized-concept. Asset type: background art for a premium grounded science-fiction strategy game called Astralis. A vast realistic stellar neighborhood seen from deep space. In the far right half, the curved limb of a beautiful temperate exoplanet glows in soft sea-glass teal, with delicate clouds, a warm amber sunrise and one very small elegant research ship for scale. The left half is mostly deep midnight ink space, sparsely scattered with tiny realistic stars, leaving quiet negative space for a readable menu and constellation logo. Fine painterly realism, cinematic detail, restrained warm parchment highlights, calm optimistic wonder, subtle ancient mystery. Wide horizontal composition. No letters, no logos, no interface, no border, no watermark, no oversaturated nebula, no lens flare over the left half.",
+    "size": "1920x1080",
+    "n": 1
+  },
+  "bytes": 215722,
+  "key_usage_before": 196.350247908,
+  "key_usage_after": 196.358997908,
+  "cost_delta_usd": 0.00875,
+  "usage": {
+    "prompt_tokens": 207,
+    "completion_tokens": 2331,
+    "total_tokens": 2538,
+    "cost": 0.01,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.01,
+      "upstream_inference_prompt_cost": 0,
+      "upstream_inference_completions_cost": 0.01
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 2331
+    }
+  },
+  "cost_usd": 0.01,
+  "image_verification": {
+    "complete_decode": "passed",
+    "width": 2048,
+    "height": 1152,
+    "format": "WEBP"
+  }
+}

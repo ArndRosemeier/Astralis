@@ -1,0 +1,36 @@
+{
+  "asset": "public/assets/identity/hallowfleet.mp3",
+  "model": "bytedance-seed/seed-audio-1-0",
+  "method": "local procedural composition of existing Seed Audio material; no new inference",
+  "source": "public/assets/ui-confirm.mp3",
+  "source_provenance": "docs/assets/ui-confirm.json",
+  "prompt": "A quiet four-note minor-pentatonic identity motif for hallowfleet, derived from the common starship instrument timbre.",
+  "seed": null,
+  "motif_semitones": [
+    10,
+    3,
+    0,
+    0
+  ],
+  "derivation": {
+    "note_spacing_ms": 720,
+    "trim_start_seconds": 0.03,
+    "source_note_seconds": 0.55,
+    "composition": "pitched copies, temporal placement, fades, mix, normalization and headroom limiter"
+  },
+  "usage": {
+    "cost": 0
+  },
+  "cost_usd": 0,
+  "bytes": 36406,
+  "full_decode": "passed",
+  "verification": [
+    "Duration: 00:00:03.00, start: 0.025057, bitrate: 96 kb/s",
+    "Stream #0:0: Audio: mp3 (mp3float), 44100 Hz, mono, fltp, 96 kb/s",
+    "Stream #0:0: Audio: pcm_s16le, 44100 Hz, mono, s16, 705 kb/s",
+    "[Parsed_volumedetect_0 @ 000001f9bc5c4900] mean_volume: -25.2 dB",
+    "[Parsed_volumedetect_0 @ 000001f9bc5c4900] max_volume: -11.8 dB"
+  ],
+  "ffprobe": "unavailable; ffmpeg stream inspection used",
+  "identity_fingerprint": 1346194279
+}

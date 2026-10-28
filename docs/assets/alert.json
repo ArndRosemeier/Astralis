@@ -1,0 +1,40 @@
+{
+  "asset": "public/assets/alert.mp3",
+  "model": "bytedance-seed/seed-audio-1-0",
+  "prompt": "The sound of a quiet advisory warning on a refined science-fiction starship instrument panel: two low soft electronic pulses with a tiny metallic tick, informative rather than frightening, rounded and restrained, no speech, no voice, no music, isolated short user-interface sound effect.",
+  "seed": null,
+  "api_request": {
+    "model": "bytedance-seed/seed-audio-1-0",
+    "input": "The sound of a quiet advisory warning on a refined science-fiction starship instrument panel: two low soft electronic pulses with a tiny metallic tick, informative rather than frightening, rounded and restrained, no speech, no voice, no music, isolated short user-interface sound effect.",
+    "response_format": "mp3"
+  },
+  "bytes": 18852,
+  "key_usage_before": 196.391253783,
+  "key_usage_after": 196.391253783,
+  "cost_delta_usd": 0.0,
+  "verification": [
+    "Duration: 00:00:01.54, start: 0.025057, bitrate: 97 kb/s",
+    "Stream #0:0: Audio: mp3 (mp3float), 44100 Hz, mono, fltp, 96 kb/s",
+    "Stream #0:0: Audio: pcm_s16le, 44100 Hz, mono, s16, 705 kb/s",
+    "[Parsed_volumedetect_0 @ 000002961c7eb840] mean_volume: -23.4 dB",
+    "[Parsed_volumedetect_0 @ 000002961c7eb840] max_volume: -7.0 dB"
+  ],
+  "full_decode": "passed",
+  "ffprobe": "unavailable; ffmpeg stream inspection used",
+  "billing_headers": {
+    "X-Generation-Id": "gen-tts-1793145443-Zo83FgCcu4JdAMjVJfD9"
+  },
+  "cost_usd": 0.00625,
+  "post_trim_level_polish": {
+    "gain_db": -2.5,
+    "target_mean_db": -23,
+    "peak_ceiling_db": -4
+  },
+  "billing": {
+    "id": "gen-tts-1793145443-Zo83FgCcu4JdAMjVJfD9",
+    "model": "bytedance-seed/seed-audio-1-0-20260630",
+    "total_cost": 0.00625,
+    "generation_time": null,
+    "num_media_completion": null
+  }
+}

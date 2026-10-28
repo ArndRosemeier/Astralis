@@ -1,0 +1,53 @@
+{
+  "asset": "public/assets/species/lattice.webp",
+  "model": "meta/muse-image",
+  "prompt": "Portrait artwork for Astralis, a premium grounded science-fiction strategy game.\nOne single species representative, composed centrally and filling most of a square image,\ndistinct silhouette readable at a small icon size. Subject: An elegant nonhumanoid geometric machine consciousness. Three nested floating dark metallic polyhedral rings arranged around a small warm crystalline core, precise thin sea-glass light traces, fine articulated sensor fins. Minimal, intelligent, quietly dignified, original hard science-fiction industrial design. No humanoid face or limbs.\nShared visual direction: realistic detailed painterly concept art, dark midnight-ink\nobservatory-like neutral background with a faint circular instrument halo, soft sea-glass\nteal rim light from the left, warm parchment and restrained amber key light from the right,\nrich tactile materials, dignified expression or intelligent presence, calm optimistic mystery.\nClose portrait or equivalent full organism framing for a nonhumanoid. Consistent sophisticated\nlighting and rendering across a set of 12 species. Original design with no franchise characters.\nNo letters, no labels, no logo, no watermark, no frame, no collage, no multiple portraits,\nno weapons, no visual interface, no Earth flags. Square 1:1 composition.",
+  "seed": null,
+  "api_request": {
+    "model": "meta/muse-image",
+    "prompt": "Portrait artwork for Astralis, a premium grounded science-fiction strategy game.\nOne single species representative, composed centrally and filling most of a square image,\ndistinct silhouette readable at a small icon size. Subject: An elegant nonhumanoid geometric machine consciousness. Three nested floating dark metallic polyhedral rings arranged around a small warm crystalline core, precise thin sea-glass light traces, fine articulated sensor fins. Minimal, intelligent, quietly dignified, original hard science-fiction industrial design. No humanoid face or limbs.\nShared visual direction: realistic detailed painterly concept art, dark midnight-ink\nobservatory-like neutral background with a faint circular instrument halo, soft sea-glass\nteal rim light from the left, warm parchment and restrained amber key light from the right,\nrich tactile materials, dignified expression or intelligent presence, calm optimistic mystery.\nClose portrait or equivalent full organism framing for a nonhumanoid. Consistent sophisticated\nlighting and rendering across a set of 12 species. Original design with no franchise characters.\nNo letters, no labels, no logo, no watermark, no frame, no collage, no multiple portraits,\nno weapons, no visual interface, no Earth flags. Square 1:1 composition.",
+    "size": "1024x1024",
+    "n": 1
+  },
+  "bytes": 110210,
+  "key_usage_before": 196.449253783,
+  "key_usage_after": 196.469253783,
+  "cost_delta_usd": 0.02,
+  "usage": {
+    "prompt_tokens": 325,
+    "completion_tokens": 4027,
+    "total_tokens": 4352,
+    "cost": 0.01,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.01,
+      "upstream_inference_prompt_cost": 0,
+      "upstream_inference_completions_cost": 0.01
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 4027
+    }
+  },
+  "cost_usd": 0.01,
+  "runtime_optimization": {
+    "source": "docs/assets/originals/species/lattice.webp",
+    "source_dimensions": [
+      1600,
+      1600
+    ],
+    "source_sha256": "a49d067b6039b091997860ac29e691220ccb2dbe1c2c02b34cea7c3ba037b1a4",
+    "width": 768,
+    "height": 768,
+    "operation": "Lanczos downsample and WebP quality88 encoding; no creative edits"
+  },
+  "image_verification": {
+    "complete_decode": "passed",
+    "width": 768,
+    "height": 768,
+    "format": "WEBP"
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "asset": "public/assets/discovery.mp3",
+  "model": "bytedance-seed/seed-audio-1-0",
+  "prompt": "The sound of a brief astronomical discovery notification on an elegant futuristic starship: a delicate ascending cluster of three crystalline chimes opening into a soft shimmering airy tail, warm optimism and wonder, subtle rather than alarming, no speech, no voice, no music, isolated sound effect.",
+  "seed": null,
+  "api_request": {
+    "model": "bytedance-seed/seed-audio-1-0",
+    "input": "The sound of a brief astronomical discovery notification on an elegant futuristic starship: a delicate ascending cluster of three crystalline chimes opening into a soft shimmering airy tail, warm optimism and wonder, subtle rather than alarming, no speech, no voice, no music, isolated sound effect.",
+    "response_format": "mp3"
+  },
+  "bytes": 36719,
+  "key_usage_before": 196.262747908,
+  "key_usage_after": 196.350247908,
+  "cost_delta_usd": 0.0875,
+  "verification": [
+    "Duration: 00:00:03.03, start: 0.025057, bitrate: 96 kb/s",
+    "Stream #0:0: Audio: mp3 (mp3float), 44100 Hz, mono, fltp, 96 kb/s",
+    "Stream #0:0: Audio: pcm_s16le, 44100 Hz, mono, s16, 705 kb/s",
+    "[Parsed_volumedetect_0 @ 000001faaf790400] mean_volume: -23.5 dB",
+    "[Parsed_volumedetect_0 @ 000001faaf790400] max_volume: -4.4 dB"
+  ],
+  "full_decode": "passed",
+  "ffprobe": "unavailable; ffmpeg stream inspection used",
+  "billing_headers": {
+    "X-Generation-Id": "gen-tts-1793145303-bt6kPMsEXe3mCkoKiPo0"
+  },
+  "billing": {
+    "id": "gen-tts-1793145303-bt6kPMsEXe3mCkoKiPo0",
+    "model": "bytedance-seed/seed-audio-1-0-20260630",
+    "total_cost": 0.00875,
+    "generation_time": null,
+    "num_media_completion": null
+  },
+  "cost_usd": 0.00875,
+  "post_trim_level_polish": {
+    "gain_db": 1.3,
+    "target_mean_db": -23,
+    "peak_ceiling_db": -4
+  }
+}

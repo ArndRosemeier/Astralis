@@ -1,0 +1,3 @@
+import type {GameState} from './types';
+export function contactComponents(g:GameState){const active=g.empires.filter(e=>!e.eliminated&&!e.threat).map(e=>e.id);const unseen=new Set(active),groups:number[][]=[];while(unseen.size){const first=unseen.values().next().value!;unseen.delete(first);const group=[first];for(let i=0;i<group.length;i++)for(const r of g.relations.filter(r=>r.contact&&(r.a===group[i]||r.b===group[i]))){const next=r.a===group[i]?r.b:r.a;if(unseen.delete(next))group.push(next);}groups.push(group);}return groups.sort((a,b)=>b.length-a.length);}
+export function alliedCoalition(g:GameState,ids:number[]){return ids.every(a=>ids.every(b=>a===b||g.relations.some(r=>r.a===Math.min(a,b)&&r.b===Math.max(a,b)&&r.state==='Alliance')));}

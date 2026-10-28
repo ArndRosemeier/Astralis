@@ -1,0 +1,53 @@
+{
+  "asset": "public/assets/species/aumaru.webp",
+  "model": "meta/muse-image",
+  "prompt": "Portrait artwork for Astralis, a premium grounded science-fiction strategy game.\nOne single species representative, composed centrally and filling most of a square image,\ndistinct silhouette readable at a small icon size. Subject: An ancient alien representative carrying the elegance of a fading golden age. A long broad mauve-gray head with a softly fluted backward crest, four narrow thoughtful gold eyes, delicate silver sensory membranes along the cheeks, a long graceful neck with subtle age folds and iridescent skin. Wears exquisitely crafted but gently worn deep-plum diplomatic drapery with restrained geometric golden threads. Melancholy dignity and intelligence. Clearly nonhuman, no elf ears, no crown, no fantasy jewelry.\nShared visual direction: realistic detailed painterly concept art, dark midnight-ink\nobservatory-like neutral background with a faint circular instrument halo, soft sea-glass\nteal rim light from the left, warm parchment and restrained amber key light from the right,\nrich tactile materials, dignified expression or intelligent presence, calm optimistic mystery.\nClose portrait or equivalent full organism framing for a nonhumanoid. Consistent sophisticated\nlighting and rendering across a set of 26 species. Original design with no franchise characters.\nNo letters, no labels, no logo, no watermark, no frame, no collage, no multiple portraits,\nno weapons, no visual interface, no Earth flags. Square 1:1 composition.",
+  "seed": null,
+  "api_request": {
+    "model": "meta/muse-image",
+    "prompt": "Portrait artwork for Astralis, a premium grounded science-fiction strategy game.\nOne single species representative, composed centrally and filling most of a square image,\ndistinct silhouette readable at a small icon size. Subject: An ancient alien representative carrying the elegance of a fading golden age. A long broad mauve-gray head with a softly fluted backward crest, four narrow thoughtful gold eyes, delicate silver sensory membranes along the cheeks, a long graceful neck with subtle age folds and iridescent skin. Wears exquisitely crafted but gently worn deep-plum diplomatic drapery with restrained geometric golden threads. Melancholy dignity and intelligence. Clearly nonhuman, no elf ears, no crown, no fantasy jewelry.\nShared visual direction: realistic detailed painterly concept art, dark midnight-ink\nobservatory-like neutral background with a faint circular instrument halo, soft sea-glass\nteal rim light from the left, warm parchment and restrained amber key light from the right,\nrich tactile materials, dignified expression or intelligent presence, calm optimistic mystery.\nClose portrait or equivalent full organism framing for a nonhumanoid. Consistent sophisticated\nlighting and rendering across a set of 26 species. Original design with no franchise characters.\nNo letters, no labels, no logo, no watermark, no frame, no collage, no multiple portraits,\nno weapons, no visual interface, no Earth flags. Square 1:1 composition.",
+    "size": "1024x1024",
+    "n": 1
+  },
+  "bytes": 94110,
+  "key_usage_before": 196.599253783,
+  "key_usage_after": 196.609253783,
+  "cost_delta_usd": 0.01,
+  "usage": {
+    "prompt_tokens": 366,
+    "completion_tokens": 2807,
+    "total_tokens": 3173,
+    "cost": 0.01,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.01,
+      "upstream_inference_prompt_cost": 0,
+      "upstream_inference_completions_cost": 0.01
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 2807
+    }
+  },
+  "cost_usd": 0.01,
+  "runtime_optimization": {
+    "source": "docs/assets/originals/species/aumaru.webp",
+    "source_dimensions": [
+      1600,
+      1600
+    ],
+    "source_sha256": "0ba4d6e67704c3fc4abc329303b2c130920f246f9ac7dc3974c1b6201008d4dd",
+    "width": 768,
+    "height": 768,
+    "operation": "Lanczos downsample and WebP quality88 encoding; no creative edits"
+  },
+  "image_verification": {
+    "complete_decode": "passed",
+    "width": 768,
+    "height": 768,
+    "format": "WEBP"
+  }
+}

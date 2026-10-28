@@ -1,0 +1,870 @@
+{
+  "style": "Celestial Instruments",
+  "budget_usd": 50,
+  "asset_subtask_ceiling_usd": 5,
+  "total_confirmed_cost_usd": 0.586505875,
+  "pending_billing": [],
+  "assets": [
+    {
+      "path": "/assets/alert.mp3",
+      "model": "bytedance-seed/seed-audio-1-0",
+      "bytes": 18852,
+      "cost_usd": 0.00625,
+      "provenance": "docs/assets/alert.json",
+      "full_decode": "passed",
+      "verification": [
+        "Duration: 00:00:01.54, start: 0.025057, bitrate: 97 kb/s",
+        "Stream #0:0: Audio: mp3 (mp3float), 44100 Hz, mono, fltp, 96 kb/s",
+        "Stream #0:0: Audio: pcm_s16le, 44100 Hz, mono, s16, 705 kb/s",
+        "[Parsed_volumedetect_0 @ 000002961c7eb840] mean_volume: -23.4 dB",
+        "[Parsed_volumedetect_0 @ 000002961c7eb840] max_volume: -7.0 dB"
+      ]
+    },
+    {
+      "path": "/assets/battle.mp3",
+      "model": "google/lyria-3-pro-preview",
+      "bytes": 2381366,
+      "cost_usd": 0.08,
+      "provenance": "docs/assets/battle.json",
+      "full_decode": "passed",
+      "verification": [
+        "Duration: 00:01:59.04, start: 0.025057, bitrate: 160 kb/s",
+        "Stream #0:0: Audio: mp3 (mp3float), 44100 Hz, stereo, fltp, 160 kb/s",
+        "Stream #0:0: Audio: pcm_s16le, 44100 Hz, stereo, s16, 1411 kb/s",
+        "[Parsed_volumedetect_0 @ 0000021c43e22780] mean_volume: -21.6 dB",
+        "[Parsed_volumedetect_0 @ 0000021c43e22780] max_volume: -3.9 dB"
+      ]
+    },
+    {
+      "path": "/assets/discovery.mp3",
+      "model": "bytedance-seed/seed-audio-1-0",
+      "bytes": 36719,
+      "cost_usd": 0.00875,
+      "provenance": "docs/assets/discovery.json",
+      "full_decode": "passed",
+      "verification": [
+        "Duration: 00:00:03.03, start: 0.025057, bitrate: 96 kb/s",
+        "Stream #0:0: Audio: mp3 (mp3float), 44100 Hz, mono, fltp, 96 kb/s",
+        "Stream #0:0: Audio: pcm_s16le, 44100 Hz, mono, s16, 705 kb/s",
+        "[Parsed_volumedetect_0 @ 000001faaf790400] mean_volume: -23.5 dB",
+        "[Parsed_volumedetect_0 @ 000001faaf790400] max_volume: -4.4 dB"
+      ]
+    },
+    {
+      "path": "/assets/exploration.mp3",
+      "model": "google/lyria-3-pro-preview",
+      "bytes": 2423684,
+      "cost_usd": 0.08,
+      "provenance": "docs/assets/exploration.json",
+      "full_decode": "passed",
+      "verification": [
+        "Duration: 00:02:01.16, start: 0.025057, bitrate: 160 kb/s",
+        "Stream #0:0: Audio: mp3 (mp3float), 44100 Hz, stereo, fltp, 160 kb/s",
+        "Stream #0:0: Audio: pcm_s16le, 44100 Hz, stereo, s16, 1411 kb/s",
+        "[Parsed_volumedetect_0 @ 000001c96d4768c0] mean_volume: -23.1 dB",
+        "[Parsed_volumedetect_0 @ 000001c96d4768c0] max_volume: -5.1 dB"
+      ]
+    },
+    {
+      "path": "/assets/identity/abyssals.mp3",
+      "model": "bytedance-seed/seed-audio-1-0",
+      "bytes": 38600,
+      "cost_usd": 0,
+      "provenance": "docs/assets/identity/abyssals.json",
+      "method": "local procedural composition of existing Seed Audio material; no new inference",
+      "full_decode": "passed",
+      "verification": [
+        "Duration: 00:00:03.19, start: 0.025057, bitrate: 96 kb/s",
+        "Stream #0:0: Audio: mp3 (mp3float), 44100 Hz, mono, fltp, 96 kb/s",
+        "Stream #0:0: Audio: pcm_s16le, 44100 Hz, mono, s16, 705 kb/s",
+        "[Parsed_volumedetect_0 @ 0000017702b23840] mean_volume: -24.9 dB",
+        "[Parsed_volumedetect_0 @ 0000017702b23840] max_volume: -12.0 dB"
+      ]
+    },
+    {
+      "path": "/assets/identity/aumaru.mp3",
+      "model": "bytedance-seed/seed-audio-1-0",
+      "bytes": 36406,
+      "cost_usd": 0,
+      "provenance": "docs/assets/identity/aumaru.json",
+      "method": "local procedural composition of existing Seed Audio material; no new inference",
+      "full_decode": "passed",
+      "verification": [
+        "Duration: 00:00:03.00, start: 0.025057, bitrate: 96 kb/s",
+        "Stream #0:0: Audio: mp3 (mp3float), 44100 Hz, mono, fltp, 96 kb/s",
+        "Stream #0:0: Audio: pcm_s16le, 44100 Hz, mono, s16, 705 kb/s",
+        "[Parsed_volumedetect_0 @ 0000018d21c66d80] mean_volume: -25.4 dB",
+        "[Parsed_volumedetect_0 @ 0000018d21c66d80] max_volume: -11.8 dB"
+      ]
+    },
+    {
+      "path": "/assets/identity/brathak.mp3",
+      "model": "bytedance-seed/seed-audio-1-0",
+      "bytes": 38600,
+      "cost_usd": 0,
+      "provenance": "docs/assets/identity/brathak.json",
+      "method": "local procedural composition of existing Seed Audio material; no new inference",
+      "full_decode": "passed",
+      "verification": [
+        "Duration: 00:00:03.19, start: 0.025057, bitrate: 96 kb/s",
+        "Stream #0:0: Audio: mp3 (mp3float), 44100 Hz, mono, fltp, 96 kb/s",
+        "Stream #0:0: Audio: pcm_s16le, 44100 Hz, mono, s16, 705 kb/s",
+        "[Parsed_volumedetect_0 @ 000001f979606980] mean_volume: -24.9 dB",
+        "[Parsed_volumedetect_0 @ 000001f979606980] max_volume: -12.5 dB"
+      ]
+    },
+    {
+      "path": "/assets/identity/corundi.mp3",
+      "model": "bytedance-seed/seed-audio-1-0",
+      "bytes": 38600,
+      "cost_usd": 0,
+      "provenance": "docs/assets/identity/corundi.json",
+      "method": "local procedural composition of existing Seed Audio material; no new inference",
+      "full_decode": "passed",
+      "verification": [
+        "Duration: 00:00:03.19, start: 0.025057, bitrate: 96 kb/s",
+        "Stream #0:0: Audio: mp3 (mp3float), 44100 Hz, mono, fltp, 96 kb/s",
+        "Stream #0:0: Audio: pcm_s16le, 44100 Hz, mono, s16, 705 kb/s",
+        "[Parsed_volumedetect_0 @ 000001ad27d16980] mean_volume: -24.9 dB",
+        "[Parsed_volumedetect_0 @ 000001ad27d16980] max_volume: -12.3 dB"
+      ]
+    },
+    {
+      "path": "/assets/identity/hallowfleet.mp3",
+      "model": "bytedance-seed/seed-audio-1-0",
+      "bytes": 36406,
+      "cost_usd": 0,
+      "provenance": "docs/assets/identity/hallowfleet.json",
+      "method": "local procedural composition of existing Seed Audio material; no new inference",
+      "full_decode": "passed",
+      "verification": [
+        "Duration: 00:00:03.00, start: 0.025057, bitrate: 96 kb/s",
+        "Stream #0:0: Audio: mp3 (mp3float), 44100 Hz, mono, fltp, 96 kb/s",
+        "Stream #0:0: Audio: pcm_s16le, 44100 Hz, mono, s16, 705 kb/s",
+        "[Parsed_volumedetect_0 @ 000001f9bc5c4900] mean_volume: -25.2 dB",
+        "[Parsed_volumedetect_0 @ 000001f9bc5c4900] max_volume: -11.8 dB"
+      ]
+    },
+    {
+      "path": "/assets/identity/humans.mp3",
+      "model": "bytedance-seed/seed-audio-1-0",
+      "bytes": 36406,
+      "cost_usd": 0,
+      "provenance": "docs/assets/identity/humans.json",
+      "method": "local procedural composition of existing Seed Audio material; no new inference",
+      "full_decode": "passed",
+      "verification": [
+        "Duration: 00:00:03.00, start: 0.025057, bitrate: 96 kb/s",
+        "Stream #0:0: Audio: mp3 (mp3float), 44100 Hz, mono, fltp, 96 kb/s",
+        "Stream #0:0: Audio: pcm_s16le, 44100 Hz, mono, s16, 705 kb/s",
+        "[Parsed_volumedetect_0 @ 0000015fe786cdc0] mean_volume: -24.7 dB",
+        "[Parsed_volumedetect_0 @ 0000015fe786cdc0] max_volume: -12.0 dB"
+      ]
+    },
+    {
+      "path": "/assets/identity/ixit.mp3",
+      "model": "bytedance-seed/seed-audio-1-0",
+      "bytes": 36406,
+      "cost_usd": 0,
+      "provenance": "docs/assets/identity/ixit.json",
+      "method": "local procedural composition of existing Seed Audio material; no new inference",
+      "full_decode": "passed",
+      "verification": [
+        "Duration: 00:00:03.00, start: 0.025057, bitrate: 96 kb/s",
+        "Stream #0:0: Audio: mp3 (mp3float), 44100 Hz, mono, fltp, 96 kb/s",
+        "Stream #0:0: Audio: pcm_s16le, 44100 Hz, mono, s16, 705 kb/s",
+        "[Parsed_volumedetect_0 @ 00000102d40cf040] mean_volume: -24.9 dB",
+        "[Parsed_volumedetect_0 @ 00000102d40cf040] max_volume: -11.8 dB"
+      ]
+    },
+    {
+      "path": "/assets/identity/keth-ra.mp3",
+      "model": "bytedance-seed/seed-audio-1-0",
+      "bytes": 36406,
+      "cost_usd": 0,
+      "provenance": "docs/assets/identity/keth-ra.json",
+      "method": "local procedural composition of existing Seed Audio material; no new inference",
+      "full_decode": "passed",
+      "verification": [
+        "Duration: 00:00:03.00, start: 0.025057, bitrate: 96 kb/s",
+        "Stream #0:0: Audio: mp3 (mp3float), 44100 Hz, mono, fltp, 96 kb/s",
+        "Stream #0:0: Audio: pcm_s16le, 44100 Hz, mono, s16, 705 kb/s",
+        "[Parsed_volumedetect_0 @ 0000026725916980] mean_volume: -24.9 dB",
+        "[Parsed_volumedetect_0 @ 0000026725916980] max_volume: -11.7 dB"
+      ]
+    },
+    {
+      "path": "/assets/identity/kiriel.mp3",
+      "model": "bytedance-seed/seed-audio-1-0",
+      "bytes": 36406,
+      "cost_usd": 0,
+      "provenance": "docs/assets/identity/kiriel.json",
+      "method": "local procedural composition of existing Seed Audio material; no new inference",
+      "full_decode": "passed",
+      "verification": [
+        "Duration: 00:00:03.00, start: 0.025057, bitrate: 96 kb/s",
+        "Stream #0:0: Audio: mp3 (mp3float), 44100 Hz, mono, fltp, 96 kb/s",
+        "Stream #0:0: Audio: pcm_s16le, 44100 Hz, mono, s16, 705 kb/s",
+        "[Parsed_volumedetect_0 @ 0000019529e8d140] mean_volume: -24.9 dB",
+        "[Parsed_volumedetect_0 @ 0000019529e8d140] max_volume: -11.8 dB"
+      ]
+    },
+    {
+      "path": "/assets/identity/kith.mp3",
+      "model": "bytedance-seed/seed-audio-1-0",
+      "bytes": 36406,
+      "cost_usd": 0,
+      "provenance": "docs/assets/identity/kith.json",
+      "method": "local procedural composition of existing Seed Audio material; no new inference",
+      "full_decode": "passed",
+      "verification": [
+        "Duration: 00:00:03.00, start: 0.025057, bitrate: 96 kb/s",
+        "Stream #0:0: Audio: mp3 (mp3float), 44100 Hz, mono, fltp, 96 kb/s",
+        "Stream #0:0: Audio: pcm_s16le, 44100 Hz, mono, s16, 705 kb/s",
+        "[Parsed_volumedetect_0 @ 0000028e2d5f6cc0] mean_volume: -25.2 dB",
+        "[Parsed_volumedetect_0 @ 0000028e2d5f6cc0] max_volume: -11.7 dB"
+      ]
+    },
+    {
+      "path": "/assets/identity/lattice.mp3",
+      "model": "bytedance-seed/seed-audio-1-0",
+      "bytes": 36406,
+      "cost_usd": 0,
+      "provenance": "docs/assets/identity/lattice.json",
+      "method": "local procedural composition of existing Seed Audio material; no new inference",
+      "full_decode": "passed",
+      "verification": [
+        "Duration: 00:00:03.00, start: 0.025057, bitrate: 96 kb/s",
+        "Stream #0:0: Audio: mp3 (mp3float), 44100 Hz, mono, fltp, 96 kb/s",
+        "Stream #0:0: Audio: pcm_s16le, 44100 Hz, mono, s16, 705 kb/s",
+        "[Parsed_volumedetect_0 @ 0000021094093000] mean_volume: -24.8 dB",
+        "[Parsed_volumedetect_0 @ 0000021094093000] max_volume: -11.7 dB"
+      ]
+    },
+    {
+      "path": "/assets/identity/mur.mp3",
+      "model": "bytedance-seed/seed-audio-1-0",
+      "bytes": 36406,
+      "cost_usd": 0,
+      "provenance": "docs/assets/identity/mur.json",
+      "method": "local procedural composition of existing Seed Audio material; no new inference",
+      "full_decode": "passed",
+      "verification": [
+        "Duration: 00:00:03.00, start: 0.025057, bitrate: 96 kb/s",
+        "Stream #0:0: Audio: mp3 (mp3float), 44100 Hz, mono, fltp, 96 kb/s",
+        "Stream #0:0: Audio: pcm_s16le, 44100 Hz, mono, s16, 705 kb/s",
+        "[Parsed_volumedetect_0 @ 0000017858745e80] mean_volume: -24.9 dB",
+        "[Parsed_volumedetect_0 @ 0000017858745e80] max_volume: -11.9 dB"
+      ]
+    },
+    {
+      "path": "/assets/identity/mycel.mp3",
+      "model": "bytedance-seed/seed-audio-1-0",
+      "bytes": 36406,
+      "cost_usd": 0,
+      "provenance": "docs/assets/identity/mycel.json",
+      "method": "local procedural composition of existing Seed Audio material; no new inference",
+      "full_decode": "passed",
+      "verification": [
+        "Duration: 00:00:03.00, start: 0.025057, bitrate: 96 kb/s",
+        "Stream #0:0: Audio: mp3 (mp3float), 44100 Hz, mono, fltp, 96 kb/s",
+        "Stream #0:0: Audio: pcm_s16le, 44100 Hz, mono, s16, 705 kb/s",
+        "[Parsed_volumedetect_0 @ 0000017db2596980] mean_volume: -25.4 dB",
+        "[Parsed_volumedetect_0 @ 0000017db2596980] max_volume: -11.8 dB"
+      ]
+    },
+    {
+      "path": "/assets/identity/myriad.mp3",
+      "model": "bytedance-seed/seed-audio-1-0",
+      "bytes": 36406,
+      "cost_usd": 0,
+      "provenance": "docs/assets/identity/myriad.json",
+      "method": "local procedural composition of existing Seed Audio material; no new inference",
+      "full_decode": "passed",
+      "verification": [
+        "Duration: 00:00:03.00, start: 0.025057, bitrate: 96 kb/s",
+        "Stream #0:0: Audio: mp3 (mp3float), 44100 Hz, mono, fltp, 96 kb/s",
+        "Stream #0:0: Audio: pcm_s16le, 44100 Hz, mono, s16, 705 kb/s",
+        "[Parsed_volumedetect_0 @ 000002a7ba2376c0] mean_volume: -24.8 dB",
+        "[Parsed_volumedetect_0 @ 000002a7ba2376c0] max_volume: -11.9 dB"
+      ]
+    },
+    {
+      "path": "/assets/identity/oolu.mp3",
+      "model": "bytedance-seed/seed-audio-1-0",
+      "bytes": 36406,
+      "cost_usd": 0,
+      "provenance": "docs/assets/identity/oolu.json",
+      "method": "local procedural composition of existing Seed Audio material; no new inference",
+      "full_decode": "passed",
+      "verification": [
+        "Duration: 00:00:03.00, start: 0.025057, bitrate: 96 kb/s",
+        "Stream #0:0: Audio: mp3 (mp3float), 44100 Hz, mono, fltp, 96 kb/s",
+        "Stream #0:0: Audio: pcm_s16le, 44100 Hz, mono, s16, 705 kb/s",
+        "[Parsed_volumedetect_0 @ 000002225381f000] mean_volume: -25.0 dB",
+        "[Parsed_volumedetect_0 @ 000002225381f000] max_volume: -12.0 dB"
+      ]
+    },
+    {
+      "path": "/assets/identity/qelloth.mp3",
+      "model": "bytedance-seed/seed-audio-1-0",
+      "bytes": 38600,
+      "cost_usd": 0,
+      "provenance": "docs/assets/identity/qelloth.json",
+      "method": "local procedural composition of existing Seed Audio material; no new inference",
+      "full_decode": "passed",
+      "verification": [
+        "Duration: 00:00:03.19, start: 0.025057, bitrate: 96 kb/s",
+        "Stream #0:0: Audio: mp3 (mp3float), 44100 Hz, mono, fltp, 96 kb/s",
+        "Stream #0:0: Audio: pcm_s16le, 44100 Hz, mono, s16, 705 kb/s",
+        "[Parsed_volumedetect_0 @ 000002505cfd4580] mean_volume: -24.9 dB",
+        "[Parsed_volumedetect_0 @ 000002505cfd4580] max_volume: -12.2 dB"
+      ]
+    },
+    {
+      "path": "/assets/identity/seren.mp3",
+      "model": "bytedance-seed/seed-audio-1-0",
+      "bytes": 36406,
+      "cost_usd": 0,
+      "provenance": "docs/assets/identity/seren.json",
+      "method": "local procedural composition of existing Seed Audio material; no new inference",
+      "full_decode": "passed",
+      "verification": [
+        "Duration: 00:00:03.00, start: 0.025057, bitrate: 96 kb/s",
+        "Stream #0:0: Audio: mp3 (mp3float), 44100 Hz, mono, fltp, 96 kb/s",
+        "Stream #0:0: Audio: pcm_s16le, 44100 Hz, mono, s16, 705 kb/s",
+        "[Parsed_volumedetect_0 @ 000002648bad4cc0] mean_volume: -24.9 dB",
+        "[Parsed_volumedetect_0 @ 000002648bad4cc0] max_volume: -11.5 dB"
+      ]
+    },
+    {
+      "path": "/assets/identity/skethi.mp3",
+      "model": "bytedance-seed/seed-audio-1-0",
+      "bytes": 36406,
+      "cost_usd": 0,
+      "provenance": "docs/assets/identity/skethi.json",
+      "method": "local procedural composition of existing Seed Audio material; no new inference",
+      "full_decode": "passed",
+      "verification": [
+        "Duration: 00:00:03.00, start: 0.025057, bitrate: 96 kb/s",
+        "Stream #0:0: Audio: mp3 (mp3float), 44100 Hz, mono, fltp, 96 kb/s",
+        "Stream #0:0: Audio: pcm_s16le, 44100 Hz, mono, s16, 705 kb/s",
+        "[Parsed_volumedetect_0 @ 0000023fb921cd80] mean_volume: -25.0 dB",
+        "[Parsed_volumedetect_0 @ 0000023fb921cd80] max_volume: -11.7 dB"
+      ]
+    },
+    {
+      "path": "/assets/identity/sorrin.mp3",
+      "model": "bytedance-seed/seed-audio-1-0",
+      "bytes": 36406,
+      "cost_usd": 0,
+      "provenance": "docs/assets/identity/sorrin.json",
+      "method": "local procedural composition of existing Seed Audio material; no new inference",
+      "full_decode": "passed",
+      "verification": [
+        "Duration: 00:00:03.00, start: 0.025057, bitrate: 96 kb/s",
+        "Stream #0:0: Audio: mp3 (mp3float), 44100 Hz, mono, fltp, 96 kb/s",
+        "Stream #0:0: Audio: pcm_s16le, 44100 Hz, mono, s16, 705 kb/s",
+        "[Parsed_volumedetect_0 @ 000001b650a5a940] mean_volume: -25.1 dB",
+        "[Parsed_volumedetect_0 @ 000001b650a5a940] max_volume: -11.8 dB"
+      ]
+    },
+    {
+      "path": "/assets/identity/sylphae.mp3",
+      "model": "bytedance-seed/seed-audio-1-0",
+      "bytes": 36406,
+      "cost_usd": 0,
+      "provenance": "docs/assets/identity/sylphae.json",
+      "method": "local procedural composition of existing Seed Audio material; no new inference",
+      "full_decode": "passed",
+      "verification": [
+        "Duration: 00:00:03.00, start: 0.025057, bitrate: 96 kb/s",
+        "Stream #0:0: Audio: mp3 (mp3float), 44100 Hz, mono, fltp, 96 kb/s",
+        "Stream #0:0: Audio: pcm_s16le, 44100 Hz, mono, s16, 705 kb/s",
+        "[Parsed_volumedetect_0 @ 0000022b8f266980] mean_volume: -25.2 dB",
+        "[Parsed_volumedetect_0 @ 0000022b8f266980] max_volume: -12.0 dB"
+      ]
+    },
+    {
+      "path": "/assets/identity/tessit.mp3",
+      "model": "bytedance-seed/seed-audio-1-0",
+      "bytes": 36406,
+      "cost_usd": 0,
+      "provenance": "docs/assets/identity/tessit.json",
+      "method": "local procedural composition of existing Seed Audio material; no new inference",
+      "full_decode": "passed",
+      "verification": [
+        "Duration: 00:00:03.00, start: 0.025057, bitrate: 96 kb/s",
+        "Stream #0:0: Audio: mp3 (mp3float), 44100 Hz, mono, fltp, 96 kb/s",
+        "Stream #0:0: Audio: pcm_s16le, 44100 Hz, mono, s16, 705 kb/s",
+        "[Parsed_volumedetect_0 @ 000001b98b7d6980] mean_volume: -25.0 dB",
+        "[Parsed_volumedetect_0 @ 000001b98b7d6980] max_volume: -11.8 dB"
+      ]
+    },
+    {
+      "path": "/assets/identity/tharn.mp3",
+      "model": "bytedance-seed/seed-audio-1-0",
+      "bytes": 38600,
+      "cost_usd": 0,
+      "provenance": "docs/assets/identity/tharn.json",
+      "method": "local procedural composition of existing Seed Audio material; no new inference",
+      "full_decode": "passed",
+      "verification": [
+        "Duration: 00:00:03.19, start: 0.025057, bitrate: 96 kb/s",
+        "Stream #0:0: Audio: mp3 (mp3float), 44100 Hz, mono, fltp, 96 kb/s",
+        "Stream #0:0: Audio: pcm_s16le, 44100 Hz, mono, s16, 705 kb/s",
+        "[Parsed_volumedetect_0 @ 0000023fff5e7980] mean_volume: -24.9 dB",
+        "[Parsed_volumedetect_0 @ 0000023fff5e7980] max_volume: -12.3 dB"
+      ]
+    },
+    {
+      "path": "/assets/identity/ulqua.mp3",
+      "model": "bytedance-seed/seed-audio-1-0",
+      "bytes": 36406,
+      "cost_usd": 0,
+      "provenance": "docs/assets/identity/ulqua.json",
+      "method": "local procedural composition of existing Seed Audio material; no new inference",
+      "full_decode": "passed",
+      "verification": [
+        "Duration: 00:00:03.00, start: 0.025057, bitrate: 96 kb/s",
+        "Stream #0:0: Audio: mp3 (mp3float), 44100 Hz, mono, fltp, 96 kb/s",
+        "Stream #0:0: Audio: pcm_s16le, 44100 Hz, mono, s16, 705 kb/s",
+        "[Parsed_volumedetect_0 @ 0000013ba7c24cc0] mean_volume: -25.1 dB",
+        "[Parsed_volumedetect_0 @ 0000013ba7c24cc0] max_volume: -11.9 dB"
+      ]
+    },
+    {
+      "path": "/assets/identity/vael.mp3",
+      "model": "bytedance-seed/seed-audio-1-0",
+      "bytes": 36406,
+      "cost_usd": 0,
+      "provenance": "docs/assets/identity/vael.json",
+      "method": "local procedural composition of existing Seed Audio material; no new inference",
+      "full_decode": "passed",
+      "verification": [
+        "Duration: 00:00:03.00, start: 0.025057, bitrate: 96 kb/s",
+        "Stream #0:0: Audio: mp3 (mp3float), 44100 Hz, mono, fltp, 96 kb/s",
+        "Stream #0:0: Audio: pcm_s16le, 44100 Hz, mono, s16, 705 kb/s",
+        "[Parsed_volumedetect_0 @ 000002b427670300] mean_volume: -24.9 dB",
+        "[Parsed_volumedetect_0 @ 000002b427670300] max_volume: -12.1 dB"
+      ]
+    },
+    {
+      "path": "/assets/identity/vorr.mp3",
+      "model": "bytedance-seed/seed-audio-1-0",
+      "bytes": 36406,
+      "cost_usd": 0,
+      "provenance": "docs/assets/identity/vorr.json",
+      "method": "local procedural composition of existing Seed Audio material; no new inference",
+      "full_decode": "passed",
+      "verification": [
+        "Duration: 00:00:03.00, start: 0.025057, bitrate: 96 kb/s",
+        "Stream #0:0: Audio: mp3 (mp3float), 44100 Hz, mono, fltp, 96 kb/s",
+        "Stream #0:0: Audio: pcm_s16le, 44100 Hz, mono, s16, 705 kb/s",
+        "[Parsed_volumedetect_0 @ 000002675fc49f40] mean_volume: -24.9 dB",
+        "[Parsed_volumedetect_0 @ 000002675fc49f40] max_volume: -11.7 dB"
+      ]
+    },
+    {
+      "path": "/assets/identity/wardens.mp3",
+      "model": "bytedance-seed/seed-audio-1-0",
+      "bytes": 36406,
+      "cost_usd": 0,
+      "provenance": "docs/assets/identity/wardens.json",
+      "method": "local procedural composition of existing Seed Audio material; no new inference",
+      "full_decode": "passed",
+      "verification": [
+        "Duration: 00:00:03.00, start: 0.025057, bitrate: 96 kb/s",
+        "Stream #0:0: Audio: mp3 (mp3float), 44100 Hz, mono, fltp, 96 kb/s",
+        "Stream #0:0: Audio: pcm_s16le, 44100 Hz, mono, s16, 705 kb/s",
+        "[Parsed_volumedetect_0 @ 000001a125125e80] mean_volume: -25.4 dB",
+        "[Parsed_volumedetect_0 @ 000001a125125e80] max_volume: -11.9 dB"
+      ]
+    },
+    {
+      "path": "/assets/impact.mp3",
+      "model": "bytedance-seed/seed-audio-1-0",
+      "bytes": 22300,
+      "cost_usd": 0.01375,
+      "provenance": "docs/assets/impact.json",
+      "full_decode": "passed",
+      "verification": [
+        "Duration: 00:00:01.83, start: 0.025057, bitrate: 97 kb/s",
+        "Stream #0:0: Audio: mp3 (mp3float), 44100 Hz, mono, fltp, 96 kb/s",
+        "Stream #0:0: Audio: pcm_s16le, 44100 Hz, mono, s16, 705 kb/s",
+        "[Parsed_volumedetect_0 @ 000002236024ed80] mean_volume: -23.5 dB",
+        "[Parsed_volumedetect_0 @ 000002236024ed80] max_volume: -10.6 dB"
+      ]
+    },
+    {
+      "path": "/assets/species/abyssals.webp",
+      "model": "meta/muse-image",
+      "bytes": 105468,
+      "cost_usd": 0.01,
+      "provenance": "docs/assets/species/abyssals.json",
+      "width": 768,
+      "height": 768,
+      "format": "WEBP"
+    },
+    {
+      "path": "/assets/species/aumaru.webp",
+      "model": "meta/muse-image",
+      "bytes": 94110,
+      "cost_usd": 0.01,
+      "provenance": "docs/assets/species/aumaru.json",
+      "width": 768,
+      "height": 768,
+      "format": "WEBP"
+    },
+    {
+      "path": "/assets/species/brathak.webp",
+      "model": "meta/muse-image",
+      "bytes": 134254,
+      "cost_usd": 0.01,
+      "provenance": "docs/assets/species/brathak.json",
+      "width": 768,
+      "height": 768,
+      "format": "WEBP"
+    },
+    {
+      "path": "/assets/species/corundi.webp",
+      "model": "meta/muse-image",
+      "bytes": 112498,
+      "cost_usd": 0.01,
+      "provenance": "docs/assets/species/corundi.json",
+      "width": 768,
+      "height": 768,
+      "format": "WEBP"
+    },
+    {
+      "path": "/assets/species/hallowfleet.webp",
+      "model": "meta/muse-image",
+      "bytes": 116262,
+      "cost_usd": 0.01,
+      "provenance": "docs/assets/species/hallowfleet.json",
+      "width": 768,
+      "height": 768,
+      "format": "WEBP"
+    },
+    {
+      "path": "/assets/species/humans.webp",
+      "model": "meta/muse-image",
+      "bytes": 85872,
+      "cost_usd": 0.01,
+      "provenance": "docs/assets/species/humans.json",
+      "width": 768,
+      "height": 768,
+      "format": "WEBP"
+    },
+    {
+      "path": "/assets/species/ixit.webp",
+      "model": "meta/muse-image",
+      "bytes": 97450,
+      "cost_usd": 0.01,
+      "provenance": "docs/assets/species/ixit.json",
+      "width": 768,
+      "height": 768,
+      "format": "WEBP"
+    },
+    {
+      "path": "/assets/species/keth-ra.webp",
+      "model": "meta/muse-image",
+      "bytes": 98022,
+      "cost_usd": 0.01,
+      "provenance": "docs/assets/species/keth-ra.json",
+      "width": 768,
+      "height": 768,
+      "format": "WEBP"
+    },
+    {
+      "path": "/assets/species/kiriel.webp",
+      "model": "meta/muse-image",
+      "bytes": 88294,
+      "cost_usd": 0.01,
+      "provenance": "docs/assets/species/kiriel.json",
+      "width": 768,
+      "height": 768,
+      "format": "WEBP"
+    },
+    {
+      "path": "/assets/species/kith.webp",
+      "model": "meta/muse-image",
+      "bytes": 93454,
+      "cost_usd": 0.01,
+      "provenance": "docs/assets/species/kith.json",
+      "width": 768,
+      "height": 768,
+      "format": "WEBP"
+    },
+    {
+      "path": "/assets/species/lattice.webp",
+      "model": "meta/muse-image",
+      "bytes": 110210,
+      "cost_usd": 0.01,
+      "provenance": "docs/assets/species/lattice.json",
+      "width": 768,
+      "height": 768,
+      "format": "WEBP"
+    },
+    {
+      "path": "/assets/species/mur.webp",
+      "model": "meta/muse-image",
+      "bytes": 107226,
+      "cost_usd": 0.01,
+      "provenance": "docs/assets/species/mur.json",
+      "width": 768,
+      "height": 768,
+      "format": "WEBP"
+    },
+    {
+      "path": "/assets/species/mycel.webp",
+      "model": "meta/muse-image",
+      "bytes": 129940,
+      "cost_usd": 0.01,
+      "provenance": "docs/assets/species/mycel.json",
+      "width": 768,
+      "height": 768,
+      "format": "WEBP"
+    },
+    {
+      "path": "/assets/species/myriad.webp",
+      "model": "meta/muse-image",
+      "bytes": 154736,
+      "cost_usd": 0.01,
+      "provenance": "docs/assets/species/myriad.json",
+      "width": 768,
+      "height": 768,
+      "format": "WEBP"
+    },
+    {
+      "path": "/assets/species/oolu.webp",
+      "model": "meta/muse-image",
+      "bytes": 103836,
+      "cost_usd": 0.01,
+      "provenance": "docs/assets/species/oolu.json",
+      "width": 768,
+      "height": 768,
+      "format": "WEBP"
+    },
+    {
+      "path": "/assets/species/qelloth.webp",
+      "model": "meta/muse-image",
+      "bytes": 86392,
+      "cost_usd": 0.01,
+      "provenance": "docs/assets/species/qelloth.json",
+      "width": 768,
+      "height": 768,
+      "format": "WEBP"
+    },
+    {
+      "path": "/assets/species/seren.webp",
+      "model": "meta/muse-image",
+      "bytes": 116474,
+      "cost_usd": 0.01,
+      "provenance": "docs/assets/species/seren.json",
+      "width": 768,
+      "height": 768,
+      "format": "WEBP"
+    },
+    {
+      "path": "/assets/species/skethi.webp",
+      "model": "meta/muse-image",
+      "bytes": 93392,
+      "cost_usd": 0.01,
+      "provenance": "docs/assets/species/skethi.json",
+      "width": 768,
+      "height": 768,
+      "format": "WEBP"
+    },
+    {
+      "path": "/assets/species/sorrin.webp",
+      "model": "meta/muse-image",
+      "bytes": 127256,
+      "cost_usd": 0.01,
+      "provenance": "docs/assets/species/sorrin.json",
+      "width": 768,
+      "height": 768,
+      "format": "WEBP"
+    },
+    {
+      "path": "/assets/species/sylphae.webp",
+      "model": "meta/muse-image",
+      "bytes": 107608,
+      "cost_usd": 0.01,
+      "provenance": "docs/assets/species/sylphae.json",
+      "width": 768,
+      "height": 768,
+      "format": "WEBP"
+    },
+    {
+      "path": "/assets/species/tessit.webp",
+      "model": "meta/muse-image",
+      "bytes": 135520,
+      "cost_usd": 0.01,
+      "provenance": "docs/assets/species/tessit.json",
+      "width": 768,
+      "height": 768,
+      "format": "WEBP"
+    },
+    {
+      "path": "/assets/species/tharn.webp",
+      "model": "meta/muse-image",
+      "bytes": 84416,
+      "cost_usd": 0.01,
+      "provenance": "docs/assets/species/tharn.json",
+      "width": 768,
+      "height": 768,
+      "format": "WEBP"
+    },
+    {
+      "path": "/assets/species/ulqua.webp",
+      "model": "meta/muse-image",
+      "bytes": 150082,
+      "cost_usd": 0.01,
+      "provenance": "docs/assets/species/ulqua.json",
+      "width": 768,
+      "height": 768,
+      "format": "WEBP"
+    },
+    {
+      "path": "/assets/species/vael.webp",
+      "model": "meta/muse-image",
+      "bytes": 77040,
+      "cost_usd": 0.01,
+      "provenance": "docs/assets/species/vael.json",
+      "width": 768,
+      "height": 768,
+      "format": "WEBP"
+    },
+    {
+      "path": "/assets/species/vorr.webp",
+      "model": "meta/muse-image",
+      "bytes": 98004,
+      "cost_usd": 0.01,
+      "provenance": "docs/assets/species/vorr.json",
+      "width": 768,
+      "height": 768,
+      "format": "WEBP"
+    },
+    {
+      "path": "/assets/species/wardens.webp",
+      "model": "meta/muse-image",
+      "bytes": 90558,
+      "cost_usd": 0.01,
+      "provenance": "docs/assets/species/wardens.json",
+      "width": 768,
+      "height": 768,
+      "format": "WEBP"
+    },
+    {
+      "path": "/assets/title-panorama.webp",
+      "model": "meta/muse-image",
+      "bytes": 215722,
+      "cost_usd": 0.01,
+      "provenance": "docs/assets/title-panorama.json",
+      "width": 2048,
+      "height": 1152,
+      "format": "WEBP"
+    },
+    {
+      "path": "/assets/title-theme.mp3",
+      "model": "google/lyria-3-pro-preview",
+      "bytes": 2184403,
+      "cost_usd": 0.08,
+      "provenance": "docs/assets/title-theme.json",
+      "full_decode": "passed",
+      "verification": [
+        "Duration: 00:01:49.19, start: 0.025057, bitrate: 160 kb/s",
+        "Stream #0:0: Audio: mp3 (mp3float), 44100 Hz, stereo, fltp, 160 kb/s",
+        "Stream #0:0: Audio: pcm_s16le, 44100 Hz, stereo, s16, 1411 kb/s",
+        "[Parsed_volumedetect_0 @ 000001d4d9b33540] mean_volume: -22.7 dB",
+        "[Parsed_volumedetect_0 @ 000001d4d9b33540] max_volume: -7.2 dB"
+      ]
+    },
+    {
+      "path": "/assets/turn.mp3",
+      "model": "bytedance-seed/seed-audio-1-0",
+      "bytes": 24808,
+      "cost_usd": 0.017255875,
+      "provenance": "docs/assets/turn.json",
+      "full_decode": "passed",
+      "verification": [
+        "Duration: 00:00:02.04, start: 0.025057, bitrate: 97 kb/s",
+        "Stream #0:0: Audio: mp3 (mp3float), 44100 Hz, mono, fltp, 96 kb/s",
+        "Stream #0:0: Audio: pcm_s16le, 44100 Hz, mono, s16, 705 kb/s",
+        "[Parsed_volumedetect_0 @ 000001cec3354080] mean_volume: -23.5 dB",
+        "[Parsed_volumedetect_0 @ 000001cec3354080] max_volume: -12.1 dB"
+      ]
+    },
+    {
+      "path": "/assets/ui-confirm.mp3",
+      "model": "bytedance-seed/seed-audio-1-0",
+      "bytes": 15090,
+      "cost_usd": 0.0075,
+      "provenance": "docs/assets/ui-confirm.json",
+      "full_decode": "passed",
+      "verification": [
+        "Duration: 00:00:01.23, start: 0.025057, bitrate: 98 kb/s",
+        "Stream #0:0: Audio: mp3 (mp3float), 44100 Hz, mono, fltp, 96 kb/s",
+        "Stream #0:0: Audio: pcm_s16le, 44100 Hz, mono, s16, 705 kb/s",
+        "[Parsed_volumedetect_0 @ 000001a4da8d3140] mean_volume: -23.5 dB",
+        "[Parsed_volumedetect_0 @ 000001a4da8d3140] max_volume: -11.0 dB"
+      ]
+    },
+    {
+      "path": "/assets/victory.mp3",
+      "model": "bytedance-seed/seed-audio-1-0",
+      "bytes": 37346,
+      "cost_usd": 0.008,
+      "provenance": "docs/assets/victory.json",
+      "full_decode": "passed",
+      "verification": [
+        "Duration: 00:00:03.08, start: 0.025057, bitrate: 96 kb/s",
+        "Stream #0:0: Audio: mp3 (mp3float), 44100 Hz, mono, fltp, 96 kb/s",
+        "Stream #0:0: Audio: pcm_s16le, 44100 Hz, mono, s16, 705 kb/s",
+        "[Parsed_volumedetect_0 @ 000001f114cf62c0] mean_volume: -23.5 dB",
+        "[Parsed_volumedetect_0 @ 000001f114cf62c0] max_volume: -8.1 dB"
+      ]
+    },
+    {
+      "path": "/assets/weapon.mp3",
+      "model": "bytedance-seed/seed-audio-1-0",
+      "bytes": 22300,
+      "cost_usd": 0.005,
+      "provenance": "docs/assets/weapon.json",
+      "full_decode": "passed",
+      "verification": [
+        "Duration: 00:00:01.83, start: 0.025057, bitrate: 97 kb/s",
+        "Stream #0:0: Audio: mp3 (mp3float), 44100 Hz, mono, fltp, 96 kb/s",
+        "Stream #0:0: Audio: pcm_s16le, 44100 Hz, mono, s16, 705 kb/s",
+        "[Parsed_volumedetect_0 @ 000002b7a4261780] mean_volume: -23.5 dB",
+        "[Parsed_volumedetect_0 @ 000002b7a4261780] max_volume: -7.9 dB"
+      ]
+    },
+    {
+      "path": "/assets/hero.webp",
+      "model": "meta/muse-image",
+      "bytes": 454158,
+      "cost_usd": 0.01,
+      "width": 1920,
+      "height": 1280,
+      "format": "WEBP",
+      "provenance": "docs/assets/hero-source.json",
+      "preexisting_integration_test": true
+    }
+  ],
+  "fonts": [
+    {
+      "path": "/assets/fonts/oxanium.ttf",
+      "family": "Oxanium",
+      "license": "SIL OFL 1.1",
+      "notice": "/assets/fonts/Oxanium-OFL.txt"
+    },
+    {
+      "path": "/assets/fonts/space-grotesk.ttf",
+      "family": "Space Grotesk",
+      "license": "SIL OFL 1.1",
+      "notice": "/assets/fonts/SpaceGrotesk-OFL.txt"
+    }
+  ]
+}

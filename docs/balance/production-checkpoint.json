@@ -1,0 +1,4789 @@
+{
+  "sourceAtStart": {
+    "battle.ts": "664c9dba68101a40b90617f545d5faa8565ce918b4beafaa4991340cd55b8f69",
+    "diplomacy.ts": "0a96d41a4ecd10900864fb24e987a70011d413ed11e6937cca4a5c456d3fd9ad",
+    "effects.ts": "c53cff210fabda51bcffe50456e15955ac1fc8db6844731c5ce9d1e99d846625",
+    "engine.ts": "5550570044600985ddfd975d454d18bde4f51e24526929ebbb29e1f900eabd0a",
+    "generation.ts": "1bd9db3abf93746f57b368fe64d84cbe8fa131e3208de7dcfc6f4ea5ec5539ed",
+    "hazards.ts": "62c11cb3756afb6ce39f3e29750518d12d58d168b880badc3401e8338b253e7e",
+    "intel.ts": "07adc5aaa386ee957f30551d7697766fb1732e658ea39b2de435a4a7bd40a5d4",
+    "math.ts": "08c22bf692c19a6dba3cbfbe978096fcfa6775803c603adcd1d377bb4c3da94c",
+    "politics.ts": "cd49f5bb86afc84b29d14e865539c147893831f3abea656eadf39185420bab62",
+    "rules-data.json": "5d4eccbe11cf076db8672423d2fb0c41421aa6829333b9a50f3d5fa1c4980eac",
+    "rules.ts": "63ac27edd5074a7d917909a4923246a1e12f6a480e6ff65c35ee0f96af0c801a",
+    "species.ts": "1538d6bf509132aeca8fcfd6d81a52ede89f0f218de7ae378c3a53c2828a4086",
+    "types.ts": "8c3ea4b0df5c2f0e40490ac516aafe6c2f5adf0414492529328cfdf81ce5a828",
+    "ai/controller.ts": "9b8f91adf0df2e70aef1df7b90fa37b3f78d3c151497c09c59c4b5b347c53670",
+    "sim/rules-data.json": "5d4eccbe11cf076db8672423d2fb0c41421aa6829333b9a50f3d5fa1c4980eac",
+    "catalog/systems.json": "7a3ba003882182b918e71efb6c5ef1d4f81290f2cfbccb16915a2a550371c56e",
+    "catalog/planets.json": "a93c558bd76aba0aa9e36ee2074a515a3b091fe8cf53048e1e8edfd08b5b1bc5",
+    "balance/costs.ts": "41f2b2f8005854d087e7a39765b1f97c2dd546c0c71ff16166d105bced51a77e",
+    "balance/picks.ts": "a7cdfbd51de0be42df55776800f92c430e759309394e469cfaf2f4a76864e6ce"
+  },
+  "completed": [
+    "subterranean",
+    "photosynthetic",
+    "spore-borne",
+    "hive-mind",
+    "terraformers",
+    "genetic-plasticity",
+    "electrosense",
+    "radiotrophic",
+    "cybernetic"
+  ],
+  "checkedTurns": 60480,
+  "comparisons": [
+    {
+      "pick": "subterranean",
+      "seed": "PRODUCTION-PAIR-104729",
+      "style": "Balanced",
+      "scorePercent": 12.724934158142947,
+      "populationPercent": 13.013511704318026,
+      "winChange": 0,
+      "outcomes": [
+        {
+          "seat": 0,
+          "scorePercent": -15.23978685612789,
+          "populationPercent": -12.09374354738797,
+          "winChange": 0
+        },
+        {
+          "seat": 1,
+          "scorePercent": 40.68965517241379,
+          "populationPercent": 38.12076695602402,
+          "winChange": 0
+        }
+      ]
+    },
+    {
+      "pick": "subterranean",
+      "seed": "PRODUCTION-PAIR-112648",
+      "style": "Expansionist",
+      "scorePercent": 16.596203518201023,
+      "populationPercent": 32.69166074830548,
+      "winChange": 0.5,
+      "outcomes": [
+        {
+          "seat": 0,
+          "scorePercent": 28.799291094373068,
+          "populationPercent": 52.649408222157156,
+          "winChange": 0
+        },
+        {
+          "seat": 1,
+          "scorePercent": 4.39311594202898,
+          "populationPercent": 12.733913274453812,
+          "winChange": 1
+        }
+      ]
+    },
+    {
+      "pick": "subterranean",
+      "seed": "PRODUCTION-PAIR-120567",
+      "style": "Scholar",
+      "scorePercent": 72.38858678781548,
+      "populationPercent": 153.09055903590001,
+      "winChange": 0,
+      "outcomes": [
+        {
+          "seat": 0,
+          "scorePercent": 142.4793388429752,
+          "populationPercent": 315.63581112669465,
+          "winChange": 1
+        },
+        {
+          "seat": 1,
+          "scorePercent": 2.297834732655768,
+          "populationPercent": -9.454693054894603,
+          "winChange": -1
+        }
+      ]
+    },
+    {
+      "pick": "subterranean",
+      "seed": "PRODUCTION-PAIR-128486",
+      "style": "Militarist",
+      "scorePercent": 29.114880838285096,
+      "populationPercent": 42.43072679469652,
+      "winChange": 0,
+      "outcomes": [
+        {
+          "seat": 0,
+          "scorePercent": 56.12765957446808,
+          "populationPercent": 70.79150128414662,
+          "winChange": 0
+        },
+        {
+          "seat": 1,
+          "scorePercent": 2.1021021021021102,
+          "populationPercent": 14.069952305246414,
+          "winChange": 0
+        }
+      ]
+    },
+    {
+      "pick": "subterranean",
+      "seed": "PRODUCTION-PAIR-136405",
+      "style": "Trader",
+      "scorePercent": 57.518677552768864,
+      "populationPercent": 78.75159035526482,
+      "winChange": 0,
+      "outcomes": [
+        {
+          "seat": 0,
+          "scorePercent": 52.062256809338514,
+          "populationPercent": 81.98695652173909,
+          "winChange": 0
+        },
+        {
+          "seat": 1,
+          "scorePercent": 62.97509829619921,
+          "populationPercent": 75.51622418879056,
+          "winChange": 0
+        }
+      ]
+    },
+    {
+      "pick": "subterranean",
+      "seed": "PRODUCTION-PAIR-144324",
+      "style": "Diplomat",
+      "scorePercent": 49.11970255765007,
+      "populationPercent": 72.96830578321064,
+      "winChange": 0.5,
+      "outcomes": [
+        {
+          "seat": 0,
+          "scorePercent": 47.224594363791624,
+          "populationPercent": 54.472843450479225,
+          "winChange": 0
+        },
+        {
+          "seat": 1,
+          "scorePercent": 51.01481075150851,
+          "populationPercent": 91.46376811594206,
+          "winChange": 1
+        }
+      ]
+    },
+    {
+      "pick": "subterranean",
+      "seed": "PRODUCTION-PAIR-152243",
+      "style": "Balanced",
+      "scorePercent": 38.07793376716084,
+      "populationPercent": 75.69706722998248,
+      "winChange": 0,
+      "outcomes": [
+        {
+          "seat": 0,
+          "scorePercent": 71.24789207419899,
+          "populationPercent": 154.98006644518273,
+          "winChange": 0
+        },
+        {
+          "seat": 1,
+          "scorePercent": 4.907975460122693,
+          "populationPercent": -3.585931985217772,
+          "winChange": 0
+        }
+      ]
+    },
+    {
+      "pick": "subterranean",
+      "seed": "PRODUCTION-PAIR-160162",
+      "style": "Expansionist",
+      "scorePercent": 18.54297954012082,
+      "populationPercent": 36.777661855909116,
+      "winChange": 0.5,
+      "outcomes": [
+        {
+          "seat": 0,
+          "scorePercent": 42.94516327788047,
+          "populationPercent": 77.57201646090537,
+          "winChange": 1
+        },
+        {
+          "seat": 1,
+          "scorePercent": -5.859204197638823,
+          "populationPercent": -4.016692749087136,
+          "winChange": 0
+        }
+      ]
+    },
+    {
+      "pick": "subterranean",
+      "seed": "PRODUCTION-PAIR-168081",
+      "style": "Scholar",
+      "scorePercent": 31.30684812208504,
+      "populationPercent": 49.15016707269774,
+      "winChange": 0.5,
+      "outcomes": [
+        {
+          "seat": 0,
+          "scorePercent": 65.79194001874413,
+          "populationPercent": 93.47749286071777,
+          "winChange": 1
+        },
+        {
+          "seat": 1,
+          "scorePercent": -3.178243774574052,
+          "populationPercent": 4.822841284677715,
+          "winChange": 0
+        }
+      ]
+    },
+    {
+      "pick": "subterranean",
+      "seed": "PRODUCTION-PAIR-176000",
+      "style": "Militarist",
+      "scorePercent": 37.106729307371864,
+      "populationPercent": 50.501373039752075,
+      "winChange": 0.5,
+      "outcomes": [
+        {
+          "seat": 0,
+          "scorePercent": 39.465875370919875,
+          "populationPercent": 51.79425837320575,
+          "winChange": 1
+        },
+        {
+          "seat": 1,
+          "scorePercent": 34.747583243823854,
+          "populationPercent": 49.2084877062984,
+          "winChange": 0
+        }
+      ]
+    },
+    {
+      "pick": "subterranean",
+      "seed": "PRODUCTION-PAIR-183919",
+      "style": "Trader",
+      "scorePercent": 35.48904759624753,
+      "populationPercent": 51.80870565103831,
+      "winChange": 0,
+      "outcomes": [
+        {
+          "seat": 0,
+          "scorePercent": 52.31874591770085,
+          "populationPercent": 75.3555049179382,
+          "winChange": 0
+        },
+        {
+          "seat": 1,
+          "scorePercent": 18.659349274794202,
+          "populationPercent": 28.261906384138413,
+          "winChange": 0
+        }
+      ]
+    },
+    {
+      "pick": "subterranean",
+      "seed": "PRODUCTION-PAIR-191838",
+      "style": "Diplomat",
+      "scorePercent": 127.46137994425666,
+      "populationPercent": 240.15586723827042,
+      "winChange": 0.5,
+      "outcomes": [
+        {
+          "seat": 0,
+          "scorePercent": 214.77272727272728,
+          "populationPercent": 433.0739299610896,
+          "winChange": 1
+        },
+        {
+          "seat": 1,
+          "scorePercent": 40.150032615786046,
+          "populationPercent": 47.23780451545123,
+          "winChange": 0
+        }
+      ]
+    },
+    {
+      "pick": "subterranean",
+      "seed": "PRODUCTION-PAIR-199757",
+      "style": "Balanced",
+      "scorePercent": 46.85164117745917,
+      "populationPercent": 59.871152698302865,
+      "winChange": 0.5,
+      "outcomes": [
+        {
+          "seat": 0,
+          "scorePercent": 101.66444740346203,
+          "populationPercent": 137.1517175572519,
+          "winChange": 1
+        },
+        {
+          "seat": 1,
+          "scorePercent": -7.961165048543695,
+          "populationPercent": -17.409412160646177,
+          "winChange": 0
+        }
+      ]
+    },
+    {
+      "pick": "subterranean",
+      "seed": "PRODUCTION-PAIR-207676",
+      "style": "Expansionist",
+      "scorePercent": 45.62939497319501,
+      "populationPercent": 69.8226468022018,
+      "winChange": 0,
+      "outcomes": [
+        {
+          "seat": 0,
+          "scorePercent": 80.18867924528301,
+          "populationPercent": 119.16997367752975,
+          "winChange": 0
+        },
+        {
+          "seat": 1,
+          "scorePercent": 11.070110701107016,
+          "populationPercent": 20.47531992687386,
+          "winChange": 0
+        }
+      ]
+    },
+    {
+      "pick": "subterranean",
+      "seed": "PRODUCTION-PAIR-215595",
+      "style": "Scholar",
+      "scorePercent": 9.419861935659796,
+      "populationPercent": 21.901923605966058,
+      "winChange": 0,
+      "outcomes": [
+        {
+          "seat": 0,
+          "scorePercent": -15.701853953840327,
+          "populationPercent": -14.332036316472108,
+          "winChange": 0
+        },
+        {
+          "seat": 1,
+          "scorePercent": 34.54157782515992,
+          "populationPercent": 58.13588352840422,
+          "winChange": 0
+        }
+      ]
+    },
+    {
+      "pick": "subterranean",
+      "seed": "PRODUCTION-PAIR-223514",
+      "style": "Militarist",
+      "scorePercent": 19.34708836704221,
+      "populationPercent": 39.02198784236318,
+      "winChange": 0,
+      "outcomes": [
+        {
+          "seat": 0,
+          "scorePercent": 12.075471698113205,
+          "populationPercent": 32.32968997044063,
+          "winChange": 0
+        },
+        {
+          "seat": 1,
+          "scorePercent": 26.618705035971214,
+          "populationPercent": 45.71428571428573,
+          "winChange": 0
+        }
+      ]
+    },
+    {
+      "pick": "subterranean",
+      "seed": "PRODUCTION-PAIR-231433",
+      "style": "Trader",
+      "scorePercent": 72.48008708245078,
+      "populationPercent": 90.4706902578411,
+      "winChange": 0.5,
+      "outcomes": [
+        {
+          "seat": 0,
+          "scorePercent": 134.31180691454662,
+          "populationPercent": 178.34761837853029,
+          "winChange": 1
+        },
+        {
+          "seat": 1,
+          "scorePercent": 10.64836725035494,
+          "populationPercent": 2.5937621371519226,
+          "winChange": 0
+        }
+      ]
+    },
+    {
+      "pick": "subterranean",
+      "seed": "PRODUCTION-PAIR-239352",
+      "style": "Diplomat",
+      "scorePercent": 28.381941717150372,
+      "populationPercent": 9.539762468588542,
+      "winChange": 0.5,
+      "outcomes": [
+        {
+          "seat": 0,
+          "scorePercent": 27.266108481980346,
+          "populationPercent": 2.8011063615790865,
+          "winChange": 1
+        },
+        {
+          "seat": 1,
+          "scorePercent": 29.4977749523204,
+          "populationPercent": 16.278418575597996,
+          "winChange": 0
+        }
+      ]
+    },
+    {
+      "pick": "subterranean",
+      "seed": "PRODUCTION-PAIR-247271",
+      "style": "Balanced",
+      "scorePercent": 20.370648436108564,
+      "populationPercent": 38.577024605216565,
+      "winChange": 0,
+      "outcomes": [
+        {
+          "seat": 0,
+          "scorePercent": 21.61702127659575,
+          "populationPercent": 38.23654838757113,
+          "winChange": 0
+        },
+        {
+          "seat": 1,
+          "scorePercent": 19.124275595621377,
+          "populationPercent": 38.917500822862,
+          "winChange": 0
+        }
+      ]
+    },
+    {
+      "pick": "subterranean",
+      "seed": "PRODUCTION-PAIR-255190",
+      "style": "Expansionist",
+      "scorePercent": 28.14927498114166,
+      "populationPercent": 41.45475565143251,
+      "winChange": 0.5,
+      "outcomes": [
+        {
+          "seat": 0,
+          "scorePercent": 24.80657640232109,
+          "populationPercent": 30.341306520109868,
+          "winChange": 1
+        },
+        {
+          "seat": 1,
+          "scorePercent": 31.491973559962226,
+          "populationPercent": 52.568204782755146,
+          "winChange": 0
+        }
+      ]
+    },
+    {
+      "pick": "subterranean",
+      "seed": "PRODUCTION-PAIR-263109",
+      "style": "Scholar",
+      "scorePercent": -16.671468347450922,
+      "populationPercent": -29.212332021174635,
+      "winChange": -0.5,
+      "outcomes": [
+        {
+          "seat": 0,
+          "scorePercent": -2.8271773825809365,
+          "populationPercent": -15.637276910988895,
+          "winChange": -1
+        },
+        {
+          "seat": 1,
+          "scorePercent": -30.51575931232091,
+          "populationPercent": -42.787387131360376,
+          "winChange": 0
+        }
+      ]
+    },
+    {
+      "pick": "subterranean",
+      "seed": "PRODUCTION-PAIR-271028",
+      "style": "Militarist",
+      "scorePercent": 32.38215472491527,
+      "populationPercent": 44.65783086099895,
+      "winChange": 0,
+      "outcomes": [
+        {
+          "seat": 0,
+          "scorePercent": 47.43429286608261,
+          "populationPercent": 66.09360076408788,
+          "winChange": 0
+        },
+        {
+          "seat": 1,
+          "scorePercent": 17.33001658374793,
+          "populationPercent": 23.222060957910017,
+          "winChange": 0
+        }
+      ]
+    },
+    {
+      "pick": "subterranean",
+      "seed": "PRODUCTION-PAIR-278947",
+      "style": "Trader",
+      "scorePercent": 33.34837790577237,
+      "populationPercent": 75.73165515044482,
+      "winChange": 0,
+      "outcomes": [
+        {
+          "seat": 0,
+          "scorePercent": 51.65837479270314,
+          "populationPercent": 115.95403822782013,
+          "winChange": 0
+        },
+        {
+          "seat": 1,
+          "scorePercent": 15.038381018841584,
+          "populationPercent": 35.50927207306951,
+          "winChange": 0
+        }
+      ]
+    },
+    {
+      "pick": "subterranean",
+      "seed": "PRODUCTION-PAIR-286866",
+      "style": "Diplomat",
+      "scorePercent": 106.55844406568373,
+      "populationPercent": 169.65676201935608,
+      "winChange": 0.5,
+      "outcomes": [
+        {
+          "seat": 0,
+          "scorePercent": 228.08988764044943,
+          "populationPercent": 363.69686411149826,
+          "winChange": 1
+        },
+        {
+          "seat": 1,
+          "scorePercent": -14.972999509081985,
+          "populationPercent": -24.383340072786098,
+          "winChange": 0
+        }
+      ]
+    },
+    {
+      "pick": "photosynthetic",
+      "seed": "PRODUCTION-PAIR-104729",
+      "style": "Balanced",
+      "scorePercent": 14.932831097772603,
+      "populationPercent": 1.7775161929477257,
+      "winChange": 0,
+      "outcomes": [
+        {
+          "seat": 0,
+          "scorePercent": 5.612788632326815,
+          "populationPercent": 1.238901507330148,
+          "winChange": 0
+        },
+        {
+          "seat": 1,
+          "scorePercent": 24.25287356321839,
+          "populationPercent": 2.3161308785653034,
+          "winChange": 0
+        }
+      ]
+    },
+    {
+      "pick": "photosynthetic",
+      "seed": "PRODUCTION-PAIR-112648",
+      "style": "Expansionist",
+      "scorePercent": 3.3219817732914714,
+      "populationPercent": 2.446481430031927,
+      "winChange": 0,
+      "outcomes": [
+        {
+          "seat": 0,
+          "scorePercent": 4.696499778467,
+          "populationPercent": 5.4507688232752205,
+          "winChange": 0
+        },
+        {
+          "seat": 1,
+          "scorePercent": 1.9474637681159424,
+          "populationPercent": -0.5578059632113663,
+          "winChange": 0
+        }
+      ]
+    },
+    {
+      "pick": "photosynthetic",
+      "seed": "PRODUCTION-PAIR-120567",
+      "style": "Scholar",
+      "scorePercent": 3.8911510963895113,
+      "populationPercent": -11.392620340889277,
+      "winChange": 0,
+      "outcomes": [
+        {
+          "seat": 0,
+          "scorePercent": 6.721763085399446,
+          "populationPercent": -4.207573632538574,
+          "winChange": 0
+        },
+        {
+          "seat": 1,
+          "scorePercent": 1.0605391073795767,
+          "populationPercent": -18.577667049239977,
+          "winChange": 0
+        }
+      ]
+    },
+    {
+      "pick": "photosynthetic",
+      "seed": "PRODUCTION-PAIR-128486",
+      "style": "Militarist",
+      "scorePercent": 2.4089621536430075,
+      "populationPercent": 2.0856200447883007,
+      "winChange": 0,
+      "outcomes": [
+        {
+          "seat": 0,
+          "scorePercent": 12.425531914893618,
+          "populationPercent": 10.133084286714912,
+          "winChange": 0
+        },
+        {
+          "seat": 1,
+          "scorePercent": -7.607607607607603,
+          "populationPercent": -5.96184419713831,
+          "winChange": 0
+        }
+      ]
+    },
+    {
+      "pick": "photosynthetic",
+      "seed": "PRODUCTION-PAIR-136405",
+      "style": "Trader",
+      "scorePercent": 8.838549448980325,
+      "populationPercent": 7.735000641272277,
+      "winChange": 0,
+      "outcomes": [
+        {
+          "seat": 0,
+          "scorePercent": 4.046692607003899,
+          "populationPercent": 16.94492753623187,
+          "winChange": 0
+        },
+        {
+          "seat": 1,
+          "scorePercent": 13.630406290956753,
+          "populationPercent": -1.4749262536873142,
+          "winChange": 0
+        }
+      ]
+    },
+    {
+      "pick": "photosynthetic",
+      "seed": "PRODUCTION-PAIR-144324",
+      "style": "Diplomat",
+      "scorePercent": 14.715868448185333,
+      "populationPercent": 0,
+      "winChange": 0,
+      "outcomes": [
+        {
+          "seat": 0,
+          "scorePercent": 14.346712211784807,
+          "populationPercent": 0,
+          "winChange": 0
+        },
+        {
+          "seat": 1,
+          "scorePercent": 15.085024684585857,
+          "populationPercent": 0,
+          "winChange": 0
+        }
+      ]
+    },
+    {
+      "pick": "photosynthetic",
+      "seed": "PRODUCTION-PAIR-152243",
+      "style": "Balanced",
+      "scorePercent": 16.96263841615024,
+      "populationPercent": 2.343146617946279,
+      "winChange": 0,
+      "outcomes": [
+        {
+          "seat": 0,
+          "scorePercent": 24.620573355817864,
+          "populationPercent": 0,
+          "winChange": 0
+        },
+        {
+          "seat": 1,
+          "scorePercent": 9.304703476482622,
+          "populationPercent": 4.686293235892558,
+          "winChange": 0
+        }
+      ]
+    },
+    {
+      "pick": "photosynthetic",
+      "seed": "PRODUCTION-PAIR-160162",
+      "style": "Expansionist",
+      "scorePercent": -2.142585230188793,
+      "populationPercent": -7.223091636237178,
+      "winChange": 0,
+      "outcomes": [
+        {
+          "seat": 0,
+          "scorePercent": -4.06654343807763,
+          "populationPercent": -12.098765432098757,
+          "winChange": 0
+        },
+        {
+          "seat": 1,
+          "scorePercent": -0.21862702229995534,
+          "populationPercent": -2.3474178403755985,
+          "winChange": 0
+        }
+      ]
+    },
+    {
+      "pick": "photosynthetic",
+      "seed": "PRODUCTION-PAIR-168081",
+      "style": "Scholar",
+      "scorePercent": 11.653258545105706,
+      "populationPercent": -6.594215444591439,
+      "winChange": 0,
+      "outcomes": [
+        {
+          "seat": 0,
+          "scorePercent": 9.184629803186507,
+          "populationPercent": -14.048929843671798,
+          "winChange": 0
+        },
+        {
+          "seat": 1,
+          "scorePercent": 14.121887287024904,
+          "populationPercent": 0.8604989544889197,
+          "winChange": 0
+        }
+      ]
+    },
+    {
+      "pick": "photosynthetic",
+      "seed": "PRODUCTION-PAIR-176000",
+      "style": "Militarist",
+      "scorePercent": 3.0507463019566687,
+      "populationPercent": -5.927075795984337,
+      "winChange": 0,
+      "outcomes": [
+        {
+          "seat": 0,
+          "scorePercent": -11.943620178041547,
+          "populationPercent": -20.813397129186594,
+          "winChange": 0
+        },
+        {
+          "seat": 1,
+          "scorePercent": 18.045112781954884,
+          "populationPercent": 8.95924553721792,
+          "winChange": 0
+        }
+      ]
+    },
+    {
+      "pick": "photosynthetic",
+      "seed": "PRODUCTION-PAIR-183919",
+      "style": "Trader",
+      "scorePercent": 8.516940245254167,
+      "populationPercent": -6.874666736294754,
+      "winChange": 0,
+      "outcomes": [
+        {
+          "seat": 0,
+          "scorePercent": 19.85630306988897,
+          "populationPercent": 2.991144826790504,
+          "winChange": 0
+        },
+        {
+          "seat": 1,
+          "scorePercent": -2.8224225793806346,
+          "populationPercent": -16.740478299380012,
+          "winChange": 0
+        }
+      ]
+    },
+    {
+      "pick": "photosynthetic",
+      "seed": "PRODUCTION-PAIR-191838",
+      "style": "Diplomat",
+      "scorePercent": 6.667287478503231,
+      "populationPercent": -3.770639655890112,
+      "winChange": 0,
+      "outcomes": [
+        {
+          "seat": 0,
+          "scorePercent": 16.33522727272727,
+          "populationPercent": 0,
+          "winChange": 0
+        },
+        {
+          "seat": 1,
+          "scorePercent": -3.0006523157208087,
+          "populationPercent": -7.541279311780224,
+          "winChange": 0
+        }
+      ]
+    },
+    {
+      "pick": "photosynthetic",
+      "seed": "PRODUCTION-PAIR-199757",
+      "style": "Balanced",
+      "scorePercent": 16.22516256641631,
+      "populationPercent": 0.6741154235467839,
+      "winChange": 0,
+      "outcomes": [
+        {
+          "seat": 0,
+          "scorePercent": 17.11051930758989,
+          "populationPercent": -7.395038167938939,
+          "winChange": 0
+        },
+        {
+          "seat": 1,
+          "scorePercent": 15.339805825242724,
+          "populationPercent": 8.743269015032507,
+          "winChange": 0
+        }
+      ]
+    },
+    {
+      "pick": "photosynthetic",
+      "seed": "PRODUCTION-PAIR-207676",
+      "style": "Expansionist",
+      "scorePercent": 15.289773553147645,
+      "populationPercent": -1.261340708969677,
+      "winChange": 0,
+      "outcomes": [
+        {
+          "seat": 0,
+          "scorePercent": 17.725918570009934,
+          "populationPercent": -2.522681417939354,
+          "winChange": 0
+        },
+        {
+          "seat": 1,
+          "scorePercent": 12.853628536285356,
+          "populationPercent": 0,
+          "winChange": 0
+        }
+      ]
+    },
+    {
+      "pick": "photosynthetic",
+      "seed": "PRODUCTION-PAIR-215595",
+      "style": "Scholar",
+      "scorePercent": 3.887002477478024,
+      "populationPercent": -5.396458214619072,
+      "winChange": 0,
+      "outcomes": [
+        {
+          "seat": 0,
+          "scorePercent": -9.496783957623911,
+          "populationPercent": -31.365758754863805,
+          "winChange": 0
+        },
+        {
+          "seat": 1,
+          "scorePercent": 17.27078891257996,
+          "populationPercent": 20.57284232562566,
+          "winChange": 0
+        }
+      ]
+    },
+    {
+      "pick": "photosynthetic",
+      "seed": "PRODUCTION-PAIR-223514",
+      "style": "Militarist",
+      "scorePercent": -1.9526001350353153,
+      "populationPercent": -3.170756857083934,
+      "winChange": 0,
+      "outcomes": [
+        {
+          "seat": 0,
+          "scorePercent": -4.690026954177895,
+          "populationPercent": -6.341513714167868,
+          "winChange": 0
+        },
+        {
+          "seat": 1,
+          "scorePercent": 0.7848266841072649,
+          "populationPercent": 0,
+          "winChange": 0
+        }
+      ]
+    },
+    {
+      "pick": "photosynthetic",
+      "seed": "PRODUCTION-PAIR-231433",
+      "style": "Trader",
+      "scorePercent": 42.36802955271146,
+      "populationPercent": 75.55659802031371,
+      "winChange": 0.5,
+      "outcomes": [
+        {
+          "seat": 0,
+          "scorePercent": 75.0815394651011,
+          "populationPercent": 139.4885485457356,
+          "winChange": 1
+        },
+        {
+          "seat": 1,
+          "scorePercent": 9.654519640321823,
+          "populationPercent": 11.624647494891827,
+          "winChange": 0
+        }
+      ]
+    },
+    {
+      "pick": "photosynthetic",
+      "seed": "PRODUCTION-PAIR-239352",
+      "style": "Diplomat",
+      "scorePercent": 11.227511443449501,
+      "populationPercent": -3.3743254757471086,
+      "winChange": 0,
+      "outcomes": [
+        {
+          "seat": 0,
+          "scorePercent": 13.141609028030587,
+          "populationPercent": -1.7601206939904301,
+          "winChange": 0
+        },
+        {
+          "seat": 1,
+          "scorePercent": 9.313413858868413,
+          "populationPercent": -4.988530257503787,
+          "winChange": 0
+        }
+      ]
+    },
+    {
+      "pick": "photosynthetic",
+      "seed": "PRODUCTION-PAIR-247271",
+      "style": "Balanced",
+      "scorePercent": 15.47770273047362,
+      "populationPercent": 1.1051313385187278,
+      "winChange": 0,
+      "outcomes": [
+        {
+          "seat": 0,
+          "scorePercent": 23.872340425531924,
+          "populationPercent": 1.326412070055727,
+          "winChange": 0
+        },
+        {
+          "seat": 1,
+          "scorePercent": 7.083065035415315,
+          "populationPercent": 0.8838506069817287,
+          "winChange": 0
+        }
+      ]
+    },
+    {
+      "pick": "photosynthetic",
+      "seed": "PRODUCTION-PAIR-255190",
+      "style": "Expansionist",
+      "scorePercent": 9.4122087002263,
+      "populationPercent": 7.909051335726341,
+      "winChange": 0.5,
+      "outcomes": [
+        {
+          "seat": 0,
+          "scorePercent": 1.4023210831721533,
+          "populationPercent": -0.10617037222083736,
+          "winChange": 1
+        },
+        {
+          "seat": 1,
+          "scorePercent": 17.422096317280445,
+          "populationPercent": 15.92427304367352,
+          "winChange": 0
+        }
+      ]
+    },
+    {
+      "pick": "photosynthetic",
+      "seed": "PRODUCTION-PAIR-263109",
+      "style": "Scholar",
+      "scorePercent": 19.013610641831193,
+      "populationPercent": 4.463507428121494,
+      "winChange": 0.5,
+      "outcomes": [
+        {
+          "seat": 0,
+          "scorePercent": 15.86867305061559,
+          "populationPercent": 2.2743854529128082,
+          "winChange": 0
+        },
+        {
+          "seat": 1,
+          "scorePercent": 22.158548233046794,
+          "populationPercent": 6.652629403330179,
+          "winChange": 1
+        }
+      ]
+    },
+    {
+      "pick": "photosynthetic",
+      "seed": "PRODUCTION-PAIR-271028",
+      "style": "Militarist",
+      "scorePercent": -3.8830150457557835,
+      "populationPercent": -1.7981432886552682,
+      "winChange": 0,
+      "outcomes": [
+        {
+          "seat": 0,
+          "scorePercent": -5.444305381727155,
+          "populationPercent": 1.241642788920716,
+          "winChange": 0
+        },
+        {
+          "seat": 1,
+          "scorePercent": -2.321724709784412,
+          "populationPercent": -4.837929366231252,
+          "winChange": 0
+        }
+      ]
+    },
+    {
+      "pick": "photosynthetic",
+      "seed": "PRODUCTION-PAIR-278947",
+      "style": "Trader",
+      "scorePercent": 12.25577161876128,
+      "populationPercent": 7.533471133311664,
+      "winChange": 0,
+      "outcomes": [
+        {
+          "seat": 0,
+          "scorePercent": 21.4759535655058,
+          "populationPercent": 26.324899642765033,
+          "winChange": 0
+        },
+        {
+          "seat": 1,
+          "scorePercent": 3.0355896720167586,
+          "populationPercent": -11.257957376141704,
+          "winChange": 0
+        }
+      ]
+    },
+    {
+      "pick": "photosynthetic",
+      "seed": "PRODUCTION-PAIR-286866",
+      "style": "Diplomat",
+      "scorePercent": 17.083034730434242,
+      "populationPercent": -0.225783408547503,
+      "winChange": 0,
+      "outcomes": [
+        {
+          "seat": 0,
+          "scorePercent": 18.063958513396706,
+          "populationPercent": -3.484320557491294,
+          "winChange": 0
+        },
+        {
+          "seat": 1,
+          "scorePercent": 16.102110947471783,
+          "populationPercent": 3.032753740396288,
+          "winChange": 0
+        }
+      ]
+    },
+    {
+      "pick": "spore-borne",
+      "seed": "PRODUCTION-PAIR-104729",
+      "style": "Balanced",
+      "scorePercent": -3.4632306404524247,
+      "populationPercent": -8.887584904137391,
+      "winChange": 0,
+      "outcomes": [
+        {
+          "seat": 0,
+          "scorePercent": -3.7655417406749603,
+          "populationPercent": -7.825727854635556,
+          "winChange": 0
+        },
+        {
+          "seat": 1,
+          "scorePercent": -3.1609195402298895,
+          "populationPercent": -9.949441953639226,
+          "winChange": 0
+        }
+      ]
+    },
+    {
+      "pick": "spore-borne",
+      "seed": "PRODUCTION-PAIR-112648",
+      "style": "Expansionist",
+      "scorePercent": -3.8890581154925443,
+      "populationPercent": -5.1701897036115,
+      "winChange": 0,
+      "outcomes": [
+        {
+          "seat": 0,
+          "scorePercent": -2.569782897651751,
+          "populationPercent": -2.8857011417339207,
+          "winChange": -1
+        },
+        {
+          "seat": 1,
+          "scorePercent": -5.2083333333333375,
+          "populationPercent": -7.454678265489079,
+          "winChange": 1
+        }
+      ]
+    },
+    {
+      "pick": "spore-borne",
+      "seed": "PRODUCTION-PAIR-120567",
+      "style": "Scholar",
+      "scorePercent": -4.208594603083015,
+      "populationPercent": -6.855527251350674,
+      "winChange": 0,
+      "outcomes": [
+        {
+          "seat": 0,
+          "scorePercent": -0.33057851239669533,
+          "populationPercent": 0,
+          "winChange": 0
+        },
+        {
+          "seat": 1,
+          "scorePercent": -8.086610693769336,
+          "populationPercent": -13.711054502701348,
+          "winChange": 0
+        }
+      ]
+    },
+    {
+      "pick": "spore-borne",
+      "seed": "PRODUCTION-PAIR-128486",
+      "style": "Militarist",
+      "scorePercent": 4.291014418673994,
+      "populationPercent": 8.249523850531943,
+      "winChange": 0,
+      "outcomes": [
+        {
+          "seat": 0,
+          "scorePercent": 13.787234042553198,
+          "populationPercent": 22.460891898202195,
+          "winChange": 0
+        },
+        {
+          "seat": 1,
+          "scorePercent": -5.2052052052052105,
+          "populationPercent": -5.96184419713831,
+          "winChange": 0
+        }
+      ]
+    },
+    {
+      "pick": "spore-borne",
+      "seed": "PRODUCTION-PAIR-136405",
+      "style": "Trader",
+      "scorePercent": -1.4284184383780985,
+      "populationPercent": 0,
+      "winChange": 0,
+      "outcomes": [
+        {
+          "seat": 0,
+          "scorePercent": -2.529182879377434,
+          "populationPercent": 0,
+          "winChange": 0
+        },
+        {
+          "seat": 1,
+          "scorePercent": -0.3276539973787629,
+          "populationPercent": 0,
+          "winChange": 0
+        }
+      ]
+    },
+    {
+      "pick": "spore-borne",
+      "seed": "PRODUCTION-PAIR-144324",
+      "style": "Diplomat",
+      "scorePercent": 0.04923332332427144,
+      "populationPercent": -2.1739130434782594,
+      "winChange": 0,
+      "outcomes": [
+        {
+          "seat": 0,
+          "scorePercent": 1.1955593509820561,
+          "populationPercent": 0,
+          "winChange": 0
+        },
+        {
+          "seat": 1,
+          "scorePercent": -1.0970927043335132,
+          "populationPercent": -4.347826086956519,
+          "winChange": 0
+        }
+      ]
+    },
+    {
+      "pick": "spore-borne",
+      "seed": "PRODUCTION-PAIR-152243",
+      "style": "Balanced",
+      "scorePercent": -4.832682132261063,
+      "populationPercent": -13.61499813146203,
+      "winChange": 0,
+      "outcomes": [
+        {
+          "seat": 0,
+          "scorePercent": -1.3490725126475533,
+          "populationPercent": 0,
+          "winChange": 0
+        },
+        {
+          "seat": 1,
+          "scorePercent": -8.316291751874571,
+          "populationPercent": -27.22999626292406,
+          "winChange": 0
+        }
+      ]
+    },
+    {
+      "pick": "spore-borne",
+      "seed": "PRODUCTION-PAIR-160162",
+      "style": "Expansionist",
+      "scorePercent": 0.39949609367527783,
+      "populationPercent": 0,
+      "winChange": 0,
+      "outcomes": [
+        {
+          "seat": 0,
+          "scorePercent": 0.49291435613061374,
+          "populationPercent": 0,
+          "winChange": 0
+        },
+        {
+          "seat": 1,
+          "scorePercent": 0.3060778312199419,
+          "populationPercent": 0,
+          "winChange": 0
+        }
+      ]
+    },
+    {
+      "pick": "spore-borne",
+      "seed": "PRODUCTION-PAIR-168081",
+      "style": "Scholar",
+      "scorePercent": 5.050339568688189,
+      "populationPercent": 7.777720894140267,
+      "winChange": 0,
+      "outcomes": [
+        {
+          "seat": 0,
+          "scorePercent": -4.545454545454541,
+          "populationPercent": -6.771278005122616,
+          "winChange": 0
+        },
+        {
+          "seat": 1,
+          "scorePercent": 14.64613368283092,
+          "populationPercent": 22.32671979340315,
+          "winChange": 0
+        }
+      ]
+    },
+    {
+      "pick": "spore-borne",
+      "seed": "PRODUCTION-PAIR-176000",
+      "style": "Militarist",
+      "scorePercent": 1.5344369826643725,
+      "populationPercent": 3.3330056517023476,
+      "winChange": 0,
+      "outcomes": [
+        {
+          "seat": 0,
+          "scorePercent": -10.089020771513358,
+          "populationPercent": -7.177033492822971,
+          "winChange": 0
+        },
+        {
+          "seat": 1,
+          "scorePercent": 13.157894736842103,
+          "populationPercent": 13.843044796227666,
+          "winChange": 0
+        }
+      ]
+    },
+    {
+      "pick": "spore-borne",
+      "seed": "PRODUCTION-PAIR-183919",
+      "style": "Trader",
+      "scorePercent": 8.367935526109937,
+      "populationPercent": 31.201320441545867,
+      "winChange": 0,
+      "outcomes": [
+        {
+          "seat": 0,
+          "scorePercent": 10.189418680600903,
+          "populationPercent": 47.21220687069139,
+          "winChange": 0
+        },
+        {
+          "seat": 1,
+          "scorePercent": 6.5464523716189715,
+          "populationPercent": 15.190434012400345,
+          "winChange": 0
+        }
+      ]
+    },
+    {
+      "pick": "spore-borne",
+      "seed": "PRODUCTION-PAIR-191838",
+      "style": "Diplomat",
+      "scorePercent": 64.48347065320523,
+      "populationPercent": 146.73944708039323,
+      "winChange": 0.5,
+      "outcomes": [
+        {
+          "seat": 0,
+          "scorePercent": 123.65056818181816,
+          "populationPercent": 282.6848249027239,
+          "winChange": 1
+        },
+        {
+          "seat": 1,
+          "scorePercent": 5.3163731245923,
+          "populationPercent": 10.794069258062589,
+          "winChange": 0
+        }
+      ]
+    },
+    {
+      "pick": "spore-borne",
+      "seed": "PRODUCTION-PAIR-199757",
+      "style": "Balanced",
+      "scorePercent": -2.5207490336509206,
+      "populationPercent": -6.766042180839138,
+      "winChange": 0,
+      "outcomes": [
+        {
+          "seat": 0,
+          "scorePercent": 1.9973368841544659,
+          "populationPercent": 0,
+          "winChange": 0
+        },
+        {
+          "seat": 1,
+          "scorePercent": -7.038834951456307,
+          "populationPercent": -13.532084361678276,
+          "winChange": 0
+        }
+      ]
+    },
+    {
+      "pick": "spore-borne",
+      "seed": "PRODUCTION-PAIR-207676",
+      "style": "Expansionist",
+      "scorePercent": -1.184329618867186,
+      "populationPercent": -3.3009981160059265,
+      "winChange": 0,
+      "outcomes": [
+        {
+          "seat": 0,
+          "scorePercent": -3.47567030784508,
+          "populationPercent": -6.601996232011853,
+          "winChange": 0
+        },
+        {
+          "seat": 1,
+          "scorePercent": 1.1070110701107083,
+          "populationPercent": 0,
+          "winChange": 0
+        }
+      ]
+    },
+    {
+      "pick": "spore-borne",
+      "seed": "PRODUCTION-PAIR-215595",
+      "style": "Scholar",
+      "scorePercent": 8.530236768161782,
+      "populationPercent": 7.5345620004050655,
+      "winChange": 0,
+      "outcomes": [
+        {
+          "seat": 0,
+          "scorePercent": 3.556564510026483,
+          "populationPercent": 7.830090791180289,
+          "winChange": 0
+        },
+        {
+          "seat": 1,
+          "scorePercent": 13.503909026297078,
+          "populationPercent": 7.2390332096298415,
+          "winChange": 0
+        }
+      ]
+    },
+    {
+      "pick": "spore-borne",
+      "seed": "PRODUCTION-PAIR-223514",
+      "style": "Militarist",
+      "scorePercent": -1.5719979762330802,
+      "populationPercent": 1.6300464504217849,
+      "winChange": 0,
+      "outcomes": [
+        {
+          "seat": 0,
+          "scorePercent": 3.396226415094339,
+          "populationPercent": 6.688664329414995,
+          "winChange": 0
+        },
+        {
+          "seat": 1,
+          "scorePercent": -6.540222367560499,
+          "populationPercent": -3.4285714285714253,
+          "winChange": 0
+        }
+      ]
+    },
+    {
+      "pick": "spore-borne",
+      "seed": "PRODUCTION-PAIR-231433",
+      "style": "Trader",
+      "scorePercent": 0.4022099085924493,
+      "populationPercent": 0.8923770978787215,
+      "winChange": 0,
+      "outcomes": [
+        {
+          "seat": 0,
+          "scorePercent": 4.82713633398566,
+          "populationPercent": 4.201208374315013,
+          "winChange": 0
+        },
+        {
+          "seat": 1,
+          "scorePercent": -4.022716516800761,
+          "populationPercent": -2.41645417855757,
+          "winChange": 0
+        }
+      ]
+    },
+    {
+      "pick": "spore-borne",
+      "seed": "PRODUCTION-PAIR-239352",
+      "style": "Diplomat",
+      "scorePercent": -17.577408030629726,
+      "populationPercent": -4.365499536240303,
+      "winChange": 0,
+      "outcomes": [
+        {
+          "seat": 0,
+          "scorePercent": -27.81215871860211,
+          "populationPercent": -12.416394267035447,
+          "winChange": 0
+        },
+        {
+          "seat": 1,
+          "scorePercent": -7.342657342657343,
+          "populationPercent": 3.6853951945548413,
+          "winChange": 0
+        }
+      ]
+    },
+    {
+      "pick": "spore-borne",
+      "seed": "PRODUCTION-PAIR-247271",
+      "style": "Balanced",
+      "scorePercent": 1.8358427751366646,
+      "populationPercent": 2.1680754419863724,
+      "winChange": 0,
+      "outcomes": [
+        {
+          "seat": 0,
+          "scorePercent": 1.0638297872340496,
+          "populationPercent": 1.326412070055727,
+          "winChange": 0
+        },
+        {
+          "seat": 1,
+          "scorePercent": 2.6078557630392796,
+          "populationPercent": 3.009738813917018,
+          "winChange": 0
+        }
+      ]
+    },
+    {
+      "pick": "spore-borne",
+      "seed": "PRODUCTION-PAIR-255190",
+      "style": "Expansionist",
+      "scorePercent": 0.5298829412806851,
+      "populationPercent": -0.7841344137849147,
+      "winChange": 0,
+      "outcomes": [
+        {
+          "seat": 0,
+          "scorePercent": -7.108317214700188,
+          "populationPercent": -12.909068198850859,
+          "winChange": 0
+        },
+        {
+          "seat": 1,
+          "scorePercent": 8.168083097261558,
+          "populationPercent": 11.34079937128103,
+          "winChange": 0
+        }
+      ]
+    },
+    {
+      "pick": "spore-borne",
+      "seed": "PRODUCTION-PAIR-263109",
+      "style": "Scholar",
+      "scorePercent": 11.6825546770984,
+      "populationPercent": 16.496512965154572,
+      "winChange": 0,
+      "outcomes": [
+        {
+          "seat": 0,
+          "scorePercent": 18.923848609211124,
+          "populationPercent": 27.09479178358962,
+          "winChange": 0
+        },
+        {
+          "seat": 1,
+          "scorePercent": 4.441260744985676,
+          "populationPercent": 5.898234146719528,
+          "winChange": 0
+        }
+      ]
+    },
+    {
+      "pick": "spore-borne",
+      "seed": "PRODUCTION-PAIR-271028",
+      "style": "Militarist",
+      "scorePercent": -5.946695392457813,
+      "populationPercent": -12.751640483164516,
+      "winChange": 0,
+      "outcomes": [
+        {
+          "seat": 0,
+          "scorePercent": 0.8760951188986343,
+          "populationPercent": -0.6685768863419317,
+          "winChange": 0
+        },
+        {
+          "seat": 1,
+          "scorePercent": -12.76948590381426,
+          "populationPercent": -24.8347040799871,
+          "winChange": 0
+        }
+      ]
+    },
+    {
+      "pick": "spore-borne",
+      "seed": "PRODUCTION-PAIR-278947",
+      "style": "Trader",
+      "scorePercent": -5.01250435424645,
+      "populationPercent": 11.419512502213358,
+      "winChange": 0,
+      "outcomes": [
+        {
+          "seat": 0,
+          "scorePercent": -3.814262023217252,
+          "populationPercent": 17.018377343203326,
+          "winChange": 0
+        },
+        {
+          "seat": 1,
+          "scorePercent": -6.210746685275648,
+          "populationPercent": 5.820647661223388,
+          "winChange": 0
+        }
+      ]
+    },
+    {
+      "pick": "spore-borne",
+      "seed": "PRODUCTION-PAIR-286866",
+      "style": "Diplomat",
+      "scorePercent": -0.3650698889897386,
+      "populationPercent": 0,
+      "winChange": 0,
+      "outcomes": [
+        {
+          "seat": 0,
+          "scorePercent": 1.037165082108893,
+          "populationPercent": 0,
+          "winChange": 0
+        },
+        {
+          "seat": 1,
+          "scorePercent": -1.76730486008837,
+          "populationPercent": 0,
+          "winChange": 0
+        }
+      ]
+    },
+    {
+      "pick": "hive-mind",
+      "seed": "PRODUCTION-PAIR-104729",
+      "style": "Balanced",
+      "scorePercent": 28.276525591555913,
+      "populationPercent": 27.03230291202915,
+      "winChange": 0,
+      "outcomes": [
+        {
+          "seat": 0,
+          "scorePercent": 37.30017761989344,
+          "populationPercent": 37.94135866198638,
+          "winChange": 0
+        },
+        {
+          "seat": 1,
+          "scorePercent": 19.252873563218387,
+          "populationPercent": 16.12324716207192,
+          "winChange": 0
+        }
+      ]
+    },
+    {
+      "pick": "hive-mind",
+      "seed": "PRODUCTION-PAIR-112648",
+      "style": "Expansionist",
+      "scorePercent": 16.46590237778762,
+      "populationPercent": 32.471489788296395,
+      "winChange": 0.5,
+      "outcomes": [
+        {
+          "seat": 0,
+          "scorePercent": 5.848471422241919,
+          "populationPercent": 28.939260870171356,
+          "winChange": 0
+        },
+        {
+          "seat": 1,
+          "scorePercent": 27.083333333333325,
+          "populationPercent": 36.00371870642143,
+          "winChange": 1
+        }
+      ]
+    },
+    {
+      "pick": "hive-mind",
+      "seed": "PRODUCTION-PAIR-120567",
+      "style": "Scholar",
+      "scorePercent": 6.856144297593698,
+      "populationPercent": 3.6919496551677367,
+      "winChange": 0,
+      "outcomes": [
+        {
+          "seat": 0,
+          "scorePercent": 16.36363636363636,
+          "populationPercent": 14.726507713884995,
+          "winChange": 0
+        },
+        {
+          "seat": 1,
+          "scorePercent": -2.651347768448964,
+          "populationPercent": -7.342608403549522,
+          "winChange": 0
+        }
+      ]
+    },
+    {
+      "pick": "hive-mind",
+      "seed": "PRODUCTION-PAIR-128486",
+      "style": "Militarist",
+      "scorePercent": 33.30087534342854,
+      "populationPercent": 34.0649077749241,
+      "winChange": 0,
+      "outcomes": [
+        {
+          "seat": 0,
+          "scorePercent": 60.59574468085107,
+          "populationPercent": 68.1298155498482,
+          "winChange": 0
+        },
+        {
+          "seat": 1,
+          "scorePercent": 6.006006006006004,
+          "populationPercent": 0,
+          "winChange": 0
+        }
+      ]
+    },
+    {
+      "pick": "hive-mind",
+      "seed": "PRODUCTION-PAIR-136405",
+      "style": "Trader",
+      "scorePercent": 10.522053536368315,
+      "populationPercent": 0,
+      "winChange": 0,
+      "outcomes": [
+        {
+          "seat": 0,
+          "scorePercent": 12.91828793774319,
+          "populationPercent": 0,
+          "winChange": 0
+        },
+        {
+          "seat": 1,
+          "scorePercent": 8.125819134993439,
+          "populationPercent": 0,
+          "winChange": 0
+        }
+      ]
+    },
+    {
+      "pick": "hive-mind",
+      "seed": "PRODUCTION-PAIR-144324",
+      "style": "Diplomat",
+      "scorePercent": 17.560790974796383,
+      "populationPercent": 6.358753530582955,
+      "winChange": 0,
+      "outcomes": [
+        {
+          "seat": 0,
+          "scorePercent": 18.445772843723308,
+          "populationPercent": -3.514376996805113,
+          "winChange": 0
+        },
+        {
+          "seat": 1,
+          "scorePercent": 16.675809105869455,
+          "populationPercent": 16.231884057971023,
+          "winChange": 0
+        }
+      ]
+    },
+    {
+      "pick": "hive-mind",
+      "seed": "PRODUCTION-PAIR-152243",
+      "style": "Balanced",
+      "scorePercent": 25.334652978224714,
+      "populationPercent": 20.523190632396314,
+      "winChange": 0,
+      "outcomes": [
+        {
+          "seat": 0,
+          "scorePercent": 2.7824620573355885,
+          "populationPercent": 0,
+          "winChange": 0
+        },
+        {
+          "seat": 1,
+          "scorePercent": 47.88684389911384,
+          "populationPercent": 41.04638126479263,
+          "winChange": 0
+        }
+      ]
+    },
+    {
+      "pick": "hive-mind",
+      "seed": "PRODUCTION-PAIR-160162",
+      "style": "Expansionist",
+      "scorePercent": -11.84756402619645,
+      "populationPercent": -20.00521648408973,
+      "winChange": 0.5,
+      "outcomes": [
+        {
+          "seat": 0,
+          "scorePercent": 3.3271719038816983,
+          "populationPercent": 0,
+          "winChange": 1
+        },
+        {
+          "seat": 1,
+          "scorePercent": -27.022299956274598,
+          "populationPercent": -40.01043296817946,
+          "winChange": 0
+        }
+      ]
+    },
+    {
+      "pick": "hive-mind",
+      "seed": "PRODUCTION-PAIR-168081",
+      "style": "Scholar",
+      "scorePercent": 19.88302414505951,
+      "populationPercent": 26.386786960185038,
+      "winChange": 0,
+      "outcomes": [
+        {
+          "seat": 0,
+          "scorePercent": 2.577319587628857,
+          "populationPercent": -0.4887096299349247,
+          "winChange": 0
+        },
+        {
+          "seat": 1,
+          "scorePercent": 37.18872870249017,
+          "populationPercent": 53.262283550305,
+          "winChange": 0
+        }
+      ]
+    },
+    {
+      "pick": "hive-mind",
+      "seed": "PRODUCTION-PAIR-176000",
+      "style": "Militarist",
+      "scorePercent": 3.8774872747787184,
+      "populationPercent": -1.9780555372018118,
+      "winChange": 0,
+      "outcomes": [
+        {
+          "seat": 0,
+          "scorePercent": 13.501483679525217,
+          "populationPercent": 3.5885167464114742,
+          "winChange": 0
+        },
+        {
+          "seat": 1,
+          "scorePercent": -5.74650912996778,
+          "populationPercent": -7.544627820815098,
+          "winChange": 0
+        }
+      ]
+    },
+    {
+      "pick": "hive-mind",
+      "seed": "PRODUCTION-PAIR-183919",
+      "style": "Trader",
+      "scorePercent": 38.49315889236455,
+      "populationPercent": 43.90567535830482,
+      "winChange": 0,
+      "outcomes": [
+        {
+          "seat": 0,
+          "scorePercent": 61.854996734160686,
+          "populationPercent": 79.9878854307883,
+          "winChange": 0
+        },
+        {
+          "seat": 1,
+          "scorePercent": 15.131321050568403,
+          "populationPercent": 7.8234652858213405,
+          "winChange": 0
+        }
+      ]
+    },
+    {
+      "pick": "hive-mind",
+      "seed": "PRODUCTION-PAIR-191838",
+      "style": "Diplomat",
+      "scorePercent": 128.11320920802942,
+      "populationPercent": 189.32224002002874,
+      "winChange": 0.5,
+      "outcomes": [
+        {
+          "seat": 0,
+          "scorePercent": 224.36079545454547,
+          "populationPercent": 363.2645914396888,
+          "winChange": 1
+        },
+        {
+          "seat": 1,
+          "scorePercent": 31.865622961513363,
+          "populationPercent": 15.379888600368696,
+          "winChange": 0
+        }
+      ]
+    },
+    {
+      "pick": "hive-mind",
+      "seed": "PRODUCTION-PAIR-199757",
+      "style": "Balanced",
+      "scorePercent": 17.706359158662245,
+      "populationPercent": 17.772417562561326,
+      "winChange": 0,
+      "outcomes": [
+        {
+          "seat": 0,
+          "scorePercent": 14.247669773635163,
+          "populationPercent": 20.27671755725191,
+          "winChange": 0
+        },
+        {
+          "seat": 1,
+          "scorePercent": 21.165048543689323,
+          "populationPercent": 15.268117567870743,
+          "winChange": 0
+        }
+      ]
+    },
+    {
+      "pick": "hive-mind",
+      "seed": "PRODUCTION-PAIR-207676",
+      "style": "Expansionist",
+      "scorePercent": 10.75137017507216,
+      "populationPercent": 11.213952702215003,
+      "winChange": 0,
+      "outcomes": [
+        {
+          "seat": 0,
+          "scorePercent": 8.34160873882821,
+          "populationPercent": 3.0183990058925136,
+          "winChange": 0
+        },
+        {
+          "seat": 1,
+          "scorePercent": 13.161131611316112,
+          "populationPercent": 19.40950639853749,
+          "winChange": 0
+        }
+      ]
+    },
+    {
+      "pick": "hive-mind",
+      "seed": "PRODUCTION-PAIR-215595",
+      "style": "Scholar",
+      "scorePercent": 13.25749233401664,
+      "populationPercent": 17.36398243788076,
+      "winChange": 0,
+      "outcomes": [
+        {
+          "seat": 0,
+          "scorePercent": -12.788497919031405,
+          "populationPercent": -19.470817120622563,
+          "winChange": 0
+        },
+        {
+          "seat": 1,
+          "scorePercent": 39.303482587064686,
+          "populationPercent": 54.198781996384085,
+          "winChange": 0
+        }
+      ]
+    },
+    {
+      "pick": "hive-mind",
+      "seed": "PRODUCTION-PAIR-223514",
+      "style": "Militarist",
+      "scorePercent": 8.69493476524832,
+      "populationPercent": 4.537072936000553,
+      "winChange": 0.5,
+      "outcomes": [
+        {
+          "seat": 0,
+          "scorePercent": 0.6469002695417725,
+          "populationPercent": -3.7258541279988844,
+          "winChange": 0
+        },
+        {
+          "seat": 1,
+          "scorePercent": 16.742969260954865,
+          "populationPercent": 12.79999999999999,
+          "winChange": 1
+        }
+      ]
+    },
+    {
+      "pick": "hive-mind",
+      "seed": "PRODUCTION-PAIR-231433",
+      "style": "Trader",
+      "scorePercent": 37.704913731014386,
+      "populationPercent": 31.692349008963006,
+      "winChange": 0.5,
+      "outcomes": [
+        {
+          "seat": 0,
+          "scorePercent": 42.139595564253106,
+          "populationPercent": 35.689194885485456,
+          "winChange": 1
+        },
+        {
+          "seat": 1,
+          "scorePercent": 33.27023189777567,
+          "populationPercent": 27.695503132440557,
+          "winChange": 0
+        }
+      ]
+    },
+    {
+      "pick": "hive-mind",
+      "seed": "PRODUCTION-PAIR-239352",
+      "style": "Diplomat",
+      "scorePercent": 22.92214520099486,
+      "populationPercent": 11.532819100065872,
+      "winChange": 0.5,
+      "outcomes": [
+        {
+          "seat": 0,
+          "scorePercent": 21.368765926465237,
+          "populationPercent": 6.160422428966572,
+          "winChange": 1
+        },
+        {
+          "seat": 1,
+          "scorePercent": 24.47552447552448,
+          "populationPercent": 16.90521577116517,
+          "winChange": 0
+        }
+      ]
+    },
+    {
+      "pick": "hive-mind",
+      "seed": "PRODUCTION-PAIR-247271",
+      "style": "Balanced",
+      "scorePercent": 25.382828019892866,
+      "populationPercent": 23.68939457553949,
+      "winChange": 0,
+      "outcomes": [
+        {
+          "seat": 0,
+          "scorePercent": 21.53191489361703,
+          "populationPercent": 17.575695189918108,
+          "winChange": 0
+        },
+        {
+          "seat": 1,
+          "scorePercent": 29.2337411461687,
+          "populationPercent": 29.803093961160876,
+          "winChange": 0
+        }
+      ]
+    },
+    {
+      "pick": "hive-mind",
+      "seed": "PRODUCTION-PAIR-255190",
+      "style": "Expansionist",
+      "scorePercent": 26.04195776096203,
+      "populationPercent": 46.54017722856393,
+      "winChange": 0.5,
+      "outcomes": [
+        {
+          "seat": 0,
+          "scorePercent": 24.274661508704053,
+          "populationPercent": 49.03353734698972,
+          "winChange": 1
+        },
+        {
+          "seat": 1,
+          "scorePercent": 27.80925401322001,
+          "populationPercent": 44.046817110138136,
+          "winChange": 0
+        }
+      ]
+    },
+    {
+      "pick": "hive-mind",
+      "seed": "PRODUCTION-PAIR-263109",
+      "style": "Scholar",
+      "scorePercent": 34.65098640242397,
+      "populationPercent": 37.95271744933362,
+      "winChange": 0.5,
+      "outcomes": [
+        {
+          "seat": 0,
+          "scorePercent": 40.21887824897401,
+          "populationPercent": 56.53271972162979,
+          "winChange": 0
+        },
+        {
+          "seat": 1,
+          "scorePercent": 29.083094555873924,
+          "populationPercent": 19.37271517703745,
+          "winChange": 1
+        }
+      ]
+    },
+    {
+      "pick": "hive-mind",
+      "seed": "PRODUCTION-PAIR-271028",
+      "style": "Militarist",
+      "scorePercent": 44.89743605709458,
+      "populationPercent": 68.99504146895615,
+      "winChange": 0.5,
+      "outcomes": [
+        {
+          "seat": 0,
+          "scorePercent": 45.68210262828536,
+          "populationPercent": 50.90735434574973,
+          "winChange": 0
+        },
+        {
+          "seat": 1,
+          "scorePercent": 44.11276948590381,
+          "populationPercent": 87.08272859216257,
+          "winChange": 1
+        }
+      ]
+    },
+    {
+      "pick": "hive-mind",
+      "seed": "PRODUCTION-PAIR-278947",
+      "style": "Trader",
+      "scorePercent": 32.361540749381724,
+      "populationPercent": 23.21681785399748,
+      "winChange": 0,
+      "outcomes": [
+        {
+          "seat": 0,
+          "scorePercent": 55.0580431177446,
+          "populationPercent": 57.91993518211618,
+          "winChange": 0
+        },
+        {
+          "seat": 1,
+          "scorePercent": 9.665038381018842,
+          "populationPercent": -11.48629947412122,
+          "winChange": 0
+        }
+      ]
+    },
+    {
+      "pick": "hive-mind",
+      "seed": "PRODUCTION-PAIR-286866",
+      "style": "Diplomat",
+      "scorePercent": 17.332970130375436,
+      "populationPercent": 6.661949049737159,
+      "winChange": 0,
+      "outcomes": [
+        {
+          "seat": 0,
+          "scorePercent": 15.471045808124462,
+          "populationPercent": 0,
+          "winChange": 0
+        },
+        {
+          "seat": 1,
+          "scorePercent": 19.19489445262641,
+          "populationPercent": 13.323898099474318,
+          "winChange": 0
+        }
+      ]
+    },
+    {
+      "pick": "terraformers",
+      "seed": "PRODUCTION-PAIR-104729",
+      "style": "Balanced",
+      "scorePercent": 5.489424470713134,
+      "populationPercent": 4.426213870075357,
+      "winChange": 0,
+      "outcomes": [
+        {
+          "seat": 0,
+          "scorePercent": 2.4156305506216613,
+          "populationPercent": 0,
+          "winChange": 0
+        },
+        {
+          "seat": 1,
+          "scorePercent": 8.563218390804606,
+          "populationPercent": 8.852427740150715,
+          "winChange": 0
+        }
+      ]
+    },
+    {
+      "pick": "terraformers",
+      "seed": "PRODUCTION-PAIR-112648",
+      "style": "Expansionist",
+      "scorePercent": 7.078150183326592,
+      "populationPercent": 13.941418115331073,
+      "winChange": 0.5,
+      "outcomes": [
+        {
+          "seat": 0,
+          "scorePercent": 9.038546743464781,
+          "populationPercent": 18.73614654343192,
+          "winChange": 0
+        },
+        {
+          "seat": 1,
+          "scorePercent": 5.1177536231884035,
+          "populationPercent": 9.146689687230225,
+          "winChange": 1
+        }
+      ]
+    },
+    {
+      "pick": "terraformers",
+      "seed": "PRODUCTION-PAIR-120567",
+      "style": "Scholar",
+      "scorePercent": 3.4701005150529207,
+      "populationPercent": 2.2961397419029805,
+      "winChange": 0,
+      "outcomes": [
+        {
+          "seat": 0,
+          "scorePercent": 3.360881542699734,
+          "populationPercent": 0,
+          "winChange": 0
+        },
+        {
+          "seat": 1,
+          "scorePercent": 3.5793194874061074,
+          "populationPercent": 4.592279483805961,
+          "winChange": 0
+        }
+      ]
+    },
+    {
+      "pick": "terraformers",
+      "seed": "PRODUCTION-PAIR-128486",
+      "style": "Militarist",
+      "scorePercent": 4.276595744680856,
+      "populationPercent": 8.930656082185385,
+      "winChange": 0,
+      "outcomes": [
+        {
+          "seat": 0,
+          "scorePercent": 8.553191489361712,
+          "populationPercent": 17.86131216437077,
+          "winChange": 0
+        },
+        {
+          "seat": 1,
+          "scorePercent": 0,
+          "populationPercent": 0,
+          "winChange": 0
+        }
+      ]
+    },
+    {
+      "pick": "terraformers",
+      "seed": "PRODUCTION-PAIR-136405",
+      "style": "Trader",
+      "scorePercent": 5.149496917247609,
+      "populationPercent": 0,
+      "winChange": 0,
+      "outcomes": [
+        {
+          "seat": 0,
+          "scorePercent": 10.233463035019463,
+          "populationPercent": 0,
+          "winChange": 0
+        },
+        {
+          "seat": 1,
+          "scorePercent": 0.0655307994757548,
+          "populationPercent": 0,
+          "winChange": 0
+        }
+      ]
+    },
+    {
+      "pick": "terraformers",
+      "seed": "PRODUCTION-PAIR-144324",
+      "style": "Diplomat",
+      "scorePercent": 7.988727395885098,
+      "populationPercent": 6.48260869565217,
+      "winChange": 0,
+      "outcomes": [
+        {
+          "seat": 0,
+          "scorePercent": 10.93082835183603,
+          "populationPercent": 0,
+          "winChange": 0
+        },
+        {
+          "seat": 1,
+          "scorePercent": 5.046626439934165,
+          "populationPercent": 12.96521739130434,
+          "winChange": 0
+        }
+      ]
+    },
+    {
+      "pick": "terraformers",
+      "seed": "PRODUCTION-PAIR-152243",
+      "style": "Balanced",
+      "scorePercent": 6.442723618309953,
+      "populationPercent": 6.653240875306232,
+      "winChange": 0,
+      "outcomes": [
+        {
+          "seat": 0,
+          "scorePercent": 3.0354131534569895,
+          "populationPercent": 0,
+          "winChange": 0
+        },
+        {
+          "seat": 1,
+          "scorePercent": 9.850034083162917,
+          "populationPercent": 13.306481750612464,
+          "winChange": 0
+        }
+      ]
+    },
+    {
+      "pick": "terraformers",
+      "seed": "PRODUCTION-PAIR-160162",
+      "style": "Expansionist",
+      "scorePercent": 3.0478735255473066,
+      "populationPercent": 4.260563380281679,
+      "winChange": 0,
+      "outcomes": [
+        {
+          "seat": 0,
+          "scorePercent": 1.4171287738755423,
+          "populationPercent": 0,
+          "winChange": 0
+        },
+        {
+          "seat": 1,
+          "scorePercent": 4.678618277219071,
+          "populationPercent": 8.521126760563359,
+          "winChange": 0
+        }
+      ]
+    },
+    {
+      "pick": "terraformers",
+      "seed": "PRODUCTION-PAIR-168081",
+      "style": "Scholar",
+      "scorePercent": 0.707112333424631,
+      "populationPercent": 1.255095059598954,
+      "winChange": 0,
+      "outcomes": [
+        {
+          "seat": 0,
+          "scorePercent": 0.5623242736644718,
+          "populationPercent": 0,
+          "winChange": 0
+        },
+        {
+          "seat": 1,
+          "scorePercent": 0.8519003931847902,
+          "populationPercent": 2.510190119197908,
+          "winChange": 0
+        }
+      ]
+    },
+    {
+      "pick": "terraformers",
+      "seed": "PRODUCTION-PAIR-176000",
+      "style": "Militarist",
+      "scorePercent": 2.2958386853101365,
+      "populationPercent": 1.7942583732057371,
+      "winChange": 0,
+      "outcomes": [
+        {
+          "seat": 0,
+          "scorePercent": 4.376854599406532,
+          "populationPercent": 3.5885167464114742,
+          "winChange": 0
+        },
+        {
+          "seat": 1,
+          "scorePercent": 0.21482277121374072,
+          "populationPercent": 0,
+          "winChange": 0
+        }
+      ]
+    },
+    {
+      "pick": "terraformers",
+      "seed": "PRODUCTION-PAIR-183919",
+      "style": "Trader",
+      "scorePercent": 12.808862497026697,
+      "populationPercent": 26.667990378284525,
+      "winChange": 0,
+      "outcomes": [
+        {
+          "seat": 0,
+          "scorePercent": 23.775310254735473,
+          "populationPercent": 51.50999451959966,
+          "winChange": 0
+        },
+        {
+          "seat": 1,
+          "scorePercent": 1.8424147393179213,
+          "populationPercent": 1.8259862369693902,
+          "winChange": 0
+        }
+      ]
+    },
+    {
+      "pick": "terraformers",
+      "seed": "PRODUCTION-PAIR-191838",
+      "style": "Diplomat",
+      "scorePercent": 4.011116238213841,
+      "populationPercent": 1.7250094154492635,
+      "winChange": 0,
+      "outcomes": [
+        {
+          "seat": 0,
+          "scorePercent": 5.184659090909083,
+          "populationPercent": 0,
+          "winChange": 0
+        },
+        {
+          "seat": 1,
+          "scorePercent": 2.837573385518599,
+          "populationPercent": 3.450018830898527,
+          "winChange": 0
+        }
+      ]
+    },
+    {
+      "pick": "terraformers",
+      "seed": "PRODUCTION-PAIR-199757",
+      "style": "Balanced",
+      "scorePercent": 10.885227463705348,
+      "populationPercent": 16.42201370346328,
+      "winChange": 0,
+      "outcomes": [
+        {
+          "seat": 0,
+          "scorePercent": 12.450066577896134,
+          "populationPercent": 20.27671755725191,
+          "winChange": 0
+        },
+        {
+          "seat": 1,
+          "scorePercent": 9.320388349514563,
+          "populationPercent": 12.567309849674647,
+          "winChange": 0
+        }
+      ]
+    },
+    {
+      "pick": "terraformers",
+      "seed": "PRODUCTION-PAIR-207676",
+      "style": "Expansionist",
+      "scorePercent": 2.9734967160992443,
+      "populationPercent": 2.394409481433979,
+      "winChange": 0,
+      "outcomes": [
+        {
+          "seat": 0,
+          "scorePercent": 4.716981132075482,
+          "populationPercent": 4.788818962867958,
+          "winChange": 0
+        },
+        {
+          "seat": 1,
+          "scorePercent": 1.2300123001230068,
+          "populationPercent": 0,
+          "winChange": 0
+        }
+      ]
+    },
+    {
+      "pick": "terraformers",
+      "seed": "PRODUCTION-PAIR-215595",
+      "style": "Scholar",
+      "scorePercent": 2.3575571147021472,
+      "populationPercent": 3.254177538393078,
+      "winChange": 0,
+      "outcomes": [
+        {
+          "seat": 0,
+          "scorePercent": -5.448354143019296,
+          "populationPercent": -9.987029831387794,
+          "winChange": 0
+        },
+        {
+          "seat": 1,
+          "scorePercent": 10.16346837242359,
+          "populationPercent": 16.49538490817395,
+          "winChange": 0
+        }
+      ]
+    },
+    {
+      "pick": "terraformers",
+      "seed": "PRODUCTION-PAIR-223514",
+      "style": "Militarist",
+      "scorePercent": 5.565993664269753,
+      "populationPercent": 14.728177631126695,
+      "winChange": 0,
+      "outcomes": [
+        {
+          "seat": 0,
+          "scorePercent": 6.684636118598375,
+          "populationPercent": 16.6563552622534,
+          "winChange": 0
+        },
+        {
+          "seat": 1,
+          "scorePercent": 4.4473512099411305,
+          "populationPercent": 12.79999999999999,
+          "winChange": 0
+        }
+      ]
+    },
+    {
+      "pick": "terraformers",
+      "seed": "PRODUCTION-PAIR-231433",
+      "style": "Trader",
+      "scorePercent": 8.51869380028396,
+      "populationPercent": 6.126412131241654,
+      "winChange": 0,
+      "outcomes": [
+        {
+          "seat": 0,
+          "scorePercent": 0,
+          "populationPercent": 0,
+          "winChange": 0
+        },
+        {
+          "seat": 1,
+          "scorePercent": 17.03738760056792,
+          "populationPercent": 12.252824262483308,
+          "winChange": 0
+        }
+      ]
+    },
+    {
+      "pick": "terraformers",
+      "seed": "PRODUCTION-PAIR-239352",
+      "style": "Diplomat",
+      "scorePercent": 8.880386417037966,
+      "populationPercent": 4.827751900005772,
+      "winChange": 0,
+      "outcomes": [
+        {
+          "seat": 0,
+          "scorePercent": 4.9508554787040415,
+          "populationPercent": 0.7543374402816383,
+          "winChange": 0
+        },
+        {
+          "seat": 1,
+          "scorePercent": 12.80991735537189,
+          "populationPercent": 8.901166359729906,
+          "winChange": 0
+        }
+      ]
+    },
+    {
+      "pick": "terraformers",
+      "seed": "PRODUCTION-PAIR-247271",
+      "style": "Balanced",
+      "scorePercent": 3.9586387362825604,
+      "populationPercent": 5.980830771227986,
+      "winChange": 0,
+      "outcomes": [
+        {
+          "seat": 0,
+          "scorePercent": 2.76595744680852,
+          "populationPercent": 1.326412070055727,
+          "winChange": 0
+        },
+        {
+          "seat": 1,
+          "scorePercent": 5.1513200257566005,
+          "populationPercent": 10.635249472400243,
+          "winChange": 0
+        }
+      ]
+    },
+    {
+      "pick": "terraformers",
+      "seed": "PRODUCTION-PAIR-255190",
+      "style": "Expansionist",
+      "scorePercent": 3.6006880327596362,
+      "populationPercent": 7.611752171612857,
+      "winChange": 0,
+      "outcomes": [
+        {
+          "seat": 0,
+          "scorePercent": -2.949709864603478,
+          "populationPercent": -8.259430427179614,
+          "winChange": 0
+        },
+        {
+          "seat": 1,
+          "scorePercent": 10.15108593012275,
+          "populationPercent": 23.48293477040533,
+          "winChange": 0
+        }
+      ]
+    },
+    {
+      "pick": "terraformers",
+      "seed": "PRODUCTION-PAIR-263109",
+      "style": "Scholar",
+      "scorePercent": 5.734872745659869,
+      "populationPercent": 4.551776508484018,
+      "winChange": 0.5,
+      "outcomes": [
+        {
+          "seat": 0,
+          "scorePercent": 5.882352941176472,
+          "populationPercent": 6.405039847345373,
+          "winChange": 0
+        },
+        {
+          "seat": 1,
+          "scorePercent": 5.587392550143266,
+          "populationPercent": 2.6985131696226627,
+          "winChange": 1
+        }
+      ]
+    },
+    {
+      "pick": "terraformers",
+      "seed": "PRODUCTION-PAIR-271028",
+      "style": "Militarist",
+      "scorePercent": 3.592073010002139,
+      "populationPercent": 10.788203584873314,
+      "winChange": 0,
+      "outcomes": [
+        {
+          "seat": 0,
+          "scorePercent": 1.8773466833541974,
+          "populationPercent": 3.514804202483268,
+          "winChange": 0
+        },
+        {
+          "seat": 1,
+          "scorePercent": 5.306799336650081,
+          "populationPercent": 18.061602967263358,
+          "winChange": 0
+        }
+      ]
+    },
+    {
+      "pick": "terraformers",
+      "seed": "PRODUCTION-PAIR-278947",
+      "style": "Trader",
+      "scorePercent": 2.505991790292544,
+      "populationPercent": 3.2555021906442434,
+      "winChange": 0,
+      "outcomes": [
+        {
+          "seat": 0,
+          "scorePercent": 15.339966832504137,
+          "populationPercent": 27.352410415055427,
+          "winChange": 0
+        },
+        {
+          "seat": 1,
+          "scorePercent": -10.327983251919049,
+          "populationPercent": -20.84140603376694,
+          "winChange": 0
+        }
+      ]
+    },
+    {
+      "pick": "terraformers",
+      "seed": "PRODUCTION-PAIR-286866",
+      "style": "Diplomat",
+      "scorePercent": 9.116967051636337,
+      "populationPercent": 1.976344520824902,
+      "winChange": 0,
+      "outcomes": [
+        {
+          "seat": 0,
+          "scorePercent": 9.593777009507342,
+          "populationPercent": 0,
+          "winChange": 0
+        },
+        {
+          "seat": 1,
+          "scorePercent": 8.640157093765332,
+          "populationPercent": 3.952689041649804,
+          "winChange": 0
+        }
+      ]
+    },
+    {
+      "pick": "genetic-plasticity",
+      "seed": "PRODUCTION-PAIR-104729",
+      "style": "Balanced",
+      "scorePercent": 6.836630530205589,
+      "populationPercent": 11.912745115052005,
+      "winChange": 0,
+      "outcomes": [
+        {
+          "seat": 0,
+          "scorePercent": 6.891651865008885,
+          "populationPercent": 6.628123064216385,
+          "winChange": 0
+        },
+        {
+          "seat": 1,
+          "scorePercent": 6.781609195402294,
+          "populationPercent": 17.197367165887623,
+          "winChange": 0
+        }
+      ]
+    },
+    {
+      "pick": "genetic-plasticity",
+      "seed": "PRODUCTION-PAIR-112648",
+      "style": "Expansionist",
+      "scorePercent": 11.516676378802183,
+      "populationPercent": 16.388804484580856,
+      "winChange": 0.5,
+      "outcomes": [
+        {
+          "seat": 0,
+          "scorePercent": 17.190961453256538,
+          "populationPercent": 30.626071682489275,
+          "winChange": 0
+        },
+        {
+          "seat": 1,
+          "scorePercent": 5.842391304347827,
+          "populationPercent": 2.1515372866724336,
+          "winChange": 1
+        }
+      ]
+    },
+    {
+      "pick": "genetic-plasticity",
+      "seed": "PRODUCTION-PAIR-120567",
+      "style": "Scholar",
+      "scorePercent": -9.934276278228394,
+      "populationPercent": -13.183680657375424,
+      "winChange": 0,
+      "outcomes": [
+        {
+          "seat": 0,
+          "scorePercent": -19.55922865013774,
+          "populationPercent": -24.263674614305753,
+          "winChange": 0
+        },
+        {
+          "seat": 1,
+          "scorePercent": -0.3093239063190478,
+          "populationPercent": -2.1036867004450954,
+          "winChange": 0
+        }
+      ]
+    },
+    {
+      "pick": "genetic-plasticity",
+      "seed": "PRODUCTION-PAIR-128486",
+      "style": "Militarist",
+      "scorePercent": 10.787234042553195,
+      "populationPercent": 15.791501284146614,
+      "winChange": 0,
+      "outcomes": [
+        {
+          "seat": 0,
+          "scorePercent": 21.57446808510639,
+          "populationPercent": 31.583002568293228,
+          "winChange": 0
+        },
+        {
+          "seat": 1,
+          "scorePercent": 0,
+          "populationPercent": 0,
+          "winChange": 0
+        }
+      ]
+    },
+    {
+      "pick": "genetic-plasticity",
+      "seed": "PRODUCTION-PAIR-136405",
+      "style": "Trader",
+      "scorePercent": 11.225323956734378,
+      "populationPercent": 22.25150698986792,
+      "winChange": 0,
+      "outcomes": [
+        {
+          "seat": 0,
+          "scorePercent": 5.019455252918292,
+          "populationPercent": 3.913043478260869,
+          "winChange": 0
+        },
+        {
+          "seat": 1,
+          "scorePercent": 17.431192660550465,
+          "populationPercent": 40.58997050147497,
+          "winChange": 0
+        }
+      ]
+    },
+    {
+      "pick": "genetic-plasticity",
+      "seed": "PRODUCTION-PAIR-144324",
+      "style": "Diplomat",
+      "scorePercent": 7.437663164433206,
+      "populationPercent": 8.44524702504978,
+      "winChange": 0,
+      "outcomes": [
+        {
+          "seat": 0,
+          "scorePercent": -3.1169940222032455,
+          "populationPercent": -7.399361022364214,
+          "winChange": 0
+        },
+        {
+          "seat": 1,
+          "scorePercent": 17.992320351069658,
+          "populationPercent": 24.289855072463773,
+          "winChange": 0
+        }
+      ]
+    },
+    {
+      "pick": "genetic-plasticity",
+      "seed": "PRODUCTION-PAIR-152243",
+      "style": "Balanced",
+      "scorePercent": -0.7944882984972366,
+      "populationPercent": -0.9299100991131954,
+      "winChange": 0,
+      "outcomes": [
+        {
+          "seat": 0,
+          "scorePercent": 5.227655986509272,
+          "populationPercent": 9.98338870431894,
+          "winChange": 0
+        },
+        {
+          "seat": 1,
+          "scorePercent": -6.816632583503745,
+          "populationPercent": -11.843208902545332,
+          "winChange": 0
+        }
+      ]
+    },
+    {
+      "pick": "genetic-plasticity",
+      "seed": "PRODUCTION-PAIR-160162",
+      "style": "Expansionist",
+      "scorePercent": 2.001481221649537,
+      "populationPercent": 3.7170781893004157,
+      "winChange": 0,
+      "outcomes": [
+        {
+          "seat": 0,
+          "scorePercent": 5.0523721503388686,
+          "populationPercent": 7.434156378600831,
+          "winChange": 0
+        },
+        {
+          "seat": 1,
+          "scorePercent": -1.0494097070397945,
+          "populationPercent": 0,
+          "winChange": 0
+        }
+      ]
+    },
+    {
+      "pick": "genetic-plasticity",
+      "seed": "PRODUCTION-PAIR-168081",
+      "style": "Scholar",
+      "scorePercent": 5.152136476027514,
+      "populationPercent": 3.8602381378273654,
+      "winChange": 0,
+      "outcomes": [
+        {
+          "seat": 0,
+          "scorePercent": 1.6869728209934376,
+          "populationPercent": -0.20902640798421412,
+          "winChange": 0
+        },
+        {
+          "seat": 1,
+          "scorePercent": 8.61730013106159,
+          "populationPercent": 7.929502683638945,
+          "winChange": 0
+        }
+      ]
+    },
+    {
+      "pick": "genetic-plasticity",
+      "seed": "PRODUCTION-PAIR-176000",
+      "style": "Militarist",
+      "scorePercent": 5.978144810946395,
+      "populationPercent": 9.845073736424702,
+      "winChange": 0,
+      "outcomes": [
+        {
+          "seat": 0,
+          "scorePercent": 1.4836795252225476,
+          "populationPercent": 8.373205741626787,
+          "winChange": 0
+        },
+        {
+          "seat": 1,
+          "scorePercent": 10.472610096670243,
+          "populationPercent": 11.316941731222618,
+          "winChange": 0
+        }
+      ]
+    },
+    {
+      "pick": "genetic-plasticity",
+      "seed": "PRODUCTION-PAIR-183919",
+      "style": "Trader",
+      "scorePercent": 15.98832542456551,
+      "populationPercent": 17.057523571408034,
+      "winChange": 0,
+      "outcomes": [
+        {
+          "seat": 0,
+          "scorePercent": 41.34552580013062,
+          "populationPercent": 48.6428798061669,
+          "winChange": 0
+        },
+        {
+          "seat": 1,
+          "scorePercent": -9.368874950999606,
+          "populationPercent": -14.527832663350837,
+          "winChange": 0
+        }
+      ]
+    },
+    {
+      "pick": "genetic-plasticity",
+      "seed": "PRODUCTION-PAIR-191838",
+      "style": "Diplomat",
+      "scorePercent": 55.203399269109894,
+      "populationPercent": 93.08512275717366,
+      "winChange": 0,
+      "outcomes": [
+        {
+          "seat": 0,
+          "scorePercent": 112.4289772727273,
+          "populationPercent": 198.84046692607006,
+          "winChange": 0
+        },
+        {
+          "seat": 1,
+          "scorePercent": -2.022178734507507,
+          "populationPercent": -12.670221411722748,
+          "winChange": 0
+        }
+      ]
+    },
+    {
+      "pick": "genetic-plasticity",
+      "seed": "PRODUCTION-PAIR-199757",
+      "style": "Balanced",
+      "scorePercent": -3.1892428218685818,
+      "populationPercent": -7.538703163562937,
+      "winChange": 0,
+      "outcomes": [
+        {
+          "seat": 0,
+          "scorePercent": 2.796271637816239,
+          "populationPercent": 0,
+          "winChange": 0
+        },
+        {
+          "seat": 1,
+          "scorePercent": -9.174757281553402,
+          "populationPercent": -15.077406327125875,
+          "winChange": 0
+        }
+      ]
+    },
+    {
+      "pick": "genetic-plasticity",
+      "seed": "PRODUCTION-PAIR-207676",
+      "style": "Expansionist",
+      "scorePercent": 5.725236994177296,
+      "populationPercent": 8.024807692857305,
+      "winChange": 0,
+      "outcomes": [
+        {
+          "seat": 0,
+          "scorePercent": 6.653426017874886,
+          "populationPercent": 8.42987132721371,
+          "winChange": 0
+        },
+        {
+          "seat": 1,
+          "scorePercent": 4.797047970479706,
+          "populationPercent": 7.619744058500899,
+          "winChange": 0
+        }
+      ]
+    },
+    {
+      "pick": "genetic-plasticity",
+      "seed": "PRODUCTION-PAIR-215595",
+      "style": "Scholar",
+      "scorePercent": 5.069834869756934,
+      "populationPercent": 4.98245805985087,
+      "winChange": 0,
+      "outcomes": [
+        {
+          "seat": 0,
+          "scorePercent": -5.069996216420735,
+          "populationPercent": -9.987029831387794,
+          "winChange": 0
+        },
+        {
+          "seat": 1,
+          "scorePercent": 15.209665955934604,
+          "populationPercent": 19.951945951089535,
+          "winChange": 0
+        }
+      ]
+    },
+    {
+      "pick": "genetic-plasticity",
+      "seed": "PRODUCTION-PAIR-223514",
+      "style": "Militarist",
+      "scorePercent": -5.686749791541423,
+      "populationPercent": 3.933284231407562,
+      "winChange": 0,
+      "outcomes": [
+        {
+          "seat": 0,
+          "scorePercent": 7.33153638814017,
+          "populationPercent": 28.095139891386566,
+          "winChange": 0
+        },
+        {
+          "seat": 1,
+          "scorePercent": -18.705035971223015,
+          "populationPercent": -20.228571428571442,
+          "winChange": 0
+        }
+      ]
+    },
+    {
+      "pick": "genetic-plasticity",
+      "seed": "PRODUCTION-PAIR-231433",
+      "style": "Trader",
+      "scorePercent": 2.2333709657452463,
+      "populationPercent": 19.26317025548017,
+      "winChange": 0,
+      "outcomes": [
+        {
+          "seat": 0,
+          "scorePercent": -7.175472928897586,
+          "populationPercent": 4.201208374315013,
+          "winChange": 0
+        },
+        {
+          "seat": 1,
+          "scorePercent": 11.642214860388078,
+          "populationPercent": 34.32513213664532,
+          "winChange": 0
+        }
+      ]
+    },
+    {
+      "pick": "genetic-plasticity",
+      "seed": "PRODUCTION-PAIR-239352",
+      "style": "Diplomat",
+      "scorePercent": 8.288253428406321,
+      "populationPercent": 10.23266072356791,
+      "winChange": 0,
+      "outcomes": [
+        {
+          "seat": 0,
+          "scorePercent": 5.387695668001458,
+          "populationPercent": 7.689212974603965,
+          "winChange": 0
+        },
+        {
+          "seat": 1,
+          "scorePercent": 11.188811188811187,
+          "populationPercent": 12.776108472531856,
+          "winChange": 0
+        }
+      ]
+    },
+    {
+      "pick": "genetic-plasticity",
+      "seed": "PRODUCTION-PAIR-247271",
+      "style": "Balanced",
+      "scorePercent": 11.163732514967606,
+      "populationPercent": 22.359972892328738,
+      "winChange": 0,
+      "outcomes": [
+        {
+          "seat": 0,
+          "scorePercent": 15.276595744680854,
+          "populationPercent": 31.295678131847147,
+          "winChange": 0
+        },
+        {
+          "seat": 1,
+          "scorePercent": 7.0508692852543575,
+          "populationPercent": 13.424267652810329,
+          "winChange": 0
+        }
+      ]
+    },
+    {
+      "pick": "genetic-plasticity",
+      "seed": "PRODUCTION-PAIR-255190",
+      "style": "Expansionist",
+      "scorePercent": -5.499536075601407,
+      "populationPercent": -10.039384668723127,
+      "winChange": 0,
+      "outcomes": [
+        {
+          "seat": 0,
+          "scorePercent": 2.0793036750483607,
+          "populationPercent": 0.37003497376963956,
+          "winChange": 1
+        },
+        {
+          "seat": 1,
+          "scorePercent": -13.078375826251175,
+          "populationPercent": -20.448804311215895,
+          "winChange": -1
+        }
+      ]
+    },
+    {
+      "pick": "genetic-plasticity",
+      "seed": "PRODUCTION-PAIR-263109",
+      "style": "Scholar",
+      "scorePercent": 21.249985300977194,
+      "populationPercent": 19.24089958022779,
+      "winChange": 0.5,
+      "outcomes": [
+        {
+          "seat": 0,
+          "scorePercent": 19.243046055631563,
+          "populationPercent": 24.13149623975752,
+          "winChange": 0
+        },
+        {
+          "seat": 1,
+          "scorePercent": 23.25692454632282,
+          "populationPercent": 14.350302920698056,
+          "winChange": 1
+        }
+      ]
+    },
+    {
+      "pick": "genetic-plasticity",
+      "seed": "PRODUCTION-PAIR-271028",
+      "style": "Militarist",
+      "scorePercent": -12.445334860947659,
+      "populationPercent": -14.892250949449421,
+      "winChange": 0,
+      "outcomes": [
+        {
+          "seat": 0,
+          "scorePercent": -19.086357947434294,
+          "populationPercent": -13.658070678127999,
+          "winChange": 0
+        },
+        {
+          "seat": 1,
+          "scorePercent": -5.8043117744610235,
+          "populationPercent": -16.126431220770844,
+          "winChange": 0
+        }
+      ]
+    },
+    {
+      "pick": "genetic-plasticity",
+      "seed": "PRODUCTION-PAIR-278947",
+      "style": "Trader",
+      "scorePercent": 11.403380862609492,
+      "populationPercent": 21.41681856956618,
+      "winChange": 0,
+      "outcomes": [
+        {
+          "seat": 0,
+          "scorePercent": 22.388059701492537,
+          "populationPercent": 45.32464184436344,
+          "winChange": 0
+        },
+        {
+          "seat": 1,
+          "scorePercent": 0.41870202372644716,
+          "populationPercent": -2.4910047052310813,
+          "winChange": 0
+        }
+      ]
+    },
+    {
+      "pick": "genetic-plasticity",
+      "seed": "PRODUCTION-PAIR-286866",
+      "style": "Diplomat",
+      "scorePercent": 40.49956954509254,
+      "populationPercent": 70.89498359283749,
+      "winChange": 0.5,
+      "outcomes": [
+        {
+          "seat": 0,
+          "scorePercent": 81.24459809853069,
+          "populationPercent": 136.33101045296166,
+          "winChange": 1
+        },
+        {
+          "seat": 1,
+          "scorePercent": -0.2454590083456054,
+          "populationPercent": 5.458956732713305,
+          "winChange": 0
+        }
+      ]
+    },
+    {
+      "pick": "electrosense",
+      "seed": "PRODUCTION-PAIR-104729",
+      "style": "Balanced",
+      "scorePercent": 3.796165860231515,
+      "populationPercent": 0.2711848602446054,
+      "winChange": 0,
+      "outcomes": [
+        {
+          "seat": 0,
+          "scorePercent": 1.3854351687389022,
+          "populationPercent": -3.1798472021474233,
+          "winChange": 0
+        },
+        {
+          "seat": 1,
+          "scorePercent": 6.206896551724128,
+          "populationPercent": 3.722216922636634,
+          "winChange": 0
+        }
+      ]
+    },
+    {
+      "pick": "electrosense",
+      "seed": "PRODUCTION-PAIR-112648",
+      "style": "Expansionist",
+      "scorePercent": 3.545390989706742,
+      "populationPercent": 7.370453209832816,
+      "winChange": 0,
+      "outcomes": [
+        {
+          "seat": 0,
+          "scorePercent": -1.1519716437749183,
+          "populationPercent": 4.805319727322166,
+          "winChange": -1
+        },
+        {
+          "seat": 1,
+          "scorePercent": 8.242753623188403,
+          "populationPercent": 9.935586692343467,
+          "winChange": 1
+        }
+      ]
+    },
+    {
+      "pick": "electrosense",
+      "seed": "PRODUCTION-PAIR-120567",
+      "style": "Scholar",
+      "scorePercent": 0.9942554131683656,
+      "populationPercent": 0.24214091761609602,
+      "winChange": 0,
+      "outcomes": [
+        {
+          "seat": 0,
+          "scorePercent": 0,
+          "populationPercent": 0,
+          "winChange": 0
+        },
+        {
+          "seat": 1,
+          "scorePercent": 1.9885108263367313,
+          "populationPercent": 0.48428183523219204,
+          "winChange": 0
+        }
+      ]
+    },
+    {
+      "pick": "electrosense",
+      "seed": "PRODUCTION-PAIR-128486",
+      "style": "Militarist",
+      "scorePercent": 15.780525206057128,
+      "populationPercent": 16.48377305626896,
+      "winChange": 0,
+      "outcomes": [
+        {
+          "seat": 0,
+          "scorePercent": 27.957446808510646,
+          "populationPercent": 32.96754611253792,
+          "winChange": 0
+        },
+        {
+          "seat": 1,
+          "scorePercent": 3.603603603603611,
+          "populationPercent": 0,
+          "winChange": 0
+        }
+      ]
+    },
+    {
+      "pick": "electrosense",
+      "seed": "PRODUCTION-PAIR-136405",
+      "style": "Trader",
+      "scorePercent": 5.406418448577444,
+      "populationPercent": 6.456008721303053,
+      "winChange": 0,
+      "outcomes": [
+        {
+          "seat": 0,
+          "scorePercent": 6.22568093385214,
+          "populationPercent": 7.971014492753614,
+          "winChange": 0
+        },
+        {
+          "seat": 1,
+          "scorePercent": 4.587155963302747,
+          "populationPercent": 4.941002949852491,
+          "winChange": 0
+        }
+      ]
+    },
+    {
+      "pick": "electrosense",
+      "seed": "PRODUCTION-PAIR-144324",
+      "style": "Diplomat",
+      "scorePercent": 0.7844540745845063,
+      "populationPercent": 2.681159420289858,
+      "winChange": 0,
+      "outcomes": [
+        {
+          "seat": 0,
+          "scorePercent": 3.15969257045261,
+          "populationPercent": 0,
+          "winChange": 0
+        },
+        {
+          "seat": 1,
+          "scorePercent": -1.5907844212835975,
+          "populationPercent": 5.362318840579716,
+          "winChange": 0
+        }
+      ]
+    },
+    {
+      "pick": "electrosense",
+      "seed": "PRODUCTION-PAIR-152243",
+      "style": "Balanced",
+      "scorePercent": -6.49241146711636,
+      "populationPercent": 0,
+      "winChange": 0,
+      "outcomes": [
+        {
+          "seat": 0,
+          "scorePercent": -12.98482293423272,
+          "populationPercent": 0,
+          "winChange": 0
+        },
+        {
+          "seat": 1,
+          "scorePercent": 0,
+          "populationPercent": 0,
+          "winChange": 0
+        }
+      ]
+    },
+    {
+      "pick": "electrosense",
+      "seed": "PRODUCTION-PAIR-160162",
+      "style": "Expansionist",
+      "scorePercent": -0.44917548112088923,
+      "populationPercent": -0.018257694314033346,
+      "winChange": 0,
+      "outcomes": [
+        {
+          "seat": 0,
+          "scorePercent": 0.3696857670979714,
+          "populationPercent": 0,
+          "winChange": 0
+        },
+        {
+          "seat": 1,
+          "scorePercent": -1.2680367293397499,
+          "populationPercent": -0.03651538862806669,
+          "winChange": 0
+        }
+      ]
+    },
+    {
+      "pick": "electrosense",
+      "seed": "PRODUCTION-PAIR-168081",
+      "style": "Scholar",
+      "scorePercent": 0,
+      "populationPercent": 0,
+      "winChange": 0,
+      "outcomes": [
+        {
+          "seat": 0,
+          "scorePercent": 0,
+          "populationPercent": 0,
+          "winChange": 0
+        },
+        {
+          "seat": 1,
+          "scorePercent": 0,
+          "populationPercent": 0,
+          "winChange": 0
+        }
+      ]
+    },
+    {
+      "pick": "electrosense",
+      "seed": "PRODUCTION-PAIR-176000",
+      "style": "Militarist",
+      "scorePercent": -0.46406818232525016,
+      "populationPercent": 1.5647335061988232,
+      "winChange": 0,
+      "outcomes": [
+        {
+          "seat": 0,
+          "scorePercent": -9.198813056379818,
+          "populationPercent": -7.177033492822971,
+          "winChange": 0
+        },
+        {
+          "seat": 1,
+          "scorePercent": 8.270676691729317,
+          "populationPercent": 10.306500505220617,
+          "winChange": 0
+        }
+      ]
+    },
+    {
+      "pick": "electrosense",
+      "seed": "PRODUCTION-PAIR-183919",
+      "style": "Trader",
+      "scorePercent": -1.8228145825166575,
+      "populationPercent": -3.335150235061668,
+      "winChange": 0,
+      "outcomes": [
+        {
+          "seat": 0,
+          "scorePercent": 0,
+          "populationPercent": 0,
+          "winChange": 0
+        },
+        {
+          "seat": 1,
+          "scorePercent": -3.645629165033315,
+          "populationPercent": -6.670300470123336,
+          "winChange": 0
+        }
+      ]
+    },
+    {
+      "pick": "electrosense",
+      "seed": "PRODUCTION-PAIR-191838",
+      "style": "Diplomat",
+      "scorePercent": 61.72224785773587,
+      "populationPercent": 114.6391145258767,
+      "winChange": 0.5,
+      "outcomes": [
+        {
+          "seat": 0,
+          "scorePercent": 125.92329545454545,
+          "populationPercent": 228.22568093385217,
+          "winChange": 1
+        },
+        {
+          "seat": 1,
+          "scorePercent": -2.4787997390737115,
+          "populationPercent": 1.0525481179012308,
+          "winChange": 0
+        }
+      ]
+    },
+    {
+      "pick": "electrosense",
+      "seed": "PRODUCTION-PAIR-199757",
+      "style": "Balanced",
+      "scorePercent": -1.2704096802968192,
+      "populationPercent": -3.5828472066412487,
+      "winChange": 0,
+      "outcomes": [
+        {
+          "seat": 0,
+          "scorePercent": 1.7310252996005415,
+          "populationPercent": 0,
+          "winChange": 0
+        },
+        {
+          "seat": 1,
+          "scorePercent": -4.27184466019418,
+          "populationPercent": -7.165694413282497,
+          "winChange": 0
+        }
+      ]
+    },
+    {
+      "pick": "electrosense",
+      "seed": "PRODUCTION-PAIR-207676",
+      "style": "Expansionist",
+      "scorePercent": 19.19316933983639,
+      "populationPercent": 25.924599871410514,
+      "winChange": 0,
+      "outcomes": [
+        {
+          "seat": 0,
+          "scorePercent": 32.17477656405163,
+          "populationPercent": 44.94060742106603,
+          "winChange": 0
+        },
+        {
+          "seat": 1,
+          "scorePercent": 6.21156211562115,
+          "populationPercent": 6.908592321755003,
+          "winChange": 0
+        }
+      ]
+    },
+    {
+      "pick": "electrosense",
+      "seed": "PRODUCTION-PAIR-215595",
+      "style": "Scholar",
+      "scorePercent": -0.639658848614072,
+      "populationPercent": -2.621562470263583,
+      "winChange": 0,
+      "outcomes": [
+        {
+          "seat": 0,
+          "scorePercent": 0,
+          "populationPercent": 0,
+          "winChange": 0
+        },
+        {
+          "seat": 1,
+          "scorePercent": -1.279317697228144,
+          "populationPercent": -5.243124940527166,
+          "winChange": 0
+        }
+      ]
+    },
+    {
+      "pick": "electrosense",
+      "seed": "PRODUCTION-PAIR-223514",
+      "style": "Militarist",
+      "scorePercent": -22.6368731038203,
+      "populationPercent": -24.602688821455583,
+      "winChange": 0,
+      "outcomes": [
+        {
+          "seat": 0,
+          "scorePercent": -17.41239892183288,
+          "populationPercent": -24.17680621433972,
+          "winChange": 0
+        },
+        {
+          "seat": 1,
+          "scorePercent": -27.861347285807714,
+          "populationPercent": -25.028571428571446,
+          "winChange": 0
+        }
+      ]
+    },
+    {
+      "pick": "electrosense",
+      "seed": "PRODUCTION-PAIR-231433",
+      "style": "Trader",
+      "scorePercent": 15.233347194656506,
+      "populationPercent": 21.64559179804611,
+      "winChange": 0,
+      "outcomes": [
+        {
+          "seat": 0,
+          "scorePercent": 41.68297455968688,
+          "populationPercent": 51.18729801882817,
+          "winChange": 0
+        },
+        {
+          "seat": 1,
+          "scorePercent": -11.21628017037387,
+          "populationPercent": -7.896114422735955,
+          "winChange": 0
+        }
+      ]
+    },
+    {
+      "pick": "electrosense",
+      "seed": "PRODUCTION-PAIR-239352",
+      "style": "Diplomat",
+      "scorePercent": -6.315009080008916,
+      "populationPercent": -3.730190233856301,
+      "winChange": 0,
+      "outcomes": [
+        {
+          "seat": 0,
+          "scorePercent": -7.35347651983983,
+          "populationPercent": -5.657530802112143,
+          "winChange": 0
+        },
+        {
+          "seat": 1,
+          "scorePercent": -5.276541640178001,
+          "populationPercent": -1.802849665600459,
+          "winChange": 0
+        }
+      ]
+    },
+    {
+      "pick": "electrosense",
+      "seed": "PRODUCTION-PAIR-247271",
+      "style": "Balanced",
+      "scorePercent": -0.6723705662341928,
+      "populationPercent": -3.43658292506816,
+      "winChange": 0,
+      "outcomes": [
+        {
+          "seat": 0,
+          "scorePercent": 2.8085106382978786,
+          "populationPercent": 1.326412070055727,
+          "winChange": 0
+        },
+        {
+          "seat": 1,
+          "scorePercent": -4.153251770766264,
+          "populationPercent": -8.199577920192047,
+          "winChange": 0
+        }
+      ]
+    },
+    {
+      "pick": "electrosense",
+      "seed": "PRODUCTION-PAIR-255190",
+      "style": "Expansionist",
+      "scorePercent": 0.9431455170108682,
+      "populationPercent": -0.9578140788144118,
+      "winChange": 0.5,
+      "outcomes": [
+        {
+          "seat": 0,
+          "scorePercent": -0.09671179883945502,
+          "populationPercent": 0,
+          "winChange": 1
+        },
+        {
+          "seat": 1,
+          "scorePercent": 1.9830028328611915,
+          "populationPercent": -1.9156281576288237,
+          "winChange": 0
+        }
+      ]
+    },
+    {
+      "pick": "electrosense",
+      "seed": "PRODUCTION-PAIR-263109",
+      "style": "Scholar",
+      "scorePercent": 1.6871865025079757,
+      "populationPercent": 3.330199797957112,
+      "winChange": 0,
+      "outcomes": [
+        {
+          "seat": 0,
+          "scorePercent": 3.3743730050159515,
+          "populationPercent": 6.660399595914224,
+          "winChange": 0
+        },
+        {
+          "seat": 1,
+          "scorePercent": 0,
+          "populationPercent": 0,
+          "winChange": 0
+        }
+      ]
+    },
+    {
+      "pick": "electrosense",
+      "seed": "PRODUCTION-PAIR-271028",
+      "style": "Militarist",
+      "scorePercent": -0.27532342459584136,
+      "populationPercent": -1.332378223495706,
+      "winChange": 0,
+      "outcomes": [
+        {
+          "seat": 0,
+          "scorePercent": -1.8773466833541974,
+          "populationPercent": -2.664756446991412,
+          "winChange": 0
+        },
+        {
+          "seat": 1,
+          "scorePercent": 1.3266998341625147,
+          "populationPercent": 0,
+          "winChange": 0
+        }
+      ]
+    },
+    {
+      "pick": "electrosense",
+      "seed": "PRODUCTION-PAIR-278947",
+      "style": "Trader",
+      "scorePercent": 1.812292341502536,
+      "populationPercent": 11.700872226250091,
+      "winChange": 0,
+      "outcomes": [
+        {
+          "seat": 0,
+          "scorePercent": 7.462686567164178,
+          "populationPercent": 31.013147718484134,
+          "winChange": 0
+        },
+        {
+          "seat": 1,
+          "scorePercent": -3.8381018841591064,
+          "populationPercent": -7.6114032659839514,
+          "winChange": 0
+        }
+      ]
+    },
+    {
+      "pick": "electrosense",
+      "seed": "PRODUCTION-PAIR-286866",
+      "style": "Diplomat",
+      "scorePercent": 46.97493517718237,
+      "populationPercent": 78.40766550522649,
+      "winChange": 0.5,
+      "outcomes": [
+        {
+          "seat": 0,
+          "scorePercent": 93.94987035436473,
+          "populationPercent": 156.81533101045298,
+          "winChange": 1
+        },
+        {
+          "seat": 1,
+          "scorePercent": 0,
+          "populationPercent": 0,
+          "winChange": 0
+        }
+      ]
+    },
+    {
+      "pick": "radiotrophic",
+      "seed": "PRODUCTION-PAIR-104729",
+      "style": "Balanced",
+      "scorePercent": 3.0266343825665842,
+      "populationPercent": 3.294117647058825,
+      "winChange": 0,
+      "outcomes": [
+        {
+          "seat": 0,
+          "scorePercent": 6.0532687651331685,
+          "populationPercent": 6.58823529411765,
+          "winChange": 0
+        },
+        {
+          "seat": 1,
+          "scorePercent": 0,
+          "populationPercent": 0,
+          "winChange": 0
+        }
+      ]
+    },
+    {
+      "pick": "radiotrophic",
+      "seed": "PRODUCTION-PAIR-112648",
+      "style": "Expansionist",
+      "scorePercent": 16.600454029511912,
+      "populationPercent": 22.212378619695315,
+      "winChange": 0.5,
+      "outcomes": [
+        {
+          "seat": 0,
+          "scorePercent": 33.200908059023824,
+          "populationPercent": 44.42475723939063,
+          "winChange": 1
+        },
+        {
+          "seat": 1,
+          "scorePercent": 0,
+          "populationPercent": 0,
+          "winChange": 0
+        }
+      ]
+    },
+    {
+      "pick": "radiotrophic",
+      "seed": "PRODUCTION-PAIR-120567",
+      "style": "Scholar",
+      "scorePercent": 1.1092851273623694,
+      "populationPercent": 0.19364503282223167,
+      "winChange": 0,
+      "outcomes": [
+        {
+          "seat": 0,
+          "scorePercent": 0,
+          "populationPercent": 0,
+          "winChange": 0
+        },
+        {
+          "seat": 1,
+          "scorePercent": 2.218570254724739,
+          "populationPercent": 0.38729006564446333,
+          "winChange": 0
+        }
+      ]
+    },
+    {
+      "pick": "radiotrophic",
+      "seed": "PRODUCTION-PAIR-128486",
+      "style": "Militarist",
+      "scorePercent": 0.5568814638027053,
+      "populationPercent": 2.828513444951808,
+      "winChange": 0,
+      "outcomes": [
+        {
+          "seat": 0,
+          "scorePercent": 1.1137629276054106,
+          "populationPercent": 5.657026889903616,
+          "winChange": 0
+        },
+        {
+          "seat": 1,
+          "scorePercent": 0,
+          "populationPercent": 0,
+          "winChange": 0
+        }
+      ]
+    },
+    {
+      "pick": "radiotrophic",
+      "seed": "PRODUCTION-PAIR-136405",
+      "style": "Trader",
+      "scorePercent": 0,
+      "populationPercent": 0,
+      "winChange": 0,
+      "outcomes": [
+        {
+          "seat": 0,
+          "scorePercent": 0,
+          "populationPercent": 0,
+          "winChange": 0
+        },
+        {
+          "seat": 1,
+          "scorePercent": 0,
+          "populationPercent": 0,
+          "winChange": 0
+        }
+      ]
+    },
+    {
+      "pick": "radiotrophic",
+      "seed": "PRODUCTION-PAIR-144324",
+      "style": "Diplomat",
+      "scorePercent": 1.0061601642710527,
+      "populationPercent": 0.6289308176100628,
+      "winChange": 0,
+      "outcomes": [
+        {
+          "seat": 0,
+          "scorePercent": 2.0123203285421054,
+          "populationPercent": 1.2578616352201255,
+          "winChange": 0
+        },
+        {
+          "seat": 1,
+          "scorePercent": 0,
+          "populationPercent": 0,
+          "winChange": 0
+        }
+      ]
+    },
+    {
+      "pick": "radiotrophic",
+      "seed": "PRODUCTION-PAIR-152243",
+      "style": "Balanced",
+      "scorePercent": 0.4184800803481714,
+      "populationPercent": 1.1252528321194721,
+      "winChange": 0,
+      "outcomes": [
+        {
+          "seat": 0,
+          "scorePercent": 0,
+          "populationPercent": 0,
+          "winChange": 0
+        },
+        {
+          "seat": 1,
+          "scorePercent": 0.8369601606963428,
+          "populationPercent": 2.2505056642389443,
+          "winChange": 0
+        }
+      ]
+    },
+    {
+      "pick": "radiotrophic",
+      "seed": "PRODUCTION-PAIR-160162",
+      "style": "Expansionist",
+      "scorePercent": 0.9500767267204724,
+      "populationPercent": 1.8006395592998548,
+      "winChange": 0,
+      "outcomes": [
+        {
+          "seat": 0,
+          "scorePercent": 0.730816077953711,
+          "populationPercent": 2.9905920956989407,
+          "winChange": 0
+        },
+        {
+          "seat": 1,
+          "scorePercent": 1.1693373754872338,
+          "populationPercent": 0.6106870229007688,
+          "winChange": 0
+        }
+      ]
+    },
+    {
+      "pick": "radiotrophic",
+      "seed": "PRODUCTION-PAIR-168081",
+      "style": "Scholar",
+      "scorePercent": 0,
+      "populationPercent": 0,
+      "winChange": 0,
+      "outcomes": [
+        {
+          "seat": 0,
+          "scorePercent": 0,
+          "populationPercent": 0,
+          "winChange": 0
+        },
+        {
+          "seat": 1,
+          "scorePercent": 0,
+          "populationPercent": 0,
+          "winChange": 0
+        }
+      ]
+    },
+    {
+      "pick": "radiotrophic",
+      "seed": "PRODUCTION-PAIR-176000",
+      "style": "Militarist",
+      "scorePercent": 0.29347028613352366,
+      "populationPercent": 0.9345794392523366,
+      "winChange": 0,
+      "outcomes": [
+        {
+          "seat": 0,
+          "scorePercent": 0.5869405722670473,
+          "populationPercent": 1.869158878504673,
+          "winChange": 0
+        },
+        {
+          "seat": 1,
+          "scorePercent": 0,
+          "populationPercent": 0,
+          "winChange": 0
+        }
+      ]
+    },
+    {
+      "pick": "radiotrophic",
+      "seed": "PRODUCTION-PAIR-183919",
+      "style": "Trader",
+      "scorePercent": 0,
+      "populationPercent": 0,
+      "winChange": 0,
+      "outcomes": [
+        {
+          "seat": 0,
+          "scorePercent": 0,
+          "populationPercent": 0,
+          "winChange": 0
+        },
+        {
+          "seat": 1,
+          "scorePercent": 0,
+          "populationPercent": 0,
+          "winChange": 0
+        }
+      ]
+    },
+    {
+      "pick": "radiotrophic",
+      "seed": "PRODUCTION-PAIR-191838",
+      "style": "Diplomat",
+      "scorePercent": 0.07082152974504652,
+      "populationPercent": -2.867987442578168,
+      "winChange": 0,
+      "outcomes": [
+        {
+          "seat": 0,
+          "scorePercent": 0,
+          "populationPercent": 0,
+          "winChange": 0
+        },
+        {
+          "seat": 1,
+          "scorePercent": 0.14164305949009304,
+          "populationPercent": -5.735974885156336,
+          "winChange": 0
+        }
+      ]
+    },
+    {
+      "pick": "radiotrophic",
+      "seed": "PRODUCTION-PAIR-199757",
+      "style": "Balanced",
+      "scorePercent": 0,
+      "populationPercent": 0,
+      "winChange": 0,
+      "outcomes": [
+        {
+          "seat": 0,
+          "scorePercent": 0,
+          "populationPercent": 0,
+          "winChange": 0
+        },
+        {
+          "seat": 1,
+          "scorePercent": 0,
+          "populationPercent": 0,
+          "winChange": 0
+        }
+      ]
+    },
+    {
+      "pick": "radiotrophic",
+      "seed": "PRODUCTION-PAIR-207676",
+      "style": "Expansionist",
+      "scorePercent": 0,
+      "populationPercent": 0,
+      "winChange": 0,
+      "outcomes": [
+        {
+          "seat": 0,
+          "scorePercent": 0,
+          "populationPercent": 0,
+          "winChange": 0
+        },
+        {
+          "seat": 1,
+          "scorePercent": 0,
+          "populationPercent": 0,
+          "winChange": 0
+        }
+      ]
+    },
+    {
+      "pick": "radiotrophic",
+      "seed": "PRODUCTION-PAIR-215595",
+      "style": "Scholar",
+      "scorePercent": -12.798779990440568,
+      "populationPercent": -18.078470154833273,
+      "winChange": 0,
+      "outcomes": [
+        {
+          "seat": 0,
+          "scorePercent": -25.38434036467644,
+          "populationPercent": -36.36866359447004,
+          "winChange": 0
+        },
+        {
+          "seat": 1,
+          "scorePercent": -0.2132196162046962,
+          "populationPercent": 0.2117232848035,
+          "winChange": 0
+        }
+      ]
+    },
+    {
+      "pick": "radiotrophic",
+      "seed": "PRODUCTION-PAIR-223514",
+      "style": "Militarist",
+      "scorePercent": 0,
+      "populationPercent": 0,
+      "winChange": 0,
+      "outcomes": [
+        {
+          "seat": 0,
+          "scorePercent": 0,
+          "populationPercent": 0,
+          "winChange": 0
+        },
+        {
+          "seat": 1,
+          "scorePercent": 0,
+          "populationPercent": 0,
+          "winChange": 0
+        }
+      ]
+    },
+    {
+      "pick": "radiotrophic",
+      "seed": "PRODUCTION-PAIR-231433",
+      "style": "Trader",
+      "scorePercent": 4.907975460122705,
+      "populationPercent": 1.1348772793721595,
+      "winChange": 0.5,
+      "outcomes": [
+        {
+          "seat": 0,
+          "scorePercent": 9.81595092024541,
+          "populationPercent": 2.269754558744319,
+          "winChange": 1
+        },
+        {
+          "seat": 1,
+          "scorePercent": 0,
+          "populationPercent": 0,
+          "winChange": 0
+        }
+      ]
+    },
+    {
+      "pick": "radiotrophic",
+      "seed": "PRODUCTION-PAIR-239352",
+      "style": "Diplomat",
+      "scorePercent": 8.193250928584762,
+      "populationPercent": 0.8823950728588603,
+      "winChange": 0,
+      "outcomes": [
+        {
+          "seat": 0,
+          "scorePercent": 8.717603500504879,
+          "populationPercent": 4.784428921681982,
+          "winChange": 0
+        },
+        {
+          "seat": 1,
+          "scorePercent": 7.668898356664644,
+          "populationPercent": -3.019638775964262,
+          "winChange": 0
+        }
+      ]
+    },
+    {
+      "pick": "radiotrophic",
+      "seed": "PRODUCTION-PAIR-247271",
+      "style": "Balanced",
+      "scorePercent": 1.3640792465086093,
+      "populationPercent": 2.2858143335149017,
+      "winChange": 0,
+      "outcomes": [
+        {
+          "seat": 0,
+          "scorePercent": 0,
+          "populationPercent": 0,
+          "winChange": 0
+        },
+        {
+          "seat": 1,
+          "scorePercent": 2.7281584930172187,
+          "populationPercent": 4.571628667029803,
+          "winChange": 0
+        }
+      ]
+    },
+    {
+      "pick": "radiotrophic",
+      "seed": "PRODUCTION-PAIR-255190",
+      "style": "Expansionist",
+      "scorePercent": 4.361325481673751,
+      "populationPercent": 11.265043798416684,
+      "winChange": 0.5,
+      "outcomes": [
+        {
+          "seat": 0,
+          "scorePercent": 7.569913211186119,
+          "populationPercent": 19.244897251966563,
+          "winChange": 0
+        },
+        {
+          "seat": 1,
+          "scorePercent": 1.1527377521613813,
+          "populationPercent": 3.2851903448668063,
+          "winChange": 1
+        }
+      ]
+    },
+    {
+      "pick": "radiotrophic",
+      "seed": "PRODUCTION-PAIR-263109",
+      "style": "Scholar",
+      "scorePercent": 0,
+      "populationPercent": 0,
+      "winChange": 0,
+      "outcomes": [
+        {
+          "seat": 0,
+          "scorePercent": 0,
+          "populationPercent": 0,
+          "winChange": 0
+        },
+        {
+          "seat": 1,
+          "scorePercent": 0,
+          "populationPercent": 0,
+          "winChange": 0
+        }
+      ]
+    },
+    {
+      "pick": "radiotrophic",
+      "seed": "PRODUCTION-PAIR-271028",
+      "style": "Militarist",
+      "scorePercent": -1.5557886410922093,
+      "populationPercent": -2.781793943660593,
+      "winChange": 0,
+      "outcomes": [
+        {
+          "seat": 0,
+          "scorePercent": 1.5508021390374438,
+          "populationPercent": 0.7798647633358247,
+          "winChange": 0
+        },
+        {
+          "seat": 1,
+          "scorePercent": -4.662379421221862,
+          "populationPercent": -6.343452650657011,
+          "winChange": 0
+        }
+      ]
+    },
+    {
+      "pick": "radiotrophic",
+      "seed": "PRODUCTION-PAIR-278947",
+      "style": "Trader",
+      "scorePercent": 0,
+      "populationPercent": 0,
+      "winChange": 0,
+      "outcomes": [
+        {
+          "seat": 0,
+          "scorePercent": 0,
+          "populationPercent": 0,
+          "winChange": 0
+        },
+        {
+          "seat": 1,
+          "scorePercent": 0,
+          "populationPercent": 0,
+          "winChange": 0
+        }
+      ]
+    },
+    {
+      "pick": "radiotrophic",
+      "seed": "PRODUCTION-PAIR-286866",
+      "style": "Diplomat",
+      "scorePercent": 0,
+      "populationPercent": 0,
+      "winChange": 0,
+      "outcomes": [
+        {
+          "seat": 0,
+          "scorePercent": 0,
+          "populationPercent": 0,
+          "winChange": 0
+        },
+        {
+          "seat": 1,
+          "scorePercent": 0,
+          "populationPercent": 0,
+          "winChange": 0
+        }
+      ]
+    },
+    {
+      "pick": "cybernetic",
+      "seed": "PRODUCTION-PAIR-104729",
+      "style": "Balanced",
+      "scorePercent": -5.584461321737,
+      "populationPercent": -5.338850434995307,
+      "winChange": 0,
+      "outcomes": [
+        {
+          "seat": 0,
+          "scorePercent": -3.4103019538188284,
+          "populationPercent": -3.1798472021474233,
+          "winChange": 0
+        },
+        {
+          "seat": 1,
+          "scorePercent": -7.758620689655171,
+          "populationPercent": -7.497853667843191,
+          "winChange": 0
+        }
+      ]
+    },
+    {
+      "pick": "cybernetic",
+      "seed": "PRODUCTION-PAIR-112648",
+      "style": "Expansionist",
+      "scorePercent": 5.572678879877746,
+      "populationPercent": 7.405696044250975,
+      "winChange": 0.5,
+      "outcomes": [
+        {
+          "seat": 0,
+          "scorePercent": 3.898980948161279,
+          "populationPercent": 8.56927773827949,
+          "winChange": 0
+        },
+        {
+          "seat": 1,
+          "scorePercent": 7.246376811594213,
+          "populationPercent": 6.242114350222461,
+          "winChange": 1
+        }
+      ]
+    },
+    {
+      "pick": "cybernetic",
+      "seed": "PRODUCTION-PAIR-120567",
+      "style": "Scholar",
+      "scorePercent": -8.777689724140531,
+      "populationPercent": -10.111132883576413,
+      "winChange": 0,
+      "outcomes": [
+        {
+          "seat": 0,
+          "scorePercent": -3.8567493112947604,
+          "populationPercent": 0,
+          "winChange": 0
+        },
+        {
+          "seat": 1,
+          "scorePercent": -13.698630136986301,
+          "populationPercent": -20.222265767152827,
+          "winChange": 0
+        }
+      ]
+    },
+    {
+      "pick": "cybernetic",
+      "seed": "PRODUCTION-PAIR-128486",
+      "style": "Militarist",
+      "scorePercent": 6.4486614273848275,
+      "populationPercent": 10.681814301150666,
+      "winChange": 0,
+      "outcomes": [
+        {
+          "seat": 0,
+          "scorePercent": 17.70212765957446,
+          "populationPercent": 27.325472799439645,
+          "winChange": 0
+        },
+        {
+          "seat": 1,
+          "scorePercent": -4.8048048048048075,
+          "populationPercent": -5.96184419713831,
+          "winChange": 0
+        }
+      ]
+    },
+    {
+      "pick": "cybernetic",
+      "seed": "PRODUCTION-PAIR-136405",
+      "style": "Trader",
+      "scorePercent": 1.5881911969442775,
+      "populationPercent": 13.148621264588934,
+      "winChange": 0,
+      "outcomes": [
+        {
+          "seat": 0,
+          "scorePercent": 4.5525291828793835,
+          "populationPercent": 21.872463768115914,
+          "winChange": 0
+        },
+        {
+          "seat": 1,
+          "scorePercent": -1.3761467889908285,
+          "populationPercent": 4.424778761061954,
+          "winChange": 0
+        }
+      ]
+    },
+    {
+      "pick": "cybernetic",
+      "seed": "PRODUCTION-PAIR-144324",
+      "style": "Diplomat",
+      "scorePercent": -3.6278541625580365,
+      "populationPercent": 0,
+      "winChange": 0,
+      "outcomes": [
+        {
+          "seat": 0,
+          "scorePercent": -3.415883859948765,
+          "populationPercent": 0,
+          "winChange": 0
+        },
+        {
+          "seat": 1,
+          "scorePercent": -3.8398244651673075,
+          "populationPercent": 0,
+          "winChange": 0
+        }
+      ]
+    },
+    {
+      "pick": "cybernetic",
+      "seed": "PRODUCTION-PAIR-152243",
+      "style": "Balanced",
+      "scorePercent": -3.2147951964006327,
+      "populationPercent": 0.007058921230751469,
+      "winChange": 0,
+      "outcomes": [
+        {
+          "seat": 0,
+          "scorePercent": -5.986509274873519,
+          "populationPercent": 0,
+          "winChange": 0
+        },
+        {
+          "seat": 1,
+          "scorePercent": -0.44308111792774607,
+          "populationPercent": 0.014117842461502939,
+          "winChange": 0
+        }
+      ]
+    },
+    {
+      "pick": "cybernetic",
+      "seed": "PRODUCTION-PAIR-160162",
+      "style": "Expansionist",
+      "scorePercent": -0.849681866026758,
+      "populationPercent": -0.6193415637860022,
+      "winChange": 0,
+      "outcomes": [
+        {
+          "seat": 0,
+          "scorePercent": -1.7868145409735026,
+          "populationPercent": -1.2386831275720045,
+          "winChange": 0
+        },
+        {
+          "seat": 1,
+          "scorePercent": 0.08745080891998658,
+          "populationPercent": 0,
+          "winChange": 0
+        }
+      ]
+    },
+    {
+      "pick": "cybernetic",
+      "seed": "PRODUCTION-PAIR-168081",
+      "style": "Scholar",
+      "scorePercent": -4.607776362481742,
+      "populationPercent": -2.959682611419079,
+      "winChange": 0,
+      "outcomes": [
+        {
+          "seat": 0,
+          "scorePercent": -7.544517338331769,
+          "populationPercent": -6.073541967203466,
+          "winChange": 0
+        },
+        {
+          "seat": 1,
+          "scorePercent": -1.671035386631714,
+          "populationPercent": 0.1541767443653086,
+          "winChange": 0
+        }
+      ]
+    },
+    {
+      "pick": "cybernetic",
+      "seed": "PRODUCTION-PAIR-176000",
+      "style": "Militarist",
+      "scorePercent": -2.8931750741839792,
+      "populationPercent": -1.7942583732057427,
+      "winChange": 0,
+      "outcomes": [
+        {
+          "seat": 0,
+          "scorePercent": -5.7863501483679585,
+          "populationPercent": -3.5885167464114853,
+          "winChange": 0
+        },
+        {
+          "seat": 1,
+          "scorePercent": 0,
+          "populationPercent": 0,
+          "winChange": 0
+        }
+      ]
+    },
+    {
+      "pick": "cybernetic",
+      "seed": "PRODUCTION-PAIR-183919",
+      "style": "Trader",
+      "scorePercent": -4.010824509848854,
+      "populationPercent": 0,
+      "winChange": 0,
+      "outcomes": [
+        {
+          "seat": 0,
+          "scorePercent": -5.160026126714568,
+          "populationPercent": 0,
+          "winChange": 0
+        },
+        {
+          "seat": 1,
+          "scorePercent": -2.86162289298314,
+          "populationPercent": 0,
+          "winChange": 0
+        }
+      ]
+    },
+    {
+      "pick": "cybernetic",
+      "seed": "PRODUCTION-PAIR-191838",
+      "style": "Diplomat",
+      "scorePercent": -3.256690869062445,
+      "populationPercent": 0,
+      "winChange": 0,
+      "outcomes": [
+        {
+          "seat": 0,
+          "scorePercent": -3.4801136363636354,
+          "populationPercent": 0,
+          "winChange": 0
+        },
+        {
+          "seat": 1,
+          "scorePercent": -3.033268101761255,
+          "populationPercent": 0,
+          "winChange": 0
+        }
+      ]
+    },
+    {
+      "pick": "cybernetic",
+      "seed": "PRODUCTION-PAIR-199757",
+      "style": "Balanced",
+      "scorePercent": -5.983478339560199,
+      "populationPercent": -5.625280457706983,
+      "winChange": 0,
+      "outcomes": [
+        {
+          "seat": 0,
+          "scorePercent": -4.394141145139818,
+          "populationPercent": 0,
+          "winChange": 0
+        },
+        {
+          "seat": 1,
+          "scorePercent": -7.572815533980581,
+          "populationPercent": -11.250560915413965,
+          "winChange": 0
+        }
+      ]
+    },
+    {
+      "pick": "cybernetic",
+      "seed": "PRODUCTION-PAIR-207676",
+      "style": "Expansionist",
+      "scorePercent": -4.225800698920596,
+      "populationPercent": -1.9167937917477118,
+      "winChange": 0,
+      "outcomes": [
+        {
+          "seat": 0,
+          "scorePercent": -5.561072492552133,
+          "populationPercent": -1.032856322069453,
+          "winChange": 0
+        },
+        {
+          "seat": 1,
+          "scorePercent": -2.890528905289058,
+          "populationPercent": -2.8007312614259705,
+          "winChange": 0
+        }
+      ]
+    },
+    {
+      "pick": "cybernetic",
+      "seed": "PRODUCTION-PAIR-215595",
+      "style": "Scholar",
+      "scorePercent": 0.05989994893377815,
+      "populationPercent": 2.992672946997821,
+      "winChange": 0,
+      "outcomes": [
+        {
+          "seat": 0,
+          "scorePercent": -3.291713961407494,
+          "populationPercent": 0,
+          "winChange": 0
+        },
+        {
+          "seat": 1,
+          "scorePercent": 3.4115138592750505,
+          "populationPercent": 5.985345893995642,
+          "winChange": 0
+        }
+      ]
+    },
+    {
+      "pick": "cybernetic",
+      "seed": "PRODUCTION-PAIR-223514",
+      "style": "Militarist",
+      "scorePercent": 0.751561456054467,
+      "populationPercent": 0.5774386471437465,
+      "winChange": 0,
+      "outcomes": [
+        {
+          "seat": 0,
+          "scorePercent": 3.0727762803234526,
+          "populationPercent": 1.154877294287493,
+          "winChange": 0
+        },
+        {
+          "seat": 1,
+          "scorePercent": -1.5696533682145186,
+          "populationPercent": 0,
+          "winChange": 0
+        }
+      ]
+    },
+    {
+      "pick": "cybernetic",
+      "seed": "PRODUCTION-PAIR-231433",
+      "style": "Trader",
+      "scorePercent": -3.881973148548623,
+      "populationPercent": -2.6207804927472655,
+      "winChange": 0,
+      "outcomes": [
+        {
+          "seat": 0,
+          "scorePercent": -3.4572733202870243,
+          "populationPercent": 0,
+          "winChange": 0
+        },
+        {
+          "seat": 1,
+          "scorePercent": -4.306672976810222,
+          "populationPercent": -5.241560985494531,
+          "winChange": 0
+        }
+      ]
+    },
+    {
+      "pick": "cybernetic",
+      "seed": "PRODUCTION-PAIR-239352",
+      "style": "Diplomat",
+      "scorePercent": -4.118287973402646,
+      "populationPercent": 0,
+      "winChange": 0,
+      "outcomes": [
+        {
+          "seat": 0,
+          "scorePercent": -4.040771751001094,
+          "populationPercent": 0,
+          "winChange": 0
+        },
+        {
+          "seat": 1,
+          "scorePercent": -4.1958041958041985,
+          "populationPercent": 0,
+          "winChange": 0
+        }
+      ]
+    },
+    {
+      "pick": "cybernetic",
+      "seed": "PRODUCTION-PAIR-247271",
+      "style": "Balanced",
+      "scorePercent": -4.185502322204105,
+      "populationPercent": -4.394434945921288,
+      "winChange": 0,
+      "outcomes": [
+        {
+          "seat": 0,
+          "scorePercent": -6.085106382978722,
+          "populationPercent": -4.076290751878597,
+          "winChange": 0
+        },
+        {
+          "seat": 1,
+          "scorePercent": -2.2858982614294865,
+          "populationPercent": -4.71257913996398,
+          "winChange": 0
+        }
+      ]
+    },
+    {
+      "pick": "cybernetic",
+      "seed": "PRODUCTION-PAIR-255190",
+      "style": "Expansionist",
+      "scorePercent": -5.402938431387589,
+      "populationPercent": -14.433302885752486,
+      "winChange": -0.5,
+      "outcomes": [
+        {
+          "seat": 0,
+          "scorePercent": -7.736943907156668,
+          "populationPercent": -20.715713215088684,
+          "winChange": 0
+        },
+        {
+          "seat": 1,
+          "scorePercent": -3.0689329556185085,
+          "populationPercent": -8.15089255641629,
+          "winChange": -1
+        }
+      ]
+    },
+    {
+      "pick": "cybernetic",
+      "seed": "PRODUCTION-PAIR-263109",
+      "style": "Scholar",
+      "scorePercent": -3.1575787508313082,
+      "populationPercent": -1.7670644170477257,
+      "winChange": 0,
+      "outcomes": [
+        {
+          "seat": 0,
+          "scorePercent": -1.7783857729138153,
+          "populationPercent": -0.6818947132113617,
+          "winChange": 0
+        },
+        {
+          "seat": 1,
+          "scorePercent": -4.536771728748801,
+          "populationPercent": -2.8522341208840896,
+          "winChange": 0
+        }
+      ]
+    },
+    {
+      "pick": "cybernetic",
+      "seed": "PRODUCTION-PAIR-271028",
+      "style": "Militarist",
+      "scorePercent": -0.09386733416770765,
+      "populationPercent": 0.620821394460358,
+      "winChange": 0,
+      "outcomes": [
+        {
+          "seat": 0,
+          "scorePercent": -0.1877346683354153,
+          "populationPercent": 1.241642788920716,
+          "winChange": 0
+        },
+        {
+          "seat": 1,
+          "scorePercent": 0,
+          "populationPercent": 0,
+          "winChange": 0
+        }
+      ]
+    },
+    {
+      "pick": "cybernetic",
+      "seed": "PRODUCTION-PAIR-278947",
+      "style": "Trader",
+      "scorePercent": -17.14042603914598,
+      "populationPercent": -12.998132518612504,
+      "winChange": 0,
+      "outcomes": [
+        {
+          "seat": 0,
+          "scorePercent": -20.812603648424542,
+          "populationPercent": -12.904651419732627,
+          "winChange": 0
+        },
+        {
+          "seat": 1,
+          "scorePercent": -13.468248429867414,
+          "populationPercent": -13.091613617492381,
+          "winChange": 0
+        }
+      ]
+    },
+    {
+      "pick": "cybernetic",
+      "seed": "PRODUCTION-PAIR-286866",
+      "style": "Diplomat",
+      "scorePercent": -4.3522618930935835,
+      "populationPercent": 0,
+      "winChange": 0,
+      "outcomes": [
+        {
+          "seat": 0,
+          "scorePercent": -4.580812445980986,
+          "populationPercent": 0,
+          "winChange": 0
+        },
+        {
+          "seat": 1,
+          "scorePercent": -4.123711340206182,
+          "populationPercent": 0,
+          "winChange": 0
+        }
+      ]
+    }
+  ]
+}

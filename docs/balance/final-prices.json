@@ -1,0 +1,315 @@
+{
+  "schemaVersion": 1,
+  "scope": "Nine specials; other picks retain the pre-roster research calibration",
+  "games": 576,
+  "checkedTurns": 69120,
+  "observedBattles": 6387,
+  "seedCount": 24,
+  "sourceAtPricing": {
+    "battle.ts": "664c9dba68101a40b90617f545d5faa8565ce918b4beafaa4991340cd55b8f69",
+    "diplomacy.ts": "0a96d41a4ecd10900864fb24e987a70011d413ed11e6937cca4a5c456d3fd9ad",
+    "effects.ts": "c53cff210fabda51bcffe50456e15955ac1fc8db6844731c5ce9d1e99d846625",
+    "engine.ts": "5550570044600985ddfd975d454d18bde4f51e24526929ebbb29e1f900eabd0a",
+    "generation.ts": "1bd9db3abf93746f57b368fe64d84cbe8fa131e3208de7dcfc6f4ea5ec5539ed",
+    "hazards.ts": "62c11cb3756afb6ce39f3e29750518d12d58d168b880badc3401e8338b253e7e",
+    "intel.ts": "07adc5aaa386ee957f30551d7697766fb1732e658ea39b2de435a4a7bd40a5d4",
+    "math.ts": "08c22bf692c19a6dba3cbfbe978096fcfa6775803c603adcd1d377bb4c3da94c",
+    "politics.ts": "cd49f5bb86afc84b29d14e865539c147893831f3abea656eadf39185420bab62",
+    "rules-data.json": "5d4eccbe11cf076db8672423d2fb0c41421aa6829333b9a50f3d5fa1c4980eac",
+    "rules.ts": "63ac27edd5074a7d917909a4923246a1e12f6a480e6ff65c35ee0f96af0c801a",
+    "species.ts": "1538d6bf509132aeca8fcfd6d81a52ede89f0f218de7ae378c3a53c2828a4086",
+    "types.ts": "8c3ea4b0df5c2f0e40490ac516aafe6c2f5adf0414492529328cfdf81ce5a828",
+    "ai/controller.ts": "9b8f91adf0df2e70aef1df7b90fa37b3f78d3c151497c09c59c4b5b347c53670",
+    "sim/rules-data.json": "5d4eccbe11cf076db8672423d2fb0c41421aa6829333b9a50f3d5fa1c4980eac",
+    "catalog/systems.json": "7a3ba003882182b918e71efb6c5ef1d4f81290f2cfbccb16915a2a550371c56e",
+    "catalog/planets.json": "a93c558bd76aba0aa9e36ee2074a515a3b091fe8cf53048e1e8edfd08b5b1bc5",
+    "balance/costs.ts": "41f2b2f8005854d087e7a39765b1f97c2dd546c0c71ff16166d105bced51a77e",
+    "balance/picks.ts": "a7cdfbd51de0be42df55776800f92c430e759309394e469cfaf2f4a76864e6ce"
+  },
+  "decisions": [
+    {
+      "id": "subterranean",
+      "oldCost": 3,
+      "cost": 7,
+      "meanScorePercent": 39.6539729462181,
+      "confidence95Percent": [
+        27.290387517168945,
+        52.01755837526725
+      ],
+      "indicativePointInterval": [
+        5,
+        9
+      ],
+      "actualWinFraction": 0.7083333333333334,
+      "explanation": "Mean-score price with a provisional one-point minimum; finite neutral-profile evidence is not universal balance."
+    },
+    {
+      "id": "photosynthetic",
+      "oldCost": 1,
+      "cost": 2,
+      "meanScorePercent": 9.52532316945117,
+      "confidence95Percent": [
+        5.782887413600864,
+        13.267758925301475
+      ],
+      "indicativePointInterval": [
+        1,
+        3
+      ],
+      "actualWinFraction": 0.5625,
+      "explanation": "Explicit-light revision validated in a separate 72-game pass. Supported integer prices are retained within sampling uncertainty.",
+      "evidence": "photo-validation.json"
+    },
+    {
+      "id": "spore-borne",
+      "oldCost": 2,
+      "cost": 1,
+      "meanScorePercent": 2.2981631421612163,
+      "confidence95Percent": [
+        -3.488131827495892,
+        8.084458111818325
+      ],
+      "indicativePointInterval": [
+        0,
+        2
+      ],
+      "actualWinFraction": 0.5208333333333334,
+      "explanation": "Mean-score price with a provisional one-point minimum; finite neutral-profile evidence is not universal balance."
+    },
+    {
+      "id": "hive-mind",
+      "oldCost": 4,
+      "cost": 5,
+      "meanScorePercent": 25.355883128288756,
+      "confidence95Percent": [
+        15.201147229746423,
+        35.51061902683109
+      ],
+      "indicativePointInterval": [
+        3,
+        6
+      ],
+      "actualWinFraction": 0.6875,
+      "explanation": "Retain at least four points conservatively for immunity and Unified package; the documented incompatible Subterranean pair is excluded."
+    },
+    {
+      "id": "terraformers",
+      "oldCost": 2,
+      "cost": 1,
+      "meanScorePercent": 5.435692027811261,
+      "confidence95Percent": [
+        4.233618851918802,
+        6.6377652037037205
+      ],
+      "indicativePointInterval": [
+        1,
+        1
+      ],
+      "actualWinFraction": 0.5416666666666666,
+      "explanation": "Mean-score price with a provisional one-point minimum; finite neutral-profile evidence is not universal balance."
+    },
+    {
+      "id": "genetic-plasticity",
+      "oldCost": 2,
+      "cost": 2,
+      "meanScorePercent": 8.342114651253135,
+      "confidence95Percent": [
+        2.4539629029265777,
+        14.230266399579694
+      ],
+      "indicativePointInterval": [
+        0,
+        3
+      ],
+      "actualWinFraction": 0.5625,
+      "explanation": "Mean-score price with a provisional one-point minimum; finite neutral-profile evidence is not universal balance."
+    },
+    {
+      "id": "electrosense",
+      "oldCost": 1,
+      "cost": 1,
+      "meanScorePercent": 5.701475812754538,
+      "confidence95Percent": [
+        -1.1530225038686623,
+        12.555974129377738
+      ],
+      "indicativePointInterval": [
+        0,
+        2
+      ],
+      "actualWinFraction": 0.5625,
+      "explanation": "Mean-score price with a provisional one-point minimum; finite neutral-profile evidence is not universal balance."
+    },
+    {
+      "id": "radiotrophic",
+      "oldCost": 1,
+      "cost": 1,
+      "meanScorePercent": 1.1876802614924535,
+      "confidence95Percent": [
+        -0.7381699258941423,
+        3.1135304488790494
+      ],
+      "indicativePointInterval": [
+        0,
+        1
+      ],
+      "actualWinFraction": 0.5625,
+      "explanation": "Mean-score price with a provisional one-point minimum; finite neutral-profile evidence is not universal balance."
+    },
+    {
+      "id": "cybernetic",
+      "oldCost": 1,
+      "cost": 0,
+      "meanScorePercent": -3.122669629521134,
+      "confidence95Percent": [
+        -4.960947949578751,
+        -1.284391309463517
+      ],
+      "indicativePointInterval": [
+        0,
+        0
+      ],
+      "actualWinFraction": 0.5,
+      "explanation": "Zero-point sidegrade: extra upkeep outweighed repair/troop utility in these games. No refund is granted, since military/human exploitation remains uncertain."
+    }
+  ],
+  "costs": {
+    "carbon": 0,
+    "lithic": 4,
+    "synthetic": 1,
+    "temperature-narrow": 0,
+    "temperature-wide": 1,
+    "gravity-narrow": 0,
+    "gravity-wide": 3,
+    "amphibious": 2,
+    "radiation-vulnerable": -1,
+    "radiation-resistant": 2,
+    "hardy": 1,
+    "sealed-metabolism": 1,
+    "growth-very-slow": 0,
+    "growth-slow": 0,
+    "growth-fast": 1,
+    "growth-very-fast": 1,
+    "lifespan-ephemeral": 0,
+    "lifespan-short": 0,
+    "lifespan-long": 1,
+    "lifespan-ancient": 1,
+    "rigid": 0,
+    "creative": 1,
+    "origin-standard": 0,
+    "origin-large": 3,
+    "origin-small": -1,
+    "origin-rich": 1,
+    "origin-poor": 0,
+    "origin-twin": 3,
+    "origin-vault": 1,
+    "origin-nomad": 0,
+    "subterranean": 7,
+    "photosynthetic": 2,
+    "spore-borne": 1,
+    "hive-mind": 5,
+    "terraformers": 1,
+    "genetic-plasticity": 2,
+    "electrosense": 1,
+    "radiotrophic": 1,
+    "cybernetic": 0,
+    "autocracy": 0,
+    "republic": 2,
+    "communion": 1,
+    "federation": 1,
+    "technocracy": 2,
+    "directorate": 1,
+    "xenophobic": 0,
+    "cosmopolitan": 1,
+    "industry-minus": -1,
+    "industry-1": 2,
+    "industry-2": 5,
+    "research-minus": -1,
+    "research-1": 2,
+    "research-2": 5,
+    "commerce-minus": 0,
+    "commerce-1": 1,
+    "commerce-2": 3,
+    "piloting-minus": 0,
+    "piloting-1": 1,
+    "piloting-2": 3,
+    "troops-minus": 0,
+    "troops-1": 1,
+    "troops-2": 3,
+    "espionage-minus": 0,
+    "espionage-1": 1,
+    "espionage-2": 3,
+    "diplomacy-minus": 0,
+    "diplomacy-1": 1,
+    "diplomacy-2": 3,
+    "stability-minus": 0,
+    "stability-1": 1,
+    "stability-2": 3
+  },
+  "exclusions": [
+    [
+      "subterranean",
+      "hive-mind"
+    ]
+  ],
+  "limitations": [
+    "The price convention is a game-design choice, not a statistically unique integer.",
+    "Confidence intervals cover sampled neutral Carbon/Autocracy/Oxygen profile games only; model error, frame/environment interactions and human exploits remain.",
+    "Special pairs with significant super-additive effects are handled by D49 availability constraints rather than pretending individual prices make them additive.",
+    "Frame, origin, government and aptitude prices still come from the explicitly labeled pre-roster research simulator; these are not falsely labeled as production-calibrated.",
+    "Editing predefined species after pricing changes the source fingerprint but does not change the neutral reference profile used in the experiment. New mechanical or AI changes require new validation."
+  ],
+  "targetedRevisions": [
+    {
+      "trait": "photosynthetic",
+      "report": "photo-validation.json",
+      "oldCost": 2,
+      "cost": 2,
+      "previousDecision": {
+        "id": "photosynthetic",
+        "oldCost": 1,
+        "cost": 2,
+        "meanScorePercent": 10.384242608715915,
+        "confidence95Percent": [
+          6.561383334421656,
+          14.207101883010175
+        ],
+        "indicativePointInterval": [
+          1,
+          3
+        ],
+        "actualWinFraction": 0.5625,
+        "explanation": "Mean-score price with a provisional one-point minimum; finite neutral-profile evidence is not universal balance."
+      },
+      "sourceAtPricing": {
+        "battle.ts": "664c9dba68101a40b90617f545d5faa8565ce918b4beafaa4991340cd55b8f69",
+        "diplomacy.ts": "0a96d41a4ecd10900864fb24e987a70011d413ed11e6937cca4a5c456d3fd9ad",
+        "effects.ts": "c53cff210fabda51bcffe50456e15955ac1fc8db6844731c5ce9d1e99d846625",
+        "engine.ts": "f6969ec09273de3aa5f842ce1b599e3b4d21a9f61f5914fcc3244788a7ae2018",
+        "generation.ts": "3c013da8db57dcf81a6c495b462fb398e75c177b00f7e9b195f70047e5f8dde2",
+        "hazards.ts": "62c11cb3756afb6ce39f3e29750518d12d58d168b880badc3401e8338b253e7e",
+        "intel.ts": "07adc5aaa386ee957f30551d7697766fb1732e658ea39b2de435a4a7bd40a5d4",
+        "math.ts": "08c22bf692c19a6dba3cbfbe978096fcfa6775803c603adcd1d377bb4c3da94c",
+        "politics.ts": "cd49f5bb86afc84b29d14e865539c147893831f3abea656eadf39185420bab62",
+        "rules-data.json": "5d4eccbe11cf076db8672423d2fb0c41421aa6829333b9a50f3d5fa1c4980eac",
+        "rules.ts": "a3f47b42ce86c9d532dcc0a28fd765afbe8bf6e0a3b4f35c4b8350347087a07e",
+        "species.ts": "0094265985146c1f88723b7f92cabceadf33c2fa80c254ee4f5cec9458928890",
+        "types.ts": "6b1b002acad5e275d95fce0463cf42d3cca22dac3f690598d0a89153366ba6fe",
+        "ai/controller.ts": "9b8f91adf0df2e70aef1df7b90fa37b3f78d3c151497c09c59c4b5b347c53670",
+        "sim/rules-data.json": "5d4eccbe11cf076db8672423d2fb0c41421aa6829333b9a50f3d5fa1c4980eac",
+        "catalog/systems.json": "7a3ba003882182b918e71efb6c5ef1d4f81290f2cfbccb16915a2a550371c56e",
+        "catalog/planets.json": "a93c558bd76aba0aa9e36ee2074a515a3b091fe8cf53048e1e8edfd08b5b1bc5",
+        "balance/costs.ts": "6452b44712de822ad26701c0461d0569f4f2bd95c4abdafb392a3d2ac7ee4943",
+        "balance/picks.ts": "a7cdfbd51de0be42df55776800f92c430e759309394e469cfaf2f4a76864e6ce"
+      },
+      "games": 72,
+      "checkedTurns": 8640,
+      "scorePercent": {
+        "n": 24,
+        "mean": 9.52532316945117,
+        "low": 5.782887413600864,
+        "high": 13.267758925301475
+      }
+    }
+  ]
+}
